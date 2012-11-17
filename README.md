@@ -8,3 +8,7 @@ Robot simulaion using 3D enviroment created using XNA game studio. Robot travels
 The purpose of the simulation was to test a modification of the Hough transform algorithm. 
 
 The mouse, and keys F1,F2,F3,F4,s,d,f,e,up,down,left,right control the robot. 
+
+Build
+========================
+You will need visual studio 2010 and the XNA gamestudio to build the simulation. 
