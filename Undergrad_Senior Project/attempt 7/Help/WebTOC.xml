@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="57a54d7b-6e99-41b9-acbd-721c9f0ef349" Title="( Default Namespace ) Namespace" Url="html/N_.htm">
+    <HelpTOCNode Title="&lt;Module&gt; Class" Url="html/T__Module_.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="99f550ce-8f9a-410b-9645-564fad5923b6" Title="Attempt_7 Namespace" Url="html/N_Attempt_7.htm">
+    <HelpTOCNode Id="2f007590-1268-490c-9a65-922cc1a55c01" Title="Camera Class" Url="html/T_Attempt_7_Camera.htm">
+      <HelpTOCNode Title="Camera Members" Url="html/AllMembers_T_Attempt_7_Camera.htm" />
+      <HelpTOCNode Title="Camera Constructor " Url="html/M_Attempt_7_Camera__ctor.htm" />
+      <HelpTOCNode Id="d55ab942-1404-4088-bed1-326aca47256d" Title="Camera Fields" Url="html/Fields_T_Attempt_7_Camera.htm">
+        <HelpTOCNode Title="cameraPosition Field" Url="html/F_Attempt_7_Camera_cameraPosition.htm" />
+        <HelpTOCNode Title="isMouseDependent Field" Url="html/F_Attempt_7_Camera_isMouseDependent.htm" />
+        <HelpTOCNode Title="mouseOffset Field" Url="html/F_Attempt_7_Camera_mouseOffset.htm" />
+        <HelpTOCNode Title="Projection Field" Url="html/F_Attempt_7_Camera_Projection.htm" />
+        <HelpTOCNode Title="target Field" Url="html/F_Attempt_7_Camera_target.htm" />
+        <HelpTOCNode Title="updirection Field" Url="html/F_Attempt_7_Camera_updirection.htm" />
+        <HelpTOCNode Title="View Field" Url="html/F_Attempt_7_Camera_View.htm" />
+        <HelpTOCNode Title="World Field" Url="html/F_Attempt_7_Camera_World.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9fd5c871-76cf-4524-9ec8-057f4d20254b" Title="Camera Methods" Url="html/Methods_T_Attempt_7_Camera.htm">
+        <HelpTOCNode Title="GetCameraPosition Method " Url="html/M_Attempt_7_Camera_GetCameraPosition.htm" />
+        <HelpTOCNode Title="Initialize Method " Url="html/M_Attempt_7_Camera_Initialize.htm" />
+        <HelpTOCNode Title="SetCameraPositionAndTarget Method " Url="html/M_Attempt_7_Camera_SetCameraPositionAndTarget.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/M_Attempt_7_Camera_Update.htm" />
+        <HelpTOCNode Title="UpdateKeyBoard Method " Url="html/M_Attempt_7_Camera_UpdateKeyBoard.htm" />
+        <HelpTOCNode Title="UpdateMouse Method " Url="html/M_Attempt_7_Camera_UpdateMouse.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8d8b9a56-5b80-469b-af9d-518070892aa9" Title="ImageAnalysis Class" Url="html/T_Attempt_7_ImageAnalysis.htm">
+      <HelpTOCNode Title="ImageAnalysis Members" Url="html/AllMembers_T_Attempt_7_ImageAnalysis.htm" />
+      <HelpTOCNode Title="ImageAnalysis Constructor " Url="html/M_Attempt_7_ImageAnalysis__ctor.htm" />
+      <HelpTOCNode Id="73a5dc40-b355-48eb-9033-ee47ba97dd98" Title="ImageAnalysis Fields" Url="html/Fields_T_Attempt_7_ImageAnalysis.htm">
+        <HelpTOCNode Title="accum2 Field" Url="html/F_Attempt_7_ImageAnalysis_accum2.htm" />
+        <HelpTOCNode Title="AccumLength Field" Url="html/F_Attempt_7_ImageAnalysis_AccumLength.htm" />
+        <HelpTOCNode Title="arial Field" Url="html/F_Attempt_7_ImageAnalysis_arial.htm" />
+        <HelpTOCNode Title="basicEffects Field" Url="html/F_Attempt_7_ImageAnalysis_basicEffects.htm" />
+        <HelpTOCNode Title="blueGood Field" Url="html/F_Attempt_7_ImageAnalysis_blueGood.htm" />
+        <HelpTOCNode Title="camera Field" Url="html/F_Attempt_7_ImageAnalysis_camera.htm" />
+        <HelpTOCNode Title="ClearArroundMaxDegree Field" Url="html/F_Attempt_7_ImageAnalysis_ClearArroundMaxDegree.htm" />
+        <HelpTOCNode Title="ClearArroundMaxRho Field" Url="html/F_Attempt_7_ImageAnalysis_ClearArroundMaxRho.htm" />
+        <HelpTOCNode Title="cntThreshold Field" Url="html/F_Attempt_7_ImageAnalysis_cntThreshold.htm" />
+        <HelpTOCNode Title="colorArray Field" Url="html/F_Attempt_7_ImageAnalysis_colorArray.htm" />
+        <HelpTOCNode Title="colorArray1D Field" Url="html/F_Attempt_7_ImageAnalysis_colorArray1D.htm" />
+        <HelpTOCNode Title="count1A Field" Url="html/F_Attempt_7_ImageAnalysis_count1A.htm" />
+        <HelpTOCNode Title="count1B Field" Url="html/F_Attempt_7_ImageAnalysis_count1B.htm" />
+        <HelpTOCNode Title="count1C Field" Url="html/F_Attempt_7_ImageAnalysis_count1C.htm" />
+        <HelpTOCNode Title="count1D Field" Url="html/F_Attempt_7_ImageAnalysis_count1D.htm" />
+        <HelpTOCNode Title="count1E Field" Url="html/F_Attempt_7_ImageAnalysis_count1E.htm" />
+        <HelpTOCNode Title="count2A Field" Url="html/F_Attempt_7_ImageAnalysis_count2A.htm" />
+        <HelpTOCNode Title="count2B Field" Url="html/F_Attempt_7_ImageAnalysis_count2B.htm" />
+        <HelpTOCNode Title="count2C Field" Url="html/F_Attempt_7_ImageAnalysis_count2C.htm" />
+        <HelpTOCNode Title="count2E Field" Url="html/F_Attempt_7_ImageAnalysis_count2E.htm" />
+        <HelpTOCNode Title="greenGood Field" Url="html/F_Attempt_7_ImageAnalysis_greenGood.htm" />
+        <HelpTOCNode Title="houghInfo Field" Url="html/F_Attempt_7_ImageAnalysis_houghInfo.htm" />
+        <HelpTOCNode Title="houghLineStartandStopVectors Field" Url="html/F_Attempt_7_ImageAnalysis_houghLineStartandStopVectors.htm" />
+        <HelpTOCNode Title="middleValues Field" Url="html/F_Attempt_7_ImageAnalysis_middleValues.htm" />
+        <HelpTOCNode Title="NumberofLinesToFind Field" Url="html/F_Attempt_7_ImageAnalysis_NumberofLinesToFind.htm" />
+        <HelpTOCNode Title="redGood Field" Url="html/F_Attempt_7_ImageAnalysis_redGood.htm" />
+        <HelpTOCNode Title="RhoIncrement Field" Url="html/F_Attempt_7_ImageAnalysis_RhoIncrement.htm" />
+        <HelpTOCNode Title="robotCameraView Field" Url="html/F_Attempt_7_ImageAnalysis_robotCameraView.htm" />
+        <HelpTOCNode Title="screenHeight Field" Url="html/F_Attempt_7_ImageAnalysis_screenHeight.htm" />
+        <HelpTOCNode Title="screenWidth Field" Url="html/F_Attempt_7_ImageAnalysis_screenWidth.htm" />
+        <HelpTOCNode Title="SmoothSearchSize Field" Url="html/F_Attempt_7_ImageAnalysis_SmoothSearchSize.htm" />
+        <HelpTOCNode Title="spriteBatch Field" Url="html/F_Attempt_7_ImageAnalysis_spriteBatch.htm" />
+        <HelpTOCNode Title="ThetaIncrement Field" Url="html/F_Attempt_7_ImageAnalysis_ThetaIncrement.htm" />
+        <HelpTOCNode Title="totalWhiteCnt Field" Url="html/F_Attempt_7_ImageAnalysis_totalWhiteCnt.htm" />
+        <HelpTOCNode Title="trueFalseMap Field" Url="html/F_Attempt_7_ImageAnalysis_trueFalseMap.htm" />
+        <HelpTOCNode Title="trueFalseMapB Field" Url="html/F_Attempt_7_ImageAnalysis_trueFalseMapB.htm" />
+        <HelpTOCNode Title="trueFalseMapC Field" Url="html/F_Attempt_7_ImageAnalysis_trueFalseMapC.htm" />
+        <HelpTOCNode Title="turnIndication Field" Url="html/F_Attempt_7_ImageAnalysis_turnIndication.htm" />
+        <HelpTOCNode Title="turnIndicatorisTheta Field" Url="html/F_Attempt_7_ImageAnalysis_turnIndicatorisTheta.htm" />
+        <HelpTOCNode Title="UpdateSquareDimForAnalysis Field" Url="html/F_Attempt_7_ImageAnalysis_UpdateSquareDimForAnalysis.htm" />
+        <HelpTOCNode Title="UpdateSquareDimForDrawing Field" Url="html/F_Attempt_7_ImageAnalysis_UpdateSquareDimForDrawing.htm" />
+        <HelpTOCNode Title="vertexArray Field" Url="html/F_Attempt_7_ImageAnalysis_vertexArray.htm" />
+        <HelpTOCNode Title="viewPortList Field" Url="html/F_Attempt_7_ImageAnalysis_viewPortList.htm" />
+        <HelpTOCNode Title="whiteParam Field" Url="html/F_Attempt_7_ImageAnalysis_whiteParam.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="898cdddc-8bf6-4120-b864-dc6ba8039b03" Title="ImageAnalysis Methods" Url="html/Methods_T_Attempt_7_ImageAnalysis.htm">
+        <HelpTOCNode Title="AddHoughLinesColor Method " Url="html/M_Attempt_7_ImageAnalysis_AddHoughLinesColor.htm" />
+        <HelpTOCNode Title="CalculateStartandStopofLine Method " Url="html/M_Attempt_7_ImageAnalysis_CalculateStartandStopofLine.htm" />
+        <HelpTOCNode Title="ClearMaxInAccum Method " Url="html/M_Attempt_7_ImageAnalysis_ClearMaxInAccum.htm" />
+        <HelpTOCNode Title="Draw Method " Url="html/M_Attempt_7_ImageAnalysis_Draw.htm" />
+        <HelpTOCNode Title="DrawAnalysis Method " Url="html/M_Attempt_7_ImageAnalysis_DrawAnalysis.htm" />
+        <HelpTOCNode Title="DrawText Method " Url="html/M_Attempt_7_ImageAnalysis_DrawText.htm" />
+        <HelpTOCNode Title="FindAverages Method " Url="html/M_Attempt_7_ImageAnalysis_FindAverages.htm" />
+        <HelpTOCNode Title="FindMaxInAccumArrayOfHough Method " Url="html/M_Attempt_7_ImageAnalysis_FindMaxInAccumArrayOfHough.htm" />
+        <HelpTOCNode Title="FindWhite Method " Url="html/M_Attempt_7_ImageAnalysis_FindWhite.htm" />
+        <HelpTOCNode Title="GetTurnIndicator Method " Url="html/M_Attempt_7_ImageAnalysis_GetTurnIndicator.htm" />
+        <HelpTOCNode Title="Hough Method " Url="html/M_Attempt_7_ImageAnalysis_Hough.htm" />
+        <HelpTOCNode Title="Initialize Method " Url="html/M_Attempt_7_ImageAnalysis_Initialize.htm" />
+        <HelpTOCNode Title="InsertLine Method " Url="html/M_Attempt_7_ImageAnalysis_InsertLine.htm" />
+        <HelpTOCNode Title="LoadContent Method " Url="html/M_Attempt_7_ImageAnalysis_LoadContent.htm" />
+        <HelpTOCNode Title="LoadVertexArray Method " Url="html/M_Attempt_7_ImageAnalysis_LoadVertexArray.htm" />
+        <HelpTOCNode Title="SetRobotCameraView Method " Url="html/M_Attempt_7_ImageAnalysis_SetRobotCameraView.htm" />
+        <HelpTOCNode Title="ShowPath Method " Url="html/M_Attempt_7_ImageAnalysis_ShowPath.htm" />
+        <HelpTOCNode Title="Smooth Method " Url="html/M_Attempt_7_ImageAnalysis_Smooth.htm" />
+        <HelpTOCNode Title="TextureTo2DArray Method " Url="html/M_Attempt_7_ImageAnalysis_TextureTo2DArray.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/M_Attempt_7_ImageAnalysis_Update.htm" />
+        <HelpTOCNode Title="Update1 Method " Url="html/M_Attempt_7_ImageAnalysis_Update1.htm" />
+        <HelpTOCNode Title="UpdateBoolMapto3DRectangle Method " Url="html/M_Attempt_7_ImageAnalysis_UpdateBoolMapto3DRectangle.htm" />
+        <HelpTOCNode Title="UpdateColorArrayto3DRectangle Method " Url="html/M_Attempt_7_ImageAnalysis_UpdateColorArrayto3DRectangle.htm" />
+        <HelpTOCNode Title="Whiteline Method " Url="html/M_Attempt_7_ImageAnalysis_Whiteline.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="c87a64ad-efb3-406f-ae7d-089b28629b63" Title="Program Class" Url="html/T_Attempt_7_Program.htm">
+      <HelpTOCNode Title="Program Members" Url="html/AllMembers_T_Attempt_7_Program.htm" />
+      <HelpTOCNode Id="986433bd-250b-4364-9e5b-e012417f873d" Title="Program Methods" Url="html/Methods_T_Attempt_7_Program.htm">
+        <HelpTOCNode Title="Main Method " Url="html/M_Attempt_7_Program_Main.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="08d5b08c-da15-41bc-b63f-f423f420730e" Title="Robot Class" Url="html/T_Attempt_7_Robot.htm">
+      <HelpTOCNode Title="Robot Members" Url="html/AllMembers_T_Attempt_7_Robot.htm" />
+      <HelpTOCNode Title="Robot Constructor " Url="html/M_Attempt_7_Robot__ctor.htm" />
+      <HelpTOCNode Id="1f20770d-b63a-410c-862f-0610d4b5db1a" Title="Robot Fields" Url="html/Fields_T_Attempt_7_Robot.htm">
+        <HelpTOCNode Title="cameraHeight Field" Url="html/F_Attempt_7_Robot_cameraHeight.htm" />
+        <HelpTOCNode Title="changeDirectionThreshholdValue Field" Url="html/F_Attempt_7_Robot_changeDirectionThreshholdValue.htm" />
+        <HelpTOCNode Title="direction Field" Url="html/F_Attempt_7_Robot_direction.htm" />
+        <HelpTOCNode Title="distanceToCameraTarget Field" Url="html/F_Attempt_7_Robot_distanceToCameraTarget.htm" />
+        <HelpTOCNode Title="paused Field" Url="html/F_Attempt_7_Robot_paused.htm" />
+        <HelpTOCNode Title="position Field" Url="html/F_Attempt_7_Robot_position.htm" />
+        <HelpTOCNode Title="robotCameraView Field" Url="html/F_Attempt_7_Robot_robotCameraView.htm" />
+        <HelpTOCNode Title="speed Field" Url="html/F_Attempt_7_Robot_speed.htm" />
+        <HelpTOCNode Title="startPosition Field" Url="html/F_Attempt_7_Robot_startPosition.htm" />
+        <HelpTOCNode Title="timePressedKey Field" Url="html/F_Attempt_7_Robot_timePressedKey.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0c319eed-6421-4439-90c1-987808a6ab75" Title="Robot Methods" Url="html/Methods_T_Attempt_7_Robot.htm">
+        <HelpTOCNode Title="ChangeDirection Method " Url="html/M_Attempt_7_Robot_ChangeDirection.htm" />
+        <HelpTOCNode Title="GetDirection Method " Url="html/M_Attempt_7_Robot_GetDirection.htm" />
+        <HelpTOCNode Title="GetIsRobotPaused Method " Url="html/M_Attempt_7_Robot_GetIsRobotPaused.htm" />
+        <HelpTOCNode Title="GetKeyBoard Method " Url="html/M_Attempt_7_Robot_GetKeyBoard.htm" />
+        <HelpTOCNode Title="GetPosition Method " Url="html/M_Attempt_7_Robot_GetPosition.htm" />
+        <HelpTOCNode Title="GetRobotCamera Method " Url="html/M_Attempt_7_Robot_GetRobotCamera.htm" />
+        <HelpTOCNode Title="Initialize Method " Url="html/M_Attempt_7_Robot_Initialize.htm" />
+        <HelpTOCNode Title="SetPosition Method " Url="html/M_Attempt_7_Robot_SetPosition.htm" />
+        <HelpTOCNode Title="SetStartPosition Method " Url="html/M_Attempt_7_Robot_SetStartPosition.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/M_Attempt_7_Robot_Update.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6ca98235-c797-48f5-bc22-7bbcd8c7d364" Title="SimulationMain Class" Url="html/T_Attempt_7_SimulationMain.htm">
+      <HelpTOCNode Title="SimulationMain Members" Url="html/AllMembers_T_Attempt_7_SimulationMain.htm" />
+      <HelpTOCNode Title="SimulationMain Constructor " Url="html/M_Attempt_7_SimulationMain__ctor.htm" />
+      <HelpTOCNode Id="707f589b-2034-4491-a1b4-85602ecca917" Title="SimulationMain Fields" Url="html/Fields_T_Attempt_7_SimulationMain.htm">
+        <HelpTOCNode Title="arial Field" Url="html/F_Attempt_7_SimulationMain_arial.htm" />
+        <HelpTOCNode Title="basicEffects Field" Url="html/F_Attempt_7_SimulationMain_basicEffects.htm" />
+        <HelpTOCNode Title="cameraList Field" Url="html/F_Attempt_7_SimulationMain_cameraList.htm" />
+        <HelpTOCNode Title="graphics Field" Url="html/F_Attempt_7_SimulationMain_graphics.htm" />
+        <HelpTOCNode Title="grass Field" Url="html/F_Attempt_7_SimulationMain_grass.htm" />
+        <HelpTOCNode Title="imageAnalysis Field" Url="html/F_Attempt_7_SimulationMain_imageAnalysis.htm" />
+        <HelpTOCNode Title="largeGrass Field" Url="html/F_Attempt_7_SimulationMain_largeGrass.htm" />
+        <HelpTOCNode Title="rand Field" Url="html/F_Attempt_7_SimulationMain_rand.htm" />
+        <HelpTOCNode Title="renderTargets Field" Url="html/F_Attempt_7_SimulationMain_renderTargets.htm" />
+        <HelpTOCNode Title="robot1 Field" Url="html/F_Attempt_7_SimulationMain_robot1.htm" />
+        <HelpTOCNode Title="screenRectangle Field" Url="html/F_Attempt_7_SimulationMain_screenRectangle.htm" />
+        <HelpTOCNode Title="screenSize Field" Url="html/F_Attempt_7_SimulationMain_screenSize.htm" />
+        <HelpTOCNode Title="spriteBatch Field" Url="html/F_Attempt_7_SimulationMain_spriteBatch.htm" />
+        <HelpTOCNode Title="timePressedKey Field" Url="html/F_Attempt_7_SimulationMain_timePressedKey.htm" />
+        <HelpTOCNode Title="trackRobot Field" Url="html/F_Attempt_7_SimulationMain_trackRobot.htm" />
+        <HelpTOCNode Title="verts1 Field" Url="html/F_Attempt_7_SimulationMain_verts1.htm" />
+        <HelpTOCNode Title="verts2 Field" Url="html/F_Attempt_7_SimulationMain_verts2.htm" />
+        <HelpTOCNode Title="verts3 Field" Url="html/F_Attempt_7_SimulationMain_verts3.htm" />
+        <HelpTOCNode Title="viewPortList Field" Url="html/F_Attempt_7_SimulationMain_viewPortList.htm" />
+        <HelpTOCNode Title="windowSize Field" Url="html/F_Attempt_7_SimulationMain_windowSize.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="aeafb833-783a-4df2-b033-c49befa646ca" Title="SimulationMain Methods" Url="html/Methods_T_Attempt_7_SimulationMain.htm">
+        <HelpTOCNode Title="BuildRenderTargets Method " Url="html/M_Attempt_7_SimulationMain_BuildRenderTargets.htm" />
+        <HelpTOCNode Title="CreateGrassTexture Method " Url="html/M_Attempt_7_SimulationMain_CreateGrassTexture.htm" />
+        <HelpTOCNode Title="CreateViewPorts Method " Url="html/M_Attempt_7_SimulationMain_CreateViewPorts.htm" />
+        <HelpTOCNode Title="Draw Method " Url="html/M_Attempt_7_SimulationMain_Draw.htm" />
+        <HelpTOCNode Title="DrawColorLines Method " Url="html/M_Attempt_7_SimulationMain_DrawColorLines.htm" />
+        <HelpTOCNode Title="DrawRobot Method " Url="html/M_Attempt_7_SimulationMain_DrawRobot.htm" />
+        <HelpTOCNode Title="DrawText Method " Url="html/M_Attempt_7_SimulationMain_DrawText.htm" />
+        <HelpTOCNode Title="DrawTextureRectange Method " Url="html/M_Attempt_7_SimulationMain_DrawTextureRectange.htm" />
+        <HelpTOCNode Title="GetKeyBoard Method " Url="html/M_Attempt_7_SimulationMain_GetKeyBoard.htm" />
+        <HelpTOCNode Title="Initialize Method " Url="html/M_Attempt_7_SimulationMain_Initialize.htm" />
+        <HelpTOCNode Title="LoadContent Method " Url="html/M_Attempt_7_SimulationMain_LoadContent.htm" />
+        <HelpTOCNode Title="LoadGround Method " Url="html/M_Attempt_7_SimulationMain_LoadGround.htm" />
+        <HelpTOCNode Title="LoadLines Method " Url="html/M_Attempt_7_SimulationMain_LoadLines.htm" />
+        <HelpTOCNode Title="TextureTo2DArray Method " Url="html/M_Attempt_7_SimulationMain_TextureTo2DArray.htm" />
+        <HelpTOCNode Title="UnloadContent Method " Url="html/M_Attempt_7_SimulationMain_UnloadContent.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/M_Attempt_7_SimulationMain_Update.htm" />
+        <HelpTOCNode Title="UpDateRobotPosition Method " Url="html/M_Attempt_7_SimulationMain_UpDateRobotPosition.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

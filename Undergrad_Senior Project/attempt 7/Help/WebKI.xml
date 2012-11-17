@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+
+  <HelpKINode Title=" namespace" Url="html/N_.htm" />
+  <HelpKINode Title="&lt;Module&gt; class" Url="html/T__Module_.htm" />
+  <HelpKINode Title="&lt;Module&gt; class">
+    <HelpKINode Title="about &lt;Module&gt; class" Url="html/T__Module_.htm" />
+  </HelpKINode>
+  <HelpKINode Title="accum2 field" Url="html/F_Attempt_7_ImageAnalysis_accum2.htm" />
+  <HelpKINode Title="AccumLength field" Url="html/F_Attempt_7_ImageAnalysis_AccumLength.htm" />
+  <HelpKINode Title="AddHoughLinesColor method" Url="html/M_Attempt_7_ImageAnalysis_AddHoughLinesColor.htm" />
+  <HelpKINode Title="arial field" Url="html/F_Attempt_7_ImageAnalysis_arial.htm" />
+  <HelpKINode Title="arial field" Url="html/F_Attempt_7_SimulationMain_arial.htm" />
+  <HelpKINode Title="Attempt_7 namespace" Url="html/N_Attempt_7.htm" />
+  <HelpKINode Title="Attempt_7.Camera class" Url="html/AllMembers_T_Attempt_7_Camera.htm" />
+  <HelpKINode Title="Attempt_7.Camera class" Url="html/T_Attempt_7_Camera.htm" />
+  <HelpKINode Title="Attempt_7.ImageAnalysis class" Url="html/AllMembers_T_Attempt_7_ImageAnalysis.htm" />
+  <HelpKINode Title="Attempt_7.ImageAnalysis class" Url="html/T_Attempt_7_ImageAnalysis.htm" />
+  <HelpKINode Title="Attempt_7.Program class" Url="html/AllMembers_T_Attempt_7_Program.htm" />
+  <HelpKINode Title="Attempt_7.Program class" Url="html/T_Attempt_7_Program.htm" />
+  <HelpKINode Title="Attempt_7.Robot class" Url="html/AllMembers_T_Attempt_7_Robot.htm" />
+  <HelpKINode Title="Attempt_7.Robot class" Url="html/T_Attempt_7_Robot.htm" />
+  <HelpKINode Title="Attempt_7.SimulationMain class" Url="html/AllMembers_T_Attempt_7_SimulationMain.htm" />
+  <HelpKINode Title="Attempt_7.SimulationMain class" Url="html/T_Attempt_7_SimulationMain.htm" />
+  <HelpKINode Title="basicEffects field" Url="html/F_Attempt_7_ImageAnalysis_basicEffects.htm" />
+  <HelpKINode Title="basicEffects field" Url="html/F_Attempt_7_SimulationMain_basicEffects.htm" />
+  <HelpKINode Title="blueGood field" Url="html/F_Attempt_7_ImageAnalysis_blueGood.htm" />
+  <HelpKINode Title="BuildRenderTargets method" Url="html/M_Attempt_7_SimulationMain_BuildRenderTargets.htm" />
+  <HelpKINode Title="CalculateStartandStopofLine method" Url="html/M_Attempt_7_ImageAnalysis_CalculateStartandStopofLine.htm" />
+  <HelpKINode Title="Camera class" Url="html/AllMembers_T_Attempt_7_Camera.htm" />
+  <HelpKINode Title="Camera class" Url="html/T_Attempt_7_Camera.htm" />
+  <HelpKINode Title="Camera class">
+    <HelpKINode Title="about Camera class" Url="html/T_Attempt_7_Camera.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Attempt_7_Camera.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Attempt_7_Camera__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Attempt_7_Camera.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Attempt_7_Camera.htm" />
+  </HelpKINode>
+  <HelpKINode Title="camera field" Url="html/F_Attempt_7_ImageAnalysis_camera.htm" />
+  <HelpKINode Title="Camera.Camera constructor" Url="html/M_Attempt_7_Camera__ctor.htm" />
+  <HelpKINode Title="Camera.cameraPosition field" Url="html/F_Attempt_7_Camera_cameraPosition.htm" />
+  <HelpKINode Title="Camera.GetCameraPosition method" Url="html/M_Attempt_7_Camera_GetCameraPosition.htm" />
+  <HelpKINode Title="Camera.Initialize method" Url="html/M_Attempt_7_Camera_Initialize.htm" />
+  <HelpKINode Title="Camera.isMouseDependent field" Url="html/F_Attempt_7_Camera_isMouseDependent.htm" />
+  <HelpKINode Title="Camera.mouseOffset field" Url="html/F_Attempt_7_Camera_mouseOffset.htm" />
+  <HelpKINode Title="Camera.Projection field" Url="html/F_Attempt_7_Camera_Projection.htm" />
+  <HelpKINode Title="Camera.SetCameraPositionAndTarget method" Url="html/M_Attempt_7_Camera_SetCameraPositionAndTarget.htm" />
+  <HelpKINode Title="Camera.target field" Url="html/F_Attempt_7_Camera_target.htm" />
+  <HelpKINode Title="Camera.Update method" Url="html/M_Attempt_7_Camera_Update.htm" />
+  <HelpKINode Title="Camera.UpdateKeyBoard method" Url="html/M_Attempt_7_Camera_UpdateKeyBoard.htm" />
+  <HelpKINode Title="Camera.UpdateMouse method" Url="html/M_Attempt_7_Camera_UpdateMouse.htm" />
+  <HelpKINode Title="Camera.updirection field" Url="html/F_Attempt_7_Camera_updirection.htm" />
+  <HelpKINode Title="Camera.View field" Url="html/F_Attempt_7_Camera_View.htm" />
+  <HelpKINode Title="Camera.World field" Url="html/F_Attempt_7_Camera_World.htm" />
+  <HelpKINode Title="cameraHeight field" Url="html/F_Attempt_7_Robot_cameraHeight.htm" />
+  <HelpKINode Title="cameraList field" Url="html/F_Attempt_7_SimulationMain_cameraList.htm" />
+  <HelpKINode Title="cameraPosition field" Url="html/F_Attempt_7_Camera_cameraPosition.htm" />
+  <HelpKINode Title="ChangeDirection method" Url="html/M_Attempt_7_Robot_ChangeDirection.htm" />
+  <HelpKINode Title="changeDirectionThreshholdValue field" Url="html/F_Attempt_7_Robot_changeDirectionThreshholdValue.htm" />
+  <HelpKINode Title="ClearArroundMaxDegree field" Url="html/F_Attempt_7_ImageAnalysis_ClearArroundMaxDegree.htm" />
+  <HelpKINode Title="ClearArroundMaxRho field" Url="html/F_Attempt_7_ImageAnalysis_ClearArroundMaxRho.htm" />
+  <HelpKINode Title="ClearMaxInAccum method" Url="html/M_Attempt_7_ImageAnalysis_ClearMaxInAccum.htm" />
+  <HelpKINode Title="cntThreshold field" Url="html/F_Attempt_7_ImageAnalysis_cntThreshold.htm" />
+  <HelpKINode Title="colorArray field" Url="html/F_Attempt_7_ImageAnalysis_colorArray.htm" />
+  <HelpKINode Title="colorArray1D field" Url="html/F_Attempt_7_ImageAnalysis_colorArray1D.htm" />
+  <HelpKINode Title="count1A field" Url="html/F_Attempt_7_ImageAnalysis_count1A.htm" />
+  <HelpKINode Title="count1B field" Url="html/F_Attempt_7_ImageAnalysis_count1B.htm" />
+  <HelpKINode Title="count1C field" Url="html/F_Attempt_7_ImageAnalysis_count1C.htm" />
+  <HelpKINode Title="count1D field" Url="html/F_Attempt_7_ImageAnalysis_count1D.htm" />
+  <HelpKINode Title="count1E field" Url="html/F_Attempt_7_ImageAnalysis_count1E.htm" />
+  <HelpKINode Title="count2A field" Url="html/F_Attempt_7_ImageAnalysis_count2A.htm" />
+  <HelpKINode Title="count2B field" Url="html/F_Attempt_7_ImageAnalysis_count2B.htm" />
+  <HelpKINode Title="count2C field" Url="html/F_Attempt_7_ImageAnalysis_count2C.htm" />
+  <HelpKINode Title="count2E field" Url="html/F_Attempt_7_ImageAnalysis_count2E.htm" />
+  <HelpKINode Title="CreateGrassTexture method" Url="html/M_Attempt_7_SimulationMain_CreateGrassTexture.htm" />
+  <HelpKINode Title="CreateViewPorts method" Url="html/M_Attempt_7_SimulationMain_CreateViewPorts.htm" />
+  <HelpKINode Title="direction field" Url="html/F_Attempt_7_Robot_direction.htm" />
+  <HelpKINode Title="distanceToCameraTarget field" Url="html/F_Attempt_7_Robot_distanceToCameraTarget.htm" />
+  <HelpKINode Title="Draw method" Url="html/M_Attempt_7_ImageAnalysis_Draw.htm" />
+  <HelpKINode Title="Draw method" Url="html/M_Attempt_7_SimulationMain_Draw.htm" />
+  <HelpKINode Title="DrawAnalysis method" Url="html/M_Attempt_7_ImageAnalysis_DrawAnalysis.htm" />
+  <HelpKINode Title="DrawColorLines method" Url="html/M_Attempt_7_SimulationMain_DrawColorLines.htm" />
+  <HelpKINode Title="DrawRobot method" Url="html/M_Attempt_7_SimulationMain_DrawRobot.htm" />
+  <HelpKINode Title="DrawText method" Url="html/M_Attempt_7_ImageAnalysis_DrawText.htm" />
+  <HelpKINode Title="DrawText method" Url="html/M_Attempt_7_SimulationMain_DrawText.htm" />
+  <HelpKINode Title="DrawTextureRectange method" Url="html/M_Attempt_7_SimulationMain_DrawTextureRectange.htm" />
+  <HelpKINode Title="FindAverages method" Url="html/M_Attempt_7_ImageAnalysis_FindAverages.htm" />
+  <HelpKINode Title="FindMaxInAccumArrayOfHough method" Url="html/M_Attempt_7_ImageAnalysis_FindMaxInAccumArrayOfHough.htm" />
+  <HelpKINode Title="FindWhite method" Url="html/M_Attempt_7_ImageAnalysis_FindWhite.htm" />
+  <HelpKINode Title="GetCameraPosition method" Url="html/M_Attempt_7_Camera_GetCameraPosition.htm" />
+  <HelpKINode Title="GetDirection method" Url="html/M_Attempt_7_Robot_GetDirection.htm" />
+  <HelpKINode Title="GetIsRobotPaused method" Url="html/M_Attempt_7_Robot_GetIsRobotPaused.htm" />
+  <HelpKINode Title="GetKeyBoard method" Url="html/M_Attempt_7_Robot_GetKeyBoard.htm" />
+  <HelpKINode Title="GetKeyBoard method" Url="html/M_Attempt_7_SimulationMain_GetKeyBoard.htm" />
+  <HelpKINode Title="GetPosition method" Url="html/M_Attempt_7_Robot_GetPosition.htm" />
+  <HelpKINode Title="GetRobotCamera method" Url="html/M_Attempt_7_Robot_GetRobotCamera.htm" />
+  <HelpKINode Title="GetTurnIndicator method" Url="html/M_Attempt_7_ImageAnalysis_GetTurnIndicator.htm" />
+  <HelpKINode Title="graphics field" Url="html/F_Attempt_7_SimulationMain_graphics.htm" />
+  <HelpKINode Title="grass field" Url="html/F_Attempt_7_SimulationMain_grass.htm" />
+  <HelpKINode Title="greenGood field" Url="html/F_Attempt_7_ImageAnalysis_greenGood.htm" />
+  <HelpKINode Title="Hough method" Url="html/M_Attempt_7_ImageAnalysis_Hough.htm" />
+  <HelpKINode Title="houghInfo field" Url="html/F_Attempt_7_ImageAnalysis_houghInfo.htm" />
+  <HelpKINode Title="houghLineStartandStopVectors field" Url="html/F_Attempt_7_ImageAnalysis_houghLineStartandStopVectors.htm" />
+  <HelpKINode Title="ImageAnalysis class" Url="html/AllMembers_T_Attempt_7_ImageAnalysis.htm" />
+  <HelpKINode Title="ImageAnalysis class" Url="html/T_Attempt_7_ImageAnalysis.htm" />
+  <HelpKINode Title="ImageAnalysis class">
+    <HelpKINode Title="about ImageAnalysis class" Url="html/T_Attempt_7_ImageAnalysis.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Attempt_7_ImageAnalysis.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Attempt_7_ImageAnalysis__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Attempt_7_ImageAnalysis.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Attempt_7_ImageAnalysis.htm" />
+  </HelpKINode>
+  <HelpKINode Title="imageAnalysis field" Url="html/F_Attempt_7_SimulationMain_imageAnalysis.htm" />
+  <HelpKINode Title="ImageAnalysis.accum2 field" Url="html/F_Attempt_7_ImageAnalysis_accum2.htm" />
+  <HelpKINode Title="ImageAnalysis.AccumLength field" Url="html/F_Attempt_7_ImageAnalysis_AccumLength.htm" />
+  <HelpKINode Title="ImageAnalysis.AddHoughLinesColor method" Url="html/M_Attempt_7_ImageAnalysis_AddHoughLinesColor.htm" />
+  <HelpKINode Title="ImageAnalysis.arial field" Url="html/F_Attempt_7_ImageAnalysis_arial.htm" />
+  <HelpKINode Title="ImageAnalysis.basicEffects field" Url="html/F_Attempt_7_ImageAnalysis_basicEffects.htm" />
+  <HelpKINode Title="ImageAnalysis.blueGood field" Url="html/F_Attempt_7_ImageAnalysis_blueGood.htm" />
+  <HelpKINode Title="ImageAnalysis.CalculateStartandStopofLine method" Url="html/M_Attempt_7_ImageAnalysis_CalculateStartandStopofLine.htm" />
+  <HelpKINode Title="ImageAnalysis.camera field" Url="html/F_Attempt_7_ImageAnalysis_camera.htm" />
+  <HelpKINode Title="ImageAnalysis.ClearArroundMaxDegree field" Url="html/F_Attempt_7_ImageAnalysis_ClearArroundMaxDegree.htm" />
+  <HelpKINode Title="ImageAnalysis.ClearArroundMaxRho field" Url="html/F_Attempt_7_ImageAnalysis_ClearArroundMaxRho.htm" />
+  <HelpKINode Title="ImageAnalysis.ClearMaxInAccum method" Url="html/M_Attempt_7_ImageAnalysis_ClearMaxInAccum.htm" />
+  <HelpKINode Title="ImageAnalysis.cntThreshold field" Url="html/F_Attempt_7_ImageAnalysis_cntThreshold.htm" />
+  <HelpKINode Title="ImageAnalysis.colorArray field" Url="html/F_Attempt_7_ImageAnalysis_colorArray.htm" />
+  <HelpKINode Title="ImageAnalysis.colorArray1D field" Url="html/F_Attempt_7_ImageAnalysis_colorArray1D.htm" />
+  <HelpKINode Title="ImageAnalysis.count1A field" Url="html/F_Attempt_7_ImageAnalysis_count1A.htm" />
+  <HelpKINode Title="ImageAnalysis.count1B field" Url="html/F_Attempt_7_ImageAnalysis_count1B.htm" />
+  <HelpKINode Title="ImageAnalysis.count1C field" Url="html/F_Attempt_7_ImageAnalysis_count1C.htm" />
+  <HelpKINode Title="ImageAnalysis.count1D field" Url="html/F_Attempt_7_ImageAnalysis_count1D.htm" />
+  <HelpKINode Title="ImageAnalysis.count1E field" Url="html/F_Attempt_7_ImageAnalysis_count1E.htm" />
+  <HelpKINode Title="ImageAnalysis.count2A field" Url="html/F_Attempt_7_ImageAnalysis_count2A.htm" />
+  <HelpKINode Title="ImageAnalysis.count2B field" Url="html/F_Attempt_7_ImageAnalysis_count2B.htm" />
+  <HelpKINode Title="ImageAnalysis.count2C field" Url="html/F_Attempt_7_ImageAnalysis_count2C.htm" />
+  <HelpKINode Title="ImageAnalysis.count2E field" Url="html/F_Attempt_7_ImageAnalysis_count2E.htm" />
+  <HelpKINode Title="ImageAnalysis.Draw method" Url="html/M_Attempt_7_ImageAnalysis_Draw.htm" />
+  <HelpKINode Title="ImageAnalysis.DrawAnalysis method" Url="html/M_Attempt_7_ImageAnalysis_DrawAnalysis.htm" />
+  <HelpKINode Title="ImageAnalysis.DrawText method" Url="html/M_Attempt_7_ImageAnalysis_DrawText.htm" />
+  <HelpKINode Title="ImageAnalysis.FindAverages method" Url="html/M_Attempt_7_ImageAnalysis_FindAverages.htm" />
+  <HelpKINode Title="ImageAnalysis.FindMaxInAccumArrayOfHough method" Url="html/M_Attempt_7_ImageAnalysis_FindMaxInAccumArrayOfHough.htm" />
+  <HelpKINode Title="ImageAnalysis.FindWhite method" Url="html/M_Attempt_7_ImageAnalysis_FindWhite.htm" />
+  <HelpKINode Title="ImageAnalysis.GetTurnIndicator method" Url="html/M_Attempt_7_ImageAnalysis_GetTurnIndicator.htm" />
+  <HelpKINode Title="ImageAnalysis.greenGood field" Url="html/F_Attempt_7_ImageAnalysis_greenGood.htm" />
+  <HelpKINode Title="ImageAnalysis.Hough method" Url="html/M_Attempt_7_ImageAnalysis_Hough.htm" />
+  <HelpKINode Title="ImageAnalysis.houghInfo field" Url="html/F_Attempt_7_ImageAnalysis_houghInfo.htm" />
+  <HelpKINode Title="ImageAnalysis.houghLineStartandStopVectors field" Url="html/F_Attempt_7_ImageAnalysis_houghLineStartandStopVectors.htm" />
+  <HelpKINode Title="ImageAnalysis.ImageAnalysis constructor" Url="html/M_Attempt_7_ImageAnalysis__ctor.htm" />
+  <HelpKINode Title="ImageAnalysis.Initialize method" Url="html/M_Attempt_7_ImageAnalysis_Initialize.htm" />
+  <HelpKINode Title="ImageAnalysis.InsertLine method" Url="html/M_Attempt_7_ImageAnalysis_InsertLine.htm" />
+  <HelpKINode Title="ImageAnalysis.LoadContent method" Url="html/M_Attempt_7_ImageAnalysis_LoadContent.htm" />
+  <HelpKINode Title="ImageAnalysis.LoadVertexArray method" Url="html/M_Attempt_7_ImageAnalysis_LoadVertexArray.htm" />
+  <HelpKINode Title="ImageAnalysis.middleValues field" Url="html/F_Attempt_7_ImageAnalysis_middleValues.htm" />
+  <HelpKINode Title="ImageAnalysis.NumberofLinesToFind field" Url="html/F_Attempt_7_ImageAnalysis_NumberofLinesToFind.htm" />
+  <HelpKINode Title="ImageAnalysis.redGood field" Url="html/F_Attempt_7_ImageAnalysis_redGood.htm" />
+  <HelpKINode Title="ImageAnalysis.RhoIncrement field" Url="html/F_Attempt_7_ImageAnalysis_RhoIncrement.htm" />
+  <HelpKINode Title="ImageAnalysis.robotCameraView field" Url="html/F_Attempt_7_ImageAnalysis_robotCameraView.htm" />
+  <HelpKINode Title="ImageAnalysis.screenHeight field" Url="html/F_Attempt_7_ImageAnalysis_screenHeight.htm" />
+  <HelpKINode Title="ImageAnalysis.screenWidth field" Url="html/F_Attempt_7_ImageAnalysis_screenWidth.htm" />
+  <HelpKINode Title="ImageAnalysis.SetRobotCameraView method" Url="html/M_Attempt_7_ImageAnalysis_SetRobotCameraView.htm" />
+  <HelpKINode Title="ImageAnalysis.ShowPath method" Url="html/M_Attempt_7_ImageAnalysis_ShowPath.htm" />
+  <HelpKINode Title="ImageAnalysis.Smooth method" Url="html/M_Attempt_7_ImageAnalysis_Smooth.htm" />
+  <HelpKINode Title="ImageAnalysis.SmoothSearchSize field" Url="html/F_Attempt_7_ImageAnalysis_SmoothSearchSize.htm" />
+  <HelpKINode Title="ImageAnalysis.spriteBatch field" Url="html/F_Attempt_7_ImageAnalysis_spriteBatch.htm" />
+  <HelpKINode Title="ImageAnalysis.TextureTo2DArray method" Url="html/M_Attempt_7_ImageAnalysis_TextureTo2DArray.htm" />
+  <HelpKINode Title="ImageAnalysis.ThetaIncrement field" Url="html/F_Attempt_7_ImageAnalysis_ThetaIncrement.htm" />
+  <HelpKINode Title="ImageAnalysis.totalWhiteCnt field" Url="html/F_Attempt_7_ImageAnalysis_totalWhiteCnt.htm" />
+  <HelpKINode Title="ImageAnalysis.trueFalseMap field" Url="html/F_Attempt_7_ImageAnalysis_trueFalseMap.htm" />
+  <HelpKINode Title="ImageAnalysis.trueFalseMapB field" Url="html/F_Attempt_7_ImageAnalysis_trueFalseMapB.htm" />
+  <HelpKINode Title="ImageAnalysis.trueFalseMapC field" Url="html/F_Attempt_7_ImageAnalysis_trueFalseMapC.htm" />
+  <HelpKINode Title="ImageAnalysis.turnIndication field" Url="html/F_Attempt_7_ImageAnalysis_turnIndication.htm" />
+  <HelpKINode Title="ImageAnalysis.turnIndicatorisTheta field" Url="html/F_Attempt_7_ImageAnalysis_turnIndicatorisTheta.htm" />
+  <HelpKINode Title="ImageAnalysis.Update method" Url="html/M_Attempt_7_ImageAnalysis_Update.htm" />
+  <HelpKINode Title="ImageAnalysis.Update1 method" Url="html/M_Attempt_7_ImageAnalysis_Update1.htm" />
+  <HelpKINode Title="ImageAnalysis.UpdateBoolMapto3DRectangle method" Url="html/M_Attempt_7_ImageAnalysis_UpdateBoolMapto3DRectangle.htm" />
+  <HelpKINode Title="ImageAnalysis.UpdateColorArrayto3DRectangle method" Url="html/M_Attempt_7_ImageAnalysis_UpdateColorArrayto3DRectangle.htm" />
+  <HelpKINode Title="ImageAnalysis.UpdateSquareDimForAnalysis field" Url="html/F_Attempt_7_ImageAnalysis_UpdateSquareDimForAnalysis.htm" />
+  <HelpKINode Title="ImageAnalysis.UpdateSquareDimForDrawing field" Url="html/F_Attempt_7_ImageAnalysis_UpdateSquareDimForDrawing.htm" />
+  <HelpKINode Title="ImageAnalysis.vertexArray field" Url="html/F_Attempt_7_ImageAnalysis_vertexArray.htm" />
+  <HelpKINode Title="ImageAnalysis.viewPortList field" Url="html/F_Attempt_7_ImageAnalysis_viewPortList.htm" />
+  <HelpKINode Title="ImageAnalysis.Whiteline method" Url="html/M_Attempt_7_ImageAnalysis_Whiteline.htm" />
+  <HelpKINode Title="ImageAnalysis.whiteParam field" Url="html/F_Attempt_7_ImageAnalysis_whiteParam.htm" />
+  <HelpKINode Title="Initialize method" Url="html/M_Attempt_7_Camera_Initialize.htm" />
+  <HelpKINode Title="Initialize method" Url="html/M_Attempt_7_ImageAnalysis_Initialize.htm" />
+  <HelpKINode Title="Initialize method" Url="html/M_Attempt_7_Robot_Initialize.htm" />
+  <HelpKINode Title="Initialize method" Url="html/M_Attempt_7_SimulationMain_Initialize.htm" />
+  <HelpKINode Title="InsertLine method" Url="html/M_Attempt_7_ImageAnalysis_InsertLine.htm" />
+  <HelpKINode Title="isMouseDependent field" Url="html/F_Attempt_7_Camera_isMouseDependent.htm" />
+  <HelpKINode Title="largeGrass field" Url="html/F_Attempt_7_SimulationMain_largeGrass.htm" />
+  <HelpKINode Title="LoadContent method" Url="html/M_Attempt_7_ImageAnalysis_LoadContent.htm" />
+  <HelpKINode Title="LoadContent method" Url="html/M_Attempt_7_SimulationMain_LoadContent.htm" />
+  <HelpKINode Title="LoadGround method" Url="html/M_Attempt_7_SimulationMain_LoadGround.htm" />
+  <HelpKINode Title="LoadLines method" Url="html/M_Attempt_7_SimulationMain_LoadLines.htm" />
+  <HelpKINode Title="LoadVertexArray method" Url="html/M_Attempt_7_ImageAnalysis_LoadVertexArray.htm" />
+  <HelpKINode Title="Main method" Url="html/M_Attempt_7_Program_Main.htm" />
+  <HelpKINode Title="middleValues field" Url="html/F_Attempt_7_ImageAnalysis_middleValues.htm" />
+  <HelpKINode Title="mouseOffset field" Url="html/F_Attempt_7_Camera_mouseOffset.htm" />
+  <HelpKINode Title="NumberofLinesToFind field" Url="html/F_Attempt_7_ImageAnalysis_NumberofLinesToFind.htm" />
+  <HelpKINode Title="paused field" Url="html/F_Attempt_7_Robot_paused.htm" />
+  <HelpKINode Title="position field" Url="html/F_Attempt_7_Robot_position.htm" />
+  <HelpKINode Title="Program class" Url="html/AllMembers_T_Attempt_7_Program.htm" />
+  <HelpKINode Title="Program class" Url="html/T_Attempt_7_Program.htm" />
+  <HelpKINode Title="Program class">
+    <HelpKINode Title="about Program class" Url="html/T_Attempt_7_Program.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Attempt_7_Program.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Attempt_7_Program.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Program.Main method" Url="html/M_Attempt_7_Program_Main.htm" />
+  <HelpKINode Title="Projection field" Url="html/F_Attempt_7_Camera_Projection.htm" />
+  <HelpKINode Title="rand field" Url="html/F_Attempt_7_SimulationMain_rand.htm" />
+  <HelpKINode Title="redGood field" Url="html/F_Attempt_7_ImageAnalysis_redGood.htm" />
+  <HelpKINode Title="renderTargets field" Url="html/F_Attempt_7_SimulationMain_renderTargets.htm" />
+  <HelpKINode Title="RhoIncrement field" Url="html/F_Attempt_7_ImageAnalysis_RhoIncrement.htm" />
+  <HelpKINode Title="Robot class" Url="html/AllMembers_T_Attempt_7_Robot.htm" />
+  <HelpKINode Title="Robot class" Url="html/T_Attempt_7_Robot.htm" />
+  <HelpKINode Title="Robot class">
+    <HelpKINode Title="about Robot class" Url="html/T_Attempt_7_Robot.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Attempt_7_Robot.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Attempt_7_Robot__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Attempt_7_Robot.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Attempt_7_Robot.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Robot.cameraHeight field" Url="html/F_Attempt_7_Robot_cameraHeight.htm" />
+  <HelpKINode Title="Robot.ChangeDirection method" Url="html/M_Attempt_7_Robot_ChangeDirection.htm" />
+  <HelpKINode Title="Robot.changeDirectionThreshholdValue field" Url="html/F_Attempt_7_Robot_changeDirectionThreshholdValue.htm" />
+  <HelpKINode Title="Robot.direction field" Url="html/F_Attempt_7_Robot_direction.htm" />
+  <HelpKINode Title="Robot.distanceToCameraTarget field" Url="html/F_Attempt_7_Robot_distanceToCameraTarget.htm" />
+  <HelpKINode Title="Robot.GetDirection method" Url="html/M_Attempt_7_Robot_GetDirection.htm" />
+  <HelpKINode Title="Robot.GetIsRobotPaused method" Url="html/M_Attempt_7_Robot_GetIsRobotPaused.htm" />
+  <HelpKINode Title="Robot.GetKeyBoard method" Url="html/M_Attempt_7_Robot_GetKeyBoard.htm" />
+  <HelpKINode Title="Robot.GetPosition method" Url="html/M_Attempt_7_Robot_GetPosition.htm" />
+  <HelpKINode Title="Robot.GetRobotCamera method" Url="html/M_Attempt_7_Robot_GetRobotCamera.htm" />
+  <HelpKINode Title="Robot.Initialize method" Url="html/M_Attempt_7_Robot_Initialize.htm" />
+  <HelpKINode Title="Robot.paused field" Url="html/F_Attempt_7_Robot_paused.htm" />
+  <HelpKINode Title="Robot.position field" Url="html/F_Attempt_7_Robot_position.htm" />
+  <HelpKINode Title="Robot.Robot constructor" Url="html/M_Attempt_7_Robot__ctor.htm" />
+  <HelpKINode Title="Robot.robotCameraView field" Url="html/F_Attempt_7_Robot_robotCameraView.htm" />
+  <HelpKINode Title="Robot.SetPosition method" Url="html/M_Attempt_7_Robot_SetPosition.htm" />
+  <HelpKINode Title="Robot.SetStartPosition method" Url="html/M_Attempt_7_Robot_SetStartPosition.htm" />
+  <HelpKINode Title="Robot.speed field" Url="html/F_Attempt_7_Robot_speed.htm" />
+  <HelpKINode Title="Robot.startPosition field" Url="html/F_Attempt_7_Robot_startPosition.htm" />
+  <HelpKINode Title="Robot.timePressedKey field" Url="html/F_Attempt_7_Robot_timePressedKey.htm" />
+  <HelpKINode Title="Robot.Update method" Url="html/M_Attempt_7_Robot_Update.htm" />
+  <HelpKINode Title="robot1 field" Url="html/F_Attempt_7_SimulationMain_robot1.htm" />
+  <HelpKINode Title="robotCameraView field" Url="html/F_Attempt_7_ImageAnalysis_robotCameraView.htm" />
+  <HelpKINode Title="robotCameraView field" Url="html/F_Attempt_7_Robot_robotCameraView.htm" />
+  <HelpKINode Title="screenHeight field" Url="html/F_Attempt_7_ImageAnalysis_screenHeight.htm" />
+  <HelpKINode Title="screenRectangle field" Url="html/F_Attempt_7_SimulationMain_screenRectangle.htm" />
+  <HelpKINode Title="screenSize field" Url="html/F_Attempt_7_SimulationMain_screenSize.htm" />
+  <HelpKINode Title="screenWidth field" Url="html/F_Attempt_7_ImageAnalysis_screenWidth.htm" />
+  <HelpKINode Title="SetCameraPositionAndTarget method" Url="html/M_Attempt_7_Camera_SetCameraPositionAndTarget.htm" />
+  <HelpKINode Title="SetPosition method" Url="html/M_Attempt_7_Robot_SetPosition.htm" />
+  <HelpKINode Title="SetRobotCameraView method" Url="html/M_Attempt_7_ImageAnalysis_SetRobotCameraView.htm" />
+  <HelpKINode Title="SetStartPosition method" Url="html/M_Attempt_7_Robot_SetStartPosition.htm" />
+  <HelpKINode Title="ShowPath method" Url="html/M_Attempt_7_ImageAnalysis_ShowPath.htm" />
+  <HelpKINode Title="SimulationMain class" Url="html/AllMembers_T_Attempt_7_SimulationMain.htm" />
+  <HelpKINode Title="SimulationMain class" Url="html/T_Attempt_7_SimulationMain.htm" />
+  <HelpKINode Title="SimulationMain class">
+    <HelpKINode Title="about SimulationMain class" Url="html/T_Attempt_7_SimulationMain.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Attempt_7_SimulationMain.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Attempt_7_SimulationMain__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Attempt_7_SimulationMain.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Attempt_7_SimulationMain.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SimulationMain.arial field" Url="html/F_Attempt_7_SimulationMain_arial.htm" />
+  <HelpKINode Title="SimulationMain.basicEffects field" Url="html/F_Attempt_7_SimulationMain_basicEffects.htm" />
+  <HelpKINode Title="SimulationMain.BuildRenderTargets method" Url="html/M_Attempt_7_SimulationMain_BuildRenderTargets.htm" />
+  <HelpKINode Title="SimulationMain.cameraList field" Url="html/F_Attempt_7_SimulationMain_cameraList.htm" />
+  <HelpKINode Title="SimulationMain.CreateGrassTexture method" Url="html/M_Attempt_7_SimulationMain_CreateGrassTexture.htm" />
+  <HelpKINode Title="SimulationMain.CreateViewPorts method" Url="html/M_Attempt_7_SimulationMain_CreateViewPorts.htm" />
+  <HelpKINode Title="SimulationMain.Draw method" Url="html/M_Attempt_7_SimulationMain_Draw.htm" />
+  <HelpKINode Title="SimulationMain.DrawColorLines method" Url="html/M_Attempt_7_SimulationMain_DrawColorLines.htm" />
+  <HelpKINode Title="SimulationMain.DrawRobot method" Url="html/M_Attempt_7_SimulationMain_DrawRobot.htm" />
+  <HelpKINode Title="SimulationMain.DrawText method" Url="html/M_Attempt_7_SimulationMain_DrawText.htm" />
+  <HelpKINode Title="SimulationMain.DrawTextureRectange method" Url="html/M_Attempt_7_SimulationMain_DrawTextureRectange.htm" />
+  <HelpKINode Title="SimulationMain.GetKeyBoard method" Url="html/M_Attempt_7_SimulationMain_GetKeyBoard.htm" />
+  <HelpKINode Title="SimulationMain.graphics field" Url="html/F_Attempt_7_SimulationMain_graphics.htm" />
+  <HelpKINode Title="SimulationMain.grass field" Url="html/F_Attempt_7_SimulationMain_grass.htm" />
+  <HelpKINode Title="SimulationMain.imageAnalysis field" Url="html/F_Attempt_7_SimulationMain_imageAnalysis.htm" />
+  <HelpKINode Title="SimulationMain.Initialize method" Url="html/M_Attempt_7_SimulationMain_Initialize.htm" />
+  <HelpKINode Title="SimulationMain.largeGrass field" Url="html/F_Attempt_7_SimulationMain_largeGrass.htm" />
+  <HelpKINode Title="SimulationMain.LoadContent method" Url="html/M_Attempt_7_SimulationMain_LoadContent.htm" />
+  <HelpKINode Title="SimulationMain.LoadGround method" Url="html/M_Attempt_7_SimulationMain_LoadGround.htm" />
+  <HelpKINode Title="SimulationMain.LoadLines method" Url="html/M_Attempt_7_SimulationMain_LoadLines.htm" />
+  <HelpKINode Title="SimulationMain.rand field" Url="html/F_Attempt_7_SimulationMain_rand.htm" />
+  <HelpKINode Title="SimulationMain.renderTargets field" Url="html/F_Attempt_7_SimulationMain_renderTargets.htm" />
+  <HelpKINode Title="SimulationMain.robot1 field" Url="html/F_Attempt_7_SimulationMain_robot1.htm" />
+  <HelpKINode Title="SimulationMain.screenRectangle field" Url="html/F_Attempt_7_SimulationMain_screenRectangle.htm" />
+  <HelpKINode Title="SimulationMain.screenSize field" Url="html/F_Attempt_7_SimulationMain_screenSize.htm" />
+  <HelpKINode Title="SimulationMain.SimulationMain constructor" Url="html/M_Attempt_7_SimulationMain__ctor.htm" />
+  <HelpKINode Title="SimulationMain.spriteBatch field" Url="html/F_Attempt_7_SimulationMain_spriteBatch.htm" />
+  <HelpKINode Title="SimulationMain.TextureTo2DArray method" Url="html/M_Attempt_7_SimulationMain_TextureTo2DArray.htm" />
+  <HelpKINode Title="SimulationMain.timePressedKey field" Url="html/F_Attempt_7_SimulationMain_timePressedKey.htm" />
+  <HelpKINode Title="SimulationMain.trackRobot field" Url="html/F_Attempt_7_SimulationMain_trackRobot.htm" />
+  <HelpKINode Title="SimulationMain.UnloadContent method" Url="html/M_Attempt_7_SimulationMain_UnloadContent.htm" />
+  <HelpKINode Title="SimulationMain.Update method" Url="html/M_Attempt_7_SimulationMain_Update.htm" />
+  <HelpKINode Title="SimulationMain.UpDateRobotPosition method" Url="html/M_Attempt_7_SimulationMain_UpDateRobotPosition.htm" />
+  <HelpKINode Title="SimulationMain.verts1 field" Url="html/F_Attempt_7_SimulationMain_verts1.htm" />
+  <HelpKINode Title="SimulationMain.verts2 field" Url="html/F_Attempt_7_SimulationMain_verts2.htm" />
+  <HelpKINode Title="SimulationMain.verts3 field" Url="html/F_Attempt_7_SimulationMain_verts3.htm" />
+  <HelpKINode Title="SimulationMain.viewPortList field" Url="html/F_Attempt_7_SimulationMain_viewPortList.htm" />
+  <HelpKINode Title="SimulationMain.windowSize field" Url="html/F_Attempt_7_SimulationMain_windowSize.htm" />
+  <HelpKINode Title="Smooth method" Url="html/M_Attempt_7_ImageAnalysis_Smooth.htm" />
+  <HelpKINode Title="SmoothSearchSize field" Url="html/F_Attempt_7_ImageAnalysis_SmoothSearchSize.htm" />
+  <HelpKINode Title="speed field" Url="html/F_Attempt_7_Robot_speed.htm" />
+  <HelpKINode Title="spriteBatch field" Url="html/F_Attempt_7_ImageAnalysis_spriteBatch.htm" />
+  <HelpKINode Title="spriteBatch field" Url="html/F_Attempt_7_SimulationMain_spriteBatch.htm" />
+  <HelpKINode Title="startPosition field" Url="html/F_Attempt_7_Robot_startPosition.htm" />
+  <HelpKINode Title="target field" Url="html/F_Attempt_7_Camera_target.htm" />
+  <HelpKINode Title="TextureTo2DArray method" Url="html/M_Attempt_7_ImageAnalysis_TextureTo2DArray.htm" />
+  <HelpKINode Title="TextureTo2DArray method" Url="html/M_Attempt_7_SimulationMain_TextureTo2DArray.htm" />
+  <HelpKINode Title="ThetaIncrement field" Url="html/F_Attempt_7_ImageAnalysis_ThetaIncrement.htm" />
+  <HelpKINode Title="timePressedKey field" Url="html/F_Attempt_7_Robot_timePressedKey.htm" />
+  <HelpKINode Title="timePressedKey field" Url="html/F_Attempt_7_SimulationMain_timePressedKey.htm" />
+  <HelpKINode Title="totalWhiteCnt field" Url="html/F_Attempt_7_ImageAnalysis_totalWhiteCnt.htm" />
+  <HelpKINode Title="trackRobot field" Url="html/F_Attempt_7_SimulationMain_trackRobot.htm" />
+  <HelpKINode Title="trueFalseMap field" Url="html/F_Attempt_7_ImageAnalysis_trueFalseMap.htm" />
+  <HelpKINode Title="trueFalseMapB field" Url="html/F_Attempt_7_ImageAnalysis_trueFalseMapB.htm" />
+  <HelpKINode Title="trueFalseMapC field" Url="html/F_Attempt_7_ImageAnalysis_trueFalseMapC.htm" />
+  <HelpKINode Title="turnIndication field" Url="html/F_Attempt_7_ImageAnalysis_turnIndication.htm" />
+  <HelpKINode Title="turnIndicatorisTheta field" Url="html/F_Attempt_7_ImageAnalysis_turnIndicatorisTheta.htm" />
+  <HelpKINode Title="UnloadContent method" Url="html/M_Attempt_7_SimulationMain_UnloadContent.htm" />
+  <HelpKINode Title="Update method" Url="html/M_Attempt_7_Camera_Update.htm" />
+  <HelpKINode Title="Update method" Url="html/M_Attempt_7_ImageAnalysis_Update.htm" />
+  <HelpKINode Title="Update method" Url="html/M_Attempt_7_Robot_Update.htm" />
+  <HelpKINode Title="Update method" Url="html/M_Attempt_7_SimulationMain_Update.htm" />
+  <HelpKINode Title="Update1 method" Url="html/M_Attempt_7_ImageAnalysis_Update1.htm" />
+  <HelpKINode Title="UpdateBoolMapto3DRectangle method" Url="html/M_Attempt_7_ImageAnalysis_UpdateBoolMapto3DRectangle.htm" />
+  <HelpKINode Title="UpdateColorArrayto3DRectangle method" Url="html/M_Attempt_7_ImageAnalysis_UpdateColorArrayto3DRectangle.htm" />
+  <HelpKINode Title="UpdateKeyBoard method" Url="html/M_Attempt_7_Camera_UpdateKeyBoard.htm" />
+  <HelpKINode Title="UpdateMouse method" Url="html/M_Attempt_7_Camera_UpdateMouse.htm" />
+  <HelpKINode Title="UpDateRobotPosition method" Url="html/M_Attempt_7_SimulationMain_UpDateRobotPosition.htm" />
+  <HelpKINode Title="UpdateSquareDimForAnalysis field" Url="html/F_Attempt_7_ImageAnalysis_UpdateSquareDimForAnalysis.htm" />
+  <HelpKINode Title="UpdateSquareDimForDrawing field" Url="html/F_Attempt_7_ImageAnalysis_UpdateSquareDimForDrawing.htm" />
+  <HelpKINode Title="updirection field" Url="html/F_Attempt_7_Camera_updirection.htm" />
+  <HelpKINode Title="vertexArray field" Url="html/F_Attempt_7_ImageAnalysis_vertexArray.htm" />
+  <HelpKINode Title="verts1 field" Url="html/F_Attempt_7_SimulationMain_verts1.htm" />
+  <HelpKINode Title="verts2 field" Url="html/F_Attempt_7_SimulationMain_verts2.htm" />
+  <HelpKINode Title="verts3 field" Url="html/F_Attempt_7_SimulationMain_verts3.htm" />
+  <HelpKINode Title="View field" Url="html/F_Attempt_7_Camera_View.htm" />
+  <HelpKINode Title="viewPortList field" Url="html/F_Attempt_7_ImageAnalysis_viewPortList.htm" />
+  <HelpKINode Title="viewPortList field" Url="html/F_Attempt_7_SimulationMain_viewPortList.htm" />
+  <HelpKINode Title="Whiteline method" Url="html/M_Attempt_7_ImageAnalysis_Whiteline.htm" />
+  <HelpKINode Title="whiteParam field" Url="html/F_Attempt_7_ImageAnalysis_whiteParam.htm" />
+  <HelpKINode Title="windowSize field" Url="html/F_Attempt_7_SimulationMain_windowSize.htm" />
+  <HelpKINode Title="World field" Url="html/F_Attempt_7_Camera_World.htm" />
+</HelpKI>

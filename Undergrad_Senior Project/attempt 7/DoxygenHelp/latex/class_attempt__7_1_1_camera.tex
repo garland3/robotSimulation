@@ -1,0 +1,449 @@
+\section{Attempt\_\-7.Camera Class Reference}
+\label{class_attempt__7_1_1_camera}\index{Attempt\_\-7::Camera@{Attempt\_\-7::Camera}}
+
+
+Represents the camera object/class that contains all the information needed about position and target for rendering.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Camera} (Game game, Vector3 pos, Vector3 {\bf target}, Vector3 up, bool {\bf isMouseDependent})
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxyref{Camera}{p.}{class_attempt__7_1_1_camera} class. \item\end{DoxyCompactList}\item 
+override void {\bf Initialize} ()
+\begin{DoxyCompactList}\small\item\em Initializes the camera. \item\end{DoxyCompactList}\item 
+override void {\bf Update} (GameTime gameTime)
+\begin{DoxyCompactList}\small\item\em Updates the camera's view. If the camera is mouse dependent than Update gets the position of the mouse and keyboard inorder to update the camera position. \item\end{DoxyCompactList}\item 
+Vector3 {\bf GetCameraPosition} ()
+\begin{DoxyCompactList}\small\item\em Returns the current camera position in 3D space. \item\end{DoxyCompactList}\item 
+void {\bf SetCameraPositionAndTarget} (Vector3 pos, Vector3 {\bf target})
+\begin{DoxyCompactList}\small\item\em Sets the camera position and target point to a specific position. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Matrix {\bf View}
+\begin{DoxyCompactList}\small\item\em Matrix representation of the view determined by the position, target, and updirection. \item\end{DoxyCompactList}\item 
+Matrix {\bf Projection}
+\begin{DoxyCompactList}\small\item\em Matrix representation of the view determined by the angle of the field of view (Pi/4), aspectRatio, nearest plane visible (1), and farthest plane visible (1200) \item\end{DoxyCompactList}\item 
+Matrix {\bf World}
+\begin{DoxyCompactList}\small\item\em Matrix representing how the real world cordinates differ from that of the rendering by the camera. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf UpdateMouse} ()
+\begin{DoxyCompactList}\small\item\em Updates the position of the camera based on the mouse's position. The Mouse origin (0,0) is the top left corner of the simulation Window. \item\end{DoxyCompactList}\item 
+void {\bf UpdateKeyBoard} ()
+\begin{DoxyCompactList}\small\item\em Checks to see if the Arrow keys are pressed. Moves the camera position and target based on the arrow keys. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 {\bf cameraPosition} = Vector3.Zero
+\begin{DoxyCompactList}\small\item\em The position of the camera. Defualt = 0,0,0. \item\end{DoxyCompactList}\item 
+Vector3 {\bf target} = Vector3.Zero
+\begin{DoxyCompactList}\small\item\em Target of the camera = a point in 3D space that the camera is pointed at. \item\end{DoxyCompactList}\item 
+Vector3 {\bf updirection}
+\begin{DoxyCompactList}\small\item\em The 3D vector that defines which direction is up for the camera. \item\end{DoxyCompactList}\item 
+Vector3 {\bf mouseOffset}
+\begin{DoxyCompactList}\small\item\em If the camera is mouse controlled, how much should the mouse cordinates differ from 3D cordinates in space. How much should they be translated in 3D space. \item\end{DoxyCompactList}\item 
+bool {\bf isMouseDependent}
+\begin{DoxyCompactList}\small\item\em If the camera is mouse dependent than the position of the mouse determines the position of the camera in 3D space. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents the camera object/class that contains all the information needed about position and target for rendering. 
+
+Definition at line 25 of file Camera.cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Attempt\_\-7::Camera@{Attempt\_\-7::Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Attempt_7::Camera@{Attempt\_\-7::Camera}}
+\subsubsection[{Camera}]{\setlength{\rightskip}{0pt plus 5cm}Attempt\_\-7.Camera.Camera (
+\begin{DoxyParamCaption}
+\item[{Game}]{game, }
+\item[{Vector3}]{pos, }
+\item[{Vector3}]{target, }
+\item[{Vector3}]{up, }
+\item[{bool}]{isMouseDependent}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_camera_a00dbb72fcaebdd53a8206071f2da796b}
+
+
+Initializes a new instance of the \doxyref{Camera}{p.}{class_attempt__7_1_1_camera} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The game object of the simulation\\
+\hline
+{\em pos} & The start position of the camera in 3D space\\
+\hline
+{\em target} & A point in 3D space that the camera will point at. \\
+\hline
+{\em up} & The 3D vector that determines which direction is up for the camera\\
+\hline
+{\em isMouseDependent} & Sets the camera's position based on the mouse if true\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 75 of file Camera.cs.
+
+
+\begin{DoxyCode}
+            : base(game)
+        {
+            this.cameraPosition = pos;
+            this.target = target;
+            this.updirection = up;
+            this.View = Matrix.CreateLookAt(pos, target, up);
+            this.Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOv
+      er4, (float)Game.Window.ClientBounds.Width / (float)Game.Window.ClientBounds.Heig
+      ht, 1, 1200);
+            this.isMouseDependent = isMouseDependent;
+            this.World = Matrix.Identity;
+            this.mouseOffset = pos;
+        }
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Attempt\_\-7::Camera@{Attempt\_\-7::Camera}!GetCameraPosition@{GetCameraPosition}}
+\index{GetCameraPosition@{GetCameraPosition}!Attempt_7::Camera@{Attempt\_\-7::Camera}}
+\subsubsection[{GetCameraPosition}]{\setlength{\rightskip}{0pt plus 5cm}Vector3 Attempt\_\-7.Camera.GetCameraPosition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_camera_a0574b1158af6b8e99f5d2b21fbc3c7a8}
+
+
+Returns the current camera position in 3D space. 
+
+\begin{DoxyReturn}{Returns}
+The camera position
+\end{DoxyReturn}
+
+
+Definition at line 117 of file Camera.cs.
+
+
+\begin{DoxyCode}
+        {
+            return this.cameraPosition;
+        }
+\end{DoxyCode}
+\index{Attempt\_\-7::Camera@{Attempt\_\-7::Camera}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Attempt_7::Camera@{Attempt\_\-7::Camera}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}override void Attempt\_\-7.Camera.Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_camera_a3007d7c03912d7ff6f6f19e90a3575c2}
+
+
+Initializes the camera. 
+
+
+
+Definition at line 91 of file Camera.cs.
+
+
+\begin{DoxyCode}
+        {
+            base.Initialize();
+        }
+\end{DoxyCode}
+\index{Attempt\_\-7::Camera@{Attempt\_\-7::Camera}!SetCameraPositionAndTarget@{SetCameraPositionAndTarget}}
+\index{SetCameraPositionAndTarget@{SetCameraPositionAndTarget}!Attempt_7::Camera@{Attempt\_\-7::Camera}}
+\subsubsection[{SetCameraPositionAndTarget}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.Camera.SetCameraPositionAndTarget (
+\begin{DoxyParamCaption}
+\item[{Vector3}]{pos, }
+\item[{Vector3}]{target}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_camera_a950a4219356e02b8b8eddf506c03743f}
+
+
+Sets the camera position and target point to a specific position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The new position of the camera in 3D space\\
+\hline
+{\em target} & The new target point of the camera in 3D space\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 127 of file Camera.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.cameraPosition = pos;
+            this.target = target;
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_camera_a950a4219356e02b8b8eddf506c03743f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::Camera@{Attempt\_\-7::Camera}!Update@{Update}}
+\index{Update@{Update}!Attempt_7::Camera@{Attempt\_\-7::Camera}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}override void Attempt\_\-7.Camera.Update (
+\begin{DoxyParamCaption}
+\item[{GameTime}]{gameTime}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_camera_a0090d02f2acd45b0088ecd0123be57ef}
+
+
+Updates the camera's view. If the camera is mouse dependent than Update gets the position of the mouse and keyboard inorder to update the camera position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gameTime} & Clock Information\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 100 of file Camera.cs.
+
+
+\begin{DoxyCode}
+        {
+            if (this.isMouseDependent == true)
+            {
+                this.UpdateMouse();
+                this.UpdateKeyBoard();
+            }
+
+            this.View = Matrix.CreateLookAt(this.cameraPosition, this.target, thi
+      s.updirection); // Update the veiw. 
+          
+            base.Update(gameTime);
+        }
+\end{DoxyCode}
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_camera_a0090d02f2acd45b0088ecd0123be57ef_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=372pt]{class_attempt__7_1_1_camera_a0090d02f2acd45b0088ecd0123be57ef_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::Camera@{Attempt\_\-7::Camera}!UpdateKeyBoard@{UpdateKeyBoard}}
+\index{UpdateKeyBoard@{UpdateKeyBoard}!Attempt_7::Camera@{Attempt\_\-7::Camera}}
+\subsubsection[{UpdateKeyBoard}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.Camera.UpdateKeyBoard (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_camera_a26c1b12ed3fea81c3bed64f0389cc9d1}
+
+
+Checks to see if the Arrow keys are pressed. Moves the camera position and target based on the arrow keys. 
+
+
+
+Definition at line 154 of file Camera.cs.
+
+
+\begin{DoxyCode}
+        {
+            KeyboardState keyboardState = Keyboard.GetState();
+            if (keyboardState.IsKeyDown(Keys.Left))
+            {
+                this.target += Vector3.Left / 3;
+                this.mouseOffset += Vector3.Left / 3;
+            }
+
+            if (keyboardState.IsKeyDown(Keys.Right))
+            {
+                this.target += Vector3.Right / 3;
+                this.mouseOffset += Vector3.Right / 3;
+            }
+
+            if (keyboardState.IsKeyDown(Keys.Up))
+            {
+                this.target += Vector3.Up / 3;
+                this.mouseOffset += Vector3.Up / 3;
+            }
+
+            if (keyboardState.IsKeyDown(Keys.Down))
+            {
+                this.target += Vector3.Down / 3;
+                this.mouseOffset += Vector3.Down / 3;
+            }
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_camera_a26c1b12ed3fea81c3bed64f0389cc9d1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::Camera@{Attempt\_\-7::Camera}!UpdateMouse@{UpdateMouse}}
+\index{UpdateMouse@{UpdateMouse}!Attempt_7::Camera@{Attempt\_\-7::Camera}}
+\subsubsection[{UpdateMouse}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.Camera.UpdateMouse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_camera_ac8b5117b5378692c67dada10a2707ad9}
+
+
+Updates the position of the camera based on the mouse's position. The Mouse origin (0,0) is the top left corner of the simulation Window. 
+
+
+
+Definition at line 136 of file Camera.cs.
+
+
+\begin{DoxyCode}
+        {
+            Vector3 mouseVector = Vector3.Zero;
+            MouseState mouse = Mouse.GetState(); // Create a mouse state object
+
+            mouseVector.X = mouse.X; // Moving the mosue left and right is the ca
+      mera position x axis
+            mouseVector.Y = mouse.Y; // Moving the mouse up and down is the camer
+      a position y axis
+            mouseVector.Z = (int)mouse.ScrollWheelValue; // Mouse scroll wheel to
+      tal is the camera position z axis
+
+            this.cameraPosition.X = mouseVector.X / 10;
+            this.cameraPosition.Y = mouseVector.Y / 10;
+            this.cameraPosition.Z = mouseVector.Z / 60;
+            this.cameraPosition += this.mouseOffset;
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_camera_ac8b5117b5378692c67dada10a2707ad9_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Attempt\_\-7::Camera@{Attempt\_\-7::Camera}!cameraPosition@{cameraPosition}}
+\index{cameraPosition@{cameraPosition}!Attempt_7::Camera@{Attempt\_\-7::Camera}}
+\subsubsection[{cameraPosition}]{\setlength{\rightskip}{0pt plus 5cm}Vector3 {\bf Attempt\_\-7.Camera.cameraPosition} = Vector3.Zero\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_camera_ac5ff73c169cf1db99dc2c95e4a2d8464}
+
+
+The position of the camera. Defualt = 0,0,0. 
+
+
+
+Definition at line 45 of file Camera.cs.
+
+\index{Attempt\_\-7::Camera@{Attempt\_\-7::Camera}!isMouseDependent@{isMouseDependent}}
+\index{isMouseDependent@{isMouseDependent}!Attempt_7::Camera@{Attempt\_\-7::Camera}}
+\subsubsection[{isMouseDependent}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Attempt\_\-7.Camera.isMouseDependent}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_camera_afa316d43d2017c000a0650706956d08b}
+
+
+If the camera is mouse dependent than the position of the mouse determines the position of the camera in 3D space. 
+
+
+
+Definition at line 65 of file Camera.cs.
+
+\index{Attempt\_\-7::Camera@{Attempt\_\-7::Camera}!mouseOffset@{mouseOffset}}
+\index{mouseOffset@{mouseOffset}!Attempt_7::Camera@{Attempt\_\-7::Camera}}
+\subsubsection[{mouseOffset}]{\setlength{\rightskip}{0pt plus 5cm}Vector3 {\bf Attempt\_\-7.Camera.mouseOffset}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_camera_a2595f02eb31f80ea60343ba98fdbc5ff}
+
+
+If the camera is mouse controlled, how much should the mouse cordinates differ from 3D cordinates in space. How much should they be translated in 3D space. 
+
+
+
+Definition at line 60 of file Camera.cs.
+
+\index{Attempt\_\-7::Camera@{Attempt\_\-7::Camera}!Projection@{Projection}}
+\index{Projection@{Projection}!Attempt_7::Camera@{Attempt\_\-7::Camera}}
+\subsubsection[{Projection}]{\setlength{\rightskip}{0pt plus 5cm}Matrix {\bf Attempt\_\-7.Camera.Projection}}\label{class_attempt__7_1_1_camera_afad745cd526a8c616843da8464a4d256}
+
+
+Matrix representation of the view determined by the angle of the field of view (Pi/4), aspectRatio, nearest plane visible (1), and farthest plane visible (1200) 
+
+
+
+Definition at line 35 of file Camera.cs.
+
+\index{Attempt\_\-7::Camera@{Attempt\_\-7::Camera}!target@{target}}
+\index{target@{target}!Attempt_7::Camera@{Attempt\_\-7::Camera}}
+\subsubsection[{target}]{\setlength{\rightskip}{0pt plus 5cm}Vector3 {\bf Attempt\_\-7.Camera.target} = Vector3.Zero\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_camera_a2ab493dc1de314f87a198146bf87db54}
+
+
+Target of the camera = a point in 3D space that the camera is pointed at. 
+
+
+
+Definition at line 50 of file Camera.cs.
+
+\index{Attempt\_\-7::Camera@{Attempt\_\-7::Camera}!updirection@{updirection}}
+\index{updirection@{updirection}!Attempt_7::Camera@{Attempt\_\-7::Camera}}
+\subsubsection[{updirection}]{\setlength{\rightskip}{0pt plus 5cm}Vector3 {\bf Attempt\_\-7.Camera.updirection}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_camera_a6923d9ddebf1709547640a09c494bf7f}
+
+
+The 3D vector that defines which direction is up for the camera. 
+
+
+
+Definition at line 55 of file Camera.cs.
+
+\index{Attempt\_\-7::Camera@{Attempt\_\-7::Camera}!View@{View}}
+\index{View@{View}!Attempt_7::Camera@{Attempt\_\-7::Camera}}
+\subsubsection[{View}]{\setlength{\rightskip}{0pt plus 5cm}Matrix {\bf Attempt\_\-7.Camera.View}}\label{class_attempt__7_1_1_camera_ab58715b7ebc0eb1b0181638331e7fe04}
+
+
+Matrix representation of the view determined by the position, target, and updirection. 
+
+
+
+Definition at line 30 of file Camera.cs.
+
+\index{Attempt\_\-7::Camera@{Attempt\_\-7::Camera}!World@{World}}
+\index{World@{World}!Attempt_7::Camera@{Attempt\_\-7::Camera}}
+\subsubsection[{World}]{\setlength{\rightskip}{0pt plus 5cm}Matrix {\bf Attempt\_\-7.Camera.World}}\label{class_attempt__7_1_1_camera_a3bc8d53e4d9b029bb75f8f0e7b09cc17}
+
+
+Matrix representing how the real world cordinates differ from that of the rendering by the camera. 
+
+
+
+Definition at line 40 of file Camera.cs.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/{\bf Camera.cs}\end{DoxyCompactItemize}

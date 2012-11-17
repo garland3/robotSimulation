@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_attempt__7_1_1_image_analysis.html#a9418e8e0a6868d294d27b97cadf6d958" title="Takes a 2D color array and finds the pixels that are &quot;white&quot;." alt="" coords="269,32,504,61"/>
+<area shape="rect" id="node5" href="$class_attempt__7_1_1_image_analysis.html#a89a87d17049aa2c3f1b31af9b8ffcb07" title="For each white pixel that might be part of a line, Find all the potiential lines going through it and..." alt="" coords="281,85,492,115"/>
+<area shape="rect" id="node15" href="$class_attempt__7_1_1_image_analysis.html#a0befd0244fb507716329010283730fb6" title="Find a path through the map to go through and return it as a bool map, also set the turn indicator..." alt="" coords="269,139,504,168"/>
+<area shape="rect" id="node7" href="$class_attempt__7_1_1_image_analysis.html#a327ee82eeb29ad6f4060bb4a9a21d7d8" title="Part of the old Hough system. Finds the edge values on the screen of the lines based on the slope and..." alt="" coords="561,5,900,35"/>
+<area shape="rect" id="node9" href="$class_attempt__7_1_1_image_analysis.html#a00bfc4bb52ece15ba645b81fb3ca3f2b" title="Clears the array arround the maximum." alt="" coords="591,59,871,88"/>
+<area shape="rect" id="node11" href="$class_attempt__7_1_1_image_analysis.html#aa983bdc246185a5a41414e1db84534dd" title="Find the average theta values. Weigh them according to the rho value of each one. Make a turning desi..." alt="" coords="604,112,857,141"/>
+<area shape="rect" id="node13" href="$class_attempt__7_1_1_image_analysis.html#a74a456e2880a858c96a7d8802250c504" title="Finds Max value in Hough. Store information about that max." alt="" coords="552,165,909,195"/>
+</map>

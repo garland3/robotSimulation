@@ -1,0 +1,958 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="class_attempt__7_1_1_draw_image_analysis" kind="class" prot="public">
+    <compoundname>Attempt_7::DrawImageAnalysis</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1a0c212b6483e545cdb54b744f26ae5aaf" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.DrawImageAnalysis.count1A</definition>
+        <argsstring></argsstring>
+        <name>count1A</name>
+        <briefdescription>
+<para>These values are part of the double for loops that reduce the computational requirements. These are the values that are incremented. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="26" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ad0933abc7604eb194143440f1b875383" compoundref="_draw_image_analysis2_8cs" startline="234" endline="267">Attempt_7.DrawImageAnalysis::UpdateBoolMapto3DRectangle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1ab82cc146a1cdfc52336d1ae86eb89157" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.DrawImageAnalysis.count2A</definition>
+        <argsstring></argsstring>
+        <name>count2A</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="26" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ad0933abc7604eb194143440f1b875383" compoundref="_draw_image_analysis2_8cs" startline="234" endline="267">Attempt_7.DrawImageAnalysis::UpdateBoolMapto3DRectangle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1afda6ca182d55b530c3188413bfced70c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.DrawImageAnalysis.count1C</definition>
+        <argsstring></argsstring>
+        <name>count1C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="26" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aacad4429bd67cfff2db2a42056fdef7e" compoundref="_draw_image_analysis2_8cs" startline="179" endline="201">Attempt_7.DrawImageAnalysis::UpdateColorArrayto3DRectangle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1aed235d7846bb2f2ace68331beb4ca7f2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.DrawImageAnalysis.count2C</definition>
+        <argsstring></argsstring>
+        <name>count2C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="26" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aacad4429bd67cfff2db2a42056fdef7e" compoundref="_draw_image_analysis2_8cs" startline="179" endline="201">Attempt_7.DrawImageAnalysis::UpdateColorArrayto3DRectangle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1a0978bfdff294a91bc2c99d55c29a9e2f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.DrawImageAnalysis.count1D</definition>
+        <argsstring></argsstring>
+        <name>count1D</name>
+        <initializer> 1</initializer>
+        <briefdescription>
+<para>Other count usage. 1D = the number of vertexs to draw. So the number of triangels will be 1/3 this number. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="31" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a98635843e4766a13a2fa9a73765aeb78" compoundref="_draw_image_analysis2_8cs" startline="269" endline="305">Attempt_7.DrawImageAnalysis::BuildVertexArrayforDrawingSmallerNumberofTriangles</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1abb4b21e7bad04bbbbb60b1c997827543" compoundref="_draw_image_analysis2_8cs" startline="474" endline="488">Attempt_7.DrawImageAnalysis::DrawAnalysisUsingIndex</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aaf4088bca6ef2e41e13c6a9bf0ca2a52" compoundref="_draw_image_analysis2_8cs" startline="507" endline="540">Attempt_7.DrawImageAnalysis::DrawText</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ab82f803a8226f55b480a102215aac025" compoundref="_draw_image_analysis2_8cs" startline="490" endline="502">Attempt_7.DrawImageAnalysis::drawUsingSmallerNumberofVertexs</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aa1273c30c63d4963aebfede894eec3e4" compoundref="_draw_image_analysis2_8cs" startline="382" endline="432">Attempt_7.DrawImageAnalysis::InsertLine</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a88d4b6824cb8e0791b6e81053afe02d7" compoundref="_draw_image_analysis2_8cs" startline="307" endline="374">Attempt_7.DrawImageAnalysis::UpdateBoolMapto3DRectangleUsingIndex</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1adfb22307c8f2e999485d67b74fe64615" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.DrawImageAnalysis.screenWidth</definition>
+        <argsstring></argsstring>
+        <name>screenWidth</name>
+        <briefdescription>
+<para>The screenSize. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="37" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a98635843e4766a13a2fa9a73765aeb78" compoundref="_draw_image_analysis2_8cs" startline="269" endline="305">Attempt_7.DrawImageAnalysis::BuildVertexArrayforDrawingSmallerNumberofTriangles</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a065696d0fbab0244c164284ff296cbc5" compoundref="_draw_image_analysis2_8cs" startline="462" endline="469">Attempt_7.DrawImageAnalysis::DrawAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1abb4b21e7bad04bbbbb60b1c997827543" compoundref="_draw_image_analysis2_8cs" startline="474" endline="488">Attempt_7.DrawImageAnalysis::DrawAnalysisUsingIndex</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a82c130125f8f918de9e139eff5de225f" compoundref="_draw_image_analysis2_8cs" startline="109" endline="121">Attempt_7.DrawImageAnalysis::DrawImageAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ae271911b749fc6bad5f303da0f6b895d" compoundref="_draw_image_analysis2_8cs" startline="127" endline="155">Attempt_7.DrawImageAnalysis::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aea47cb9ef13fda648ba3e8acb8808ed3" compoundref="_draw_image_analysis2_8cs" startline="545" endline="578">Attempt_7.DrawImageAnalysis::LoadVertexArray</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ad0933abc7604eb194143440f1b875383" compoundref="_draw_image_analysis2_8cs" startline="234" endline="267">Attempt_7.DrawImageAnalysis::UpdateBoolMapto3DRectangle</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a88d4b6824cb8e0791b6e81053afe02d7" compoundref="_draw_image_analysis2_8cs" startline="307" endline="374">Attempt_7.DrawImageAnalysis::UpdateBoolMapto3DRectangleUsingIndex</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aacad4429bd67cfff2db2a42056fdef7e" compoundref="_draw_image_analysis2_8cs" startline="179" endline="201">Attempt_7.DrawImageAnalysis::UpdateColorArrayto3DRectangle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1a6c238510c027ef883dec2ff739a3e2b3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.DrawImageAnalysis.screenHeight</definition>
+        <argsstring></argsstring>
+        <name>screenHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="37" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a98635843e4766a13a2fa9a73765aeb78" compoundref="_draw_image_analysis2_8cs" startline="269" endline="305">Attempt_7.DrawImageAnalysis::BuildVertexArrayforDrawingSmallerNumberofTriangles</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a065696d0fbab0244c164284ff296cbc5" compoundref="_draw_image_analysis2_8cs" startline="462" endline="469">Attempt_7.DrawImageAnalysis::DrawAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1abb4b21e7bad04bbbbb60b1c997827543" compoundref="_draw_image_analysis2_8cs" startline="474" endline="488">Attempt_7.DrawImageAnalysis::DrawAnalysisUsingIndex</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a82c130125f8f918de9e139eff5de225f" compoundref="_draw_image_analysis2_8cs" startline="109" endline="121">Attempt_7.DrawImageAnalysis::DrawImageAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ae271911b749fc6bad5f303da0f6b895d" compoundref="_draw_image_analysis2_8cs" startline="127" endline="155">Attempt_7.DrawImageAnalysis::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aea47cb9ef13fda648ba3e8acb8808ed3" compoundref="_draw_image_analysis2_8cs" startline="545" endline="578">Attempt_7.DrawImageAnalysis::LoadVertexArray</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ad0933abc7604eb194143440f1b875383" compoundref="_draw_image_analysis2_8cs" startline="234" endline="267">Attempt_7.DrawImageAnalysis::UpdateBoolMapto3DRectangle</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a88d4b6824cb8e0791b6e81053afe02d7" compoundref="_draw_image_analysis2_8cs" startline="307" endline="374">Attempt_7.DrawImageAnalysis::UpdateBoolMapto3DRectangleUsingIndex</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aacad4429bd67cfff2db2a42056fdef7e" compoundref="_draw_image_analysis2_8cs" startline="179" endline="201">Attempt_7.DrawImageAnalysis::UpdateColorArrayto3DRectangle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1a99b0bebc91f29a61b067739a0a5cdb58" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.DrawImageAnalysis.UpdateSquareDimForDrawing</definition>
+        <argsstring></argsstring>
+        <name>UpdateSquareDimForDrawing</name>
+        <briefdescription>
+<para>The dimensions of the double for loops. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="42" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a82c130125f8f918de9e139eff5de225f" compoundref="_draw_image_analysis2_8cs" startline="109" endline="121">Attempt_7.DrawImageAnalysis::DrawImageAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aaf4088bca6ef2e41e13c6a9bf0ca2a52" compoundref="_draw_image_analysis2_8cs" startline="507" endline="540">Attempt_7.DrawImageAnalysis::DrawText</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ad0933abc7604eb194143440f1b875383" compoundref="_draw_image_analysis2_8cs" startline="234" endline="267">Attempt_7.DrawImageAnalysis::UpdateBoolMapto3DRectangle</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aacad4429bd67cfff2db2a42056fdef7e" compoundref="_draw_image_analysis2_8cs" startline="179" endline="201">Attempt_7.DrawImageAnalysis::UpdateColorArrayto3DRectangle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1a39cdb07a4e1cbdf5ebef0c53e9af6c94" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.DrawImageAnalysis.UpdateSquareDimForAnalysis</definition>
+        <argsstring></argsstring>
+        <name>UpdateSquareDimForAnalysis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="42" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a82c130125f8f918de9e139eff5de225f" compoundref="_draw_image_analysis2_8cs" startline="109" endline="121">Attempt_7.DrawImageAnalysis::DrawImageAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aaf4088bca6ef2e41e13c6a9bf0ca2a52" compoundref="_draw_image_analysis2_8cs" startline="507" endline="540">Attempt_7.DrawImageAnalysis::DrawText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1a2e2dcb54db7f1ebeac6be4cf3b6d7aed" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.DrawImageAnalysis.NumberofLinesToFind</definition>
+        <argsstring></argsstring>
+        <name>NumberofLinesToFind</name>
+        <briefdescription>
+<para>How many lines to find. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="47" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1af6ec1c3997ca2f3d14beeb0202b15e58" compoundref="_draw_image_analysis2_8cs" startline="437" endline="456">Attempt_7.DrawImageAnalysis::AddHoughLinesColor</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a82c130125f8f918de9e139eff5de225f" compoundref="_draw_image_analysis2_8cs" startline="109" endline="121">Attempt_7.DrawImageAnalysis::DrawImageAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aaf4088bca6ef2e41e13c6a9bf0ca2a52" compoundref="_draw_image_analysis2_8cs" startline="507" endline="540">Attempt_7.DrawImageAnalysis::DrawText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1a56819c40d9d3d8898dee1ab7b7f1720b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.DrawImageAnalysis.ThetaIncrement</definition>
+        <argsstring></argsstring>
+        <name>ThetaIncrement</name>
+        <briefdescription>
+<para>How precise the hough transform is. How large between possible values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="52" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="52" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a82c130125f8f918de9e139eff5de225f" compoundref="_draw_image_analysis2_8cs" startline="109" endline="121">Attempt_7.DrawImageAnalysis::DrawImageAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aaf4088bca6ef2e41e13c6a9bf0ca2a52" compoundref="_draw_image_analysis2_8cs" startline="507" endline="540">Attempt_7.DrawImageAnalysis::DrawText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1a0783fd297ddd176a784cb49f70833e18" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.DrawImageAnalysis.RhoIncrement</definition>
+        <argsstring></argsstring>
+        <name>RhoIncrement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="52" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="52" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a82c130125f8f918de9e139eff5de225f" compoundref="_draw_image_analysis2_8cs" startline="109" endline="121">Attempt_7.DrawImageAnalysis::DrawImageAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aaf4088bca6ef2e41e13c6a9bf0ca2a52" compoundref="_draw_image_analysis2_8cs" startline="507" endline="540">Attempt_7.DrawImageAnalysis::DrawText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1a96d5f79f1b1a104d2ab3f47aa6616d37" prot="private" static="no" mutable="no">
+        <type><ref refid="class_attempt__7_1_1_camera" kindref="compound">Camera</ref></type>
+        <definition>Camera Attempt_7.DrawImageAnalysis.camera</definition>
+        <argsstring></argsstring>
+        <name>camera</name>
+        <briefdescription>
+<para><ref refid="class_attempt__7_1_1_camera" kindref="compound">Camera</ref> used to draw the triangles of what the robot is &quot;thinking&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="57" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ae271911b749fc6bad5f303da0f6b895d" compoundref="_draw_image_analysis2_8cs" startline="127" endline="155">Attempt_7.DrawImageAnalysis::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aea47cb9ef13fda648ba3e8acb8808ed3" compoundref="_draw_image_analysis2_8cs" startline="545" endline="578">Attempt_7.DrawImageAnalysis::LoadVertexArray</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1ab649a91f61c546824edd468642c77fa3" prot="private" static="no" mutable="no">
+        <type>List&lt; Viewport &gt;</type>
+        <definition>List&lt;Viewport&gt; Attempt_7.DrawImageAnalysis.viewPortList</definition>
+        <argsstring></argsstring>
+        <name>viewPortList</name>
+        <briefdescription>
+<para>List holding the viewports used in the simulation. This list is created in the Main simulation and then passed to this class when it is initiaized. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="62" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="62" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a3405b325467c48533528a5312bbbf08b" compoundref="_draw_image_analysis2_8cs" startline="215" endline="226">Attempt_7.DrawImageAnalysis::Draw</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a82c130125f8f918de9e139eff5de225f" compoundref="_draw_image_analysis2_8cs" startline="109" endline="121">Attempt_7.DrawImageAnalysis::DrawImageAnalysis</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1a36779d384eaa0c4188a16758540403e0" prot="private" static="no" mutable="no">
+        <type>BasicEffect</type>
+        <definition>BasicEffect Attempt_7.DrawImageAnalysis.basicEffects</definition>
+        <argsstring></argsstring>
+        <name>basicEffects</name>
+        <briefdescription>
+<para>BasicEffects for how to draw the triangles. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="67" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="67" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a065696d0fbab0244c164284ff296cbc5" compoundref="_draw_image_analysis2_8cs" startline="462" endline="469">Attempt_7.DrawImageAnalysis::DrawAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1abb4b21e7bad04bbbbb60b1c997827543" compoundref="_draw_image_analysis2_8cs" startline="474" endline="488">Attempt_7.DrawImageAnalysis::DrawAnalysisUsingIndex</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ab82f803a8226f55b480a102215aac025" compoundref="_draw_image_analysis2_8cs" startline="490" endline="502">Attempt_7.DrawImageAnalysis::drawUsingSmallerNumberofVertexs</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aea47cb9ef13fda648ba3e8acb8808ed3" compoundref="_draw_image_analysis2_8cs" startline="545" endline="578">Attempt_7.DrawImageAnalysis::LoadVertexArray</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1a531efa4688cdabd3c3bf99a5f1777d9c" prot="private" static="no" mutable="no">
+        <type>SpriteFont</type>
+        <definition>SpriteFont Attempt_7.DrawImageAnalysis.arial</definition>
+        <argsstring></argsstring>
+        <name>arial</name>
+        <briefdescription>
+<para>Font to use for drawing the debug/hough information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="72" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="72" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aaf4088bca6ef2e41e13c6a9bf0ca2a52" compoundref="_draw_image_analysis2_8cs" startline="507" endline="540">Attempt_7.DrawImageAnalysis::DrawText</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ae271911b749fc6bad5f303da0f6b895d" compoundref="_draw_image_analysis2_8cs" startline="127" endline="155">Attempt_7.DrawImageAnalysis::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1a76002b58f1c462ae159251486137f677" prot="private" static="no" mutable="no">
+        <type>SpriteBatch</type>
+        <definition>SpriteBatch Attempt_7.DrawImageAnalysis.spriteBatch</definition>
+        <argsstring></argsstring>
+        <name>spriteBatch</name>
+        <briefdescription>
+<para>The spriteBatch is used to draw 2D graphics. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="77" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="77" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aaf4088bca6ef2e41e13c6a9bf0ca2a52" compoundref="_draw_image_analysis2_8cs" startline="507" endline="540">Attempt_7.DrawImageAnalysis::DrawText</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ae271911b749fc6bad5f303da0f6b895d" compoundref="_draw_image_analysis2_8cs" startline="127" endline="155">Attempt_7.DrawImageAnalysis::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1ac921c38d0ea4e068fff70230356a9257" prot="private" static="no" mutable="no">
+        <type>VertexPositionColor[]</type>
+        <definition>VertexPositionColor [] Attempt_7.DrawImageAnalysis.vertexArray</definition>
+        <argsstring></argsstring>
+        <name>vertexArray</name>
+        <briefdescription>
+<para>VertexPositionColory array that stores the triangles of what the robot is &quot;thinking&quot;. Each triangle represents 1 pixel from the robot&apos;s view. So 640*480 triangles. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="82" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="82" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a065696d0fbab0244c164284ff296cbc5" compoundref="_draw_image_analysis2_8cs" startline="462" endline="469">Attempt_7.DrawImageAnalysis::DrawAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1abb4b21e7bad04bbbbb60b1c997827543" compoundref="_draw_image_analysis2_8cs" startline="474" endline="488">Attempt_7.DrawImageAnalysis::DrawAnalysisUsingIndex</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aea47cb9ef13fda648ba3e8acb8808ed3" compoundref="_draw_image_analysis2_8cs" startline="545" endline="578">Attempt_7.DrawImageAnalysis::LoadVertexArray</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ad0933abc7604eb194143440f1b875383" compoundref="_draw_image_analysis2_8cs" startline="234" endline="267">Attempt_7.DrawImageAnalysis::UpdateBoolMapto3DRectangle</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aacad4429bd67cfff2db2a42056fdef7e" compoundref="_draw_image_analysis2_8cs" startline="179" endline="201">Attempt_7.DrawImageAnalysis::UpdateColorArrayto3DRectangle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1aa7d53807833a1337862f7fd8f17f0aa7" prot="private" static="no" mutable="no">
+        <type>VertexPositionColor[]</type>
+        <definition>VertexPositionColor [] Attempt_7.DrawImageAnalysis.vertexArray2</definition>
+        <argsstring></argsstring>
+        <name>vertexArray2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="84" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="84" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a98635843e4766a13a2fa9a73765aeb78" compoundref="_draw_image_analysis2_8cs" startline="269" endline="305">Attempt_7.DrawImageAnalysis::BuildVertexArrayforDrawingSmallerNumberofTriangles</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ab82f803a8226f55b480a102215aac025" compoundref="_draw_image_analysis2_8cs" startline="490" endline="502">Attempt_7.DrawImageAnalysis::drawUsingSmallerNumberofVertexs</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ae271911b749fc6bad5f303da0f6b895d" compoundref="_draw_image_analysis2_8cs" startline="127" endline="155">Attempt_7.DrawImageAnalysis::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aa1273c30c63d4963aebfede894eec3e4" compoundref="_draw_image_analysis2_8cs" startline="382" endline="432">Attempt_7.DrawImageAnalysis::InsertLine</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1a29f389c1637b758aea8700cc3b4d8c92" prot="private" static="no" mutable="no">
+        <type>double[]</type>
+        <definition>double [] Attempt_7.DrawImageAnalysis.houghInfo</definition>
+        <argsstring></argsstring>
+        <name>houghInfo</name>
+        <briefdescription>
+<para>Stores information about the hough. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="89" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="89" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a3405b325467c48533528a5312bbbf08b" compoundref="_draw_image_analysis2_8cs" startline="215" endline="226">Attempt_7.DrawImageAnalysis::Draw</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ae271911b749fc6bad5f303da0f6b895d" compoundref="_draw_image_analysis2_8cs" startline="127" endline="155">Attempt_7.DrawImageAnalysis::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a6de17ba6756456372d8d6e2a69d6ce45" compoundref="_draw_image_analysis2_8cs" startline="162" endline="172">Attempt_7.DrawImageAnalysis::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1a111f5f187dc4143d67b30d98031d0968" prot="private" static="no" mutable="no">
+        <type><ref refid="class_attempt__7_1_1_image_analysis" kindref="compound">ImageAnalysis</ref></type>
+        <definition>ImageAnalysis Attempt_7.DrawImageAnalysis.imageAnalysis</definition>
+        <argsstring></argsstring>
+        <name>imageAnalysis</name>
+        <briefdescription>
+<para>The image analysis object associated with this class. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="94" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="94" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a3405b325467c48533528a5312bbbf08b" compoundref="_draw_image_analysis2_8cs" startline="215" endline="226">Attempt_7.DrawImageAnalysis::Draw</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a82c130125f8f918de9e139eff5de225f" compoundref="_draw_image_analysis2_8cs" startline="109" endline="121">Attempt_7.DrawImageAnalysis::DrawImageAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aaf4088bca6ef2e41e13c6a9bf0ca2a52" compoundref="_draw_image_analysis2_8cs" startline="507" endline="540">Attempt_7.DrawImageAnalysis::DrawText</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ae271911b749fc6bad5f303da0f6b895d" compoundref="_draw_image_analysis2_8cs" startline="127" endline="155">Attempt_7.DrawImageAnalysis::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a6de17ba6756456372d8d6e2a69d6ce45" compoundref="_draw_image_analysis2_8cs" startline="162" endline="172">Attempt_7.DrawImageAnalysis::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1a453387b044257078cc5a6b8cb5c736b1" prot="private" static="no" mutable="no">
+        <type>int[]</type>
+        <definition>int [] Attempt_7.DrawImageAnalysis.vertexIndex</definition>
+        <argsstring></argsstring>
+        <name>vertexIndex</name>
+        <briefdescription>
+<para>A list of the vertexs to draw. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="99" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="99" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1abb4b21e7bad04bbbbb60b1c997827543" compoundref="_draw_image_analysis2_8cs" startline="474" endline="488">Attempt_7.DrawImageAnalysis::DrawAnalysisUsingIndex</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ae271911b749fc6bad5f303da0f6b895d" compoundref="_draw_image_analysis2_8cs" startline="127" endline="155">Attempt_7.DrawImageAnalysis::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a88d4b6824cb8e0791b6e81053afe02d7" compoundref="_draw_image_analysis2_8cs" startline="307" endline="374">Attempt_7.DrawImageAnalysis::UpdateBoolMapto3DRectangleUsingIndex</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1a44ab97b569495bde696945acd9728e68" prot="private" static="no" mutable="no">
+        <type>List&lt; short &gt;</type>
+        <definition>List&lt;short&gt; Attempt_7.DrawImageAnalysis.vertexIndexList</definition>
+        <argsstring></argsstring>
+        <name>vertexIndexList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="101" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="101" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ae271911b749fc6bad5f303da0f6b895d" compoundref="_draw_image_analysis2_8cs" startline="127" endline="155">Attempt_7.DrawImageAnalysis::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_draw_image_analysis_1a295eefafafe824bfc196c0d7e88f55aa" prot="private" static="no" mutable="no">
+        <type>Vector3[]</type>
+        <definition>Vector3 [] Attempt_7.DrawImageAnalysis.houghLineStartandStopVectors</definition>
+        <argsstring></argsstring>
+        <name>houghLineStartandStopVectors</name>
+        <briefdescription>
+<para>Stores vector3 locations of the beginning and end points of two lines on the screen. Was part of the old Hough system, but potientially still useful, so has not deleted. 0 = start location of line, 1 = end location ofline. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="107" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="107" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1af6ec1c3997ca2f3d14beeb0202b15e58" compoundref="_draw_image_analysis2_8cs" startline="437" endline="456">Attempt_7.DrawImageAnalysis::AddHoughLinesColor</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a6de17ba6756456372d8d6e2a69d6ce45" compoundref="_draw_image_analysis2_8cs" startline="162" endline="172">Attempt_7.DrawImageAnalysis::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_attempt__7_1_1_draw_image_analysis_1a82c130125f8f918de9e139eff5de225f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Attempt_7.DrawImageAnalysis.DrawImageAnalysis</definition>
+        <argsstring>(Game game, int screenWidth, int screenHeight, int UpdateSquareDimForDrawing, int UpdateSquareDimForAnalysis, int NumberofLinesToFind, int ThetaIncrement, int RhoIncrement, List&lt; Viewport &gt; viewPortList, ImageAnalysis imaageanalysis)</argsstring>
+        <name>DrawImageAnalysis</name>
+        <param>
+          <type>Game</type>
+          <declname>game</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>screenWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>screenHeight</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>UpdateSquareDimForDrawing</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>UpdateSquareDimForAnalysis</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>NumberofLinesToFind</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ThetaIncrement</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>RhoIncrement</declname>
+        </param>
+        <param>
+          <type>List&lt; Viewport &gt;</type>
+          <declname>viewPortList</declname>
+        </param>
+        <param>
+          <type><ref refid="class_attempt__7_1_1_image_analysis" kindref="compound">ImageAnalysis</ref></type>
+          <declname>imaageanalysis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="111" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="109" bodyend="121"/>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a111f5f187dc4143d67b30d98031d0968" compoundref="_draw_image_analysis2_8cs" startline="94">Attempt_7.DrawImageAnalysis::imageAnalysis</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a2e2dcb54db7f1ebeac6be4cf3b6d7aed" compoundref="_draw_image_analysis2_8cs" startline="47">Attempt_7.DrawImageAnalysis::NumberofLinesToFind</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a0783fd297ddd176a784cb49f70833e18" compoundref="_draw_image_analysis2_8cs" startline="52">Attempt_7.DrawImageAnalysis::RhoIncrement</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a6c238510c027ef883dec2ff739a3e2b3" compoundref="_draw_image_analysis2_8cs" startline="37">Attempt_7.DrawImageAnalysis::screenHeight</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1adfb22307c8f2e999485d67b74fe64615" compoundref="_draw_image_analysis2_8cs" startline="37">Attempt_7.DrawImageAnalysis::screenWidth</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a56819c40d9d3d8898dee1ab7b7f1720b" compoundref="_draw_image_analysis2_8cs" startline="52">Attempt_7.DrawImageAnalysis::ThetaIncrement</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a39cdb07a4e1cbdf5ebef0c53e9af6c94" compoundref="_draw_image_analysis2_8cs" startline="42">Attempt_7.DrawImageAnalysis::UpdateSquareDimForAnalysis</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a99b0bebc91f29a61b067739a0a5cdb58" compoundref="_draw_image_analysis2_8cs" startline="42">Attempt_7.DrawImageAnalysis::UpdateSquareDimForDrawing</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1ab649a91f61c546824edd468642c77fa3" compoundref="_draw_image_analysis2_8cs" startline="62">Attempt_7.DrawImageAnalysis::viewPortList</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_draw_image_analysis_1ae271911b749fc6bad5f303da0f6b895d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Attempt_7.DrawImageAnalysis.Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+<para>Allows the game component to perform any initialization it needs to before starting to run. This is where it can query for any required services and load content. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="128" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="127" bodyend="155"/>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a531efa4688cdabd3c3bf99a5f1777d9c" compoundref="_draw_image_analysis2_8cs" startline="72">Attempt_7.DrawImageAnalysis::arial</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a96d5f79f1b1a104d2ab3f47aa6616d37" compoundref="_draw_image_analysis2_8cs" startline="57">Attempt_7.DrawImageAnalysis::camera</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a897a0f80fbf65670828c8a1a1db13d97" compoundref="_image_analysis2_8cs" startline="291" endline="301">Attempt_7.ImageAnalysis::GetHoughInfo</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a29f389c1637b758aea8700cc3b4d8c92" compoundref="_draw_image_analysis2_8cs" startline="89">Attempt_7.DrawImageAnalysis::houghInfo</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a111f5f187dc4143d67b30d98031d0968" compoundref="_draw_image_analysis2_8cs" startline="94">Attempt_7.DrawImageAnalysis::imageAnalysis</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1aea47cb9ef13fda648ba3e8acb8808ed3" compoundref="_draw_image_analysis2_8cs" startline="545" endline="578">Attempt_7.DrawImageAnalysis::LoadVertexArray</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a6c238510c027ef883dec2ff739a3e2b3" compoundref="_draw_image_analysis2_8cs" startline="37">Attempt_7.DrawImageAnalysis::screenHeight</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1adfb22307c8f2e999485d67b74fe64615" compoundref="_draw_image_analysis2_8cs" startline="37">Attempt_7.DrawImageAnalysis::screenWidth</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a76002b58f1c462ae159251486137f677" compoundref="_draw_image_analysis2_8cs" startline="77">Attempt_7.DrawImageAnalysis::spriteBatch</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1aa7d53807833a1337862f7fd8f17f0aa7" compoundref="_draw_image_analysis2_8cs" startline="84">Attempt_7.DrawImageAnalysis::vertexArray2</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a453387b044257078cc5a6b8cb5c736b1" compoundref="_draw_image_analysis2_8cs" startline="99">Attempt_7.DrawImageAnalysis::vertexIndex</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a44ab97b569495bde696945acd9728e68" compoundref="_draw_image_analysis2_8cs" startline="101">Attempt_7.DrawImageAnalysis::vertexIndexList</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_draw_image_analysis_1a6de17ba6756456372d8d6e2a69d6ce45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Attempt_7.DrawImageAnalysis.Update</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>Allows the game component to update itself. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Provides a snapshot of timing values.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>UpdateColorArrayto3DRectangle(imageAnalysis.GetColorMapToDraw(), houghInfo); </para>        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="163" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="162" bodyend="172"/>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a98635843e4766a13a2fa9a73765aeb78" compoundref="_draw_image_analysis2_8cs" startline="269" endline="305">Attempt_7.DrawImageAnalysis::BuildVertexArrayforDrawingSmallerNumberofTriangles</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a897a0f80fbf65670828c8a1a1db13d97" compoundref="_image_analysis2_8cs" startline="291" endline="301">Attempt_7.ImageAnalysis::GetHoughInfo</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a3c35b4a6a6a1e4464fc79772caa612cf" compoundref="_image_analysis2_8cs" startline="797" endline="800">Attempt_7.ImageAnalysis::GetHoughStartandStopVectors</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a1ba8eee3151c73ef5023003ee7b57b67" compoundref="_image_analysis2_8cs" startline="303" endline="306">Attempt_7.ImageAnalysis::GetTrueFalseMaptoDraw</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a29f389c1637b758aea8700cc3b4d8c92" compoundref="_draw_image_analysis2_8cs" startline="89">Attempt_7.DrawImageAnalysis::houghInfo</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a295eefafafe824bfc196c0d7e88f55aa" compoundref="_draw_image_analysis2_8cs" startline="107">Attempt_7.DrawImageAnalysis::houghLineStartandStopVectors</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a111f5f187dc4143d67b30d98031d0968" compoundref="_draw_image_analysis2_8cs" startline="94">Attempt_7.DrawImageAnalysis::imageAnalysis</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_draw_image_analysis_1aacad4429bd67cfff2db2a42056fdef7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.DrawImageAnalysis.UpdateColorArrayto3DRectangle</definition>
+        <argsstring>(Color[,] c, double[] houghInfo)</argsstring>
+        <name>UpdateColorArrayto3DRectangle</name>
+        <param>
+          <type>Color</type>
+          <declname>c</declname>
+          <array>[,]</array>
+        </param>
+        <param>
+          <type>double[]</type>
+          <declname>houghInfo</declname>
+        </param>
+        <briefdescription>
+<para>Takes a 2D color array and colors the triangles. Also adds the hough lines. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Color Array to up on the triangles</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vertexArray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertex array of the triangles</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="180" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="179" bodyend="201"/>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1af6ec1c3997ca2f3d14beeb0202b15e58" compoundref="_draw_image_analysis2_8cs" startline="437" endline="456">Attempt_7.DrawImageAnalysis::AddHoughLinesColor</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1afda6ca182d55b530c3188413bfced70c" compoundref="_draw_image_analysis2_8cs" startline="26">Attempt_7.DrawImageAnalysis::count1C</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1aed235d7846bb2f2ace68331beb4ca7f2" compoundref="_draw_image_analysis2_8cs" startline="26">Attempt_7.DrawImageAnalysis::count2C</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a6c238510c027ef883dec2ff739a3e2b3" compoundref="_draw_image_analysis2_8cs" startline="37">Attempt_7.DrawImageAnalysis::screenHeight</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1adfb22307c8f2e999485d67b74fe64615" compoundref="_draw_image_analysis2_8cs" startline="37">Attempt_7.DrawImageAnalysis::screenWidth</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a99b0bebc91f29a61b067739a0a5cdb58" compoundref="_draw_image_analysis2_8cs" startline="42">Attempt_7.DrawImageAnalysis::UpdateSquareDimForDrawing</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1ac921c38d0ea4e068fff70230356a9257" compoundref="_draw_image_analysis2_8cs" startline="82">Attempt_7.DrawImageAnalysis::vertexArray</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_draw_image_analysis_1a3405b325467c48533528a5312bbbf08b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Attempt_7.DrawImageAnalysis.Draw</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>Calls methods to draw the analysis triangles and the Debug text. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Clock Information</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="216" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="215" bodyend="226"/>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1aaf4088bca6ef2e41e13c6a9bf0ca2a52" compoundref="_draw_image_analysis2_8cs" startline="507" endline="540">Attempt_7.DrawImageAnalysis::DrawText</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1ab82f803a8226f55b480a102215aac025" compoundref="_draw_image_analysis2_8cs" startline="490" endline="502">Attempt_7.DrawImageAnalysis::drawUsingSmallerNumberofVertexs</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a99c5e65fe48a1145d7c9afba96bfb220" compoundref="_image_analysis2_8cs" startline="338" endline="341">Attempt_7.ImageAnalysis::GetTurnIndicator</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a55b77047aaacc5a78fcd70401da3b069" compoundref="_image_analysis2_8cs" startline="286" endline="289">Attempt_7.ImageAnalysis::GetWhiteCount</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a29f389c1637b758aea8700cc3b4d8c92" compoundref="_draw_image_analysis2_8cs" startline="89">Attempt_7.DrawImageAnalysis::houghInfo</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a111f5f187dc4143d67b30d98031d0968" compoundref="_draw_image_analysis2_8cs" startline="94">Attempt_7.DrawImageAnalysis::imageAnalysis</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1ab649a91f61c546824edd468642c77fa3" compoundref="_draw_image_analysis2_8cs" startline="62">Attempt_7.DrawImageAnalysis::viewPortList</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_draw_image_analysis_1ad0933abc7604eb194143440f1b875383" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.DrawImageAnalysis.UpdateBoolMapto3DRectangle</definition>
+        <argsstring>(bool[,] c, double[] houghInfo)</argsstring>
+        <name>UpdateBoolMapto3DRectangle</name>
+        <param>
+          <type>bool</type>
+          <declname>c</declname>
+          <array>[,]</array>
+        </param>
+        <param>
+          <type>double[]</type>
+          <declname>houghInfo</declname>
+        </param>
+        <briefdescription>
+<para>Colors the analysis triangles based a trueFalse bool map. Also adds the Hough information If true then Blue. If false then Transparent. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TrueFalse bool map</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="235" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="234" bodyend="267"/>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1af6ec1c3997ca2f3d14beeb0202b15e58" compoundref="_draw_image_analysis2_8cs" startline="437" endline="456">Attempt_7.DrawImageAnalysis::AddHoughLinesColor</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a0c212b6483e545cdb54b744f26ae5aaf" compoundref="_draw_image_analysis2_8cs" startline="26">Attempt_7.DrawImageAnalysis::count1A</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1ab82cc146a1cdfc52336d1ae86eb89157" compoundref="_draw_image_analysis2_8cs" startline="26">Attempt_7.DrawImageAnalysis::count2A</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a6c238510c027ef883dec2ff739a3e2b3" compoundref="_draw_image_analysis2_8cs" startline="37">Attempt_7.DrawImageAnalysis::screenHeight</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1adfb22307c8f2e999485d67b74fe64615" compoundref="_draw_image_analysis2_8cs" startline="37">Attempt_7.DrawImageAnalysis::screenWidth</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a99b0bebc91f29a61b067739a0a5cdb58" compoundref="_draw_image_analysis2_8cs" startline="42">Attempt_7.DrawImageAnalysis::UpdateSquareDimForDrawing</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1ac921c38d0ea4e068fff70230356a9257" compoundref="_draw_image_analysis2_8cs" startline="82">Attempt_7.DrawImageAnalysis::vertexArray</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_draw_image_analysis_1a88d4b6824cb8e0791b6e81053afe02d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.DrawImageAnalysis.UpdateBoolMapto3DRectangleUsingIndex</definition>
+        <argsstring>(bool[,] c, double[] houghInfo)</argsstring>
+        <name>UpdateBoolMapto3DRectangleUsingIndex</name>
+        <param>
+          <type>bool</type>
+          <declname>c</declname>
+          <array>[,]</array>
+        </param>
+        <param>
+          <type>double[]</type>
+          <declname>houghInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="308" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="307" bodyend="374"/>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a0978bfdff294a91bc2c99d55c29a9e2f" compoundref="_draw_image_analysis2_8cs" startline="31">Attempt_7.DrawImageAnalysis::count1D</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a6c238510c027ef883dec2ff739a3e2b3" compoundref="_draw_image_analysis2_8cs" startline="37">Attempt_7.DrawImageAnalysis::screenHeight</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1adfb22307c8f2e999485d67b74fe64615" compoundref="_draw_image_analysis2_8cs" startline="37">Attempt_7.DrawImageAnalysis::screenWidth</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a453387b044257078cc5a6b8cb5c736b1" compoundref="_draw_image_analysis2_8cs" startline="99">Attempt_7.DrawImageAnalysis::vertexIndex</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_draw_image_analysis_1a065696d0fbab0244c164284ff296cbc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.DrawImageAnalysis.DrawAnalysis</definition>
+        <argsstring>()</argsstring>
+        <name>DrawAnalysis</name>
+        <briefdescription>
+<para>Draws the Analysis Triangles stored in the &apos;vertexArray&apos;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="463" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="462" bodyend="469"/>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a36779d384eaa0c4188a16758540403e0" compoundref="_draw_image_analysis2_8cs" startline="67">Attempt_7.DrawImageAnalysis::basicEffects</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a6c238510c027ef883dec2ff739a3e2b3" compoundref="_draw_image_analysis2_8cs" startline="37">Attempt_7.DrawImageAnalysis::screenHeight</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1adfb22307c8f2e999485d67b74fe64615" compoundref="_draw_image_analysis2_8cs" startline="37">Attempt_7.DrawImageAnalysis::screenWidth</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1ac921c38d0ea4e068fff70230356a9257" compoundref="_draw_image_analysis2_8cs" startline="82">Attempt_7.DrawImageAnalysis::vertexArray</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_draw_image_analysis_1abb4b21e7bad04bbbbb60b1c997827543" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.DrawImageAnalysis.DrawAnalysisUsingIndex</definition>
+        <argsstring>()</argsstring>
+        <name>DrawAnalysisUsingIndex</name>
+        <briefdescription>
+<para>Draws the Analysis Triangles stored in the &apos;vertexArray&apos;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="475" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="474" bodyend="488"/>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a36779d384eaa0c4188a16758540403e0" compoundref="_draw_image_analysis2_8cs" startline="67">Attempt_7.DrawImageAnalysis::basicEffects</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a0978bfdff294a91bc2c99d55c29a9e2f" compoundref="_draw_image_analysis2_8cs" startline="31">Attempt_7.DrawImageAnalysis::count1D</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a6c238510c027ef883dec2ff739a3e2b3" compoundref="_draw_image_analysis2_8cs" startline="37">Attempt_7.DrawImageAnalysis::screenHeight</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1adfb22307c8f2e999485d67b74fe64615" compoundref="_draw_image_analysis2_8cs" startline="37">Attempt_7.DrawImageAnalysis::screenWidth</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1ac921c38d0ea4e068fff70230356a9257" compoundref="_draw_image_analysis2_8cs" startline="82">Attempt_7.DrawImageAnalysis::vertexArray</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a453387b044257078cc5a6b8cb5c736b1" compoundref="_draw_image_analysis2_8cs" startline="99">Attempt_7.DrawImageAnalysis::vertexIndex</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_attempt__7_1_1_draw_image_analysis_1affaba058b8e77f01efcba3f6ded28dea" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Attempt_7.DrawImageAnalysis.LoadContent</definition>
+        <argsstring>()</argsstring>
+        <name>LoadContent</name>
+        <briefdescription>
+<para>Loads the SpriteBatch Content. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="207" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="206" bodyend="209"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_attempt__7_1_1_draw_image_analysis_1a98635843e4766a13a2fa9a73765aeb78" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.DrawImageAnalysis.BuildVertexArrayforDrawingSmallerNumberofTriangles</definition>
+        <argsstring>(bool[,] c, double[] houghInfo)</argsstring>
+        <name>BuildVertexArrayforDrawingSmallerNumberofTriangles</name>
+        <param>
+          <type>bool</type>
+          <declname>c</declname>
+          <array>[,]</array>
+        </param>
+        <param>
+          <type>double[]</type>
+          <declname>houghInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="270" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="269" bodyend="305"/>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1af6ec1c3997ca2f3d14beeb0202b15e58" compoundref="_draw_image_analysis2_8cs" startline="437" endline="456">Attempt_7.DrawImageAnalysis::AddHoughLinesColor</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a0978bfdff294a91bc2c99d55c29a9e2f" compoundref="_draw_image_analysis2_8cs" startline="31">Attempt_7.DrawImageAnalysis::count1D</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a6c238510c027ef883dec2ff739a3e2b3" compoundref="_draw_image_analysis2_8cs" startline="37">Attempt_7.DrawImageAnalysis::screenHeight</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1adfb22307c8f2e999485d67b74fe64615" compoundref="_draw_image_analysis2_8cs" startline="37">Attempt_7.DrawImageAnalysis::screenWidth</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1aa7d53807833a1337862f7fd8f17f0aa7" compoundref="_draw_image_analysis2_8cs" startline="84">Attempt_7.DrawImageAnalysis::vertexArray2</references>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a6de17ba6756456372d8d6e2a69d6ce45" compoundref="_draw_image_analysis2_8cs" startline="162" endline="172">Attempt_7.DrawImageAnalysis::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_draw_image_analysis_1aa1273c30c63d4963aebfede894eec3e4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.DrawImageAnalysis.InsertLine</definition>
+        <argsstring>(Vector3 startLocation, Vector3 endLocation, Color c)</argsstring>
+        <name>InsertLine</name>
+        <param>
+          <type>Vector3</type>
+          <declname>startLocation</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>endLocation</declname>
+        </param>
+        <param>
+          <type>Color</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Updates the vertex information of the triangels for a line of a particular color based off its starting and ending position. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>startLocation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start position of the line. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endLocation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End position of the line </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Color to draw the line. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="383" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="382" bodyend="432"/>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a0978bfdff294a91bc2c99d55c29a9e2f" compoundref="_draw_image_analysis2_8cs" startline="31">Attempt_7.DrawImageAnalysis::count1D</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1aa7d53807833a1337862f7fd8f17f0aa7" compoundref="_draw_image_analysis2_8cs" startline="84">Attempt_7.DrawImageAnalysis::vertexArray2</references>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1af6ec1c3997ca2f3d14beeb0202b15e58" compoundref="_draw_image_analysis2_8cs" startline="437" endline="456">Attempt_7.DrawImageAnalysis::AddHoughLinesColor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_draw_image_analysis_1af6ec1c3997ca2f3d14beeb0202b15e58" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.DrawImageAnalysis.AddHoughLinesColor</definition>
+        <argsstring>(double[] houghInfo)</argsstring>
+        <name>AddHoughLinesColor</name>
+        <param>
+          <type>double[]</type>
+          <declname>houghInfo</declname>
+        </param>
+        <briefdescription>
+<para>Puts the hough information about the lines in the vertex array. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="438" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="437" bodyend="456"/>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a295eefafafe824bfc196c0d7e88f55aa" compoundref="_draw_image_analysis2_8cs" startline="107">Attempt_7.DrawImageAnalysis::houghLineStartandStopVectors</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1aa1273c30c63d4963aebfede894eec3e4" compoundref="_draw_image_analysis2_8cs" startline="382" endline="432">Attempt_7.DrawImageAnalysis::InsertLine</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a2e2dcb54db7f1ebeac6be4cf3b6d7aed" compoundref="_draw_image_analysis2_8cs" startline="47">Attempt_7.DrawImageAnalysis::NumberofLinesToFind</references>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a98635843e4766a13a2fa9a73765aeb78" compoundref="_draw_image_analysis2_8cs" startline="269" endline="305">Attempt_7.DrawImageAnalysis::BuildVertexArrayforDrawingSmallerNumberofTriangles</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ad0933abc7604eb194143440f1b875383" compoundref="_draw_image_analysis2_8cs" startline="234" endline="267">Attempt_7.DrawImageAnalysis::UpdateBoolMapto3DRectangle</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aacad4429bd67cfff2db2a42056fdef7e" compoundref="_draw_image_analysis2_8cs" startline="179" endline="201">Attempt_7.DrawImageAnalysis::UpdateColorArrayto3DRectangle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_draw_image_analysis_1ab82f803a8226f55b480a102215aac025" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.DrawImageAnalysis.drawUsingSmallerNumberofVertexs</definition>
+        <argsstring>()</argsstring>
+        <name>drawUsingSmallerNumberofVertexs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="491" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="490" bodyend="502"/>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a36779d384eaa0c4188a16758540403e0" compoundref="_draw_image_analysis2_8cs" startline="67">Attempt_7.DrawImageAnalysis::basicEffects</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a0978bfdff294a91bc2c99d55c29a9e2f" compoundref="_draw_image_analysis2_8cs" startline="31">Attempt_7.DrawImageAnalysis::count1D</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1aa7d53807833a1337862f7fd8f17f0aa7" compoundref="_draw_image_analysis2_8cs" startline="84">Attempt_7.DrawImageAnalysis::vertexArray2</references>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a3405b325467c48533528a5312bbbf08b" compoundref="_draw_image_analysis2_8cs" startline="215" endline="226">Attempt_7.DrawImageAnalysis::Draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_draw_image_analysis_1aaf4088bca6ef2e41e13c6a9bf0ca2a52" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.DrawImageAnalysis.DrawText</definition>
+        <argsstring>(int turnIndication, int totalWhiteCnt, double[] houghInfo)</argsstring>
+        <name>DrawText</name>
+        <param>
+          <type>int</type>
+          <declname>turnIndication</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>totalWhiteCnt</declname>
+        </param>
+        <param>
+          <type>double[]</type>
+          <declname>houghInfo</declname>
+        </param>
+        <briefdescription>
+<para>Draws the Text giving important information about the status of the analysis. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="508" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="507" bodyend="540"/>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a531efa4688cdabd3c3bf99a5f1777d9c" compoundref="_draw_image_analysis2_8cs" startline="72">Attempt_7.DrawImageAnalysis::arial</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a0978bfdff294a91bc2c99d55c29a9e2f" compoundref="_draw_image_analysis2_8cs" startline="31">Attempt_7.DrawImageAnalysis::count1D</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1ae14af27b7aaa3d4a1006af2a56ab14d1" compoundref="_image_analysis2_8cs" startline="312" endline="326">Attempt_7.ImageAnalysis::GetHoughMode</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a8b8e7e705c97bbb5da1300c139ec0f36" compoundref="_image_analysis2_8cs" startline="917" endline="920">Attempt_7.ImageAnalysis::GetSingularitesOldHough</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a23adf47c39e8990ae161dd46dcb43846" compoundref="_image_analysis2_8cs" startline="913" endline="916">Attempt_7.ImageAnalysis::GetSingularitiesNewHough</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a111f5f187dc4143d67b30d98031d0968" compoundref="_draw_image_analysis2_8cs" startline="94">Attempt_7.DrawImageAnalysis::imageAnalysis</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a2e2dcb54db7f1ebeac6be4cf3b6d7aed" compoundref="_draw_image_analysis2_8cs" startline="47">Attempt_7.DrawImageAnalysis::NumberofLinesToFind</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a0783fd297ddd176a784cb49f70833e18" compoundref="_draw_image_analysis2_8cs" startline="52">Attempt_7.DrawImageAnalysis::RhoIncrement</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a76002b58f1c462ae159251486137f677" compoundref="_draw_image_analysis2_8cs" startline="77">Attempt_7.DrawImageAnalysis::spriteBatch</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a56819c40d9d3d8898dee1ab7b7f1720b" compoundref="_draw_image_analysis2_8cs" startline="52">Attempt_7.DrawImageAnalysis::ThetaIncrement</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a39cdb07a4e1cbdf5ebef0c53e9af6c94" compoundref="_draw_image_analysis2_8cs" startline="42">Attempt_7.DrawImageAnalysis::UpdateSquareDimForAnalysis</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a99b0bebc91f29a61b067739a0a5cdb58" compoundref="_draw_image_analysis2_8cs" startline="42">Attempt_7.DrawImageAnalysis::UpdateSquareDimForDrawing</references>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a3405b325467c48533528a5312bbbf08b" compoundref="_draw_image_analysis2_8cs" startline="215" endline="226">Attempt_7.DrawImageAnalysis::Draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_draw_image_analysis_1aea47cb9ef13fda648ba3e8acb8808ed3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.DrawImageAnalysis.LoadVertexArray</definition>
+        <argsstring>()</argsstring>
+        <name>LoadVertexArray</name>
+        <briefdescription>
+<para>Loads the position of each triangle into the VertexArray. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="546" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="545" bodyend="578"/>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a36779d384eaa0c4188a16758540403e0" compoundref="_draw_image_analysis2_8cs" startline="67">Attempt_7.DrawImageAnalysis::basicEffects</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a96d5f79f1b1a104d2ab3f47aa6616d37" compoundref="_draw_image_analysis2_8cs" startline="57">Attempt_7.DrawImageAnalysis::camera</references>
+        <references refid="class_attempt__7_1_1_camera_1afad745cd526a8c616843da8464a4d256" compoundref="_camera_8cs" startline="35">Attempt_7.Camera::Projection</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1a6c238510c027ef883dec2ff739a3e2b3" compoundref="_draw_image_analysis2_8cs" startline="37">Attempt_7.DrawImageAnalysis::screenHeight</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1adfb22307c8f2e999485d67b74fe64615" compoundref="_draw_image_analysis2_8cs" startline="37">Attempt_7.DrawImageAnalysis::screenWidth</references>
+        <references refid="class_attempt__7_1_1_draw_image_analysis_1ac921c38d0ea4e068fff70230356a9257" compoundref="_draw_image_analysis2_8cs" startline="82">Attempt_7.DrawImageAnalysis::vertexArray</references>
+        <references refid="class_attempt__7_1_1_camera_1ab58715b7ebc0eb1b0181638331e7fe04" compoundref="_camera_8cs" startline="30">Attempt_7.Camera::View</references>
+        <references refid="class_attempt__7_1_1_camera_1a3bc8d53e4d9b029bb75f8f0e7b09cc17" compoundref="_camera_8cs" startline="40">Attempt_7.Camera::World</references>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ae271911b749fc6bad5f303da0f6b895d" compoundref="_draw_image_analysis2_8cs" startline="127" endline="155">Attempt_7.DrawImageAnalysis::Initialize</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is a game component that implements IUpdateable. Draws the image analysis information. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="26">
+        <label>Attempt_7.Camera</label>
+        <link refid="class_attempt__7_1_1_camera"/>
+      </node>
+      <node id="27">
+        <label>Attempt_7.ImageAnalysis</label>
+        <link refid="class_attempt__7_1_1_image_analysis"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>drawAnalysis</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Attempt_7.DrawImageAnalysis</label>
+        <link refid="class_attempt__7_1_1_draw_image_analysis"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>camera</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>imageAnalysis</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" line="22" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/DrawImageAnalysis2.cs" bodystart="21" bodyend="580"/>
+    <listofallmembers>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1af6ec1c3997ca2f3d14beeb0202b15e58" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>AddHoughLinesColor</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a531efa4688cdabd3c3bf99a5f1777d9c" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>arial</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a36779d384eaa0c4188a16758540403e0" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>basicEffects</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a98635843e4766a13a2fa9a73765aeb78" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>BuildVertexArrayforDrawingSmallerNumberofTriangles</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a96d5f79f1b1a104d2ab3f47aa6616d37" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>camera</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a0c212b6483e545cdb54b744f26ae5aaf" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>count1A</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1afda6ca182d55b530c3188413bfced70c" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>count1C</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a0978bfdff294a91bc2c99d55c29a9e2f" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>count1D</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1ab82cc146a1cdfc52336d1ae86eb89157" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>count2A</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1aed235d7846bb2f2ace68331beb4ca7f2" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>count2C</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a3405b325467c48533528a5312bbbf08b" prot="public" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>Draw</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a065696d0fbab0244c164284ff296cbc5" prot="public" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>DrawAnalysis</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1abb4b21e7bad04bbbbb60b1c997827543" prot="public" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>DrawAnalysisUsingIndex</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a82c130125f8f918de9e139eff5de225f" prot="public" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>DrawImageAnalysis</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1aaf4088bca6ef2e41e13c6a9bf0ca2a52" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>DrawText</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1ab82f803a8226f55b480a102215aac025" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>drawUsingSmallerNumberofVertexs</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a29f389c1637b758aea8700cc3b4d8c92" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>houghInfo</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a295eefafafe824bfc196c0d7e88f55aa" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>houghLineStartandStopVectors</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a111f5f187dc4143d67b30d98031d0968" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>imageAnalysis</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1ae271911b749fc6bad5f303da0f6b895d" prot="public" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>Initialize</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1aa1273c30c63d4963aebfede894eec3e4" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>InsertLine</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1affaba058b8e77f01efcba3f6ded28dea" prot="protected" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>LoadContent</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1aea47cb9ef13fda648ba3e8acb8808ed3" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>LoadVertexArray</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a2e2dcb54db7f1ebeac6be4cf3b6d7aed" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>NumberofLinesToFind</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a0783fd297ddd176a784cb49f70833e18" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>RhoIncrement</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a6c238510c027ef883dec2ff739a3e2b3" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>screenHeight</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1adfb22307c8f2e999485d67b74fe64615" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>screenWidth</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a76002b58f1c462ae159251486137f677" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>spriteBatch</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a56819c40d9d3d8898dee1ab7b7f1720b" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>ThetaIncrement</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a6de17ba6756456372d8d6e2a69d6ce45" prot="public" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>Update</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1ad0933abc7604eb194143440f1b875383" prot="public" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>UpdateBoolMapto3DRectangle</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a88d4b6824cb8e0791b6e81053afe02d7" prot="public" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>UpdateBoolMapto3DRectangleUsingIndex</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1aacad4429bd67cfff2db2a42056fdef7e" prot="public" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>UpdateColorArrayto3DRectangle</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a39cdb07a4e1cbdf5ebef0c53e9af6c94" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>UpdateSquareDimForAnalysis</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a99b0bebc91f29a61b067739a0a5cdb58" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>UpdateSquareDimForDrawing</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1ac921c38d0ea4e068fff70230356a9257" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>vertexArray</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1aa7d53807833a1337862f7fd8f17f0aa7" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>vertexArray2</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a453387b044257078cc5a6b8cb5c736b1" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>vertexIndex</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1a44ab97b569495bde696945acd9728e68" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>vertexIndexList</name></member>
+      <member refid="class_attempt__7_1_1_draw_image_analysis_1ab649a91f61c546824edd468642c77fa3" prot="private" virt="non-virtual"><scope>Attempt_7::DrawImageAnalysis</scope><name>viewPortList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

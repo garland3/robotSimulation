@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_attempt__7_1_1_image_analysis.html" title="It was easier to redure 640*480 small triangles and view then from a distance than to put a texture o..." alt="" coords="79,5,249,35"/>
+<area shape="rect" id="node4" href="$class_attempt__7_1_1_draw_image_analysis.html" title="This is a game component that implements IUpdateable. Draws the image analysis information." alt="" coords="180,101,380,131"/>
+<area shape="rect" id="node6" href="$class_attempt__7_1_1_camera.html" title="Represents the camera object/class that contains all the information needed about position and target..." alt="" coords="360,5,491,35"/>
+<area shape="rect" id="node9" href="$class_attempt__7_1_1_robot.html" title="Attempt_7.Robot" alt="" coords="404,101,524,131"/>
+</map>

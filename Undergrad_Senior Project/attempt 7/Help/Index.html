@@ -1,0 +1,595 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<title>IGVC Robot Simulation Help File - Table of Content</title>
+<link rel="stylesheet" href="TOC.css">
+<link rel="shortcut icon" href="favicon.ico"/>
+<script type="text/javascript" src="TOC.js"></script>
+</head>
+
+<body onload="javascript: Initialize();" onresize="javascript: ResizeTree();">
+<form id="IndexForm" runat="server">
+
+<div id="TOCDiv" class="TOCDiv">
+
+<div id="divSearchOpts" class="SearchOpts" style="height: 100px; display: none;">
+<img class="TOCLink" onclick="javascript: ShowHideSearch(false);"
+    src="CloseSearch.png" height="16" width="16" alt="Hide search" style="float: right;"/>
+Keyword(s) for which to search:
+<input id="txtSearchText" type="text" style="width: 100%;"
+  onkeypress="javascript: return OnSearchTextKeyPress(event);" /><br />
+<input id="chkSortByTitle" type="checkbox" /><label for="chkSortByTitle">&nbsp;Sort results by title</label><br />
+<input type="button" value="Search" onclick="javascript: return PerformSearch();" />
+</div>
+
+<div id="divIndexOpts" class="IndexOpts" style="height: 25px; display: none;">
+<img class="TOCLink" onclick="javascript: ShowHideIndex(false);"
+    src="CloseSearch.png" height="17" width="17" alt="Hide index" style="float: right;"/>
+Keyword Index
+</div>
+
+<div id="divNavOpts" class="NavOpts" style="height: 20px;">
+    <img class="TOCLink" onclick="javascript: SyncTOC();" src="SyncTOC.gif"
+        height="16" width="16" alt="Sync to TOC"/>
+    <img class="TOCLink" onclick="javascript: ExpandOrCollapseAll(true);"
+        src="ExpandAll.bmp" height="16" width="16" alt="Expand all "/>
+    <img class="TOCLink" onclick="javascript: ExpandOrCollapseAll(false);"
+        src="CollapseAll.bmp" height="16" width="16" alt="Collapse all" />
+</div>
+
+<div class="Tree" id="divSearchResults" style="display: none;"
+    onselectstart="javascript: return false;">
+</div>
+
+<div class="Tree" id="divIndexResults" style="display: none;"
+    onselectstart="javascript: return false;">
+</div>
+
+<div class="Tree" id="divTree" onselectstart="javascript: return false;">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/N_.htm" target="TopicContent">( Default Namespace ) Namespace</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/T__Module_.htm" target="TopicContent">&lt;Module&gt; Class</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/N_Attempt_7.htm" target="TopicContent">Attempt_7 Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_Attempt_7_Camera.htm" target="TopicContent">Camera Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_Attempt_7_Camera.htm" target="TopicContent">Camera Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Camera__ctor.htm" target="TopicContent">Camera Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_Attempt_7_Camera.htm" target="TopicContent">Camera Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_Camera_cameraPosition.htm" target="TopicContent">cameraPosition Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_Camera_isMouseDependent.htm" target="TopicContent">isMouseDependent Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_Camera_mouseOffset.htm" target="TopicContent">mouseOffset Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_Camera_Projection.htm" target="TopicContent">Projection Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_Camera_target.htm" target="TopicContent">target Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_Camera_updirection.htm" target="TopicContent">updirection Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_Camera_View.htm" target="TopicContent">View Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_Camera_World.htm" target="TopicContent">World Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_Attempt_7_Camera.htm" target="TopicContent">Camera Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Camera_GetCameraPosition.htm" target="TopicContent">GetCameraPosition Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Camera_Initialize.htm" target="TopicContent">Initialize Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Camera_SetCameraPositionAndTarget.htm" target="TopicContent">SetCameraPositionAndTarget Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Camera_Update.htm" target="TopicContent">Update Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Camera_UpdateKeyBoard.htm" target="TopicContent">UpdateKeyBoard Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Camera_UpdateMouse.htm" target="TopicContent">UpdateMouse Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_Attempt_7_ImageAnalysis.htm" target="TopicContent">ImageAnalysis Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_Attempt_7_ImageAnalysis.htm" target="TopicContent">ImageAnalysis Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis__ctor.htm" target="TopicContent">ImageAnalysis Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_Attempt_7_ImageAnalysis.htm" target="TopicContent">ImageAnalysis Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_accum2.htm" target="TopicContent">accum2 Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_AccumLength.htm" target="TopicContent">AccumLength Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_arial.htm" target="TopicContent">arial Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_basicEffects.htm" target="TopicContent">basicEffects Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_blueGood.htm" target="TopicContent">blueGood Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_camera.htm" target="TopicContent">camera Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_ClearArroundMaxDegree.htm" target="TopicContent">ClearArroundMaxDegree Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_ClearArroundMaxRho.htm" target="TopicContent">ClearArroundMaxRho Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_cntThreshold.htm" target="TopicContent">cntThreshold Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_colorArray.htm" target="TopicContent">colorArray Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_colorArray1D.htm" target="TopicContent">colorArray1D Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_count1A.htm" target="TopicContent">count1A Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_count1B.htm" target="TopicContent">count1B Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_count1C.htm" target="TopicContent">count1C Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_count1D.htm" target="TopicContent">count1D Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_count1E.htm" target="TopicContent">count1E Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_count2A.htm" target="TopicContent">count2A Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_count2B.htm" target="TopicContent">count2B Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_count2C.htm" target="TopicContent">count2C Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_count2E.htm" target="TopicContent">count2E Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_greenGood.htm" target="TopicContent">greenGood Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_houghInfo.htm" target="TopicContent">houghInfo Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_houghLineStartandStopVectors.htm" target="TopicContent">houghLineStartandStopVectors Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_middleValues.htm" target="TopicContent">middleValues Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_NumberofLinesToFind.htm" target="TopicContent">NumberofLinesToFind Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_redGood.htm" target="TopicContent">redGood Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_RhoIncrement.htm" target="TopicContent">RhoIncrement Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_robotCameraView.htm" target="TopicContent">robotCameraView Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_screenHeight.htm" target="TopicContent">screenHeight Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_screenWidth.htm" target="TopicContent">screenWidth Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_SmoothSearchSize.htm" target="TopicContent">SmoothSearchSize Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_spriteBatch.htm" target="TopicContent">spriteBatch Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_ThetaIncrement.htm" target="TopicContent">ThetaIncrement Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_totalWhiteCnt.htm" target="TopicContent">totalWhiteCnt Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_trueFalseMap.htm" target="TopicContent">trueFalseMap Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_trueFalseMapB.htm" target="TopicContent">trueFalseMapB Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_trueFalseMapC.htm" target="TopicContent">trueFalseMapC Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_turnIndication.htm" target="TopicContent">turnIndication Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_turnIndicatorisTheta.htm" target="TopicContent">turnIndicatorisTheta Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_UpdateSquareDimForAnalysis.htm" target="TopicContent">UpdateSquareDimForAnalysis Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_UpdateSquareDimForDrawing.htm" target="TopicContent">UpdateSquareDimForDrawing Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_vertexArray.htm" target="TopicContent">vertexArray Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_viewPortList.htm" target="TopicContent">viewPortList Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_ImageAnalysis_whiteParam.htm" target="TopicContent">whiteParam Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_Attempt_7_ImageAnalysis.htm" target="TopicContent">ImageAnalysis Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_AddHoughLinesColor.htm" target="TopicContent">AddHoughLinesColor Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_CalculateStartandStopofLine.htm" target="TopicContent">CalculateStartandStopofLine Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_ClearMaxInAccum.htm" target="TopicContent">ClearMaxInAccum Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_Draw.htm" target="TopicContent">Draw Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_DrawAnalysis.htm" target="TopicContent">DrawAnalysis Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_DrawText.htm" target="TopicContent">DrawText Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_FindAverages.htm" target="TopicContent">FindAverages Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_FindMaxInAccumArrayOfHough.htm" target="TopicContent">FindMaxInAccumArrayOfHough Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_FindWhite.htm" target="TopicContent">FindWhite Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_GetTurnIndicator.htm" target="TopicContent">GetTurnIndicator Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_Hough.htm" target="TopicContent">Hough Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_Initialize.htm" target="TopicContent">Initialize Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_InsertLine.htm" target="TopicContent">InsertLine Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_LoadContent.htm" target="TopicContent">LoadContent Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_LoadVertexArray.htm" target="TopicContent">LoadVertexArray Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_SetRobotCameraView.htm" target="TopicContent">SetRobotCameraView Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_ShowPath.htm" target="TopicContent">ShowPath Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_Smooth.htm" target="TopicContent">Smooth Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_TextureTo2DArray.htm" target="TopicContent">TextureTo2DArray Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_Update.htm" target="TopicContent">Update Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_Update1.htm" target="TopicContent">Update1 Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_UpdateBoolMapto3DRectangle.htm" target="TopicContent">UpdateBoolMapto3DRectangle Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_UpdateColorArrayto3DRectangle.htm" target="TopicContent">UpdateColorArrayto3DRectangle Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_ImageAnalysis_Whiteline.htm" target="TopicContent">Whiteline Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_Attempt_7_Program.htm" target="TopicContent">Program Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_Attempt_7_Program.htm" target="TopicContent">Program Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_Attempt_7_Program.htm" target="TopicContent">Program Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Program_Main.htm" target="TopicContent">Main Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_Attempt_7_Robot.htm" target="TopicContent">Robot Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_Attempt_7_Robot.htm" target="TopicContent">Robot Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Robot__ctor.htm" target="TopicContent">Robot Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_Attempt_7_Robot.htm" target="TopicContent">Robot Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_Robot_cameraHeight.htm" target="TopicContent">cameraHeight Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_Robot_changeDirectionThreshholdValue.htm" target="TopicContent">changeDirectionThreshholdValue Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_Robot_direction.htm" target="TopicContent">direction Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_Robot_distanceToCameraTarget.htm" target="TopicContent">distanceToCameraTarget Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_Robot_paused.htm" target="TopicContent">paused Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_Robot_position.htm" target="TopicContent">position Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_Robot_robotCameraView.htm" target="TopicContent">robotCameraView Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_Robot_speed.htm" target="TopicContent">speed Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_Robot_startPosition.htm" target="TopicContent">startPosition Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_Robot_timePressedKey.htm" target="TopicContent">timePressedKey Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_Attempt_7_Robot.htm" target="TopicContent">Robot Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Robot_ChangeDirection.htm" target="TopicContent">ChangeDirection Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Robot_GetDirection.htm" target="TopicContent">GetDirection Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Robot_GetIsRobotPaused.htm" target="TopicContent">GetIsRobotPaused Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Robot_GetKeyBoard.htm" target="TopicContent">GetKeyBoard Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Robot_GetPosition.htm" target="TopicContent">GetPosition Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Robot_GetRobotCamera.htm" target="TopicContent">GetRobotCamera Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Robot_Initialize.htm" target="TopicContent">Initialize Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Robot_SetPosition.htm" target="TopicContent">SetPosition Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Robot_SetStartPosition.htm" target="TopicContent">SetStartPosition Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_Robot_Update.htm" target="TopicContent">Update Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_Attempt_7_SimulationMain.htm" target="TopicContent">SimulationMain Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_Attempt_7_SimulationMain.htm" target="TopicContent">SimulationMain Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_SimulationMain__ctor.htm" target="TopicContent">SimulationMain Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_Attempt_7_SimulationMain.htm" target="TopicContent">SimulationMain Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_arial.htm" target="TopicContent">arial Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_basicEffects.htm" target="TopicContent">basicEffects Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_cameraList.htm" target="TopicContent">cameraList Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_graphics.htm" target="TopicContent">graphics Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_grass.htm" target="TopicContent">grass Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_imageAnalysis.htm" target="TopicContent">imageAnalysis Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_largeGrass.htm" target="TopicContent">largeGrass Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_rand.htm" target="TopicContent">rand Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_renderTargets.htm" target="TopicContent">renderTargets Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_robot1.htm" target="TopicContent">robot1 Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_screenRectangle.htm" target="TopicContent">screenRectangle Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_screenSize.htm" target="TopicContent">screenSize Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_spriteBatch.htm" target="TopicContent">spriteBatch Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_timePressedKey.htm" target="TopicContent">timePressedKey Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_trackRobot.htm" target="TopicContent">trackRobot Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_verts1.htm" target="TopicContent">verts1 Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_verts2.htm" target="TopicContent">verts2 Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_verts3.htm" target="TopicContent">verts3 Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_viewPortList.htm" target="TopicContent">viewPortList Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_Attempt_7_SimulationMain_windowSize.htm" target="TopicContent">windowSize Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_Attempt_7_SimulationMain.htm" target="TopicContent">SimulationMain Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_SimulationMain_BuildRenderTargets.htm" target="TopicContent">BuildRenderTargets Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_SimulationMain_CreateGrassTexture.htm" target="TopicContent">CreateGrassTexture Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_SimulationMain_CreateViewPorts.htm" target="TopicContent">CreateViewPorts Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_SimulationMain_Draw.htm" target="TopicContent">Draw Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_SimulationMain_DrawColorLines.htm" target="TopicContent">DrawColorLines Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_SimulationMain_DrawRobot.htm" target="TopicContent">DrawRobot Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_SimulationMain_DrawText.htm" target="TopicContent">DrawText Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_SimulationMain_DrawTextureRectange.htm" target="TopicContent">DrawTextureRectange Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_SimulationMain_GetKeyBoard.htm" target="TopicContent">GetKeyBoard Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_SimulationMain_Initialize.htm" target="TopicContent">Initialize Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_SimulationMain_LoadContent.htm" target="TopicContent">LoadContent Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_SimulationMain_LoadGround.htm" target="TopicContent">LoadGround Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_SimulationMain_LoadLines.htm" target="TopicContent">LoadLines Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_SimulationMain_TextureTo2DArray.htm" target="TopicContent">TextureTo2DArray Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_SimulationMain_UnloadContent.htm" target="TopicContent">UnloadContent Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_SimulationMain_Update.htm" target="TopicContent">Update Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_Attempt_7_SimulationMain_UpDateRobotPosition.htm" target="TopicContent">UpDateRobotPosition Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div id="TOCSizer" class="TOCSizer" onmousedown="OnMouseDown(event)" onselectstart="javascript: return false;"></div>
+
+<iframe id="TopicContent" name="TopicContent" class="TopicContent" src="html/N_.htm">
+This page uses an IFRAME but your browser does not support it.
+</iframe>
+
+</form>
+
+</body>
+
+</html>

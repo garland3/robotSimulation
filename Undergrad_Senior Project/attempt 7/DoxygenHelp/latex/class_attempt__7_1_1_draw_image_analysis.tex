@@ -1,0 +1,1122 @@
+\section{Attempt\_\-7.DrawImageAnalysis Class Reference}
+\label{class_attempt__7_1_1_draw_image_analysis}\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+
+
+This is a game component that implements IUpdateable. Draws the image analysis information.  
+
+
+
+
+Collaboration diagram for Attempt\_\-7.DrawImageAnalysis:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{class_attempt__7_1_1_draw_image_analysis__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf DrawImageAnalysis} (Game game, int {\bf screenWidth}, int {\bf screenHeight}, int {\bf updateSquareDimForDrawing}, int {\bf updateSquareDimForAnalysis}, int {\bf numberofLinesToFind}, int {\bf thetaIncrement}, int {\bf rhoIncrement}, List$<$ Viewport $>$ {\bf viewPortList}, {\bf ImageAnalysis} {\bf imageAnalysis})
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxyref{DrawImageAnalysis}{p.}{class_attempt__7_1_1_draw_image_analysis} class. \item\end{DoxyCompactList}\item 
+override void {\bf Initialize} ()
+\begin{DoxyCompactList}\small\item\em Allows the game component to perform any initialization it needs to before starting to run. This is where it can query for any required services and load content. \item\end{DoxyCompactList}\item 
+override void {\bf Update} (GameTime gameTime)
+\begin{DoxyCompactList}\small\item\em Allows the game component to update itself. \item\end{DoxyCompactList}\item 
+void {\bf UpdateColorArrayto3DRectangle} (Color[,] c)
+\item 
+override void {\bf Draw} (GameTime gameTime)
+\begin{DoxyCompactList}\small\item\em Calls methods to draw the analysis triangles and the Debug text. \item\end{DoxyCompactList}\item 
+void {\bf UpdateBoolMapto3DRectangle} (bool[,] c, double[$\,$] {\bf houghInfo})
+\begin{DoxyCompactList}\small\item\em Colors the analysis triangles based a trueFalse bool map. Also adds the Hough information If true then Blue. If false then Transparent. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void {\bf LoadContent} ()
+\begin{DoxyCompactList}\small\item\em Loads the SpriteBatch Content. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf BuildVertexArrayforDrawingSmallerNumberofTriangles} (bool[,] c)
+\begin{DoxyCompactList}\small\item\em Takes a bool map of and makes vertex positions based on the map. \item\end{DoxyCompactList}\item 
+void {\bf InsertLine} (Vector3 startLocation, Vector3 endLocation, Color c)
+\begin{DoxyCompactList}\small\item\em Updates the vertex information of the triangels for a line of a particular color based off its starting and ending position. \item\end{DoxyCompactList}\item 
+void {\bf AddHoughLinesColor} ()
+\begin{DoxyCompactList}\small\item\em Puts the hough information about the lines in the vertex array. \item\end{DoxyCompactList}\item 
+void {\bf DrawVertexArray2} ()
+\begin{DoxyCompactList}\small\item\em Draws the analysis rectangles that are in the \char`\"{}vertexArray2\char`\"{} and only draws the first count1D/3 in the array. \item\end{DoxyCompactList}\item 
+void {\bf DrawText} (int turnIndication, int totalWhiteCnt, double[$\,$] {\bf houghInfo})
+\item 
+void {\bf LoadVertexArray} ()
+\begin{DoxyCompactList}\small\item\em Loads the position of each triangle into the VertexArray. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf count1A}
+\begin{DoxyCompactList}\small\item\em These values are part of the double for loops that reduce the computational requirements. These are the values that are incremented. \item\end{DoxyCompactList}\item 
+int {\bf count2A}
+\item 
+int {\bf count1C}
+\item 
+int {\bf count2C}
+\item 
+int {\bf count1D} = 1
+\begin{DoxyCompactList}\small\item\em Other count usage. 1D = the number of vertexs to draw. So the number of triangels will be 1/3 this number. \item\end{DoxyCompactList}\item 
+int {\bf screenWidth}
+\begin{DoxyCompactList}\small\item\em The screenSize. \item\end{DoxyCompactList}\item 
+int {\bf screenHeight}
+\item 
+int {\bf updateSquareDimForDrawing}
+\begin{DoxyCompactList}\small\item\em The dimensions of the double for loops. \item\end{DoxyCompactList}\item 
+int {\bf updateSquareDimForAnalysis}
+\item 
+int {\bf numberofLinesToFind}
+\begin{DoxyCompactList}\small\item\em How many lines to find. \item\end{DoxyCompactList}\item 
+int {\bf thetaIncrement}
+\begin{DoxyCompactList}\small\item\em How precise the hough transform is. How large between possible values. \item\end{DoxyCompactList}\item 
+int {\bf rhoIncrement}
+\item 
+{\bf Camera} {\bf camera}
+\begin{DoxyCompactList}\small\item\em \doxyref{Camera}{p.}{class_attempt__7_1_1_camera} used to draw the triangles of what the robot is \char`\"{}thinking\char`\"{}. \item\end{DoxyCompactList}\item 
+List$<$ Viewport $>$ {\bf viewPortList}
+\begin{DoxyCompactList}\small\item\em List holding the viewports used in the simulation. This list is created in the Main simulation and then passed to this class when it is initiaized. \item\end{DoxyCompactList}\item 
+BasicEffect {\bf basicEffects}
+\begin{DoxyCompactList}\small\item\em BasicEffects for how to draw the triangles. \item\end{DoxyCompactList}\item 
+SpriteFont {\bf arial}
+\begin{DoxyCompactList}\small\item\em Font to use for drawing the debug/hough information. \item\end{DoxyCompactList}\item 
+SpriteBatch {\bf spriteBatch}
+\begin{DoxyCompactList}\small\item\em The spriteBatch is used to draw 2D graphics. \item\end{DoxyCompactList}\item 
+VertexPositionColor[$\,$] {\bf vertexArray}
+\begin{DoxyCompactList}\small\item\em VertexPositionColory array that stores the triangles of what the robot is \char`\"{}thinking\char`\"{}. Each triangle represents 1 pixel from the robot's view. So 640$\ast$480 triangles. \item\end{DoxyCompactList}\item 
+VertexPositionColor[$\,$] {\bf vertexArray2}
+\begin{DoxyCompactList}\small\item\em Stores vertex information about the houglines and white pixels. Each time a vertex is added count1D should be incremented. \item\end{DoxyCompactList}\item 
+double[$\,$] {\bf houghInfo}
+\begin{DoxyCompactList}\small\item\em Stores information about the hough. \item\end{DoxyCompactList}\item 
+{\bf ImageAnalysis} {\bf imageAnalysis}
+\begin{DoxyCompactList}\small\item\em The image analysis object associated with this class. \item\end{DoxyCompactList}\item 
+int[$\,$] {\bf vertexIndex}
+\begin{DoxyCompactList}\small\item\em A list of the vertexs to draw. \item\end{DoxyCompactList}\item 
+Vector3[$\,$] {\bf houghLineStartandStopVectors}
+\begin{DoxyCompactList}\small\item\em Stores info about where houghlines start and stop. Values 0=start of houghline Vector3, 1= End of houghLine Vector3. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a game component that implements IUpdateable. Draws the image analysis information. 
+
+Definition at line 20 of file DrawImageAnalysis2.cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!DrawImageAnalysis@{DrawImageAnalysis}}
+\index{DrawImageAnalysis@{DrawImageAnalysis}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{DrawImageAnalysis}]{\setlength{\rightskip}{0pt plus 5cm}Attempt\_\-7.DrawImageAnalysis.DrawImageAnalysis (
+\begin{DoxyParamCaption}
+\item[{Game}]{game, }
+\item[{int}]{screenWidth, }
+\item[{int}]{screenHeight, }
+\item[{int}]{updateSquareDimForDrawing, }
+\item[{int}]{updateSquareDimForAnalysis, }
+\item[{int}]{numberofLinesToFind, }
+\item[{int}]{thetaIncrement, }
+\item[{int}]{rhoIncrement, }
+\item[{List$<$ Viewport $>$}]{viewPortList, }
+\item[{{\bf ImageAnalysis}}]{imageAnalysis}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_draw_image_analysis_ac9260a734adf91c819f2dc5230607af3}
+
+
+Initializes a new instance of the \doxyref{DrawImageAnalysis}{p.}{class_attempt__7_1_1_draw_image_analysis} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the game associated with the calss\\
+\hline
+{\em screenWidth} & ScreenWidth\\
+\hline
+{\em screenHeight} & ScreenHeight\\
+\hline
+{\em updateSquareDimForDrawing} & How fast to update drawing. Obsolete\\
+\hline
+{\em updateSquareDimForAnalysis} & How fast to update analysis. This is used mostly for hough\\
+\hline
+{\em numberofLinesToFind} & How many lines to find in the picture\\
+\hline
+{\em thetaIncrement} & Quantitization of angle size, in degrees\\
+\hline
+{\em rhoIncrement} & Quantitization of rho size\\
+\hline
+{\em viewPortList} & A list of view ports\\
+\hline
+{\em imageAnalysis} & Associated imageAnalysis object.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 120 of file DrawImageAnalysis2.cs.
+
+
+\begin{DoxyCode}
+            : base(game)
+        {
+            this.screenWidth = screenWidth;
+            this.screenHeight = screenHeight;
+            this.updateSquareDimForDrawing = updateSquareDimForDrawing;
+            this.updateSquareDimForAnalysis = updateSquareDimForAnalysis;
+            this.numberofLinesToFind = numberofLinesToFind;
+            this.thetaIncrement = thetaIncrement;
+            this.rhoIncrement = rhoIncrement;
+            this.viewPortList = viewPortList;
+            this.imageAnalysis = imageAnalysis;
+        }
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!AddHoughLinesColor@{AddHoughLinesColor}}
+\index{AddHoughLinesColor@{AddHoughLinesColor}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{AddHoughLinesColor}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.DrawImageAnalysis.AddHoughLinesColor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_a2e2d0a8b750ee6b4e4a91584dc5907d2}
+
+
+Puts the hough information about the lines in the vertex array. 
+
+
+
+Definition at line 335 of file DrawImageAnalysis2.cs.
+
+
+\begin{DoxyCode}
+        {
+            // The first line found will be the darkest. The last line found will
+       be the lightest
+            int colorInc = (255 - 0) / this.numberofLinesToFind;
+
+            for (int i = 0; i < this.numberofLinesToFind; i++)
+            {
+                // Insert a hough line to from the start and stop positions calcu
+      lated before. 
+                this.InsertLine(this.houghLineStartandStopVectors[i * 4], this.
+      houghLineStartandStopVectors[1 + (i * 4)], new Color(255 - (i * colorInc), 0, 0))
+      ;
+
+                // Insert a line from 0,0 to closest point on hough line. This li
+      ne will be perpendicular to hough line. 
+                this.InsertLine(this.houghLineStartandStopVectors[(i * 4) + 2], V
+      ector3.Zero, new Color(150, 255 - (i * colorInc), 150));
+
+                // Insert a line from bottom middle to the closest point on hough
+       line. This line will be perpendicular to hough line. 
+                this.InsertLine(this.houghLineStartandStopVectors[(i * 4) + 3], n
+      ew Vector3(this.screenWidth / 2, this.screenHeight, 0), new Color(0, 255, 255 - (
+      i * colorInc)));
+            }
+        }       
+\end{DoxyCode}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_draw_image_analysis_a2e2d0a8b750ee6b4e4a91584dc5907d2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_draw_image_analysis_a2e2d0a8b750ee6b4e4a91584dc5907d2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!BuildVertexArrayforDrawingSmallerNumberofTriangles@{BuildVertexArrayforDrawingSmallerNumberofTriangles}}
+\index{BuildVertexArrayforDrawingSmallerNumberofTriangles@{BuildVertexArrayforDrawingSmallerNumberofTriangles}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{BuildVertexArrayforDrawingSmallerNumberofTriangles}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.DrawImageAnalysis.BuildVertexArrayforDrawingSmallerNumberofTriangles (
+\begin{DoxyParamCaption}
+\item[{bool}]{c[,]}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_a5412536d4836b4592239d052bc278f6e}
+
+
+Takes a bool map of and makes vertex positions based on the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The bool map\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 269 of file DrawImageAnalysis2.cs.
+
+
+\begin{DoxyCode}
+        {            
+            this.count1D = 0;
+            for (int x = 0; x < this.screenWidth; x++)
+            {
+                for (int y = 0; y < this.screenHeight;)
+                {
+                    if (c[x, y] == true)
+                    {
+                        int j = 1;
+
+                        // If there are multiple pixels in a row, then make them 
+      all into on larger triangle.
+                        // Find how many pixels are in  a row.
+                        while ((y + j) < this.screenHeight && c[x, y + j] == true
+      )
+                        {
+                            j++;
+                        }
+
+                        this.vertexArray2[this.count1D + 0].Position = new Vector
+      3(x, y, 0); // Put a vertex at the position.
+                        this.vertexArray2[this.count1D + 0].Color = Color.Blue;
+                        this.vertexArray2[this.count1D + 1].Position = new Vector
+      3(x + 3, y + j, 0); // Put another vertex a the position but +1 in the X directio
+      n
+                        this.vertexArray2[this.count1D + 1].Color = Color.Blue;
+                        this.vertexArray2[this.count1D + 2].Position = new Vector
+      3(x, y + 3 + j, 0); // Put another vertex a the position but +1 in the X directio
+      n
+                        this.vertexArray2[this.count1D + 2].Color = Color.Blue;
+                        this.count1D += 3;
+
+                        y += j;
+                    }
+                    else
+                    {
+                        y++;
+                    }
+                }
+            }
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_draw_image_analysis_a5412536d4836b4592239d052bc278f6e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!Draw@{Draw}}
+\index{Draw@{Draw}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}override void Attempt\_\-7.DrawImageAnalysis.Draw (
+\begin{DoxyParamCaption}
+\item[{GameTime}]{gameTime}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_draw_image_analysis_a3405b325467c48533528a5312bbbf08b}
+
+
+Calls methods to draw the analysis triangles and the Debug text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gameTime} & Clock Information\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 210 of file DrawImageAnalysis2.cs.
+
+
+\begin{DoxyCode}
+        {
+            Game.GraphicsDevice.Viewport = this.viewPortList[1]; // Right center 
+      view port           
+            this.DrawVertexArray2(); // Draw the triangles showing the analysis
+
+            Game.GraphicsDevice.Viewport = this.viewPortList[2]; // Right bottom
+            this.DrawText(this.imageAnalysis.GetTurnIndicator(), this.
+      imageAnalysis.GetWhiteCount(), this.houghInfo); // Draw the hough text info
+            base.Draw(gameTime);
+        }
+\end{DoxyCode}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_draw_image_analysis_a3405b325467c48533528a5312bbbf08b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!DrawText@{DrawText}}
+\index{DrawText@{DrawText}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{DrawText}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.DrawImageAnalysis.DrawText (
+\begin{DoxyParamCaption}
+\item[{int}]{turnIndication, }
+\item[{int}]{totalWhiteCnt, }
+\item[{double[$\,$]}]{houghInfo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_aaf4088bca6ef2e41e13c6a9bf0ca2a52}
+Draws the Text giving important information about the status of the analysis. 
+\begin{DoxyParams}{Parameters}
+{\em turnIndication} & Indicator of how much to turn\\
+\hline
+{\em totalWhiteCnt} & Number of white pixels found\\
+\hline
+{\em houghInfo} & Hough information array\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 374 of file DrawImageAnalysis2.cs.
+
+
+\begin{DoxyCode}
+        {
+            int spacing = 15;
+            this.spriteBatch.Begin();
+            this.spriteBatch.DrawString(this.arial, "slope", new Vector2(0, 0), C
+      olor.White);
+            this.spriteBatch.DrawString(this.arial, "yintercept", new Vector2(0, 
+      spacing * 1), Color.White);
+            this.spriteBatch.DrawString(this.arial, "rho", new Vector2(0, spacing
+       * 2), Color.White);
+            this.spriteBatch.DrawString(this.arial, "theta", new Vector2(0, spaci
+      ng * 3), Color.White);
+            this.spriteBatch.DrawString(this.arial, "x1", new Vector2(0, spacing 
+      * 4), Color.White);
+            this.spriteBatch.DrawString(this.arial, "y1", new Vector2(0, spacing 
+      * 5), Color.White);
+            this.spriteBatch.DrawString(this.arial, "BinSize", new Vector2(0, spa
+      cing * 6), Color.White);
+            this.spriteBatch.DrawString(this.arial, "xTrans = ", new Vector2(0, s
+      pacing * 7), Color.White);
+            this.spriteBatch.DrawString(this.arial, "yTrans = ", new Vector2(0, s
+      pacing * 8), Color.White);
+            this.spriteBatch.DrawString(this.arial, "Distance = ", new Vector2(0,
+       spacing * 9), Color.White);
+            this.spriteBatch.DrawString(this.arial, "Angle = ", new Vector2(0, sp
+      acing * 10), Color.White);
+            this.spriteBatch.DrawString(this.arial, "Turn Indicator = " + turnInd
+      ication.ToString(), new Vector2(0, spacing * 11), Color.White);
+            this.spriteBatch.DrawString(this.arial, "White Count = " + totalWhite
+      Cnt.ToString() + " Vertexs = " + this.count1D.ToString(), new Vector2(0, spacing 
+      * 12), Color.White);
+            this.spriteBatch.DrawString(this.arial, "Number Of lines To find = " 
+      + this.numberofLinesToFind.ToString() + " -  theta Average = " + this.houghInfo[(
+      this.numberofLinesToFind * 11)].ToString() + "  - rho Average = " + this.
+      houghInfo[(this.numberofLinesToFind * 11) + 1].ToString(), new Vector2(0, spacing
+       * 13), Color.White);
+            this.spriteBatch.DrawString(this.arial, "Singualarites Old:" + this.
+      imageAnalysis.GetSingularitesOldHough() + " New = " + this.imageAnalysis.GetSingu
+      laritiesNewHough(), new Vector2(0, spacing * 14), Color.White);
+            this.spriteBatch.DrawString(this.arial, "Hough Mode " + this.
+      imageAnalysis.GetHoughMode(), new Vector2(0, spacing * 15), Color.White);
+
+            int spacingForText = (GraphicsDevice.Viewport.Width - 50) / this.
+      numberofLinesToFind;
+
+            // Insert the hough data for each line. 
+            for (int j = 0; j < this.numberofLinesToFind; j++)
+            {
+                for (int i = 0; i < 11; i++)
+                {
+                    this.spriteBatch.DrawString(this.arial, houghInfo[(j * 11) + 
+      i].ToString(), new Vector2(50 + (spacingForText * j), i * spacing), Color.White);
+      
+                }
+            }
+
+            this.spriteBatch.End();
+        }
+\end{DoxyCode}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_draw_image_analysis_aaf4088bca6ef2e41e13c6a9bf0ca2a52_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_draw_image_analysis_aaf4088bca6ef2e41e13c6a9bf0ca2a52_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!DrawVertexArray2@{DrawVertexArray2}}
+\index{DrawVertexArray2@{DrawVertexArray2}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{DrawVertexArray2}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.DrawImageAnalysis.DrawVertexArray2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_a4729388d94926e86a7ecd6933233638b}
+
+
+Draws the analysis rectangles that are in the \char`\"{}vertexArray2\char`\"{} and only draws the first count1D/3 in the array. 
+
+
+
+Definition at line 356 of file DrawImageAnalysis2.cs.
+
+
+\begin{DoxyCode}
+        {
+            if (this.count1D != 0)
+            {
+                foreach (EffectPass pass in this.basicEffects.CurrentTechnique.Pa
+      sses)
+                {
+                    pass.Apply();
+                    GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(Primit
+      iveType.TriangleList, this.vertexArray2, 0, this.count1D / 3);
+                }
+            }
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_draw_image_analysis_a4729388d94926e86a7ecd6933233638b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}override void Attempt\_\-7.DrawImageAnalysis.Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_draw_image_analysis_ae271911b749fc6bad5f303da0f6b895d}
+
+
+Allows the game component to perform any initialization it needs to before starting to run. This is where it can query for any required services and load content. 
+
+
+
+Definition at line 138 of file DrawImageAnalysis2.cs.
+
+
+\begin{DoxyCode}
+        {
+            // Create a new SpriteBatch, which can be used to draw 2D textures.
+            this.spriteBatch = new SpriteBatch(Game.GraphicsDevice);
+
+            this.houghInfo = this.imageAnalysis.GetHoughInfo();           
+            this.arial = Game.Content.Load<SpriteFont>("Arial"); // Load the font
+      
+
+            // Camera needed for the analysis picture 
+            int xposition = this.screenHeight * 50 / 100;
+            int yposition = this.screenWidth * 50 / 100;
+            this.camera = new Camera(Game, new Vector3(yposition, xposition, -590
+      ), new Vector3(yposition, xposition, 0), -Vector3.UnitY, true); // Unit x for upd
+      irection
+            this.Game.Components.Add(this.camera);
+
+            this.vertexIndex = new int[this.screenHeight * this.screenWidth * 2];
+                  
+
+            this.LoadVertexArray(); // Loads the vertexs needed to draw the analy
+      sis triangles
+            this.vertexArray2 = new VertexPositionColor[65535]; // The vertex arr
+      ay for the analysis triangles , the largest this could be is 65535 = 16 bit
+            for (int i = 0; i < 65535; i++)
+            {
+                this.vertexArray2[i] = new VertexPositionColor(Vector3.UnitX, Col
+      or.Blue);
+            }
+
+            base.Initialize();
+        }
+\end{DoxyCode}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_draw_image_analysis_ae271911b749fc6bad5f303da0f6b895d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!InsertLine@{InsertLine}}
+\index{InsertLine@{InsertLine}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{InsertLine}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.DrawImageAnalysis.InsertLine (
+\begin{DoxyParamCaption}
+\item[{Vector3}]{startLocation, }
+\item[{Vector3}]{endLocation, }
+\item[{Color}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_aa1273c30c63d4963aebfede894eec3e4}
+
+
+Updates the vertex information of the triangels for a line of a particular color based off its starting and ending position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em startLocation} & Start position of the line. \\
+\hline
+{\em endLocation} & End position of the line \\
+\hline
+{\em c} & Color to draw the line. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 311 of file DrawImageAnalysis2.cs.
+
+
+\begin{DoxyCode}
+        {           
+            // Make a line, but make the number of points dependent on the length
+       of the line. 
+            int incrementNumber = (int)Vector3.Distance(startLocation, endLocatio
+      n) / 10;
+            for (int i = 0; i < incrementNumber; i++)
+            {
+                // Find each points location 
+                Vector3 lineLocation1 = Vector3.Lerp(startLocation, endLocation, 
+      (float)(i * 1f / incrementNumber));
+                {
+                    // Make the point 5 wide
+                    this.vertexArray2[this.count1D + 0].Position = new Vector3(li
+      neLocation1.X, lineLocation1.Y, 0); // Put a vertex at the position.
+                    this.vertexArray2[this.count1D + 0].Color = c;
+                    this.vertexArray2[this.count1D + 1].Position = new Vector3(li
+      neLocation1.X + 10, lineLocation1.Y, 0); // Put another vertex a the position but
+       +1 in the X direction
+                    this.vertexArray2[this.count1D + 1].Color = c;
+                    this.vertexArray2[this.count1D + 2].Position = new Vector3(li
+      neLocation1.X, lineLocation1.Y + 10, 0); // Put another vertex a the position but
+       +1 in the X direction
+                    this.vertexArray2[this.count1D + 2].Color = c;
+                    this.count1D += 3;                    
+                }
+            }
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_draw_image_analysis_aa1273c30c63d4963aebfede894eec3e4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!LoadContent@{LoadContent}}
+\index{LoadContent@{LoadContent}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{LoadContent}]{\setlength{\rightskip}{0pt plus 5cm}override void Attempt\_\-7.DrawImageAnalysis.LoadContent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [protected]}}\label{class_attempt__7_1_1_draw_image_analysis_affaba058b8e77f01efcba3f6ded28dea}
+
+
+Loads the SpriteBatch Content. 
+
+
+
+Definition at line 260 of file DrawImageAnalysis2.cs.
+
+
+\begin{DoxyCode}
+        {
+            base.LoadContent();
+        }
+\end{DoxyCode}
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!LoadVertexArray@{LoadVertexArray}}
+\index{LoadVertexArray@{LoadVertexArray}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{LoadVertexArray}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.DrawImageAnalysis.LoadVertexArray (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_aea47cb9ef13fda648ba3e8acb8808ed3}
+
+
+Loads the position of each triangle into the VertexArray. 
+
+
+
+Definition at line 413 of file DrawImageAnalysis2.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.vertexArray = new VertexPositionColor[(this.screenWidth * this.
+      screenHeight) + 5]; // The vertex array for the analysis triangles
+
+            for (int x = this.screenHeight - 1; x > 0; x--)
+            {
+                for (int y = this.screenWidth - 1; y > 0; y -= 2)
+                {
+                    this.vertexArray[(x * this.screenWidth) - y] = new VertexPosi
+      tionColor(new Vector3(x, y, 0), Color.White); // Put a vertex at the position.
+                    this.vertexArray[(x * this.screenWidth) - (y + 1)] = new Vert
+      exPositionColor(new Vector3(x + 1, y, 0), Color.White); // Put another vertex a t
+      he position but +1 in the X direction
+                }
+            }
+
+            // Create the basic effect. 
+            this.basicEffects = new BasicEffect(Game.GraphicsDevice);
+            this.basicEffects.TextureEnabled = false;
+            this.basicEffects.VertexColorEnabled = true;
+            this.basicEffects.World = this.camera.World;
+            this.basicEffects.View = this.camera.View;
+            this.basicEffects.Projection = this.camera.Projection;
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_draw_image_analysis_aea47cb9ef13fda648ba3e8acb8808ed3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!Update@{Update}}
+\index{Update@{Update}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}override void Attempt\_\-7.DrawImageAnalysis.Update (
+\begin{DoxyParamCaption}
+\item[{GameTime}]{gameTime}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_draw_image_analysis_a6de17ba6756456372d8d6e2a69d6ce45}
+
+
+Allows the game component to update itself. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gameTime} & Provides a snapshot of timing values.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 168 of file DrawImageAnalysis2.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.houghInfo = this.imageAnalysis.GetHoughInfo();
+            this.houghLineStartandStopVectors = this.imageAnalysis.GetHoughStarta
+      ndStopVectors();
+            this.BuildVertexArrayforDrawingSmallerNumberofTriangles(this.
+      imageAnalysis.GetTrueFalseMaptoDraw());
+            this.AddHoughLinesColor(); // Add the hough lines. 
+
+            base.Update(gameTime);
+        }
+\end{DoxyCode}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_draw_image_analysis_a6de17ba6756456372d8d6e2a69d6ce45_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!UpdateBoolMapto3DRectangle@{UpdateBoolMapto3DRectangle}}
+\index{UpdateBoolMapto3DRectangle@{UpdateBoolMapto3DRectangle}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{UpdateBoolMapto3DRectangle}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.DrawImageAnalysis.UpdateBoolMapto3DRectangle (
+\begin{DoxyParamCaption}
+\item[{bool}]{c[,], }
+\item[{double[$\,$]}]{houghInfo}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_draw_image_analysis_ad0933abc7604eb194143440f1b875383}
+
+
+Colors the analysis triangles based a trueFalse bool map. Also adds the Hough information If true then Blue. If false then Transparent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & True False map\\
+\hline
+{\em houghInfo} & Hough Information\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 226 of file DrawImageAnalysis2.cs.
+
+
+\begin{DoxyCode}
+        {
+            for (int x = this.count1A; x < this.screenWidth; x += this.
+      updateSquareDimForDrawing)
+            {
+                for (int y = this.count2A; y < this.screenHeight; y += this.
+      updateSquareDimForDrawing)
+                {
+                    if (c[x, y] == true)
+                    {
+                        this.vertexArray[x + (y * this.screenWidth)].Color = Colo
+      r.White;
+                    }
+                    else
+                    {
+                        this.vertexArray[x + (y * this.screenWidth)].Color = Colo
+      r.Transparent;
+                    }
+                }
+            }
+
+            this.AddHoughLinesColor(); // Add the hough lines. 
+            this.count1A++;
+            if (this.count1A == this.updateSquareDimForDrawing)
+            {
+                this.count1A = 0;
+                this.count2A++;
+
+                if (this.count2A == this.updateSquareDimForDrawing)
+                {
+                    this.count2A = 0;
+                }
+            }
+        }
+\end{DoxyCode}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_draw_image_analysis_ad0933abc7604eb194143440f1b875383_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!UpdateColorArrayto3DRectangle@{UpdateColorArrayto3DRectangle}}
+\index{UpdateColorArrayto3DRectangle@{UpdateColorArrayto3DRectangle}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{UpdateColorArrayto3DRectangle}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.DrawImageAnalysis.UpdateColorArrayto3DRectangle (
+\begin{DoxyParamCaption}
+\item[{Color}]{c[,]}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_draw_image_analysis_a5fc3cbd0f863118307ed7b61e778e52e}
+Takes a 2D color array and colors the triangles. 
+\begin{DoxyParams}{Parameters}
+{\em c} & Color array to make into triangles\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 182 of file DrawImageAnalysis2.cs.
+
+
+\begin{DoxyCode}
+        {
+            for (int x = this.count1C; x < this.screenWidth; x += this.
+      updateSquareDimForDrawing)
+            {
+                for (int y = this.count2C; y < this.screenHeight; y += this.
+      updateSquareDimForDrawing)
+                {
+                    this.vertexArray[x + (y * this.screenWidth)].Color = c[x, y];
+      
+                }
+            }
+
+            this.count1C++;
+            if (this.count1C == this.updateSquareDimForDrawing)
+            {
+                this.count1C = 0;
+                this.count2C++;
+                this.AddHoughLinesColor(); // Add the hough lines. 
+
+                if (this.count2C == this.updateSquareDimForDrawing)
+                {
+                    this.count2C = 0;
+                }
+            }
+        }
+\end{DoxyCode}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_draw_image_analysis_a5fc3cbd0f863118307ed7b61e778e52e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!arial@{arial}}
+\index{arial@{arial}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{arial}]{\setlength{\rightskip}{0pt plus 5cm}SpriteFont {\bf Attempt\_\-7.DrawImageAnalysis.arial}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_a531efa4688cdabd3c3bf99a5f1777d9c}
+
+
+Font to use for drawing the debug/hough information. 
+
+
+
+Definition at line 70 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!basicEffects@{basicEffects}}
+\index{basicEffects@{basicEffects}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{basicEffects}]{\setlength{\rightskip}{0pt plus 5cm}BasicEffect {\bf Attempt\_\-7.DrawImageAnalysis.basicEffects}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_a36779d384eaa0c4188a16758540403e0}
+
+
+BasicEffects for how to draw the triangles. 
+
+
+
+Definition at line 65 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!camera@{camera}}
+\index{camera@{camera}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera} {\bf Attempt\_\-7.DrawImageAnalysis.camera}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_a96d5f79f1b1a104d2ab3f47aa6616d37}
+
+
+\doxyref{Camera}{p.}{class_attempt__7_1_1_camera} used to draw the triangles of what the robot is \char`\"{}thinking\char`\"{}. 
+
+
+
+Definition at line 55 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!count1A@{count1A}}
+\index{count1A@{count1A}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{count1A}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Attempt\_\-7.DrawImageAnalysis.count1A}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_a0c212b6483e545cdb54b744f26ae5aaf}
+
+
+These values are part of the double for loops that reduce the computational requirements. These are the values that are incremented. 
+
+
+
+Definition at line 25 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!count1C@{count1C}}
+\index{count1C@{count1C}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{count1C}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Attempt\_\-7.DrawImageAnalysis.count1C}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_afda6ca182d55b530c3188413bfced70c}
+
+
+Definition at line 25 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!count1D@{count1D}}
+\index{count1D@{count1D}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{count1D}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Attempt\_\-7.DrawImageAnalysis.count1D} = 1\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_a0978bfdff294a91bc2c99d55c29a9e2f}
+
+
+Other count usage. 1D = the number of vertexs to draw. So the number of triangels will be 1/3 this number. 
+
+
+
+Definition at line 30 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!count2A@{count2A}}
+\index{count2A@{count2A}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{count2A}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Attempt\_\-7.DrawImageAnalysis.count2A}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_ab82cc146a1cdfc52336d1ae86eb89157}
+
+
+Definition at line 25 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!count2C@{count2C}}
+\index{count2C@{count2C}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{count2C}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Attempt\_\-7.DrawImageAnalysis.count2C}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_aed235d7846bb2f2ace68331beb4ca7f2}
+
+
+Definition at line 25 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!houghInfo@{houghInfo}}
+\index{houghInfo@{houghInfo}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{houghInfo}]{\setlength{\rightskip}{0pt plus 5cm}double [$\,$] {\bf Attempt\_\-7.DrawImageAnalysis.houghInfo}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_a29f389c1637b758aea8700cc3b4d8c92}
+
+
+Stores information about the hough. 
+
+
+
+Definition at line 90 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!houghLineStartandStopVectors@{houghLineStartandStopVectors}}
+\index{houghLineStartandStopVectors@{houghLineStartandStopVectors}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{houghLineStartandStopVectors}]{\setlength{\rightskip}{0pt plus 5cm}Vector3 [$\,$] {\bf Attempt\_\-7.DrawImageAnalysis.houghLineStartandStopVectors}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_a295eefafafe824bfc196c0d7e88f55aa}
+
+
+Stores info about where houghlines start and stop. Values 0=start of houghline Vector3, 1= End of houghLine Vector3. 
+
+
+
+Definition at line 105 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!imageAnalysis@{imageAnalysis}}
+\index{imageAnalysis@{imageAnalysis}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{imageAnalysis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ImageAnalysis} {\bf Attempt\_\-7.DrawImageAnalysis.imageAnalysis}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_a111f5f187dc4143d67b30d98031d0968}
+
+
+The image analysis object associated with this class. 
+
+
+
+Definition at line 95 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!numberofLinesToFind@{numberofLinesToFind}}
+\index{numberofLinesToFind@{numberofLinesToFind}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{numberofLinesToFind}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Attempt\_\-7.DrawImageAnalysis.numberofLinesToFind}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_ac6adfc217d9308380d780ef2c5798a07}
+
+
+How many lines to find. 
+
+
+
+Definition at line 45 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!rhoIncrement@{rhoIncrement}}
+\index{rhoIncrement@{rhoIncrement}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{rhoIncrement}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Attempt\_\-7.DrawImageAnalysis.rhoIncrement}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_ad491420363f8fb9860c7002473568704}
+
+
+Definition at line 50 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!screenHeight@{screenHeight}}
+\index{screenHeight@{screenHeight}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{screenHeight}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Attempt\_\-7.DrawImageAnalysis.screenHeight}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_a6c238510c027ef883dec2ff739a3e2b3}
+
+
+Definition at line 35 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!screenWidth@{screenWidth}}
+\index{screenWidth@{screenWidth}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{screenWidth}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Attempt\_\-7.DrawImageAnalysis.screenWidth}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_adfb22307c8f2e999485d67b74fe64615}
+
+
+The screenSize. 
+
+
+
+Definition at line 35 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!spriteBatch@{spriteBatch}}
+\index{spriteBatch@{spriteBatch}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{spriteBatch}]{\setlength{\rightskip}{0pt plus 5cm}SpriteBatch {\bf Attempt\_\-7.DrawImageAnalysis.spriteBatch}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_a76002b58f1c462ae159251486137f677}
+
+
+The spriteBatch is used to draw 2D graphics. 
+
+
+
+Definition at line 75 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!thetaIncrement@{thetaIncrement}}
+\index{thetaIncrement@{thetaIncrement}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{thetaIncrement}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Attempt\_\-7.DrawImageAnalysis.thetaIncrement}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_a68ba8db80a4b57a8f45cc9242f0596a2}
+
+
+How precise the hough transform is. How large between possible values. 
+
+
+
+Definition at line 50 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!updateSquareDimForAnalysis@{updateSquareDimForAnalysis}}
+\index{updateSquareDimForAnalysis@{updateSquareDimForAnalysis}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{updateSquareDimForAnalysis}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Attempt\_\-7.DrawImageAnalysis.updateSquareDimForAnalysis}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_ae466c737efe90f065c9c5bcd75a09444}
+
+
+Definition at line 40 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!updateSquareDimForDrawing@{updateSquareDimForDrawing}}
+\index{updateSquareDimForDrawing@{updateSquareDimForDrawing}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{updateSquareDimForDrawing}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Attempt\_\-7.DrawImageAnalysis.updateSquareDimForDrawing}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_ab08b69ce270784325033fba31585a81c}
+
+
+The dimensions of the double for loops. 
+
+
+
+Definition at line 40 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!vertexArray@{vertexArray}}
+\index{vertexArray@{vertexArray}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{vertexArray}]{\setlength{\rightskip}{0pt plus 5cm}VertexPositionColor [$\,$] {\bf Attempt\_\-7.DrawImageAnalysis.vertexArray}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_ac921c38d0ea4e068fff70230356a9257}
+
+
+VertexPositionColory array that stores the triangles of what the robot is \char`\"{}thinking\char`\"{}. Each triangle represents 1 pixel from the robot's view. So 640$\ast$480 triangles. 
+
+
+
+Definition at line 80 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!vertexArray2@{vertexArray2}}
+\index{vertexArray2@{vertexArray2}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{vertexArray2}]{\setlength{\rightskip}{0pt plus 5cm}VertexPositionColor [$\,$] {\bf Attempt\_\-7.DrawImageAnalysis.vertexArray2}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_aa7d53807833a1337862f7fd8f17f0aa7}
+
+
+Stores vertex information about the houglines and white pixels. Each time a vertex is added count1D should be incremented. 
+
+
+
+Definition at line 85 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!vertexIndex@{vertexIndex}}
+\index{vertexIndex@{vertexIndex}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{vertexIndex}]{\setlength{\rightskip}{0pt plus 5cm}int [$\,$] {\bf Attempt\_\-7.DrawImageAnalysis.vertexIndex}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_a453387b044257078cc5a6b8cb5c736b1}
+
+
+A list of the vertexs to draw. 
+
+
+
+Definition at line 100 of file DrawImageAnalysis2.cs.
+
+\index{Attempt\_\-7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}!viewPortList@{viewPortList}}
+\index{viewPortList@{viewPortList}!Attempt_7::DrawImageAnalysis@{Attempt\_\-7::DrawImageAnalysis}}
+\subsubsection[{viewPortList}]{\setlength{\rightskip}{0pt plus 5cm}List$<$Viewport$>$ {\bf Attempt\_\-7.DrawImageAnalysis.viewPortList}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_draw_image_analysis_ab649a91f61c546824edd468642c77fa3}
+
+
+List holding the viewports used in the simulation. This list is created in the Main simulation and then passed to this class when it is initiaized. 
+
+
+
+Definition at line 60 of file DrawImageAnalysis2.cs.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/{\bf DrawImageAnalysis2.cs}\end{DoxyCompactItemize}

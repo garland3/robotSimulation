@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>grass11.jpg</Source>
+      <Name>grass11</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\grass11.xnb</Output>
+      <Time>2011-03-05T21:18:43-05:00</Time>
+    </Item>
+    <Item>
+      <Source>blacksquare.jpg</Source>
+      <Name>blacksquare</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\blacksquare.xnb</Output>
+      <Time>2011-01-06T21:28:16-05:00</Time>
+    </Item>
+    <Item>
+      <Source>ground.jpg</Source>
+      <Name>ground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\ground.xnb</Output>
+      <Time>2011-01-11T20:20:44-05:00</Time>
+    </Item>
+    <Item>
+      <Source>grass2.jpg</Source>
+      <Name>grass2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\grass2.xnb</Output>
+      <Time>2011-03-05T21:35:43-05:00</Time>
+    </Item>
+    <Item>
+      <Source>grass3.jpg</Source>
+      <Name>grass3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\grass3.xnb</Output>
+      <Time>2011-03-05T21:37:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>flashlight.fbx</Source>
+      <Name>flashlight</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\flashlight.xnb</Output>
+      <Time>2011-01-03T23:41:49-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\flashlight_0.xml</Key>
+        <Value>2012-11-17T10:52:57.7390243-05:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Arial.spritefont</Source>
+      <Name>Arial</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\Arial.xnb</Output>
+      <Time>2011-02-12T19:24:24-05:00</Time>
+    </Item>
+    <Item>
+      <Source>ArialLarge.spritefont</Source>
+      <Name>ArialLarge</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\ArialLarge.xnb</Output>
+      <Time>2011-02-28T16:23:24-05:00</Time>
+    </Item>
+    <Item>
+      <Source>flashlight.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\flashlight_0.xml</Output>
+      <Time>2011-01-03T23:41:49-05:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Release</BuildConfiguration>
+      <CompressContent>true</CompressContent>
+      <RootDirectory>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7Content\obj\x86\Release\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2011-08-28T13:18:12.0881197-04:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

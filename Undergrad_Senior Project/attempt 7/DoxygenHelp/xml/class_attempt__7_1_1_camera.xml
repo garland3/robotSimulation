@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="class_attempt__7_1_1_camera" kind="class" prot="public">
+    <compoundname>Attempt_7::Camera</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_attempt__7_1_1_camera_1ab58715b7ebc0eb1b0181638331e7fe04" prot="public" static="no" mutable="no">
+        <type>Matrix</type>
+        <definition>Matrix Attempt_7.Camera.View</definition>
+        <argsstring></argsstring>
+        <name>View</name>
+        <briefdescription>
+<para>Matrix representation of the view determined by the position, target, and updirection. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" line="30" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_camera_1a00dbb72fcaebdd53a8206071f2da796b" compoundref="_camera_8cs" startline="75" endline="86">Attempt_7.Camera::Camera</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a6600ca6533a6db25d8796c13b63c1a40" compoundref="_simulation_main_8cs" startline="564" endline="580">Attempt_7.SimulationMain::DrawColorLines</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1abbd56e335ac6f87700aa78afdea7c6c8" compoundref="_simulation_main_8cs" startline="586" endline="601">Attempt_7.SimulationMain::DrawGrass</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1acfd54a5aa5fb4311b2938ee7ab121022" compoundref="_simulation_main_8cs" startline="545" endline="558">Attempt_7.SimulationMain::DrawRobot</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aea47cb9ef13fda648ba3e8acb8808ed3" compoundref="_draw_image_analysis2_8cs" startline="545" endline="578">Attempt_7.DrawImageAnalysis::LoadVertexArray</referencedby>
+        <referencedby refid="class_attempt__7_1_1_camera_1a0090d02f2acd45b0088ecd0123be57ef" compoundref="_camera_8cs" startline="100" endline="111">Attempt_7.Camera::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_camera_1afad745cd526a8c616843da8464a4d256" prot="public" static="no" mutable="no">
+        <type>Matrix</type>
+        <definition>Matrix Attempt_7.Camera.Projection</definition>
+        <argsstring></argsstring>
+        <name>Projection</name>
+        <briefdescription>
+<para>Matrix representation of the view determined by the angle of the field of view (Pi/4), aspectRatio, nearest plane visible (1), and farthest plane visible (1200) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" line="35" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_camera_1a00dbb72fcaebdd53a8206071f2da796b" compoundref="_camera_8cs" startline="75" endline="86">Attempt_7.Camera::Camera</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a6600ca6533a6db25d8796c13b63c1a40" compoundref="_simulation_main_8cs" startline="564" endline="580">Attempt_7.SimulationMain::DrawColorLines</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1abbd56e335ac6f87700aa78afdea7c6c8" compoundref="_simulation_main_8cs" startline="586" endline="601">Attempt_7.SimulationMain::DrawGrass</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1acfd54a5aa5fb4311b2938ee7ab121022" compoundref="_simulation_main_8cs" startline="545" endline="558">Attempt_7.SimulationMain::DrawRobot</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aea47cb9ef13fda648ba3e8acb8808ed3" compoundref="_draw_image_analysis2_8cs" startline="545" endline="578">Attempt_7.DrawImageAnalysis::LoadVertexArray</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_camera_1a3bc8d53e4d9b029bb75f8f0e7b09cc17" prot="public" static="no" mutable="no">
+        <type>Matrix</type>
+        <definition>Matrix Attempt_7.Camera.World</definition>
+        <argsstring></argsstring>
+        <name>World</name>
+        <briefdescription>
+<para>Matrix representing how the real world cordinates differ from that of the rendering by the camera. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" line="40" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_camera_1a00dbb72fcaebdd53a8206071f2da796b" compoundref="_camera_8cs" startline="75" endline="86">Attempt_7.Camera::Camera</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a6600ca6533a6db25d8796c13b63c1a40" compoundref="_simulation_main_8cs" startline="564" endline="580">Attempt_7.SimulationMain::DrawColorLines</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1abbd56e335ac6f87700aa78afdea7c6c8" compoundref="_simulation_main_8cs" startline="586" endline="601">Attempt_7.SimulationMain::DrawGrass</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1acfd54a5aa5fb4311b2938ee7ab121022" compoundref="_simulation_main_8cs" startline="545" endline="558">Attempt_7.SimulationMain::DrawRobot</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aea47cb9ef13fda648ba3e8acb8808ed3" compoundref="_draw_image_analysis2_8cs" startline="545" endline="578">Attempt_7.DrawImageAnalysis::LoadVertexArray</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_attempt__7_1_1_camera_1ac5ff73c169cf1db99dc2c95e4a2d8464" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 Attempt_7.Camera.cameraPosition</definition>
+        <argsstring></argsstring>
+        <name>cameraPosition</name>
+        <initializer> Vector3.Zero</initializer>
+        <briefdescription>
+<para>The position of the camera. Defualt = 0,0,0. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" line="45" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_camera_1a00dbb72fcaebdd53a8206071f2da796b" compoundref="_camera_8cs" startline="75" endline="86">Attempt_7.Camera::Camera</referencedby>
+        <referencedby refid="class_attempt__7_1_1_camera_1a0574b1158af6b8e99f5d2b21fbc3c7a8" compoundref="_camera_8cs" startline="117" endline="120">Attempt_7.Camera::GetCameraPosition</referencedby>
+        <referencedby refid="class_attempt__7_1_1_camera_1a950a4219356e02b8b8eddf506c03743f" compoundref="_camera_8cs" startline="127" endline="131">Attempt_7.Camera::SetCameraPositionAndTarget</referencedby>
+        <referencedby refid="class_attempt__7_1_1_camera_1a0090d02f2acd45b0088ecd0123be57ef" compoundref="_camera_8cs" startline="100" endline="111">Attempt_7.Camera::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_camera_1a2ab493dc1de314f87a198146bf87db54" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 Attempt_7.Camera.target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <initializer> Vector3.Zero</initializer>
+        <briefdescription>
+<para>Target of the camera = a point in 3D space that the camera is pointed at. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" line="50" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_camera_1a00dbb72fcaebdd53a8206071f2da796b" compoundref="_camera_8cs" startline="75" endline="86">Attempt_7.Camera::Camera</referencedby>
+        <referencedby refid="class_attempt__7_1_1_camera_1a950a4219356e02b8b8eddf506c03743f" compoundref="_camera_8cs" startline="127" endline="131">Attempt_7.Camera::SetCameraPositionAndTarget</referencedby>
+        <referencedby refid="class_attempt__7_1_1_camera_1a0090d02f2acd45b0088ecd0123be57ef" compoundref="_camera_8cs" startline="100" endline="111">Attempt_7.Camera::Update</referencedby>
+        <referencedby refid="class_attempt__7_1_1_camera_1a26c1b12ed3fea81c3bed64f0389cc9d1" compoundref="_camera_8cs" startline="154" endline="180">Attempt_7.Camera::UpdateKeyBoard</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_camera_1a6923d9ddebf1709547640a09c494bf7f" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 Attempt_7.Camera.updirection</definition>
+        <argsstring></argsstring>
+        <name>updirection</name>
+        <briefdescription>
+<para>The 3D vector that defines which direction is up for the camera. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" line="55" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" bodystart="55" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_camera_1a00dbb72fcaebdd53a8206071f2da796b" compoundref="_camera_8cs" startline="75" endline="86">Attempt_7.Camera::Camera</referencedby>
+        <referencedby refid="class_attempt__7_1_1_camera_1a0090d02f2acd45b0088ecd0123be57ef" compoundref="_camera_8cs" startline="100" endline="111">Attempt_7.Camera::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_camera_1a2595f02eb31f80ea60343ba98fdbc5ff" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 Attempt_7.Camera.mouseOffset</definition>
+        <argsstring></argsstring>
+        <name>mouseOffset</name>
+        <briefdescription>
+<para>If the camera is mouse controlled, how much should the mouse cordinates differ from 3D cordinates in space. How much should they be translated in 3D space. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" line="60" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" bodystart="60" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_camera_1a00dbb72fcaebdd53a8206071f2da796b" compoundref="_camera_8cs" startline="75" endline="86">Attempt_7.Camera::Camera</referencedby>
+        <referencedby refid="class_attempt__7_1_1_camera_1a26c1b12ed3fea81c3bed64f0389cc9d1" compoundref="_camera_8cs" startline="154" endline="180">Attempt_7.Camera::UpdateKeyBoard</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_camera_1afa316d43d2017c000a0650706956d08b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Attempt_7.Camera.isMouseDependent</definition>
+        <argsstring></argsstring>
+        <name>isMouseDependent</name>
+        <briefdescription>
+<para>If the camera is mouse dependent than the position of the mouse determines the position of the camera in 3D space. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" line="65" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" bodystart="65" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_camera_1a00dbb72fcaebdd53a8206071f2da796b" compoundref="_camera_8cs" startline="75" endline="86">Attempt_7.Camera::Camera</referencedby>
+        <referencedby refid="class_attempt__7_1_1_camera_1a0090d02f2acd45b0088ecd0123be57ef" compoundref="_camera_8cs" startline="100" endline="111">Attempt_7.Camera::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_attempt__7_1_1_camera_1a00dbb72fcaebdd53a8206071f2da796b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Attempt_7.Camera.Camera</definition>
+        <argsstring>(Game game, Vector3 pos, Vector3 target, Vector3 up, bool isMouseDependent)</argsstring>
+        <name>Camera</name>
+        <param>
+          <type>Game</type>
+          <declname>game</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>up</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isMouseDependent</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_attempt__7_1_1_camera" kindref="compound">Camera</ref> class. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>game</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game object of the simulation</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The start position of the camera in 3D space</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A point in 3D space that the camera will point at. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>up</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 3D vector that determines which direction is up for the camera</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isMouseDependent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sets the camera&apos;s position based on the mouse if true</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" line="77" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" bodystart="75" bodyend="86"/>
+        <references refid="class_attempt__7_1_1_camera_1ac5ff73c169cf1db99dc2c95e4a2d8464" compoundref="_camera_8cs" startline="45">Attempt_7.Camera::cameraPosition</references>
+        <references refid="class_attempt__7_1_1_camera_1afa316d43d2017c000a0650706956d08b" compoundref="_camera_8cs" startline="65">Attempt_7.Camera::isMouseDependent</references>
+        <references refid="class_attempt__7_1_1_camera_1a2595f02eb31f80ea60343ba98fdbc5ff" compoundref="_camera_8cs" startline="60">Attempt_7.Camera::mouseOffset</references>
+        <references refid="class_attempt__7_1_1_camera_1afad745cd526a8c616843da8464a4d256" compoundref="_camera_8cs" startline="35">Attempt_7.Camera::Projection</references>
+        <references refid="class_attempt__7_1_1_camera_1a2ab493dc1de314f87a198146bf87db54" compoundref="_camera_8cs" startline="50">Attempt_7.Camera::target</references>
+        <references refid="class_attempt__7_1_1_camera_1a6923d9ddebf1709547640a09c494bf7f" compoundref="_camera_8cs" startline="55">Attempt_7.Camera::updirection</references>
+        <references refid="class_attempt__7_1_1_camera_1ab58715b7ebc0eb1b0181638331e7fe04" compoundref="_camera_8cs" startline="30">Attempt_7.Camera::View</references>
+        <references refid="class_attempt__7_1_1_camera_1a3bc8d53e4d9b029bb75f8f0e7b09cc17" compoundref="_camera_8cs" startline="40">Attempt_7.Camera::World</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_camera_1a3007d7c03912d7ff6f6f19e90a3575c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Attempt_7.Camera.Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+<para>Initializes the camera. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" line="92" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_camera_1a0090d02f2acd45b0088ecd0123be57ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Attempt_7.Camera.Update</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>Updates the camera&apos;s view. If the camera is mouse dependent than Update gets the position of the mouse and keyboard inorder to update the camera position. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Clock Information</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" line="101" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" bodystart="100" bodyend="111"/>
+        <references refid="class_attempt__7_1_1_camera_1ac5ff73c169cf1db99dc2c95e4a2d8464" compoundref="_camera_8cs" startline="45">Attempt_7.Camera::cameraPosition</references>
+        <references refid="class_attempt__7_1_1_camera_1afa316d43d2017c000a0650706956d08b" compoundref="_camera_8cs" startline="65">Attempt_7.Camera::isMouseDependent</references>
+        <references refid="class_attempt__7_1_1_camera_1a2ab493dc1de314f87a198146bf87db54" compoundref="_camera_8cs" startline="50">Attempt_7.Camera::target</references>
+        <references refid="class_attempt__7_1_1_camera_1a26c1b12ed3fea81c3bed64f0389cc9d1" compoundref="_camera_8cs" startline="154" endline="180">Attempt_7.Camera::UpdateKeyBoard</references>
+        <references refid="class_attempt__7_1_1_camera_1ac8b5117b5378692c67dada10a2707ad9" compoundref="_camera_8cs" startline="136" endline="149">Attempt_7.Camera::UpdateMouse</references>
+        <references refid="class_attempt__7_1_1_camera_1a6923d9ddebf1709547640a09c494bf7f" compoundref="_camera_8cs" startline="55">Attempt_7.Camera::updirection</references>
+        <references refid="class_attempt__7_1_1_camera_1ab58715b7ebc0eb1b0181638331e7fe04" compoundref="_camera_8cs" startline="30">Attempt_7.Camera::View</references>
+        <referencedby refid="class_attempt__7_1_1_robot_1a4643dee9895d602aa0257eebb09fa82a" compoundref="_robot_8cs" startline="187" endline="199">Attempt_7.Robot::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_camera_1a0574b1158af6b8e99f5d2b21fbc3c7a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3</type>
+        <definition>Vector3 Attempt_7.Camera.GetCameraPosition</definition>
+        <argsstring>()</argsstring>
+        <name>GetCameraPosition</name>
+        <briefdescription>
+<para>Returns the current camera position in 3D space. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The camera position</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" line="118" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" bodystart="117" bodyend="120"/>
+        <references refid="class_attempt__7_1_1_camera_1ac5ff73c169cf1db99dc2c95e4a2d8464" compoundref="_camera_8cs" startline="45">Attempt_7.Camera::cameraPosition</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_camera_1a950a4219356e02b8b8eddf506c03743f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.Camera.SetCameraPositionAndTarget</definition>
+        <argsstring>(Vector3 pos, Vector3 target)</argsstring>
+        <name>SetCameraPositionAndTarget</name>
+        <param>
+          <type>Vector3</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Sets the camera position and target point to a specific position. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new position of the camera in 3D space</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new target point of the camera in 3D space</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" line="128" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" bodystart="127" bodyend="131"/>
+        <references refid="class_attempt__7_1_1_camera_1ac5ff73c169cf1db99dc2c95e4a2d8464" compoundref="_camera_8cs" startline="45">Attempt_7.Camera::cameraPosition</references>
+        <references refid="class_attempt__7_1_1_camera_1a2ab493dc1de314f87a198146bf87db54" compoundref="_camera_8cs" startline="50">Attempt_7.Camera::target</references>
+        <referencedby refid="class_attempt__7_1_1_robot_1a4643dee9895d602aa0257eebb09fa82a" compoundref="_robot_8cs" startline="187" endline="199">Attempt_7.Robot::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_attempt__7_1_1_camera_1ac8b5117b5378692c67dada10a2707ad9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.Camera.UpdateMouse</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateMouse</name>
+        <briefdescription>
+<para>Updates the position of the camera based on the mouse&apos;s position. The Mouse origin (0,0) is the top left corner of the simulation Window. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" line="137" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" bodystart="136" bodyend="149"/>
+        <referencedby refid="class_attempt__7_1_1_camera_1a0090d02f2acd45b0088ecd0123be57ef" compoundref="_camera_8cs" startline="100" endline="111">Attempt_7.Camera::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_camera_1a26c1b12ed3fea81c3bed64f0389cc9d1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.Camera.UpdateKeyBoard</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateKeyBoard</name>
+        <briefdescription>
+<para>Checks to see if the Arrow keys are pressed. Moves the camera position and target based on the arrow keys. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" line="155" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" bodystart="154" bodyend="180"/>
+        <references refid="class_attempt__7_1_1_camera_1a2595f02eb31f80ea60343ba98fdbc5ff" compoundref="_camera_8cs" startline="60">Attempt_7.Camera::mouseOffset</references>
+        <references refid="class_attempt__7_1_1_camera_1a2ab493dc1de314f87a198146bf87db54" compoundref="_camera_8cs" startline="50">Attempt_7.Camera::target</references>
+        <referencedby refid="class_attempt__7_1_1_camera_1a0090d02f2acd45b0088ecd0123be57ef" compoundref="_camera_8cs" startline="100" endline="111">Attempt_7.Camera::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the camera object/class that contains all the information needed about position and target for rendering. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" line="26" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" bodystart="25" bodyend="181"/>
+    <listofallmembers>
+      <member refid="class_attempt__7_1_1_camera_1a00dbb72fcaebdd53a8206071f2da796b" prot="public" virt="non-virtual"><scope>Attempt_7::Camera</scope><name>Camera</name></member>
+      <member refid="class_attempt__7_1_1_camera_1ac5ff73c169cf1db99dc2c95e4a2d8464" prot="private" virt="non-virtual"><scope>Attempt_7::Camera</scope><name>cameraPosition</name></member>
+      <member refid="class_attempt__7_1_1_camera_1a0574b1158af6b8e99f5d2b21fbc3c7a8" prot="public" virt="non-virtual"><scope>Attempt_7::Camera</scope><name>GetCameraPosition</name></member>
+      <member refid="class_attempt__7_1_1_camera_1a3007d7c03912d7ff6f6f19e90a3575c2" prot="public" virt="non-virtual"><scope>Attempt_7::Camera</scope><name>Initialize</name></member>
+      <member refid="class_attempt__7_1_1_camera_1afa316d43d2017c000a0650706956d08b" prot="private" virt="non-virtual"><scope>Attempt_7::Camera</scope><name>isMouseDependent</name></member>
+      <member refid="class_attempt__7_1_1_camera_1a2595f02eb31f80ea60343ba98fdbc5ff" prot="private" virt="non-virtual"><scope>Attempt_7::Camera</scope><name>mouseOffset</name></member>
+      <member refid="class_attempt__7_1_1_camera_1afad745cd526a8c616843da8464a4d256" prot="public" virt="non-virtual"><scope>Attempt_7::Camera</scope><name>Projection</name></member>
+      <member refid="class_attempt__7_1_1_camera_1a950a4219356e02b8b8eddf506c03743f" prot="public" virt="non-virtual"><scope>Attempt_7::Camera</scope><name>SetCameraPositionAndTarget</name></member>
+      <member refid="class_attempt__7_1_1_camera_1a2ab493dc1de314f87a198146bf87db54" prot="private" virt="non-virtual"><scope>Attempt_7::Camera</scope><name>target</name></member>
+      <member refid="class_attempt__7_1_1_camera_1a0090d02f2acd45b0088ecd0123be57ef" prot="public" virt="non-virtual"><scope>Attempt_7::Camera</scope><name>Update</name></member>
+      <member refid="class_attempt__7_1_1_camera_1a26c1b12ed3fea81c3bed64f0389cc9d1" prot="private" virt="non-virtual"><scope>Attempt_7::Camera</scope><name>UpdateKeyBoard</name></member>
+      <member refid="class_attempt__7_1_1_camera_1ac8b5117b5378692c67dada10a2707ad9" prot="private" virt="non-virtual"><scope>Attempt_7::Camera</scope><name>UpdateMouse</name></member>
+      <member refid="class_attempt__7_1_1_camera_1a6923d9ddebf1709547640a09c494bf7f" prot="private" virt="non-virtual"><scope>Attempt_7::Camera</scope><name>updirection</name></member>
+      <member refid="class_attempt__7_1_1_camera_1ab58715b7ebc0eb1b0181638331e7fe04" prot="public" virt="non-virtual"><scope>Attempt_7::Camera</scope><name>View</name></member>
+      <member refid="class_attempt__7_1_1_camera_1a3bc8d53e4d9b029bb75f8f0e7b09cc17" prot="public" virt="non-virtual"><scope>Attempt_7::Camera</scope><name>World</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

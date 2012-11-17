@@ -1,0 +1,1483 @@
+\section{Attempt\_\-7.SimulationMain Class Reference}
+\label{class_attempt__7_1_1_simulation_main}\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+
+
+This is the main type for the Simulation.  
+
+
+
+
+Collaboration diagram for Attempt\_\-7.SimulationMain:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf SimulationMain} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bf currentHoughMode} = 1
+\begin{DoxyCompactList}\small\item\em If 0 then Old mode (top left origin), if 1 then New Hough mode( bottom Center). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void {\bf Initialize} ()
+\begin{DoxyCompactList}\small\item\em Initialize the Simulation Object. \item\end{DoxyCompactList}\item 
+override void {\bf LoadContent} ()
+\begin{DoxyCompactList}\small\item\em Called after initialize. Loads the textures and calls methods to create the simulated enviroment. \item\end{DoxyCompactList}\item 
+override void {\bf UnloadContent} ()
+\begin{DoxyCompactList}\small\item\em Unloads Information when the simulation is closed. Currently no information is saved when the simulation is closed. \item\end{DoxyCompactList}\item 
+override void {\bf Update} (GameTime gameTime)
+\begin{DoxyCompactList}\small\item\em Main update method for the entire simulation. Simulation logic is updated when this method is called. Part of the game loop. \item\end{DoxyCompactList}\item 
+void {\bf GetKeyBoard} (GameTime gameTime1)
+\begin{DoxyCompactList}\small\item\em Checks the keyboard for F3, and Escape. \item\end{DoxyCompactList}\item 
+override void {\bf Draw} (GameTime gameTime)
+\begin{DoxyCompactList}\small\item\em Main draw method for the simulation. Draws all the world from both the mainview and the robots view. 
+
+The render target must be built and disposed each time or else the a memory overload will occur. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf DrawTextDebugInfo} ()
+\item 
+void {\bf CreateViewPorts} ()
+\begin{DoxyCompactList}\small\item\em Creates the 5 view ports. View ports are like windows inside of a Window's window. 
+\begin{DoxyItemize}
+\item MainPort = 0  
+\item TopRight = 1 
+\item CenterRight = 2 
+\item BottomRight = 3 
+\item BottomLeft = 4 
+\item BottomCenter = 5 
+\end{DoxyItemize}\item\end{DoxyCompactList}\item 
+Texture2D {\bf CreateGrassTexture} (Texture2D texturetoUse)
+\begin{DoxyCompactList}\small\item\em Takes a texture and returns a larger texture. Size of the new texture is 1024,1024. \item\end{DoxyCompactList}\item 
+Color[,] {\bf TextureTo2DArray} (Texture2D texture)
+\begin{DoxyCompactList}\small\item\em Takes a texture converts it into a 2D color array. \item\end{DoxyCompactList}\item 
+void {\bf LoadGround} ()
+\begin{DoxyCompactList}\small\item\em Create vertex data for the grass. Verts2 is the VertexPositionTexture array. \item\end{DoxyCompactList}\item 
+void {\bf LoadLines} ()
+\begin{DoxyCompactList}\small\item\em Creates the vertexPositionColor array \char`\"{}verts1\char`\"{} that is used to draw the white lines. \item\end{DoxyCompactList}\item 
+void {\bf UpDateRobotPosition} ()
+\begin{DoxyCompactList}\small\item\em Loads the vertex information about the robot and recreates it every game cycle to reflect the new position of the robot. 'verts3' is the VertexPositionColor array. \item\end{DoxyCompactList}\item 
+void {\bf BuildRenderTargets} ()
+\begin{DoxyCompactList}\small\item\em Set the renderTargets to a texture object in memory rather than rendering to the screen. Need target for both the Worldview and the robot CameraView. \item\end{DoxyCompactList}\item 
+void {\bf DrawRobot} ({\bf Camera} camera)
+\begin{DoxyCompactList}\small\item\em Draw the robot from the \char`\"{}camera\char`\"{}s perspective. \item\end{DoxyCompactList}\item 
+void {\bf DrawColorLines} ({\bf Camera} camera)
+\begin{DoxyCompactList}\small\item\em Draw the lines from the \char`\"{}camera\char`\"{}'s persepective. \item\end{DoxyCompactList}\item 
+void {\bf DrawGrass} ({\bf Camera} camera)
+\begin{DoxyCompactList}\small\item\em Draw the grass or ground from \char`\"{}camera\char`\"{}'s perspective. \item\end{DoxyCompactList}\item 
+void {\bf DrawText} ()
+\begin{DoxyCompactList}\small\item\em Draw the Simulation Status as either PAUSED or Active. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+GraphicsDeviceManager {\bf graphics}
+\begin{DoxyCompactList}\small\item\em GPU manager. \item\end{DoxyCompactList}\item 
+Vector2 {\bf screenSize} = new Vector2(640, 480)
+\begin{DoxyCompactList}\small\item\em 2D vector representing the resolution of the cameras used in the simulation. \item\end{DoxyCompactList}\item 
+Rectangle {\bf screenRectangle} = new Rectangle(0, 0, 640, 480)
+\begin{DoxyCompactList}\small\item\em Rectangle object that is the size of the camera resolution (screenSize). \item\end{DoxyCompactList}\item 
+Vector2 {\bf windowSize} = new Vector2(1000, 780)
+\begin{DoxyCompactList}\small\item\em 2D vector represeting the size of the Window's Window that the simulation will run in. \item\end{DoxyCompactList}\item 
+SpriteBatch {\bf spriteBatch}
+\begin{DoxyCompactList}\small\item\em The sprite batch object. Used to draw 2D graphics. \item\end{DoxyCompactList}\item 
+Texture2D {\bf grass}
+\begin{DoxyCompactList}\small\item\em Represents the texture of the grass bitmap that is used to represent the grass. \item\end{DoxyCompactList}\item 
+Texture2D {\bf largeGrass}
+\begin{DoxyCompactList}\small\item\em A large tiled version of the grass Texture. \item\end{DoxyCompactList}\item 
+BasicEffect {\bf basicEffects}
+\begin{DoxyCompactList}\small\item\em The basicEffects for rendering in 3D. \item\end{DoxyCompactList}\item 
+VertexPositionColor[$\,$] {\bf verts1}
+\begin{DoxyCompactList}\small\item\em The vertexPositionColor array holding the vertex information needed for drawing the white lines representing the course. \item\end{DoxyCompactList}\item 
+VertexPositionTexture[$\,$] {\bf verts2}
+\begin{DoxyCompactList}\small\item\em The vertexPositionColor array holding the information for the grass/ground. \item\end{DoxyCompactList}\item 
+VertexPositionColor[$\,$] {\bf verts3}
+\begin{DoxyCompactList}\small\item\em The vertexPositionColor Array holding the information needed for the 3D representation of the robot. \item\end{DoxyCompactList}\item 
+List$<$ Viewport $>$ {\bf viewPortList}
+\begin{DoxyCompactList}\small\item\em List holding the viewports used in the simulation. \item\end{DoxyCompactList}\item 
+bool {\bf trackRobot} = false
+\begin{DoxyCompactList}\small\item\em Bool representing if the main \doxyref{Camera}{p.}{class_attempt__7_1_1_camera} moves its view to follow the robot. \item\end{DoxyCompactList}\item 
+int {\bf timePressedKey} = 0
+\begin{DoxyCompactList}\small\item\em Time in totalmillseconds when F1, F2, or F3 were pushed. \item\end{DoxyCompactList}\item 
+SpriteFont {\bf arialLarge}
+\begin{DoxyCompactList}\small\item\em The 2D font object needed to show text. Size = 20. \item\end{DoxyCompactList}\item 
+SpriteFont {\bf arialSmall}
+\begin{DoxyCompactList}\small\item\em A smaller font of arial to show debug information. \item\end{DoxyCompactList}\item 
+Random {\bf rand}
+\begin{DoxyCompactList}\small\item\em Represents a random object so that random numbers can be generated. \item\end{DoxyCompactList}\item 
+{\bf Robot} {\bf robot1}
+\begin{DoxyCompactList}\small\item\em The robot object. See the robot class for more information. \item\end{DoxyCompactList}\item 
+List$<$ {\bf Camera} $>$ {\bf cameraList}
+\begin{DoxyCompactList}\small\item\em A list of the cameras. There are 2, The mainview and the robot view. 
+\begin{DoxyItemize}
+\item WorldView \doxyref{Camera}{p.}{class_attempt__7_1_1_camera} = 0 (The main camera) 
+\item \doxyref{Robot}{p.}{class_attempt__7_1_1_robot} View \doxyref{Camera}{p.}{class_attempt__7_1_1_camera} = 1  
+\end{DoxyItemize}\item\end{DoxyCompactList}\item 
+List$<$ RenderTarget2D $>$ {\bf renderTargets}
+\begin{DoxyCompactList}\small\item\em A list of the rendertargets. Rather than rendering to the screen, the image produced by the GPU is saved to a rendertarget.  The rendertargets correspond directly with the camera views.  
+
+
+\begin{DoxyItemize}
+\item World View Target = 0  
+\item \doxyref{Robot}{p.}{class_attempt__7_1_1_robot} View Target = 1 
+\end{DoxyItemize}\item\end{DoxyCompactList}\item 
+{\bf ImageAnalysis} {\bf imageAnalysis}
+\begin{DoxyCompactList}\small\item\em The image analysis object/class does the image processing. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the main type for the Simulation. 
+
+Definition at line 25 of file SimulationMain.cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!SimulationMain@{SimulationMain}}
+\index{SimulationMain@{SimulationMain}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{SimulationMain}]{\setlength{\rightskip}{0pt plus 5cm}Attempt\_\-7.SimulationMain.SimulationMain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_simulation_main_a9ea5edf642dc80c782aa35f4a4ba4107}
+Initializes a new instance of the \doxyref{SimulationMain}{p.}{class_attempt__7_1_1_simulation_main} class. 
+
+Definition at line 146 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.graphics = new GraphicsDeviceManager(this);
+            Content.RootDirectory = "Content";
+        }
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!BuildRenderTargets@{BuildRenderTargets}}
+\index{BuildRenderTargets@{BuildRenderTargets}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{BuildRenderTargets}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.SimulationMain.BuildRenderTargets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_a596379dec8c50adc14977c75005def80}
+
+
+Set the renderTargets to a texture object in memory rather than rendering to the screen. Need target for both the Worldview and the robot CameraView. 
+
+
+
+Definition at line 528 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.renderTargets = new List<RenderTarget2D>(); // This list will co
+      rrespond to the camera list
+
+            // Main view target. 
+            RenderTarget2D targetWorldView = new RenderTarget2D(this.GraphicsDevi
+      ce, (int)this.screenSize.X, (int)this.screenSize.Y); // Create a target for rende
+      ring of the mouse countroled camera view
+            this.renderTargets.Add(targetWorldView); // Add to the list of target
+      s
+
+            // The render target for the robot's camera view.  
+            RenderTarget2D targetRobotView = new RenderTarget2D(GraphicsDevice, (
+      int)this.screenSize.X, (int)this.screenSize.Y); // Create a target for the render
+       of the robot camera view
+            this.renderTargets.Add(targetRobotView); // Add to the list          
+           
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_a596379dec8c50adc14977c75005def80_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!CreateGrassTexture@{CreateGrassTexture}}
+\index{CreateGrassTexture@{CreateGrassTexture}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{CreateGrassTexture}]{\setlength{\rightskip}{0pt plus 5cm}Texture2D Attempt\_\-7.SimulationMain.CreateGrassTexture (
+\begin{DoxyParamCaption}
+\item[{Texture2D}]{texturetoUse}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_a931a8a86dead3b0cb29f28453cf4f6f0}
+
+
+Takes a texture and returns a larger texture. Size of the new texture is 1024,1024. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texturetoUse} & The smaller texture to tile\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The larger texture with the smaller on tiled onto it. 
+\end{DoxyReturn}
+
+
+Definition at line 401 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+            Color[,] groundColors = this.TextureTo2DArray(texturetoUse);
+            Vector2 newTextureSize = new Vector2(1024, 1024); // Size of the new 
+      texture. 
+            Color[] foregroundColors = new Color[(int)newTextureSize.X * (int)new
+      TextureSize.Y];
+
+            for (int x = 0; x < (int)newTextureSize.X; x++)
+            {
+                for (int y = 0; y < (int)newTextureSize.Y; y++)
+                {
+                    foregroundColors[x + (y * (int)newTextureSize.X)] = groundCol
+      ors[(x * 2) % texturetoUse.Width, (y * 2) % texturetoUse.Height];
+                }
+            }
+
+            Texture2D newTexture = new Texture2D(this.GraphicsDevice, (int)newTex
+      tureSize.X, (int)newTextureSize.Y, false, SurfaceFormat.Color);
+            newTexture.SetData(foregroundColors);
+            return newTexture;
+        }
+\end{DoxyCode}
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_a931a8a86dead3b0cb29f28453cf4f6f0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_a931a8a86dead3b0cb29f28453cf4f6f0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!CreateViewPorts@{CreateViewPorts}}
+\index{CreateViewPorts@{CreateViewPorts}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{CreateViewPorts}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.SimulationMain.CreateViewPorts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_aabe2d52bb2b34aeeff6a5d8c98512ef6}
+
+
+Creates the 5 view ports. View ports are like windows inside of a Window's window. 
+\begin{DoxyItemize}
+\item MainPort = 0  
+\item TopRight = 1 
+\item CenterRight = 2 
+\item BottomRight = 3 
+\item BottomLeft = 4 
+\item BottomCenter = 5 
+\end{DoxyItemize}
+
+
+
+Definition at line 366 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.viewPortList = new List<Viewport>(); // Make a list for the view
+      ports
+
+            Viewport mainView = GraphicsDevice.Viewport; // Default view port is 
+      the window size. 
+            mainView.Width = (int)GraphicsDevice.Viewport.Width * 2 / 3; // Takes
+       up 2/3 of the x and y distances
+            mainView.Height = (int)GraphicsDevice.Viewport.Height * 2 / 3;
+            this.viewPortList.Add(mainView);
+
+            for (int i = 0; i < 3; i++)
+            {
+                Viewport viewSide0 = GraphicsDevice.Viewport;
+                viewSide0.X = (int)GraphicsDevice.Viewport.Width * 2 / 3;
+                viewSide0.Y = i * (int)GraphicsDevice.Viewport.Height * 1 / 3; //
+       Make 3 on the right side of the screen going down. 
+                viewSide0.Width = (int)GraphicsDevice.Viewport.Width * 1 / 3;
+                viewSide0.Height = (int)GraphicsDevice.Viewport.Height * 1 / 3;
+                this.viewPortList.Add(viewSide0);
+            }
+
+            for (int i = 0; i < 2; i++)
+            {
+                Viewport viewSide0 = GraphicsDevice.Viewport;
+                viewSide0.X = i * (int)GraphicsDevice.Viewport.Width * 1 / 3;
+                viewSide0.Y = (int)GraphicsDevice.Viewport.Height * 2 / 3; // Mak
+      e 3 on bottom of the screen going left. 
+                viewSide0.Width = (int)GraphicsDevice.Viewport.Width * 1 / 3;
+                viewSide0.Height = (int)GraphicsDevice.Viewport.Height * 1 / 3;
+                this.viewPortList.Add(viewSide0);
+            }
+        }       
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_aabe2d52bb2b34aeeff6a5d8c98512ef6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!Draw@{Draw}}
+\index{Draw@{Draw}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}override void Attempt\_\-7.SimulationMain.Draw (
+\begin{DoxyParamCaption}
+\item[{GameTime}]{gameTime}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [protected]}}\label{class_attempt__7_1_1_simulation_main_ae2774f61c773a44b36670c81e5df8b05}
+
+
+Main draw method for the simulation. Draws all the world from both the mainview and the robots view. 
+
+The render target must be built and disposed each time or else the a memory overload will occur. 
+
+Each time the Viewport is changed a new spriteBatch.Start method must be called.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gameTime} & Clock Information\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 294 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.BuildRenderTargets(); // Create the render targets to be in the 
+      computer memory instead of the screen. 
+
+            int h = 0;
+
+            // Go through each camera and draw the world from its persepective. 
+            foreach (Camera cam in this.cameraList) 
+            {
+                this.GraphicsDevice.SetRenderTarget(this.renderTargets[h]); // Se
+      t the render target, worldview then robot view
+                this.GraphicsDevice.Clear(Color.Black); // Clear the screen to Bl
+      ack
+
+                // Draw the world from the perspective of each camera
+                this.DrawGrass(cam); // i.e grass
+                this.DrawColorLines(cam);
+                this.DrawRobot(cam);
+                h++; // Go to the next render target
+            }
+
+            // Set the renderTarget to the scree, Clear the screen, 
+            this.GraphicsDevice.SetRenderTarget(null); // Set the rendering targe
+      t back to the screen
+            this.GraphicsDevice.Clear(Color.Gray); // Clear the screen to Gray
+
+            // Send the imageAnalysis object the robot's view, 
+            this.imageAnalysis.SetRobotCameraView(this.renderTargets[1]); // Send
+       the camera view from the robot camera to the analysis class
+            this.imageAnalysis.Update1(gameTime); // Pull out the color data of t
+      he texture before the texture is disposed. 
+
+            // Draw the render target, maks sure the source rectange size is the 
+      same as the texture to draw size,
+            // (texture to draw, size of the part of the texture you what draw (t
+      he whole thing), Color, rotation, Origin of the texture,scale to 3/4 size, no eff
+      ects, 0 is default)
+
+            // Set the view port to the main view and draw the main view
+            this.GraphicsDevice.Viewport = this.viewPortList[0]; // Main View  is
+       2/3 of the screen screen
+            this.spriteBatch.Begin(); // Start the 2D drawing        
+            this.spriteBatch.Draw(this.renderTargets[0], new Rectangle(0, 0, Grap
+      hicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height), Color.White); // Draw
+       the MainView
+            this.DrawText(); // Draw a message about whether the simulation is pa
+      used or active. 
+            this.spriteBatch.End(); // Stop drawing. 
+
+            // Change viewports to the topLeft view port of the window. Draw the 
+      robot view. 
+            this.GraphicsDevice.Viewport = this.viewPortList[1];
+            this.spriteBatch.Begin(); // Start the 2D drawing      
+            this.spriteBatch.Draw(this.renderTargets[1], new Rectangle(0, 0, Grap
+      hicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height), Color.White); // Draw
+       the robotView
+            this.spriteBatch.End(); // Stop drawing.
+
+
+            // Change viewports to the bottomriht view port of the window. GiveDe
+      bug information. 
+            this.GraphicsDevice.Viewport = this.viewPortList[4];
+            this.spriteBatch.Begin(); // Start the 2D drawing     
+            this.DrawTextDebugInfo();
+            this.spriteBatch.End(); // Stop drawing.
+           
+            base.Draw(gameTime); // Call all the drawableGameCmponets draw method
+       (imageAnalysis.cs).
+            foreach (RenderTarget2D r in this.renderTargets)
+            {
+                r.Dispose(); // Free up the memory resources 
+            }
+        }
+\end{DoxyCode}
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_ae2774f61c773a44b36670c81e5df8b05_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!DrawColorLines@{DrawColorLines}}
+\index{DrawColorLines@{DrawColorLines}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{DrawColorLines}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.SimulationMain.DrawColorLines (
+\begin{DoxyParamCaption}
+\item[{{\bf Camera}}]{camera}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_a6600ca6533a6db25d8796c13b63c1a40}
+
+
+Draw the lines from the \char`\"{}camera\char`\"{}'s persepective. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & The camera to use when drawing.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 564 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.basicEffects.World = camera.World;
+            this.basicEffects.View = camera.View;
+            this.basicEffects.Projection = camera.Projection;
+            this.basicEffects.TextureEnabled = false;
+            this.basicEffects.VertexColorEnabled = true;
+
+            foreach (EffectPass pass in this.basicEffects.CurrentTechnique.Passes
+      )
+            {
+                pass.Apply();
+                this.GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(Primi
+      tiveType.LineStrip, this.verts1, 0, 36); // Draw the 1st inner line
+                this.GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(Primi
+      tiveType.LineStrip, this.verts1, 37, 36); // Draw the 2nd inner line
+                this.GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(Primi
+      tiveType.LineStrip, this.verts1, 37 * 2, 36); // Draw the outerline
+                this.GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(Primi
+      tiveType.LineStrip, this.verts1, 37 * 3, 36); // Draw the 2nd outerline          
+           
+            }
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_a6600ca6533a6db25d8796c13b63c1a40_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!DrawGrass@{DrawGrass}}
+\index{DrawGrass@{DrawGrass}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{DrawGrass}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.SimulationMain.DrawGrass (
+\begin{DoxyParamCaption}
+\item[{{\bf Camera}}]{camera}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_abbd56e335ac6f87700aa78afdea7c6c8}
+
+
+Draw the grass or ground from \char`\"{}camera\char`\"{}'s perspective. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & The camera to use when drawing.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 586 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.basicEffects.World = camera.World;
+            this.basicEffects.View = camera.View;
+            this.basicEffects.Projection = camera.Projection;
+            this.basicEffects.VertexColorEnabled = false;
+            this.basicEffects.Texture = this.largeGrass  ;
+            this.basicEffects.TextureEnabled = true; // Because the ground is a t
+      exture object. 
+           
+
+            foreach (EffectPass pass in this.basicEffects.CurrentTechnique.Passes
+      )
+            {
+                pass.Apply();
+                GraphicsDevice.DrawUserPrimitives<VertexPositionTexture>(Primitiv
+      eType.TriangleStrip, this.verts2, 0, 2);
+            }
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_abbd56e335ac6f87700aa78afdea7c6c8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!DrawRobot@{DrawRobot}}
+\index{DrawRobot@{DrawRobot}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{DrawRobot}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.SimulationMain.DrawRobot (
+\begin{DoxyParamCaption}
+\item[{{\bf Camera}}]{camera}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_acfd54a5aa5fb4311b2938ee7ab121022}
+
+
+Draw the robot from the \char`\"{}camera\char`\"{}s perspective. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & The camera to use when drawing. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 545 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.basicEffects.World = camera.World;
+            this.basicEffects.View = camera.View;
+            this.basicEffects.Projection = camera.Projection;
+            this.basicEffects.TextureEnabled = false;
+            this.basicEffects.VertexColorEnabled = true;
+
+            foreach (EffectPass pass in this.basicEffects.CurrentTechnique.Passes
+      )
+            {
+                pass.Apply();
+                this.GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(Primi
+      tiveType.TriangleStrip, this.verts3, 0, 3); // Verts3 is the robot.              
+        
+            }
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_acfd54a5aa5fb4311b2938ee7ab121022_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!DrawText@{DrawText}}
+\index{DrawText@{DrawText}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{DrawText}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.SimulationMain.DrawText (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_aa933058eb5333dbb1addb68b72c27def}
+
+
+Draw the Simulation Status as either PAUSED or Active. 
+
+
+
+Definition at line 606 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+            bool simulationPause = this.robot1.GetIsRobotPaused(); // Find if the
+       simulatin is paused from the robot. 
+
+            if (simulationPause == true)
+            {
+                this.spriteBatch.DrawString(this.arialLarge, "Simulation Status--
+      - PAUSED", new Vector2(0, 0), Color.Yellow);
+            }
+            else
+            {
+                this.spriteBatch.DrawString(this.arialLarge, "Simulation Status--
+      - Active", new Vector2(0, 0), Color.Green);
+            }
+        }
+\end{DoxyCode}
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_aa933058eb5333dbb1addb68b72c27def_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_aa933058eb5333dbb1addb68b72c27def_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!DrawTextDebugInfo@{DrawTextDebugInfo}}
+\index{DrawTextDebugInfo@{DrawTextDebugInfo}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{DrawTextDebugInfo}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.SimulationMain.DrawTextDebugInfo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_afe6aa0f5c85b090b06c0228cf4e7c21c}
+
+
+Definition at line 351 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_afe6aa0f5c85b090b06c0228cf4e7c21c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!GetKeyBoard@{GetKeyBoard}}
+\index{GetKeyBoard@{GetKeyBoard}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{GetKeyBoard}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.SimulationMain.GetKeyBoard (
+\begin{DoxyParamCaption}
+\item[{GameTime}]{gameTime1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [protected]}}\label{class_attempt__7_1_1_simulation_main_a4b98b01df022d9a02ce98bf80f0f5c9b}
+
+
+Checks the keyboard for F3, and Escape. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gameTime1} & Clock information\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 232 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+            KeyboardState keyboardState = Keyboard.GetState();
+
+            // Force 500 millsecond between updates
+            if (gameTime1.TotalGameTime.TotalMilliseconds - this.timePressedKey >
+       500)
+            {
+                if (keyboardState.IsKeyDown(Keys.F3))
+                {
+                    this.timePressedKey = (int)gameTime1.TotalGameTime.TotalMilli
+      seconds;
+                    if (this.trackRobot == false)
+                    {
+                        this.trackRobot = true; // Toggle on and off  
+                    }
+                    else
+                    {
+                        this.trackRobot = false; // Toggle on and off  
+                    }
+                }
+
+                //toggle the hough mode. 
+                if (keyboardState.IsKeyDown(Keys.F4))
+                {
+                    this.timePressedKey = (int)gameTime1.TotalGameTime.TotalMilli
+      seconds;
+                    if (currentHoughMode  == 0)
+                    {
+                        currentHoughMode = 1; // Toggle on and off  
+                    }
+                    else
+                    {
+                        currentHoughMode = 0; // Toggle on and off  
+                    }
+                }
+            }
+
+            // Allows the game to exit when Escape is hit. 
+            if (keyboardState.IsKeyDown(Keys.Escape) == true)
+            {
+                this.Exit();
+            }
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_a4b98b01df022d9a02ce98bf80f0f5c9b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}override void Attempt\_\-7.SimulationMain.Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [protected]}}\label{class_attempt__7_1_1_simulation_main_a87038950391e39711d316d5a73d8768f}
+
+
+Initialize the Simulation Object. 
+
+
+
+Definition at line 155 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.graphics.PreferredBackBufferWidth = (int)this.windowSize.X; // S
+      et the window size
+            this.graphics.PreferredBackBufferHeight = (int)this.windowSize.Y;
+            this.graphics.IsFullScreen = false  ; // Not full screen
+            this.graphics.ApplyChanges();
+            Window.Title = "Robot simulation1";
+
+            IsMouseVisible = true;
+            this.CreateViewPorts(); // Creates the viewports at startup.
+
+            this.cameraList = new List<Camera>(); // List to insert the cameras. 
+      
+
+            // Make a camera component that is controlled by mouse position - thi
+      s is the main view
+            Camera cameraWorldView = new Camera(this, new Vector3(-40, -30, 20), 
+      Vector3.Zero, Vector3.UnitZ, true);
+            Components.Add(cameraWorldView); // Updates will now sync with the ga
+      me and the component
+            this.cameraList.Add(cameraWorldView); // Add it to our list of camera
+      s to render from;
+
+            // Make camera for the robot. 
+            this.robot1 = new Robot(this, new Vector3(0, 10.5f, 0), Vector3.UnitY
+      , 0.03f, 1.8f, 1);
+            Components.Add(this.robot1); // Updates will now sync with the game a
+      nd the component
+            this.cameraList.Add(this.robot1.GetRobotCamera()); // Add the robot c
+      amera to a list of cameras to draw from
+
+            // Make an image analysis object so we can do calculations on the rob
+      ot's view. 
+            this.imageAnalysis = new ImageAnalysis(this, this.screenSize, this.
+      viewPortList);
+            Components.Add(this.imageAnalysis); // Updates will now sync with the
+       game and the component
+
+            this.rand = new Random();
+            base.Initialize();
+        }
+\end{DoxyCode}
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_a87038950391e39711d316d5a73d8768f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!LoadContent@{LoadContent}}
+\index{LoadContent@{LoadContent}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{LoadContent}]{\setlength{\rightskip}{0pt plus 5cm}override void Attempt\_\-7.SimulationMain.LoadContent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [protected]}}\label{class_attempt__7_1_1_simulation_main_afe27d46d9e2775dfb04d6397b700baeb}
+
+
+Called after initialize. Loads the textures and calls methods to create the simulated enviroment. 
+
+
+
+Definition at line 189 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.spriteBatch = new SpriteBatch(GraphicsDevice); // Create a new S
+      priteBatch, which can be used to draw textures.
+
+            this.arialLarge = Content.Load<SpriteFont>("ArialLarge"); // Load the
+       font
+            this.arialSmall = Content.Load<SpriteFont>("Arial");
+            this.grass = Content.Load<Texture2D>("grass11"); // Load the grass te
+      xture
+            this.largeGrass = this.CreateGrassTexture(this.grass); // Make a big 
+      grass texture that is a tile of the small grass texture. 
+
+            // Load the vertex arrays for the lines, ground, and robot. 
+            this.LoadLines();
+            this.LoadGround();
+            this.UpDateRobotPosition();
+
+            this.basicEffects = new BasicEffect(GraphicsDevice); // Create a basi
+      c effects object so we the GPU knows how to render the vertex data
+
+            base.LoadContent();
+        }
+\end{DoxyCode}
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_afe27d46d9e2775dfb04d6397b700baeb_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!LoadGround@{LoadGround}}
+\index{LoadGround@{LoadGround}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{LoadGround}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.SimulationMain.LoadGround (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_ad5cec97af179a424e2fd705ad82fc6bc}
+
+
+Create vertex data for the grass. Verts2 is the VertexPositionTexture array. 
+
+
+
+Definition at line 445 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.verts2 = new VertexPositionTexture[4];
+            int dimension = 15;
+            float  textureDim = 1.0f;
+            this.verts2[0] = new VertexPositionTexture(new Vector3(-dimension, di
+      mension, 0), new Vector2(0, 0));
+            this.verts2[1] = new VertexPositionTexture(new Vector3(dimension, dim
+      ension, 0), new Vector2(textureDim, 0));
+            this.verts2[2] = new VertexPositionTexture(new Vector3(-dimension, -d
+      imension, 0), new Vector2(0, textureDim));
+            this.verts2[3] = new VertexPositionTexture(new Vector3(dimension, -di
+      mension, 0), new Vector2(textureDim, textureDim));
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_ad5cec97af179a424e2fd705ad82fc6bc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!LoadLines@{LoadLines}}
+\index{LoadLines@{LoadLines}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{LoadLines}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.SimulationMain.LoadLines (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_a376590da39458ac9580001ca9fc1a036}
+
+
+Creates the vertexPositionColor array \char`\"{}verts1\char`\"{} that is used to draw the white lines. 
+
+
+
+Definition at line 459 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.verts1 = new VertexPositionColor[37 * 4]; // 2 innerlines and 2 
+      outerlines
+            int j = 0;
+            float randomFirstX = 0, randomFirstY = 0;
+
+            //Curve c = new Curve();
+            //CurveKeyCollection cCollection = new CurveKeyCollection();
+            //cCollection.Add(new CurveKey(
+
+            // "i" is in radians going around the circle. 
+            for (float i = 0; i < MathHelper.Pi * 2; i += MathHelper.Pi / 18)
+            {
+                float randomAdd1 = this.rand.Next(0, 2);
+                float randomAdd2 = this.rand.Next(0, 2);
+
+                if (j == 0)
+                {
+                    randomFirstX = randomAdd1; // Store the random changes for th
+      e first set of points
+                    randomFirstY = randomAdd2;
+                }
+
+                if (j == 36)
+                {
+                    randomAdd1 = randomFirstX; // Apply the same random changes t
+      o the last that you did the first. 
+                    randomAdd2 = randomFirstY;
+                }
+
+                this.verts1[j] = new VertexPositionColor(new Vector3((float)((Mat
+      h.Cos(i) * 10) + randomAdd1), (float)((Math.Sin(i) * 10) + randomAdd2), 0), Color
+      .WhiteSmoke); // 1st inside line
+                this.verts1[j + 37] = new VertexPositionColor(new Vector3((float)
+      ((Math.Cos(i) * 15) + randomAdd1), (float)((Math.Sin(i) * 14) + randomAdd2), 0), 
+      Color.White); // 1st outside line
+                this.verts1[j + (37 * 2)] = new VertexPositionColor(new Vector3((
+      float)((Math.Cos(i) * 10.2f) + randomAdd1), (float)((Math.Sin(i) * 10.2f) + rando
+      mAdd2), 0), Color.White); // 2nd inside line -- make it thicker
+                this.verts1[j + (37 * 3)] = new VertexPositionColor(new Vector3((
+      float)((Math.Cos(i) * 15.2f) + randomAdd1), (float)((Math.Sin(i) * 14.2f) + rando
+      mAdd2), 0), Color.White); // 2nd outside line -- make it thicker
+
+                j++;
+            }
+
+            // Put the robot's starting position between the lines and store the 
+      robot's start position
+            this.robot1.SetStartPosition(new Vector3((float)(10.5f + randomFirstX
+      ), (float)(0 + (randomFirstY / 2)), 0));
+        }
+\end{DoxyCode}
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_a376590da39458ac9580001ca9fc1a036_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_a376590da39458ac9580001ca9fc1a036_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!TextureTo2DArray@{TextureTo2DArray}}
+\index{TextureTo2DArray@{TextureTo2DArray}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{TextureTo2DArray}]{\setlength{\rightskip}{0pt plus 5cm}Color [,] Attempt\_\-7.SimulationMain.TextureTo2DArray (
+\begin{DoxyParamCaption}
+\item[{Texture2D}]{texture}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_a5918fc691a0121426b6c3382a02e86c0}
+
+
+Takes a texture converts it into a 2D color array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & The texture to convert\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The 2D color array 
+\end{DoxyReturn}
+
+
+Definition at line 425 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+            Color[] colors1D = new Color[texture.Width * texture.Height]; // Crea
+      te a 1D array
+            texture.GetData(colors1D); // Pull the color data out of the texture 
+      to the 1D arrray
+
+            Color[,] colors2D = new Color[texture.Width, texture.Height]; // Crea
+      te the 2D arrray
+            for (int x = 0; x < texture.Width; x++)
+            {
+                for (int y = 0; y < texture.Height; y++)
+                {
+                    colors2D[x, y] = colors1D[x + (y * texture.Width)]; // Popula
+      te the 2D array with the correct values.  
+                }
+            }
+
+            return colors2D;
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_a5918fc691a0121426b6c3382a02e86c0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!UnloadContent@{UnloadContent}}
+\index{UnloadContent@{UnloadContent}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{UnloadContent}]{\setlength{\rightskip}{0pt plus 5cm}override void Attempt\_\-7.SimulationMain.UnloadContent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [protected]}}\label{class_attempt__7_1_1_simulation_main_a5626f084ed61fc4807b4bd5cbc256129}
+
+
+Unloads Information when the simulation is closed. Currently no information is saved when the simulation is closed. 
+
+
+
+Definition at line 211 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+            // TODO: Unload any non ContentManager content here
+        }
+\end{DoxyCode}
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!Update@{Update}}
+\index{Update@{Update}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}override void Attempt\_\-7.SimulationMain.Update (
+\begin{DoxyParamCaption}
+\item[{GameTime}]{gameTime}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [protected]}}\label{class_attempt__7_1_1_simulation_main_a2fcdaa01b7439002334e047819e3ae4f}
+
+
+Main update method for the entire simulation. Simulation logic is updated when this method is called. Part of the game loop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gameTime} & Clock information\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 220 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.GetKeyBoard(gameTime); // Check the keyboard for commands
+            this.UpDateRobotPosition(); // Update the position of the robot.     
+                  
+
+            base.Update(gameTime); // Call the update for all the game components
+       (camera, robot, and imageAnalysis). -- this is where the real work is done      
+           
+        }
+\end{DoxyCode}
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_a2fcdaa01b7439002334e047819e3ae4f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!UpDateRobotPosition@{UpDateRobotPosition}}
+\index{UpDateRobotPosition@{UpDateRobotPosition}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{UpDateRobotPosition}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.SimulationMain.UpDateRobotPosition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_a8ec874da6a1aa6fab66c9f1c0d7549a8}
+
+
+Loads the vertex information about the robot and recreates it every game cycle to reflect the new position of the robot. 'verts3' is the VertexPositionColor array. 
+
+
+
+Definition at line 502 of file SimulationMain.cs.
+
+
+\begin{DoxyCode}
+        {
+            if (this.robot1.GetIsRobotPaused() != true)
+            {
+                this.robot1.ChangeDirection(this.imageAnalysis.GetTurnIndicator()
+      ); // Steering determination get from imageAnalysis and give to robot
+            }
+
+            this.verts3 = new VertexPositionColor[5]; // Pyramid that represents 
+      the robot. 
+            Vector3 robotPosition = this.robot1.GetPosition();
+            this.verts3[0] = new VertexPositionColor(new Vector3(-0.3f, 0.3f, 0) 
+      + robotPosition, Color.Aqua);
+            this.verts3[1] = new VertexPositionColor(new Vector3(0.3f, 0.3f, 0) +
+       robotPosition, Color.Green);
+            this.verts3[2] = new VertexPositionColor(new Vector3(-0.0f, 0.0f, 1.0
+      f) + robotPosition, Color.Red);
+            this.verts3[3] = new VertexPositionColor(new Vector3(-0.3f, -0.3f, 0)
+       + robotPosition, Color.Black);
+            this.verts3[4] = new VertexPositionColor(new Vector3(-0.3f, 0.3f, 0) 
+      + robotPosition, Color.Orange);
+
+            if (this.trackRobot == true)
+            {
+                this.cameraList[0].SetCameraPositionAndTarget(robotPosition + (Ve
+      ctor3.UnitZ * 8), robotPosition); // Set the main camera to follow if follow is o
+      n
+            }
+
+            this.cameraList[1] = this.robot1.GetRobotCamera(); // Update the robo
+      t camera as well.
+        }
+\end{DoxyCode}
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_a8ec874da6a1aa6fab66c9f1c0d7549a8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_simulation_main_a8ec874da6a1aa6fab66c9f1c0d7549a8_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!arialLarge@{arialLarge}}
+\index{arialLarge@{arialLarge}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{arialLarge}]{\setlength{\rightskip}{0pt plus 5cm}SpriteFont {\bf Attempt\_\-7.SimulationMain.arialLarge}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_ac193bee1fac89d0148938ab528684f89}
+
+
+The 2D font object needed to show text. Size = 20. 
+
+
+
+Definition at line 100 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!arialSmall@{arialSmall}}
+\index{arialSmall@{arialSmall}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{arialSmall}]{\setlength{\rightskip}{0pt plus 5cm}SpriteFont {\bf Attempt\_\-7.SimulationMain.arialSmall}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_a9c44b03ea24459de3117b705612a4b65}
+
+
+A smaller font of arial to show debug information. 
+
+
+
+Definition at line 105 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!basicEffects@{basicEffects}}
+\index{basicEffects@{basicEffects}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{basicEffects}]{\setlength{\rightskip}{0pt plus 5cm}BasicEffect {\bf Attempt\_\-7.SimulationMain.basicEffects}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_a68088515c710f3045abb248dc77fb059}
+
+
+The basicEffects for rendering in 3D. 
+
+
+
+Definition at line 65 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!cameraList@{cameraList}}
+\index{cameraList@{cameraList}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{cameraList}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Camera}$>$ {\bf Attempt\_\-7.SimulationMain.cameraList}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_a3b83a138c458ab76ad38722ba6cced5a}
+
+
+A list of the cameras. There are 2, The mainview and the robot view. 
+\begin{DoxyItemize}
+\item WorldView \doxyref{Camera}{p.}{class_attempt__7_1_1_camera} = 0 (The main camera) 
+\item \doxyref{Robot}{p.}{class_attempt__7_1_1_robot} View \doxyref{Camera}{p.}{class_attempt__7_1_1_camera} = 1  
+\end{DoxyItemize}
+
+
+
+Definition at line 124 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!currentHoughMode@{currentHoughMode}}
+\index{currentHoughMode@{currentHoughMode}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{currentHoughMode}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Attempt\_\-7.SimulationMain.currentHoughMode} = 1\hspace{0.3cm}{\ttfamily  [static]}}\label{class_attempt__7_1_1_simulation_main_aaa69f7bf5be3a94041ab550508cfbd4b}
+
+
+If 0 then Old mode (top left origin), if 1 then New Hough mode( bottom Center). 
+
+
+
+Definition at line 277 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!graphics@{graphics}}
+\index{graphics@{graphics}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{graphics}]{\setlength{\rightskip}{0pt plus 5cm}GraphicsDeviceManager {\bf Attempt\_\-7.SimulationMain.graphics}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_ad2efa87410eaca1dbf09c6424b9b31fc}
+
+
+GPU manager. 
+
+
+
+Definition at line 30 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!grass@{grass}}
+\index{grass@{grass}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{grass}]{\setlength{\rightskip}{0pt plus 5cm}Texture2D {\bf Attempt\_\-7.SimulationMain.grass}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_aab081a6e01f2778738692ef5cdecfed3}
+
+
+Represents the texture of the grass bitmap that is used to represent the grass. 
+
+
+
+Definition at line 55 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!imageAnalysis@{imageAnalysis}}
+\index{imageAnalysis@{imageAnalysis}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{imageAnalysis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ImageAnalysis} {\bf Attempt\_\-7.SimulationMain.imageAnalysis}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_a9f9ea12c0d811d9bcd5f933adb3d75f3}
+
+
+The image analysis object/class does the image processing. 
+
+
+
+Definition at line 141 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!largeGrass@{largeGrass}}
+\index{largeGrass@{largeGrass}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{largeGrass}]{\setlength{\rightskip}{0pt plus 5cm}Texture2D {\bf Attempt\_\-7.SimulationMain.largeGrass}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_a6d8a090dc3732924bc787fe73cd09657}
+
+
+A large tiled version of the grass Texture. 
+
+
+
+Definition at line 60 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!rand@{rand}}
+\index{rand@{rand}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{rand}]{\setlength{\rightskip}{0pt plus 5cm}Random {\bf Attempt\_\-7.SimulationMain.rand}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_ae9fff7ad9450d2b1c783a8867d386031}
+
+
+Represents a random object so that random numbers can be generated. 
+
+
+
+Definition at line 110 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!renderTargets@{renderTargets}}
+\index{renderTargets@{renderTargets}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{renderTargets}]{\setlength{\rightskip}{0pt plus 5cm}List$<$RenderTarget2D$>$ {\bf Attempt\_\-7.SimulationMain.renderTargets}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_abb56a338488e1b56bb87162cd8405c8f}
+
+
+A list of the rendertargets. Rather than rendering to the screen, the image produced by the GPU is saved to a rendertarget.  The rendertargets correspond directly with the camera views.  
+
+
+\begin{DoxyItemize}
+\item World View Target = 0  
+\item \doxyref{Robot}{p.}{class_attempt__7_1_1_robot} View Target = 1 
+\end{DoxyItemize}
+
+
+
+Definition at line 136 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!robot1@{robot1}}
+\index{robot1@{robot1}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{robot1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Robot} {\bf Attempt\_\-7.SimulationMain.robot1}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_a80810188dd0ef0a7422d0594ce3b7eca}
+
+
+The robot object. See the robot class for more information. 
+
+
+
+Definition at line 115 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!screenRectangle@{screenRectangle}}
+\index{screenRectangle@{screenRectangle}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{screenRectangle}]{\setlength{\rightskip}{0pt plus 5cm}Rectangle {\bf Attempt\_\-7.SimulationMain.screenRectangle} = new Rectangle(0, 0, 640, 480)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_aa4011cd0b15cc12416022b1cdec378ea}
+
+
+Rectangle object that is the size of the camera resolution (screenSize). 
+
+
+
+Definition at line 40 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!screenSize@{screenSize}}
+\index{screenSize@{screenSize}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{screenSize}]{\setlength{\rightskip}{0pt plus 5cm}Vector2 {\bf Attempt\_\-7.SimulationMain.screenSize} = new Vector2(640, 480)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_aab4721054890276bdd393bf33731eb88}
+
+
+2D vector representing the resolution of the cameras used in the simulation. 
+
+
+
+Definition at line 35 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!spriteBatch@{spriteBatch}}
+\index{spriteBatch@{spriteBatch}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{spriteBatch}]{\setlength{\rightskip}{0pt plus 5cm}SpriteBatch {\bf Attempt\_\-7.SimulationMain.spriteBatch}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_afe8a6a7e4c03f00c8b92448b8ce11e82}
+
+
+The sprite batch object. Used to draw 2D graphics. 
+
+
+
+Definition at line 50 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!timePressedKey@{timePressedKey}}
+\index{timePressedKey@{timePressedKey}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{timePressedKey}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Attempt\_\-7.SimulationMain.timePressedKey} = 0\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_ada7b29bc97491449c6cf58b58b7f82cc}
+
+
+Time in totalmillseconds when F1, F2, or F3 were pushed. 
+
+
+
+Definition at line 95 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!trackRobot@{trackRobot}}
+\index{trackRobot@{trackRobot}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{trackRobot}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Attempt\_\-7.SimulationMain.trackRobot} = false\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_a3b904d65677046e391d59846d2f1a8b9}
+
+
+Bool representing if the main \doxyref{Camera}{p.}{class_attempt__7_1_1_camera} moves its view to follow the robot. 
+
+
+
+Definition at line 90 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!verts1@{verts1}}
+\index{verts1@{verts1}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{verts1}]{\setlength{\rightskip}{0pt plus 5cm}VertexPositionColor [$\,$] {\bf Attempt\_\-7.SimulationMain.verts1}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_acdfd2380fdb8526a45e083f23b8d570b}
+
+
+The vertexPositionColor array holding the vertex information needed for drawing the white lines representing the course. 
+
+
+
+Definition at line 70 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!verts2@{verts2}}
+\index{verts2@{verts2}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{verts2}]{\setlength{\rightskip}{0pt plus 5cm}VertexPositionTexture [$\,$] {\bf Attempt\_\-7.SimulationMain.verts2}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_a8c77e7d93e5e69fb14c1a36188e39a02}
+
+
+The vertexPositionColor array holding the information for the grass/ground. 
+
+
+
+Definition at line 75 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!verts3@{verts3}}
+\index{verts3@{verts3}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{verts3}]{\setlength{\rightskip}{0pt plus 5cm}VertexPositionColor [$\,$] {\bf Attempt\_\-7.SimulationMain.verts3}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_a825a374a50b64f52d5c990b999ac7555}
+
+
+The vertexPositionColor Array holding the information needed for the 3D representation of the robot. 
+
+
+
+Definition at line 80 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!viewPortList@{viewPortList}}
+\index{viewPortList@{viewPortList}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{viewPortList}]{\setlength{\rightskip}{0pt plus 5cm}List$<$Viewport$>$ {\bf Attempt\_\-7.SimulationMain.viewPortList}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_a65d06e9d2b30625630083b7526fa4dd3}
+
+
+List holding the viewports used in the simulation. 
+
+
+
+Definition at line 85 of file SimulationMain.cs.
+
+\index{Attempt\_\-7::SimulationMain@{Attempt\_\-7::SimulationMain}!windowSize@{windowSize}}
+\index{windowSize@{windowSize}!Attempt_7::SimulationMain@{Attempt\_\-7::SimulationMain}}
+\subsubsection[{windowSize}]{\setlength{\rightskip}{0pt plus 5cm}Vector2 {\bf Attempt\_\-7.SimulationMain.windowSize} = new Vector2(1000, 780)\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_simulation_main_a74fa7cc4615b22ab00abfdab65d75e59}
+
+
+2D vector represeting the size of the Window's Window that the simulation will run in. 
+
+
+
+Definition at line 45 of file SimulationMain.cs.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/{\bf SimulationMain.cs}\end{DoxyCompactItemize}

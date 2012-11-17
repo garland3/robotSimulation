@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_attempt__7_1_1_draw_image_analysis.html#a2e2d0a8b750ee6b4e4a91584dc5907d2" title="Puts the hough information about the lines in the vertex array." alt="" coords="315,59,640,88"/>
+<area shape="rect" id="node5" href="$class_attempt__7_1_1_draw_image_analysis.html#a6de17ba6756456372d8d6e2a69d6ce45" title="Allows the game component to update itself." alt="" coords="761,5,1007,35"/>
+<area shape="rect" id="node7" href="$class_attempt__7_1_1_draw_image_analysis.html#ad0933abc7604eb194143440f1b875383" title="Colors the analysis triangles based a trueFalse bool map. Also adds the Hough information If true the..." alt="" coords="693,59,1075,88"/>
+<area shape="rect" id="node9" href="$class_attempt__7_1_1_draw_image_analysis.html#a5fc3cbd0f863118307ed7b61e778e52e" title="Attempt_7.DrawImageAnalysis.UpdateColorArrayto3DRectangle" alt="" coords="689,112,1079,141"/>
+</map>

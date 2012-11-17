@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_attempt__7_1_1_camera.html#a0090d02f2acd45b0088ecd0123be57ef" title="Updates the camera&#39;s view. If the camera is mouse dependent than Update gets the position of the ..." alt="" coords="288,5,464,35"/>
+<area shape="rect" id="node5" href="$class_attempt__7_1_1_robot.html#a4643dee9895d602aa0257eebb09fa82a" title="Main Update method. Calls all other methods for updating the robot. Because the robot is a GameCompon..." alt="" coords="512,5,677,35"/>
+</map>

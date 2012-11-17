@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_attempt__7_1_1_draw_image_analysis.html#af6ec1c3997ca2f3d14beeb0202b15e58" title="Puts the hough information about the lines in the vertex array." alt="" coords="568,5,893,35"/>
+<area shape="rect" id="node5" href="$class_attempt__7_1_1_draw_image_analysis.html#aa1273c30c63d4963aebfede894eec3e4" title="Updates the vertex information of the triangels for a line of a particular color based off its starti..." alt="" coords="943,5,1201,35"/>
+</map>

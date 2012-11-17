@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="namespaceattempt__7" kind="namespace">
+    <compoundname>attempt_7</compoundname>
+    <innerclass refid="classattempt__7_1_1_user_control1" prot="public">attempt_7::UserControl1</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/UserControl1.cs" line="11"/>
+  </compounddef>
+</doxygen>

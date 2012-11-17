@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.7.3">
+  <compound refid="class_attempt__7_1_1_camera" kind="class"><name>Attempt_7::Camera</name>
+    <member refid="class_attempt__7_1_1_camera_1ab58715b7ebc0eb1b0181638331e7fe04" kind="variable"><name>View</name></member>
+    <member refid="class_attempt__7_1_1_camera_1afad745cd526a8c616843da8464a4d256" kind="variable"><name>Projection</name></member>
+    <member refid="class_attempt__7_1_1_camera_1a3bc8d53e4d9b029bb75f8f0e7b09cc17" kind="variable"><name>World</name></member>
+    <member refid="class_attempt__7_1_1_camera_1ac5ff73c169cf1db99dc2c95e4a2d8464" kind="variable"><name>cameraPosition</name></member>
+    <member refid="class_attempt__7_1_1_camera_1a2ab493dc1de314f87a198146bf87db54" kind="variable"><name>target</name></member>
+    <member refid="class_attempt__7_1_1_camera_1a6923d9ddebf1709547640a09c494bf7f" kind="variable"><name>updirection</name></member>
+    <member refid="class_attempt__7_1_1_camera_1a2595f02eb31f80ea60343ba98fdbc5ff" kind="variable"><name>mouseOffset</name></member>
+    <member refid="class_attempt__7_1_1_camera_1afa316d43d2017c000a0650706956d08b" kind="variable"><name>isMouseDependent</name></member>
+    <member refid="class_attempt__7_1_1_camera_1a00dbb72fcaebdd53a8206071f2da796b" kind="function"><name>Camera</name></member>
+    <member refid="class_attempt__7_1_1_camera_1a3007d7c03912d7ff6f6f19e90a3575c2" kind="function"><name>Initialize</name></member>
+    <member refid="class_attempt__7_1_1_camera_1a0090d02f2acd45b0088ecd0123be57ef" kind="function"><name>Update</name></member>
+    <member refid="class_attempt__7_1_1_camera_1a0574b1158af6b8e99f5d2b21fbc3c7a8" kind="function"><name>GetCameraPosition</name></member>
+    <member refid="class_attempt__7_1_1_camera_1a950a4219356e02b8b8eddf506c03743f" kind="function"><name>SetCameraPositionAndTarget</name></member>
+    <member refid="class_attempt__7_1_1_camera_1ac8b5117b5378692c67dada10a2707ad9" kind="function"><name>UpdateMouse</name></member>
+    <member refid="class_attempt__7_1_1_camera_1a26c1b12ed3fea81c3bed64f0389cc9d1" kind="function"><name>UpdateKeyBoard</name></member>
+  </compound>
+  <compound refid="class_attempt__7_1_1_draw_image_analysis" kind="class"><name>Attempt_7::DrawImageAnalysis</name>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a0c212b6483e545cdb54b744f26ae5aaf" kind="variable"><name>count1A</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1ab82cc146a1cdfc52336d1ae86eb89157" kind="variable"><name>count2A</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1afda6ca182d55b530c3188413bfced70c" kind="variable"><name>count1C</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1aed235d7846bb2f2ace68331beb4ca7f2" kind="variable"><name>count2C</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a0978bfdff294a91bc2c99d55c29a9e2f" kind="variable"><name>count1D</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1adfb22307c8f2e999485d67b74fe64615" kind="variable"><name>screenWidth</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a6c238510c027ef883dec2ff739a3e2b3" kind="variable"><name>screenHeight</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a99b0bebc91f29a61b067739a0a5cdb58" kind="variable"><name>UpdateSquareDimForDrawing</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a39cdb07a4e1cbdf5ebef0c53e9af6c94" kind="variable"><name>UpdateSquareDimForAnalysis</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a2e2dcb54db7f1ebeac6be4cf3b6d7aed" kind="variable"><name>NumberofLinesToFind</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a56819c40d9d3d8898dee1ab7b7f1720b" kind="variable"><name>ThetaIncrement</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a0783fd297ddd176a784cb49f70833e18" kind="variable"><name>RhoIncrement</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a96d5f79f1b1a104d2ab3f47aa6616d37" kind="variable"><name>camera</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1ab649a91f61c546824edd468642c77fa3" kind="variable"><name>viewPortList</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a36779d384eaa0c4188a16758540403e0" kind="variable"><name>basicEffects</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a531efa4688cdabd3c3bf99a5f1777d9c" kind="variable"><name>arial</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a76002b58f1c462ae159251486137f677" kind="variable"><name>spriteBatch</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1ac921c38d0ea4e068fff70230356a9257" kind="variable"><name>vertexArray</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1aa7d53807833a1337862f7fd8f17f0aa7" kind="variable"><name>vertexArray2</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a29f389c1637b758aea8700cc3b4d8c92" kind="variable"><name>houghInfo</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a111f5f187dc4143d67b30d98031d0968" kind="variable"><name>imageAnalysis</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a453387b044257078cc5a6b8cb5c736b1" kind="variable"><name>vertexIndex</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a44ab97b569495bde696945acd9728e68" kind="variable"><name>vertexIndexList</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a295eefafafe824bfc196c0d7e88f55aa" kind="variable"><name>houghLineStartandStopVectors</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a82c130125f8f918de9e139eff5de225f" kind="function"><name>DrawImageAnalysis</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1ae271911b749fc6bad5f303da0f6b895d" kind="function"><name>Initialize</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a6de17ba6756456372d8d6e2a69d6ce45" kind="function"><name>Update</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1aacad4429bd67cfff2db2a42056fdef7e" kind="function"><name>UpdateColorArrayto3DRectangle</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a3405b325467c48533528a5312bbbf08b" kind="function"><name>Draw</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1ad0933abc7604eb194143440f1b875383" kind="function"><name>UpdateBoolMapto3DRectangle</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a88d4b6824cb8e0791b6e81053afe02d7" kind="function"><name>UpdateBoolMapto3DRectangleUsingIndex</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a065696d0fbab0244c164284ff296cbc5" kind="function"><name>DrawAnalysis</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1abb4b21e7bad04bbbbb60b1c997827543" kind="function"><name>DrawAnalysisUsingIndex</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1affaba058b8e77f01efcba3f6ded28dea" kind="function"><name>LoadContent</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1a98635843e4766a13a2fa9a73765aeb78" kind="function"><name>BuildVertexArrayforDrawingSmallerNumberofTriangles</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1aa1273c30c63d4963aebfede894eec3e4" kind="function"><name>InsertLine</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1af6ec1c3997ca2f3d14beeb0202b15e58" kind="function"><name>AddHoughLinesColor</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1ab82f803a8226f55b480a102215aac025" kind="function"><name>drawUsingSmallerNumberofVertexs</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1aaf4088bca6ef2e41e13c6a9bf0ca2a52" kind="function"><name>DrawText</name></member>
+    <member refid="class_attempt__7_1_1_draw_image_analysis_1aea47cb9ef13fda648ba3e8acb8808ed3" kind="function"><name>LoadVertexArray</name></member>
+  </compound>
+  <compound refid="class_attempt__7_1_1_image_analysis" kind="class"><name>Attempt_7::ImageAnalysis</name>
+    <member refid="class_attempt__7_1_1_image_analysis_1aaa874c7b203d72acf483aac60d199c10" kind="variable"><name>OLD_HOUGH_MODE</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a11feb673e1bb0953762222e164cec0c7" kind="variable"><name>New_HOUGH_MODE</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a4b69c7da8f3962c2220e8d77fd9c51e9" kind="variable"><name>currentMode</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a74cfdb396e3abe4a6f5a9ccbe4f948e2" kind="variable"><name>NumberofLinesToFind</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a8cdd9f3be232a5cf32006ddd52bc4ae2" kind="variable"><name>AccumLength</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a75787da0f52a71c54f5f8a18d32467b8" kind="variable"><name>AccumLengthOld</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1ae80e0958661793ecf50c1a17f1b7e9d0" kind="variable"><name>ThetaIncrement</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1aade101616dd021e3cbb0501146a78835" kind="variable"><name>RhoIncrement</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1ace29e13b249b0a3d0fccd7228f47937b" kind="variable"><name>UpdateSquareDimForDrawing</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a228e6183baa7e0b58771ad6be4117d7f" kind="variable"><name>UpdateSquareDimForAnalysis</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1af57eb11bc470f90921bed1b60cfc9741" kind="variable"><name>ClearArroundMaxDegree</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a5de31952bf3d80b7ad21aa4c0acc3092" kind="variable"><name>ClearArroundMaxRho</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a3622f807410a6198f92490ee1964b3ff" kind="variable"><name>SmoothSearchSize</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a9b47675bd42bc8dacf5c93bb02befd81" kind="variable"><name>turnIndicatorisTheta</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a5c675bc754b9cc7185837d234766dd04" kind="variable"><name>robotCameraView</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1ab79ad9fb17e17983e14861ee93c3479a" kind="variable"><name>trueFalseMap</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a88fcfe8ea8917bfe5e458a845cc2b291" kind="variable"><name>trueFalseMapB</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1ad698ffe87469398b956a2a1c5ae2b840" kind="variable"><name>trueFalseMapC</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1affd258e6985c66c0a80415e3ddebb4e7" kind="variable"><name>screenWidth</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1af5af6f29720f9a85b1cb6a71016b7af8" kind="variable"><name>screenHeight</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1ace2cb703da0214a4f5565f2c619d54f8" kind="variable"><name>turnIndication</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a51a11cb6235b097fb2140c32ab734521" kind="variable"><name>houghInfo</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1aeb7215aa1a091fa531c07ee3aa4c03d6" kind="variable"><name>houghLineStartandStopVectors</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a3490343b5c67fcbbdbb23257a56e4b3a" kind="variable"><name>colorArray</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1acdb050a1334538156f7a3332ae7f332a" kind="variable"><name>colorArray1D</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a8fa0aaf56dde7fca58135cdc8c74575f" kind="variable"><name>count1A</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a53eb6ffb4fdd39ce7f8f59a7358e2144" kind="variable"><name>count1B</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a87af8ae466e41feca21cb200e3463bf9" kind="variable"><name>count1C</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a195927d24332255e0130b0bf2791e146" kind="variable"><name>count1D</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1aea1d803966f442e9699b52e196613f8c" kind="variable"><name>count1E</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1ae79ba8e9b9e910edf5aded0604399f07" kind="variable"><name>count2A</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1aa9956634aa2f4b718beb2d398b3d2b46" kind="variable"><name>count2B</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a8f2510e6449b532e0a8aa7c616d8f474" kind="variable"><name>count2C</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a1c9acb58142af8f283eb7958305b4337" kind="variable"><name>count2E</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a6dfa6991871f29000b2e32e2a1bed121" kind="variable"><name>middleValues</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a29de7b233adab56b0b7df3464b1528ef" kind="variable"><name>totalWhiteCnt</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1ac861772cdcfacb7ac2401079c651eb4e" kind="variable"><name>accum2</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1acb2ae3d661927b0467b5d4fdc7eded98" kind="variable"><name>accum1</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1ae51a397ecb99b137ec6920e1329e8b6b" kind="variable"><name>cntThreshold</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1aa9e1387a4605edfe0d910284724a671a" kind="variable"><name>redGood</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1afdb8b1b0ef151cceeed6883a6ca955f5" kind="variable"><name>blueGood</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a288ae76c53338d5463b05a6c978baf61" kind="variable"><name>greenGood</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1ab67ff7ed27c69e82b67b7d0d3b6e1fec" kind="variable"><name>whiteParam</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a20ae1fce740efa28137cde3029a1b4bf" kind="variable"><name>drawAnalysis</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1af6c217c696c6b6e16d8988e89d39666b" kind="variable"><name>countOfNewHoughSingularities</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1ab9f59ec453ba211ebc7cd614c6ab5fab" kind="variable"><name>countofOldHoughSingularities</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a372086fbe7753711c79fb65694e74b8b" kind="function"><name>ImageAnalysis</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" kind="function"><name>Initialize</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a1d0bc75993df71df5d005ab3d749bb81" kind="function"><name>Update1</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1aa6cac5de12d6bf454500ee5498db48cb" kind="function"><name>SetRobotCameraView</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1ab597ab75ce16d1fd903b68e7df2a2c7f" kind="function"><name>Update</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a55b77047aaacc5a78fcd70401da3b069" kind="function"><name>GetWhiteCount</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a897a0f80fbf65670828c8a1a1db13d97" kind="function"><name>GetHoughInfo</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a1ba8eee3151c73ef5023003ee7b57b67" kind="function"><name>GetTrueFalseMaptoDraw</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1ae14af27b7aaa3d4a1006af2a56ab14d1" kind="function"><name>GetHoughMode</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1ab8604cecb2f620a88298bccc48a4436d" kind="function"><name>GetColorMapToDraw</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a99c5e65fe48a1145d7c9afba96bfb220" kind="function"><name>GetTurnIndicator</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a3c35b4a6a6a1e4464fc79772caa612cf" kind="function"><name>GetHoughStartandStopVectors</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a23adf47c39e8990ae161dd46dcb43846" kind="function"><name>GetSingularitiesNewHough</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a8b8e7e705c97bbb5da1300c139ec0f36" kind="function"><name>GetSingularitesOldHough</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1ac70a680405b76bd8b0ece8ee2a8112e8" kind="function"><name>TextureTo2DArray</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a9418e8e0a6868d294d27b97cadf6d958" kind="function"><name>FindWhite</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a879442dce1e8ad7240a78101c31cace4" kind="function"><name>Whiteline</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a87fb97262f08f3b21afd2bcdb29bbe6c" kind="function"><name>Smooth</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a0befd0244fb507716329010283730fb6" kind="function"><name>ShowPath</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a74a456e2880a858c96a7d8802250c504" kind="function"><name>FindMaxInAccumArrayOfHough</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a327ee82eeb29ad6f4060bb4a9a21d7d8" kind="function"><name>CalculateStartandStopofLine</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" kind="function"><name>Hough</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1aa983bdc246185a5a41414e1db84534dd" kind="function"><name>FindAverages</name></member>
+    <member refid="class_attempt__7_1_1_image_analysis_1a00bfc4bb52ece15ba645b81fb3ca3f2b" kind="function"><name>ClearMaxInAccum</name></member>
+  </compound>
+  <compound refid="class_attempt__7_1_1_robot" kind="class"><name>Attempt_7::Robot</name>
+    <member refid="class_attempt__7_1_1_robot_1a2c385dd8076a962677e83ad6a6dc2bba" kind="variable"><name>position</name></member>
+    <member refid="class_attempt__7_1_1_robot_1aa928880825b2dadef2602204a6998854" kind="variable"><name>startPosition</name></member>
+    <member refid="class_attempt__7_1_1_robot_1aeab9c7a5393e1b353f90e179815d1d28" kind="variable"><name>direction</name></member>
+    <member refid="class_attempt__7_1_1_robot_1a7bf6f1325eee035a51c8ab387e7a79b8" kind="variable"><name>speed</name></member>
+    <member refid="class_attempt__7_1_1_robot_1a3d145c2fa647a421cebd0cd1ba2908e0" kind="variable"><name>distanceToCameraTarget</name></member>
+    <member refid="class_attempt__7_1_1_robot_1a4f546940b473ee32465833ddb9e14bc0" kind="variable"><name>cameraHeight</name></member>
+    <member refid="class_attempt__7_1_1_robot_1a7a9896ed9d9a0eff3a72a38d9a79e16d" kind="variable"><name>robotCameraView</name></member>
+    <member refid="class_attempt__7_1_1_robot_1a150306a7cb29e38e31b4c583dd260845" kind="variable"><name>paused</name></member>
+    <member refid="class_attempt__7_1_1_robot_1ab4f37d2ec38b3a9fa404e6d9c74c54cc" kind="variable"><name>changeDirectionThreshholdValue</name></member>
+    <member refid="class_attempt__7_1_1_robot_1a6cce884644ea640990454230965f80c5" kind="variable"><name>timePressedKey</name></member>
+    <member refid="class_attempt__7_1_1_robot_1a785ba173cf0504dee326170d3b4db554" kind="function"><name>Robot</name></member>
+    <member refid="class_attempt__7_1_1_robot_1a121c5b23a88c3a1b57bbfc728e63f7bf" kind="function"><name>GetPosition</name></member>
+    <member refid="class_attempt__7_1_1_robot_1a9541d93ce48fe779926507f5b0a9f229" kind="function"><name>SetPosition</name></member>
+    <member refid="class_attempt__7_1_1_robot_1a9945c6d5a6e824f9669b3e6720f644e3" kind="function"><name>SetStartPosition</name></member>
+    <member refid="class_attempt__7_1_1_robot_1aeda683933e67246b4e3758d8bdd250c3" kind="function"><name>GetRobotCamera</name></member>
+    <member refid="class_attempt__7_1_1_robot_1a68c2627772051c07f1551c38daf9ab95" kind="function"><name>GetIsRobotPaused</name></member>
+    <member refid="class_attempt__7_1_1_robot_1a7f204250cb4974ce920c698ce72556d8" kind="function"><name>GetDirection</name></member>
+    <member refid="class_attempt__7_1_1_robot_1a4b7de5f5731480e25f70c0177495e635" kind="function"><name>Initialize</name></member>
+    <member refid="class_attempt__7_1_1_robot_1a2ad0f76fceb915c1f1b0b98f4dc4686e" kind="function"><name>ChangeDirection</name></member>
+    <member refid="class_attempt__7_1_1_robot_1a4643dee9895d602aa0257eebb09fa82a" kind="function"><name>Update</name></member>
+    <member refid="class_attempt__7_1_1_robot_1a26d9c782d2b45cea22c9214cddd65e64" kind="function"><name>GetKeyBoard</name></member>
+  </compound>
+  <compound refid="class_attempt__7_1_1_simulation_main" kind="class"><name>Attempt_7::SimulationMain</name>
+    <member refid="class_attempt__7_1_1_simulation_main_1ad2efa87410eaca1dbf09c6424b9b31fc" kind="variable"><name>graphics</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1aab4721054890276bdd393bf33731eb88" kind="variable"><name>screenSize</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1aa4011cd0b15cc12416022b1cdec378ea" kind="variable"><name>screenRectangle</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a74fa7cc4615b22ab00abfdab65d75e59" kind="variable"><name>windowSize</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1afe8a6a7e4c03f00c8b92448b8ce11e82" kind="variable"><name>spriteBatch</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1aab081a6e01f2778738692ef5cdecfed3" kind="variable"><name>grass</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a6d8a090dc3732924bc787fe73cd09657" kind="variable"><name>largeGrass</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a68088515c710f3045abb248dc77fb059" kind="variable"><name>basicEffects</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1acdfd2380fdb8526a45e083f23b8d570b" kind="variable"><name>verts1</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a8c77e7d93e5e69fb14c1a36188e39a02" kind="variable"><name>verts2</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a825a374a50b64f52d5c990b999ac7555" kind="variable"><name>verts3</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a65d06e9d2b30625630083b7526fa4dd3" kind="variable"><name>viewPortList</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a3b904d65677046e391d59846d2f1a8b9" kind="variable"><name>trackRobot</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1ada7b29bc97491449c6cf58b58b7f82cc" kind="variable"><name>timePressedKey</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1ac193bee1fac89d0148938ab528684f89" kind="variable"><name>arialLarge</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a9c44b03ea24459de3117b705612a4b65" kind="variable"><name>arialSmall</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1ae9fff7ad9450d2b1c783a8867d386031" kind="variable"><name>rand</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a80810188dd0ef0a7422d0594ce3b7eca" kind="variable"><name>robot1</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a3b83a138c458ab76ad38722ba6cced5a" kind="variable"><name>cameraList</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1abb56a338488e1b56bb87162cd8405c8f" kind="variable"><name>renderTargets</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a9f9ea12c0d811d9bcd5f933adb3d75f3" kind="variable"><name>imageAnalysis</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1aaa69f7bf5be3a94041ab550508cfbd4b" kind="variable"><name>currentHoughMode</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a9ea5edf642dc80c782aa35f4a4ba4107" kind="function"><name>SimulationMain</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a87038950391e39711d316d5a73d8768f" kind="function"><name>Initialize</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1afe27d46d9e2775dfb04d6397b700baeb" kind="function"><name>LoadContent</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a5626f084ed61fc4807b4bd5cbc256129" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a2fcdaa01b7439002334e047819e3ae4f" kind="function"><name>Update</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a4b98b01df022d9a02ce98bf80f0f5c9b" kind="function"><name>GetKeyBoard</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1ae2774f61c773a44b36670c81e5df8b05" kind="function"><name>Draw</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1afe6aa0f5c85b090b06c0228cf4e7c21c" kind="function"><name>DrawTextDebugInfo</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1aabe2d52bb2b34aeeff6a5d8c98512ef6" kind="function"><name>CreateViewPorts</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a931a8a86dead3b0cb29f28453cf4f6f0" kind="function"><name>CreateGrassTexture</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a5918fc691a0121426b6c3382a02e86c0" kind="function"><name>TextureTo2DArray</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1ad5cec97af179a424e2fd705ad82fc6bc" kind="function"><name>LoadGround</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a376590da39458ac9580001ca9fc1a036" kind="function"><name>LoadLines</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a8ec874da6a1aa6fab66c9f1c0d7549a8" kind="function"><name>UpDateRobotPosition</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a596379dec8c50adc14977c75005def80" kind="function"><name>BuildRenderTargets</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1acfd54a5aa5fb4311b2938ee7ab121022" kind="function"><name>DrawRobot</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1a6600ca6533a6db25d8796c13b63c1a40" kind="function"><name>DrawColorLines</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1abbd56e335ac6f87700aa78afdea7c6c8" kind="function"><name>DrawGrass</name></member>
+    <member refid="class_attempt__7_1_1_simulation_main_1aa933058eb5333dbb1addb68b72c27def" kind="function"><name>DrawText</name></member>
+  </compound>
+  <compound refid="classattempt__7_1_1_user_control1" kind="class"><name>attempt_7::UserControl1</name>
+    <member refid="classattempt__7_1_1_user_control1_1ae04c619a57a3116c297c884613866267" kind="variable"><name>components</name></member>
+    <member refid="classattempt__7_1_1_user_control1_1aae769dedffbcdb731a06dfd1b1aadea8" kind="variable"><name>button1</name></member>
+    <member refid="classattempt__7_1_1_user_control1_1aea456eff66fc3373208b1d1e18e30bc8" kind="function"><name>UserControl1</name></member>
+    <member refid="classattempt__7_1_1_user_control1_1a7192cfaed442d6762114349c4efb5ed3" kind="function"><name>Dispose</name></member>
+    <member refid="classattempt__7_1_1_user_control1_1aa7f26c54a6a74eb25d099636d8af3678" kind="function"><name>InitializeComponent</name></member>
+  </compound>
+  <compound refid="namespaceattempt__7" kind="namespace"><name>attempt_7</name>
+  </compound>
+  <compound refid="namespace_attempt__7" kind="namespace"><name>Attempt_7</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework" kind="namespace"><name>Microsoft::Xna::Framework</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_audio" kind="namespace"><name>Microsoft::Xna::Framework::Audio</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_content" kind="namespace"><name>Microsoft::Xna::Framework::Content</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_gamer_services" kind="namespace"><name>Microsoft::Xna::Framework::GamerServices</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_graphics" kind="namespace"><name>Microsoft::Xna::Framework::Graphics</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_input" kind="namespace"><name>Microsoft::Xna::Framework::Input</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_media" kind="namespace"><name>Microsoft::Xna::Framework::Media</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model" kind="namespace"><name>System::ComponentModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data" kind="namespace"><name>System::Data</name>
+  </compound>
+  <compound refid="namespace_system_1_1_diagnostics" kind="namespace"><name>System::Diagnostics</name>
+  </compound>
+  <compound refid="namespace_system_1_1_drawing" kind="namespace"><name>System::Drawing</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_interop_services" kind="namespace"><name>System::Runtime::InteropServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_timers" kind="namespace"><name>System::Timers</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_forms" kind="namespace"><name>System::Windows::Forms</name>
+  </compound>
+  <compound refid="_camera_8cs" kind="file"><name>Camera.cs</name>
+  </compound>
+  <compound refid="_draw_image_analysis_8cs" kind="file"><name>DrawImageAnalysis.cs</name>
+  </compound>
+  <compound refid="_draw_image_analysis2_8cs" kind="file"><name>DrawImageAnalysis2.cs</name>
+  </compound>
+  <compound refid="_image_analysis_8cs" kind="file"><name>ImageAnalysis.cs</name>
+  </compound>
+  <compound refid="_image_analysis2_8cs" kind="file"><name>ImageAnalysis2.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_robot_8cs" kind="file"><name>Robot.cs</name>
+  </compound>
+  <compound refid="_simulation_main_8cs" kind="file"><name>SimulationMain.cs</name>
+  </compound>
+  <compound refid="_user_control1_8cs" kind="file"><name>UserControl1.cs</name>
+  </compound>
+  <compound refid="_user_control1_8_designer_8cs" kind="file"><name>UserControl1.Designer.cs</name>
+  </compound>
+  <compound refid="dir_65531c2611cc05e70dd67d851570d469" kind="dir"><name>C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/</name>
+  </compound>
+  <compound refid="dir_da3435c79f593b98a1fd1bf6a2bb87bf" kind="dir"><name>C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/</name>
+  </compound>
+  <compound refid="dir_7a2206b575ad5096f2539a9d8c36251a" kind="dir"><name>C:/Users/Anthony/Dropbox/Senior Project/attempt 7/</name>
+  </compound>
+  <compound refid="dir_4dc70ce585b07afacd66256bfeb8b8e5" kind="dir"><name>C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Properties/</name>
+  </compound>
+</doxygenindex>

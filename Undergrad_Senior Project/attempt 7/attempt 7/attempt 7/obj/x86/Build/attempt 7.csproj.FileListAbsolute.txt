@@ -1,0 +1,16 @@
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Build\Content\grass11.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Build\Content\blacksquare.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Build\Content\ground.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Build\Content\flashlight.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Build\Content\Arial.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Build\attempt 7.exe.manifest
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Build\attempt 7.application
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Build\attempt 7.exe
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Build\attempt 7.pdb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Build\ResolveAssemblyReference.cache
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Build\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Build\attempt 7.TrustInfo.xml
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Build\attempt 7.exe.manifest
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Build\attempt 7.application
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Build\attempt 7.exe
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Build\attempt 7.pdb

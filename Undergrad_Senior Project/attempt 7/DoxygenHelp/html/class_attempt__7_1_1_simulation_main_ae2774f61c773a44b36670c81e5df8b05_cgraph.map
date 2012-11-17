@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_attempt__7_1_1_simulation_main.html#a596379dec8c50adc14977c75005def80" title="Set the renderTargets to a texture object in memory rather than rendering to the screen. Need target for both the Worldview and the robot CameraView." alt="" coords="268,5,559,35"/>
+<area shape="rect" id="node5" href="$class_attempt__7_1_1_simulation_main.html#a6600ca6533a6db25d8796c13b63c1a40" title="Draw the lines from the &quot;camera&quot;&#39;s persepective." alt="" coords="279,59,548,88"/>
+<area shape="rect" id="node7" href="$class_attempt__7_1_1_simulation_main.html#abbd56e335ac6f87700aa78afdea7c6c8" title="Draw the grass or ground from &quot;camera&quot;&#39;s perspective." alt="" coords="292,112,535,141"/>
+<area shape="rect" id="node9" href="$class_attempt__7_1_1_simulation_main.html#acfd54a5aa5fb4311b2938ee7ab121022" title="Draw the robot from the &quot;camera&quot;s perspective." alt="" coords="292,165,535,195"/>
+<area shape="rect" id="node11" href="$class_attempt__7_1_1_simulation_main.html#aa933058eb5333dbb1addb68b72c27def" title="Draw the Simulation Status as either PAUSED or Active." alt="" coords="297,219,529,248"/>
+<area shape="rect" id="node15" href="$class_attempt__7_1_1_simulation_main.html#afe6aa0f5c85b090b06c0228cf4e7c21c" title="Attempt_7.SimulationMain.DrawTextDebugInfo" alt="" coords="268,272,559,301"/>
+<area shape="rect" id="node17" href="$class_attempt__7_1_1_image_analysis.html#aa6cac5de12d6bf454500ee5498db48cb" title="Takes a 2D renderTarget/Texture and sets it as the image to analze. Explicitly called in the Simulati..." alt="" coords="263,325,564,355"/>
+<area shape="rect" id="node19" href="$class_attempt__7_1_1_image_analysis.html#a1d0bc75993df71df5d005ab3d749bb81" title="Stores the texture from the robot camera in a color array before the texture is disposed. Expicitly called in the SimulationMain Draw method." alt="" coords="303,379,524,408"/>
+<area shape="rect" id="node13" href="$class_attempt__7_1_1_robot.html#a68c2627772051c07f1551c38daf9ab95" title="Accessor method that tells if the robot is moving forward." alt="" coords="637,219,869,248"/>
+<area shape="rect" id="node21" href="$class_attempt__7_1_1_image_analysis.html#ac70a680405b76bd8b0ece8ee2a8112e8" title="Takes a texture and makes it into a 2D color array. Passing in the arrays is faster than trying to bu..." alt="" coords="615,379,892,408"/>
+</map>

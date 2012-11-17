@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="classattempt__7_1_1_user_control1" kind="class" prot="public">
+    <compoundname>attempt_7::UserControl1</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classattempt__7_1_1_user_control1_1ae04c619a57a3116c297c884613866267" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer attempt_7.UserControl1.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <initializer> null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/UserControl1.Designer.cs" line="8" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/UserControl1.Designer.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classattempt__7_1_1_user_control1_1aae769dedffbcdb731a06dfd1b1aadea8" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button attempt_7.UserControl1.button1</definition>
+        <argsstring></argsstring>
+        <name>button1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/UserControl1.Designer.cs" line="56" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/UserControl1.Designer.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classattempt__7_1_1_user_control1_1aea456eff66fc3373208b1d1e18e30bc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>attempt_7.UserControl1.UserControl1</definition>
+        <argsstring>()</argsstring>
+        <name>UserControl1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/UserControl1.cs" line="15" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/UserControl1.cs" bodystart="14" bodyend="18"/>
+        <references refid="classattempt__7_1_1_user_control1_1aa7f26c54a6a74eb25d099636d8af3678" compoundref="_user_control1_8_designer_8cs" startline="29" endline="52">attempt_7.UserControl1::InitializeComponent</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classattempt__7_1_1_user_control1_1a7192cfaed442d6762114349c4efb5ed3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void attempt_7.UserControl1.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/UserControl1.Designer.cs" line="15" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/UserControl1.Designer.cs" bodystart="14" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classattempt__7_1_1_user_control1_1aa7f26c54a6a74eb25d099636d8af3678" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void attempt_7.UserControl1.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/UserControl1.Designer.cs" line="30" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/UserControl1.Designer.cs" bodystart="29" bodyend="52"/>
+        <referencedby refid="classattempt__7_1_1_user_control1_1aea456eff66fc3373208b1d1e18e30bc8" compoundref="_user_control1_8cs" startline="14" endline="18">attempt_7.UserControl1::UserControl1</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="43">
+        <label>System</label>
+      </node>
+      <node id="42">
+        <label>attempt_7.UserControl1</label>
+        <link refid="classattempt__7_1_1_user_control1"/>
+        <childnode refid="43" relation="usage">
+          <edgelabel>components</edgelabel>
+          <edgelabel>button1</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/UserControl1.cs" line="13" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/UserControl1.cs" bodystart="12" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classattempt__7_1_1_user_control1_1aae769dedffbcdb731a06dfd1b1aadea8" prot="private" virt="non-virtual"><scope>attempt_7::UserControl1</scope><name>button1</name></member>
+      <member refid="classattempt__7_1_1_user_control1_1ae04c619a57a3116c297c884613866267" prot="private" virt="non-virtual"><scope>attempt_7::UserControl1</scope><name>components</name></member>
+      <member refid="classattempt__7_1_1_user_control1_1a7192cfaed442d6762114349c4efb5ed3" prot="protected" virt="non-virtual"><scope>attempt_7::UserControl1</scope><name>Dispose</name></member>
+      <member refid="classattempt__7_1_1_user_control1_1aa7f26c54a6a74eb25d099636d8af3678" prot="private" virt="non-virtual"><scope>attempt_7::UserControl1</scope><name>InitializeComponent</name></member>
+      <member refid="classattempt__7_1_1_user_control1_1aea456eff66fc3373208b1d1e18e30bc8" prot="public" virt="non-virtual"><scope>attempt_7::UserControl1</scope><name>UserControl1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

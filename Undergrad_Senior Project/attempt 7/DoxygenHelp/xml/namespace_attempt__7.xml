@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="namespace_attempt__7" kind="namespace">
+    <compoundname>Attempt_7</compoundname>
+    <innerclass refid="class_attempt__7_1_1_camera" prot="public">Attempt_7::Camera</innerclass>
+    <innerclass refid="class_attempt__7_1_1_draw_image_analysis" prot="public">Attempt_7::DrawImageAnalysis</innerclass>
+    <innerclass refid="class_attempt__7_1_1_image_analysis" prot="public">Attempt_7::ImageAnalysis</innerclass>
+    <innerclass refid="class_attempt__7_1_1_robot" prot="public">Attempt_7::Robot</innerclass>
+    <innerclass refid="class_attempt__7_1_1_simulation_main" prot="public">Attempt_7::SimulationMain</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Camera.cs" line="7"/>
+  </compounddef>
+</doxygen>

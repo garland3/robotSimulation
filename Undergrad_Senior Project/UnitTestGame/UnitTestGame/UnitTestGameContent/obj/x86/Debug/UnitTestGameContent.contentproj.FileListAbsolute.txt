@@ -1,0 +1,2 @@
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGameContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGameContent\obj\x86\Debug\ResolveAssemblyReference.cache

@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_attempt__7_1_1_image_analysis.html#ae14af27b7aaa3d4a1006af2a56ab14d1" title="Gets the Hough mode. 0 = Old, 1 = New." alt="" coords="345,5,609,35"/>
+<area shape="rect" id="node5" href="$class_attempt__7_1_1_image_analysis.html#a8b8e7e705c97bbb5da1300c139ec0f36" title="Returns the number of times rho=0 in the Old hough system." alt="" coords="317,59,637,88"/>
+<area shape="rect" id="node7" href="$class_attempt__7_1_1_image_analysis.html#a23adf47c39e8990ae161dd46dcb43846" title="Returns the number of times rho=0 in the new hough system." alt="" coords="313,112,641,141"/>
+</map>

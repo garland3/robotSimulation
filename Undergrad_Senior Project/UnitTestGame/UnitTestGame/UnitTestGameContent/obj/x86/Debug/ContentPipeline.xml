@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Arial.spritefont</Source>
+      <Name>Arial</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\Arial.xnb</Output>
+      <Time>2011-02-12T11:16:34.933-05:00</Time>
+    </Item>
+    <Item>
+      <Source>grass11.jpg</Source>
+      <Name>grass11</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\grass11.xnb</Output>
+      <Time>2011-01-13T20:15:59.9654932-05:00</Time>
+    </Item>
+    <Item>
+      <Source>field.jpg</Source>
+      <Name>field</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\field.xnb</Output>
+      <Time>2011-01-13T20:16:07.3684932-05:00</Time>
+    </Item>
+    <Item>
+      <Source>APG.jpg</Source>
+      <Name>APG</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\APG.xnb</Output>
+      <Time>2011-01-16T16:31:22.458-05:00</Time>
+    </Item>
+    <Item>
+      <Source>LineTest.jpg</Source>
+      <Name>LineTest</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest.xnb</Output>
+      <Time>2011-01-16T20:49:45.801-05:00</Time>
+    </Item>
+    <Item>
+      <Source>LineTest2.jpg</Source>
+      <Name>LineTest2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest2.xnb</Output>
+      <Time>2011-01-16T21:20:33.138-05:00</Time>
+    </Item>
+    <Item>
+      <Source>LineTest3.jpg</Source>
+      <Name>LineTest3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest3.xnb</Output>
+      <Time>2011-01-16T22:53:27.525-05:00</Time>
+    </Item>
+    <Item>
+      <Source>LineTest4.jpg</Source>
+      <Name>LineTest4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest4.xnb</Output>
+      <Time>2011-01-17T21:36:32.175-05:00</Time>
+    </Item>
+    <Item>
+      <Source>LineTest5.jpg</Source>
+      <Name>LineTest5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest5.xnb</Output>
+      <Time>2011-01-17T21:36:48.698-05:00</Time>
+    </Item>
+    <Item>
+      <Source>LineTest6.jpg</Source>
+      <Name>LineTest6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest6.xnb</Output>
+      <Time>2011-01-17T21:37:09.7-05:00</Time>
+    </Item>
+    <Item>
+      <Source>LineTest7.jpg</Source>
+      <Name>LineTest7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest7.xnb</Output>
+      <Time>2011-02-25T22:06:35.536-05:00</Time>
+    </Item>
+    <Item>
+      <Source>LineTest8.jpg</Source>
+      <Name>LineTest8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest8.xnb</Output>
+      <Time>2011-01-17T21:37:48.699-05:00</Time>
+    </Item>
+    <Item>
+      <Source>LineTest9.jpg</Source>
+      <Name>LineTest9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest9.xnb</Output>
+      <Time>2011-01-17T21:38:05.58-05:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGameContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGameContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2010-12-19T21:53:47.291-05:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

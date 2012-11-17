@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_attempt__7_1_1_simulation_main.html#aabe2d52bb2b34aeeff6a5d8c98512ef6" title="Creates the 5 view ports. View ports are like windows inside of a Window&#39;s window. MainPort = 0 &#160;TopRight = 1 CenterRight = 2 BottomRight = 3 BottomLeft = 4 BottomCenter = 5 " alt="" coords="281,5,556,35"/>
+<area shape="rect" id="node5" href="$class_attempt__7_1_1_robot.html#aeda683933e67246b4e3758d8bdd250c3" title="Gets the camera/view that the robot&#39;s camera sees." alt="" coords="307,59,531,88"/>
+</map>

@@ -1,0 +1,904 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="class_attempt__7_1_1_simulation_main" kind="class" prot="public">
+    <compoundname>Attempt_7::SimulationMain</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1ad2efa87410eaca1dbf09c6424b9b31fc" prot="private" static="no" mutable="no">
+        <type>GraphicsDeviceManager</type>
+        <definition>GraphicsDeviceManager Attempt_7.SimulationMain.graphics</definition>
+        <argsstring></argsstring>
+        <name>graphics</name>
+        <briefdescription>
+<para>GPU manager. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="30" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a87038950391e39711d316d5a73d8768f" compoundref="_simulation_main_8cs" startline="155" endline="184">Attempt_7.SimulationMain::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a9ea5edf642dc80c782aa35f4a4ba4107" compoundref="_simulation_main_8cs" startline="146" endline="150">Attempt_7.SimulationMain::SimulationMain</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1aab4721054890276bdd393bf33731eb88" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Attempt_7.SimulationMain.screenSize</definition>
+        <argsstring></argsstring>
+        <name>screenSize</name>
+        <initializer> new Vector2(640, 480)</initializer>
+        <briefdescription>
+<para>2D vector representing the resolution of the cameras used in the simulation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="35" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a596379dec8c50adc14977c75005def80" compoundref="_simulation_main_8cs" startline="528" endline="539">Attempt_7.SimulationMain::BuildRenderTargets</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a87038950391e39711d316d5a73d8768f" compoundref="_simulation_main_8cs" startline="155" endline="184">Attempt_7.SimulationMain::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1aa4011cd0b15cc12416022b1cdec378ea" prot="private" static="no" mutable="no">
+        <type>Rectangle</type>
+        <definition>Rectangle Attempt_7.SimulationMain.screenRectangle</definition>
+        <argsstring></argsstring>
+        <name>screenRectangle</name>
+        <initializer> new Rectangle(0, 0, 640, 480)</initializer>
+        <briefdescription>
+<para>Rectangle object that is the size of the camera resolution (screenSize). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="40" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1a74fa7cc4615b22ab00abfdab65d75e59" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Attempt_7.SimulationMain.windowSize</definition>
+        <argsstring></argsstring>
+        <name>windowSize</name>
+        <initializer> new Vector2(1000, 780)</initializer>
+        <briefdescription>
+<para>2D vector represeting the size of the Window&apos;s Window that the simulation will run in. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="45" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a87038950391e39711d316d5a73d8768f" compoundref="_simulation_main_8cs" startline="155" endline="184">Attempt_7.SimulationMain::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1afe8a6a7e4c03f00c8b92448b8ce11e82" prot="private" static="no" mutable="no">
+        <type>SpriteBatch</type>
+        <definition>SpriteBatch Attempt_7.SimulationMain.spriteBatch</definition>
+        <argsstring></argsstring>
+        <name>spriteBatch</name>
+        <briefdescription>
+<para>The sprite batch object. Used to draw 2D graphics. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="50" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1ae2774f61c773a44b36670c81e5df8b05" compoundref="_simulation_main_8cs" startline="294" endline="349">Attempt_7.SimulationMain::Draw</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1aa933058eb5333dbb1addb68b72c27def" compoundref="_simulation_main_8cs" startline="606" endline="618">Attempt_7.SimulationMain::DrawText</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1afe27d46d9e2775dfb04d6397b700baeb" compoundref="_simulation_main_8cs" startline="189" endline="206">Attempt_7.SimulationMain::LoadContent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1aab081a6e01f2778738692ef5cdecfed3" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Attempt_7.SimulationMain.grass</definition>
+        <argsstring></argsstring>
+        <name>grass</name>
+        <briefdescription>
+<para>Represents the texture of the grass bitmap that is used to represent the grass. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="55" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="55" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1afe27d46d9e2775dfb04d6397b700baeb" compoundref="_simulation_main_8cs" startline="189" endline="206">Attempt_7.SimulationMain::LoadContent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1a6d8a090dc3732924bc787fe73cd09657" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Attempt_7.SimulationMain.largeGrass</definition>
+        <argsstring></argsstring>
+        <name>largeGrass</name>
+        <briefdescription>
+<para>A large tiled version of the grass Texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="60" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="60" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1abbd56e335ac6f87700aa78afdea7c6c8" compoundref="_simulation_main_8cs" startline="586" endline="601">Attempt_7.SimulationMain::DrawGrass</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1afe27d46d9e2775dfb04d6397b700baeb" compoundref="_simulation_main_8cs" startline="189" endline="206">Attempt_7.SimulationMain::LoadContent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1a68088515c710f3045abb248dc77fb059" prot="private" static="no" mutable="no">
+        <type>BasicEffect</type>
+        <definition>BasicEffect Attempt_7.SimulationMain.basicEffects</definition>
+        <argsstring></argsstring>
+        <name>basicEffects</name>
+        <briefdescription>
+<para>The basicEffects for rendering in 3D. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="65" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="65" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a6600ca6533a6db25d8796c13b63c1a40" compoundref="_simulation_main_8cs" startline="564" endline="580">Attempt_7.SimulationMain::DrawColorLines</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1abbd56e335ac6f87700aa78afdea7c6c8" compoundref="_simulation_main_8cs" startline="586" endline="601">Attempt_7.SimulationMain::DrawGrass</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1acfd54a5aa5fb4311b2938ee7ab121022" compoundref="_simulation_main_8cs" startline="545" endline="558">Attempt_7.SimulationMain::DrawRobot</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1afe27d46d9e2775dfb04d6397b700baeb" compoundref="_simulation_main_8cs" startline="189" endline="206">Attempt_7.SimulationMain::LoadContent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1acdfd2380fdb8526a45e083f23b8d570b" prot="private" static="no" mutable="no">
+        <type>VertexPositionColor[]</type>
+        <definition>VertexPositionColor [] Attempt_7.SimulationMain.verts1</definition>
+        <argsstring></argsstring>
+        <name>verts1</name>
+        <briefdescription>
+<para>The vertexPositionColor array holding the vertex information needed for drawing the white lines representing the course. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="70" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="70" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a6600ca6533a6db25d8796c13b63c1a40" compoundref="_simulation_main_8cs" startline="564" endline="580">Attempt_7.SimulationMain::DrawColorLines</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a376590da39458ac9580001ca9fc1a036" compoundref="_simulation_main_8cs" startline="459" endline="497">Attempt_7.SimulationMain::LoadLines</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1a8c77e7d93e5e69fb14c1a36188e39a02" prot="private" static="no" mutable="no">
+        <type>VertexPositionTexture[]</type>
+        <definition>VertexPositionTexture [] Attempt_7.SimulationMain.verts2</definition>
+        <argsstring></argsstring>
+        <name>verts2</name>
+        <briefdescription>
+<para>The vertexPositionColor array holding the information for the grass/ground. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="75" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="75" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1abbd56e335ac6f87700aa78afdea7c6c8" compoundref="_simulation_main_8cs" startline="586" endline="601">Attempt_7.SimulationMain::DrawGrass</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1ad5cec97af179a424e2fd705ad82fc6bc" compoundref="_simulation_main_8cs" startline="445" endline="454">Attempt_7.SimulationMain::LoadGround</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1a825a374a50b64f52d5c990b999ac7555" prot="private" static="no" mutable="no">
+        <type>VertexPositionColor[]</type>
+        <definition>VertexPositionColor [] Attempt_7.SimulationMain.verts3</definition>
+        <argsstring></argsstring>
+        <name>verts3</name>
+        <briefdescription>
+<para>The vertexPositionColor Array holding the information needed for the 3D representation of the robot. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="80" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="80" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1acfd54a5aa5fb4311b2938ee7ab121022" compoundref="_simulation_main_8cs" startline="545" endline="558">Attempt_7.SimulationMain::DrawRobot</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a8ec874da6a1aa6fab66c9f1c0d7549a8" compoundref="_simulation_main_8cs" startline="502" endline="523">Attempt_7.SimulationMain::UpDateRobotPosition</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1a65d06e9d2b30625630083b7526fa4dd3" prot="private" static="no" mutable="no">
+        <type>List&lt; Viewport &gt;</type>
+        <definition>List&lt;Viewport&gt; Attempt_7.SimulationMain.viewPortList</definition>
+        <argsstring></argsstring>
+        <name>viewPortList</name>
+        <briefdescription>
+<para>List holding the viewports used in the simulation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="85" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="85" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1aabe2d52bb2b34aeeff6a5d8c98512ef6" compoundref="_simulation_main_8cs" startline="366" endline="394">Attempt_7.SimulationMain::CreateViewPorts</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1ae2774f61c773a44b36670c81e5df8b05" compoundref="_simulation_main_8cs" startline="294" endline="349">Attempt_7.SimulationMain::Draw</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a87038950391e39711d316d5a73d8768f" compoundref="_simulation_main_8cs" startline="155" endline="184">Attempt_7.SimulationMain::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1a3b904d65677046e391d59846d2f1a8b9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Attempt_7.SimulationMain.trackRobot</definition>
+        <argsstring></argsstring>
+        <name>trackRobot</name>
+        <initializer> false</initializer>
+        <briefdescription>
+<para>Bool representing if the main <ref refid="class_attempt__7_1_1_camera" kindref="compound">Camera</ref> moves its view to follow the robot. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="90" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="90" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a4b98b01df022d9a02ce98bf80f0f5c9b" compoundref="_simulation_main_8cs" startline="232" endline="272">Attempt_7.SimulationMain::GetKeyBoard</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a8ec874da6a1aa6fab66c9f1c0d7549a8" compoundref="_simulation_main_8cs" startline="502" endline="523">Attempt_7.SimulationMain::UpDateRobotPosition</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1ada7b29bc97491449c6cf58b58b7f82cc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.SimulationMain.timePressedKey</definition>
+        <argsstring></argsstring>
+        <name>timePressedKey</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+<para>Time in totalmillseconds when F1, F2, or F3 were pushed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="95" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="95" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a4b98b01df022d9a02ce98bf80f0f5c9b" compoundref="_simulation_main_8cs" startline="232" endline="272">Attempt_7.SimulationMain::GetKeyBoard</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1ac193bee1fac89d0148938ab528684f89" prot="private" static="no" mutable="no">
+        <type>SpriteFont</type>
+        <definition>SpriteFont Attempt_7.SimulationMain.arialLarge</definition>
+        <argsstring></argsstring>
+        <name>arialLarge</name>
+        <briefdescription>
+<para>The 2D font object needed to show text. Size = 20. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="100" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="100" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1aa933058eb5333dbb1addb68b72c27def" compoundref="_simulation_main_8cs" startline="606" endline="618">Attempt_7.SimulationMain::DrawText</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1afe27d46d9e2775dfb04d6397b700baeb" compoundref="_simulation_main_8cs" startline="189" endline="206">Attempt_7.SimulationMain::LoadContent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1a9c44b03ea24459de3117b705612a4b65" prot="private" static="no" mutable="no">
+        <type>SpriteFont</type>
+        <definition>SpriteFont Attempt_7.SimulationMain.arialSmall</definition>
+        <argsstring></argsstring>
+        <name>arialSmall</name>
+        <briefdescription>
+<para>A smaller font of arial to show debug information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="105" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="105" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1afe27d46d9e2775dfb04d6397b700baeb" compoundref="_simulation_main_8cs" startline="189" endline="206">Attempt_7.SimulationMain::LoadContent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1ae9fff7ad9450d2b1c783a8867d386031" prot="private" static="no" mutable="no">
+        <type>Random</type>
+        <definition>Random Attempt_7.SimulationMain.rand</definition>
+        <argsstring></argsstring>
+        <name>rand</name>
+        <briefdescription>
+<para>Represents a random object so that random numbers can be generated. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="110" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="110" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a87038950391e39711d316d5a73d8768f" compoundref="_simulation_main_8cs" startline="155" endline="184">Attempt_7.SimulationMain::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a376590da39458ac9580001ca9fc1a036" compoundref="_simulation_main_8cs" startline="459" endline="497">Attempt_7.SimulationMain::LoadLines</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1a80810188dd0ef0a7422d0594ce3b7eca" prot="private" static="no" mutable="no">
+        <type><ref refid="class_attempt__7_1_1_robot" kindref="compound">Robot</ref></type>
+        <definition>Robot Attempt_7.SimulationMain.robot1</definition>
+        <argsstring></argsstring>
+        <name>robot1</name>
+        <briefdescription>
+<para>The robot object. See the robot class for more information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="115" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="115" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1aa933058eb5333dbb1addb68b72c27def" compoundref="_simulation_main_8cs" startline="606" endline="618">Attempt_7.SimulationMain::DrawText</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a87038950391e39711d316d5a73d8768f" compoundref="_simulation_main_8cs" startline="155" endline="184">Attempt_7.SimulationMain::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a376590da39458ac9580001ca9fc1a036" compoundref="_simulation_main_8cs" startline="459" endline="497">Attempt_7.SimulationMain::LoadLines</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a8ec874da6a1aa6fab66c9f1c0d7549a8" compoundref="_simulation_main_8cs" startline="502" endline="523">Attempt_7.SimulationMain::UpDateRobotPosition</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1a3b83a138c458ab76ad38722ba6cced5a" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_attempt__7_1_1_camera" kindref="compound">Camera</ref> &gt;</type>
+        <definition>List&lt;Camera&gt; Attempt_7.SimulationMain.cameraList</definition>
+        <argsstring></argsstring>
+        <name>cameraList</name>
+        <briefdescription>
+<para>A list of the cameras. There are 2, The mainview and the robot view. <itemizedlist>
+<listitem>
+<para>WorldView <ref refid="class_attempt__7_1_1_camera" kindref="compound">Camera</ref> = 0 (The main camera) </para></listitem>
+<listitem>
+<para><ref refid="class_attempt__7_1_1_robot" kindref="compound">Robot</ref> View <ref refid="class_attempt__7_1_1_camera" kindref="compound">Camera</ref> = 1  </para></listitem>
+</itemizedlist>
+</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="124" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="124" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1ae2774f61c773a44b36670c81e5df8b05" compoundref="_simulation_main_8cs" startline="294" endline="349">Attempt_7.SimulationMain::Draw</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a87038950391e39711d316d5a73d8768f" compoundref="_simulation_main_8cs" startline="155" endline="184">Attempt_7.SimulationMain::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a8ec874da6a1aa6fab66c9f1c0d7549a8" compoundref="_simulation_main_8cs" startline="502" endline="523">Attempt_7.SimulationMain::UpDateRobotPosition</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1abb56a338488e1b56bb87162cd8405c8f" prot="private" static="no" mutable="no">
+        <type>List&lt; RenderTarget2D &gt;</type>
+        <definition>List&lt;RenderTarget2D&gt; Attempt_7.SimulationMain.renderTargets</definition>
+        <argsstring></argsstring>
+        <name>renderTargets</name>
+        <briefdescription>
+<para>A list of the rendertargets. Rather than rendering to the screen, the image produced by the GPU is saved to a rendertarget.  The rendertargets correspond directly with the camera views.  </para><para><itemizedlist>
+<listitem>
+<para>World View Target = 0  </para></listitem>
+<listitem>
+<para><ref refid="class_attempt__7_1_1_robot" kindref="compound">Robot</ref> View Target = 1 </para></listitem>
+</itemizedlist>
+</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="136" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="136" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a596379dec8c50adc14977c75005def80" compoundref="_simulation_main_8cs" startline="528" endline="539">Attempt_7.SimulationMain::BuildRenderTargets</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1ae2774f61c773a44b36670c81e5df8b05" compoundref="_simulation_main_8cs" startline="294" endline="349">Attempt_7.SimulationMain::Draw</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1a9f9ea12c0d811d9bcd5f933adb3d75f3" prot="private" static="no" mutable="no">
+        <type><ref refid="class_attempt__7_1_1_image_analysis" kindref="compound">ImageAnalysis</ref></type>
+        <definition>ImageAnalysis Attempt_7.SimulationMain.imageAnalysis</definition>
+        <argsstring></argsstring>
+        <name>imageAnalysis</name>
+        <briefdescription>
+<para>The image analysis object/class does the image processing. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="141" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="141" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1ae2774f61c773a44b36670c81e5df8b05" compoundref="_simulation_main_8cs" startline="294" endline="349">Attempt_7.SimulationMain::Draw</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a87038950391e39711d316d5a73d8768f" compoundref="_simulation_main_8cs" startline="155" endline="184">Attempt_7.SimulationMain::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a8ec874da6a1aa6fab66c9f1c0d7549a8" compoundref="_simulation_main_8cs" startline="502" endline="523">Attempt_7.SimulationMain::UpDateRobotPosition</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_attempt__7_1_1_simulation_main_1aaa69f7bf5be3a94041ab550508cfbd4b" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.SimulationMain.currentHoughMode</definition>
+        <argsstring></argsstring>
+        <name>currentHoughMode</name>
+        <initializer> 1</initializer>
+        <briefdescription>
+<para>If 0 then Old mode (top left origin), if 1 then New Hough mode( bottom Center). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="277" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="277" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a4b98b01df022d9a02ce98bf80f0f5c9b" compoundref="_simulation_main_8cs" startline="232" endline="272">Attempt_7.SimulationMain::GetKeyBoard</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1a9ea5edf642dc80c782aa35f4a4ba4107" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Attempt_7.SimulationMain.SimulationMain</definition>
+        <argsstring>()</argsstring>
+        <name>SimulationMain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes a new instance of the <ref refid="class_attempt__7_1_1_simulation_main" kindref="compound">SimulationMain</ref> class. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="147" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="146" bodyend="150"/>
+        <references refid="class_attempt__7_1_1_simulation_main_1ad2efa87410eaca1dbf09c6424b9b31fc" compoundref="_simulation_main_8cs" startline="30">Attempt_7.SimulationMain::graphics</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1a87038950391e39711d316d5a73d8768f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Attempt_7.SimulationMain.Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+<para>Initialize the Simulation Object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="156" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="155" bodyend="184"/>
+        <references refid="class_attempt__7_1_1_simulation_main_1a3b83a138c458ab76ad38722ba6cced5a" compoundref="_simulation_main_8cs" startline="124">Attempt_7.SimulationMain::cameraList</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1aabe2d52bb2b34aeeff6a5d8c98512ef6" compoundref="_simulation_main_8cs" startline="366" endline="394">Attempt_7.SimulationMain::CreateViewPorts</references>
+        <references refid="class_attempt__7_1_1_robot_1aeda683933e67246b4e3758d8bdd250c3" compoundref="_robot_8cs" startline="131" endline="134">Attempt_7.Robot::GetRobotCamera</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1ad2efa87410eaca1dbf09c6424b9b31fc" compoundref="_simulation_main_8cs" startline="30">Attempt_7.SimulationMain::graphics</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a9f9ea12c0d811d9bcd5f933adb3d75f3" compoundref="_simulation_main_8cs" startline="141">Attempt_7.SimulationMain::imageAnalysis</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1ae9fff7ad9450d2b1c783a8867d386031" compoundref="_simulation_main_8cs" startline="110">Attempt_7.SimulationMain::rand</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a80810188dd0ef0a7422d0594ce3b7eca" compoundref="_simulation_main_8cs" startline="115">Attempt_7.SimulationMain::robot1</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1aab4721054890276bdd393bf33731eb88" compoundref="_simulation_main_8cs" startline="35">Attempt_7.SimulationMain::screenSize</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a65d06e9d2b30625630083b7526fa4dd3" compoundref="_simulation_main_8cs" startline="85">Attempt_7.SimulationMain::viewPortList</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a74fa7cc4615b22ab00abfdab65d75e59" compoundref="_simulation_main_8cs" startline="45">Attempt_7.SimulationMain::windowSize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1afe27d46d9e2775dfb04d6397b700baeb" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Attempt_7.SimulationMain.LoadContent</definition>
+        <argsstring>()</argsstring>
+        <name>LoadContent</name>
+        <briefdescription>
+<para>Called after initialize. Loads the textures and calls methods to create the simulated enviroment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="190" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="189" bodyend="206"/>
+        <references refid="class_attempt__7_1_1_simulation_main_1ac193bee1fac89d0148938ab528684f89" compoundref="_simulation_main_8cs" startline="100">Attempt_7.SimulationMain::arialLarge</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a9c44b03ea24459de3117b705612a4b65" compoundref="_simulation_main_8cs" startline="105">Attempt_7.SimulationMain::arialSmall</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a68088515c710f3045abb248dc77fb059" compoundref="_simulation_main_8cs" startline="65">Attempt_7.SimulationMain::basicEffects</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a931a8a86dead3b0cb29f28453cf4f6f0" compoundref="_simulation_main_8cs" startline="401" endline="418">Attempt_7.SimulationMain::CreateGrassTexture</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1aab081a6e01f2778738692ef5cdecfed3" compoundref="_simulation_main_8cs" startline="55">Attempt_7.SimulationMain::grass</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a6d8a090dc3732924bc787fe73cd09657" compoundref="_simulation_main_8cs" startline="60">Attempt_7.SimulationMain::largeGrass</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1ad5cec97af179a424e2fd705ad82fc6bc" compoundref="_simulation_main_8cs" startline="445" endline="454">Attempt_7.SimulationMain::LoadGround</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a376590da39458ac9580001ca9fc1a036" compoundref="_simulation_main_8cs" startline="459" endline="497">Attempt_7.SimulationMain::LoadLines</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1afe8a6a7e4c03f00c8b92448b8ce11e82" compoundref="_simulation_main_8cs" startline="50">Attempt_7.SimulationMain::spriteBatch</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a8ec874da6a1aa6fab66c9f1c0d7549a8" compoundref="_simulation_main_8cs" startline="502" endline="523">Attempt_7.SimulationMain::UpDateRobotPosition</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1a5626f084ed61fc4807b4bd5cbc256129" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Attempt_7.SimulationMain.UnloadContent</definition>
+        <argsstring>()</argsstring>
+        <name>UnloadContent</name>
+        <briefdescription>
+<para>Unloads Information when the simulation is closed. Currently no information is saved when the simulation is closed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="212" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1a2fcdaa01b7439002334e047819e3ae4f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Attempt_7.SimulationMain.Update</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>Main update method for the entire simulation. Simulation logic is updated when this method is called. Part of the game loop. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Clock information</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="221" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="220" bodyend="226"/>
+        <references refid="class_attempt__7_1_1_simulation_main_1a4b98b01df022d9a02ce98bf80f0f5c9b" compoundref="_simulation_main_8cs" startline="232" endline="272">Attempt_7.SimulationMain::GetKeyBoard</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a8ec874da6a1aa6fab66c9f1c0d7549a8" compoundref="_simulation_main_8cs" startline="502" endline="523">Attempt_7.SimulationMain::UpDateRobotPosition</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1a4b98b01df022d9a02ce98bf80f0f5c9b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.SimulationMain.GetKeyBoard</definition>
+        <argsstring>(GameTime gameTime1)</argsstring>
+        <name>GetKeyBoard</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime1</declname>
+        </param>
+        <briefdescription>
+<para>Checks the keyboard for F3, and Escape. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Clock information</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="233" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="232" bodyend="272"/>
+        <references refid="class_attempt__7_1_1_simulation_main_1aaa69f7bf5be3a94041ab550508cfbd4b" compoundref="_simulation_main_8cs" startline="277">Attempt_7.SimulationMain::currentHoughMode</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1ada7b29bc97491449c6cf58b58b7f82cc" compoundref="_simulation_main_8cs" startline="95">Attempt_7.SimulationMain::timePressedKey</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a3b904d65677046e391d59846d2f1a8b9" compoundref="_simulation_main_8cs" startline="90">Attempt_7.SimulationMain::trackRobot</references>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a2fcdaa01b7439002334e047819e3ae4f" compoundref="_simulation_main_8cs" startline="220" endline="226">Attempt_7.SimulationMain::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1ae2774f61c773a44b36670c81e5df8b05" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Attempt_7.SimulationMain.Draw</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>Main draw method for the simulation. Draws all the world from both the mainview and the robots view. </para><para>The render target must be built and disposed each time or else the a memory overload will occur. </para>        </briefdescription>
+        <detaileddescription>
+<para>Each time the Viewport is changed a new spriteBatch.Start method must be called.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Clock Information</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="295" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="294" bodyend="349"/>
+        <references refid="class_attempt__7_1_1_simulation_main_1a596379dec8c50adc14977c75005def80" compoundref="_simulation_main_8cs" startline="528" endline="539">Attempt_7.SimulationMain::BuildRenderTargets</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a3b83a138c458ab76ad38722ba6cced5a" compoundref="_simulation_main_8cs" startline="124">Attempt_7.SimulationMain::cameraList</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a6600ca6533a6db25d8796c13b63c1a40" compoundref="_simulation_main_8cs" startline="564" endline="580">Attempt_7.SimulationMain::DrawColorLines</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1abbd56e335ac6f87700aa78afdea7c6c8" compoundref="_simulation_main_8cs" startline="586" endline="601">Attempt_7.SimulationMain::DrawGrass</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1acfd54a5aa5fb4311b2938ee7ab121022" compoundref="_simulation_main_8cs" startline="545" endline="558">Attempt_7.SimulationMain::DrawRobot</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1aa933058eb5333dbb1addb68b72c27def" compoundref="_simulation_main_8cs" startline="606" endline="618">Attempt_7.SimulationMain::DrawText</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1afe6aa0f5c85b090b06c0228cf4e7c21c" compoundref="_simulation_main_8cs" startline="351" endline="354">Attempt_7.SimulationMain::DrawTextDebugInfo</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a9f9ea12c0d811d9bcd5f933adb3d75f3" compoundref="_simulation_main_8cs" startline="141">Attempt_7.SimulationMain::imageAnalysis</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1abb56a338488e1b56bb87162cd8405c8f" compoundref="_simulation_main_8cs" startline="136">Attempt_7.SimulationMain::renderTargets</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1aa6cac5de12d6bf454500ee5498db48cb" compoundref="_image_analysis2_8cs" startline="261" endline="264">Attempt_7.ImageAnalysis::SetRobotCameraView</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1afe8a6a7e4c03f00c8b92448b8ce11e82" compoundref="_simulation_main_8cs" startline="50">Attempt_7.SimulationMain::spriteBatch</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a1d0bc75993df71df5d005ab3d749bb81" compoundref="_image_analysis2_8cs" startline="249" endline="255">Attempt_7.ImageAnalysis::Update1</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a65d06e9d2b30625630083b7526fa4dd3" compoundref="_simulation_main_8cs" startline="85">Attempt_7.SimulationMain::viewPortList</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1afe6aa0f5c85b090b06c0228cf4e7c21c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.SimulationMain.DrawTextDebugInfo</definition>
+        <argsstring>()</argsstring>
+        <name>DrawTextDebugInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="352" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="351" bodyend="354"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1ae2774f61c773a44b36670c81e5df8b05" compoundref="_simulation_main_8cs" startline="294" endline="349">Attempt_7.SimulationMain::Draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1aabe2d52bb2b34aeeff6a5d8c98512ef6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.SimulationMain.CreateViewPorts</definition>
+        <argsstring>()</argsstring>
+        <name>CreateViewPorts</name>
+        <briefdescription>
+<para>Creates the 5 view ports. View ports are like windows inside of a Window&apos;s window. <itemizedlist>
+<listitem>
+<para>MainPort = 0  </para></listitem>
+<listitem>
+<para>TopRight = 1 </para></listitem>
+<listitem>
+<para>CenterRight = 2 </para></listitem>
+<listitem>
+<para>BottomRight = 3 </para></listitem>
+<listitem>
+<para>BottomLeft = 4 </para></listitem>
+<listitem>
+<para>BottomCenter = 5 </para></listitem>
+</itemizedlist>
+</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="367" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="366" bodyend="394"/>
+        <references refid="class_attempt__7_1_1_simulation_main_1a65d06e9d2b30625630083b7526fa4dd3" compoundref="_simulation_main_8cs" startline="85">Attempt_7.SimulationMain::viewPortList</references>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a87038950391e39711d316d5a73d8768f" compoundref="_simulation_main_8cs" startline="155" endline="184">Attempt_7.SimulationMain::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1a931a8a86dead3b0cb29f28453cf4f6f0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Texture2D</type>
+        <definition>Texture2D Attempt_7.SimulationMain.CreateGrassTexture</definition>
+        <argsstring>(Texture2D texturetoUse)</argsstring>
+        <name>CreateGrassTexture</name>
+        <param>
+          <type>Texture2D</type>
+          <declname>texturetoUse</declname>
+        </param>
+        <briefdescription>
+<para>Takes a texture and returns a larger texture. Size of the new texture is 1024,1024. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texturetoUse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The smaller texture to tile</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The larger texture with the smaller on tiled onto it. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="402" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="401" bodyend="418"/>
+        <references refid="class_attempt__7_1_1_simulation_main_1a5918fc691a0121426b6c3382a02e86c0" compoundref="_simulation_main_8cs" startline="425" endline="440">Attempt_7.SimulationMain::TextureTo2DArray</references>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1afe27d46d9e2775dfb04d6397b700baeb" compoundref="_simulation_main_8cs" startline="189" endline="206">Attempt_7.SimulationMain::LoadContent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1a5918fc691a0121426b6c3382a02e86c0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Color[,]</type>
+        <definition>Color [,] Attempt_7.SimulationMain.TextureTo2DArray</definition>
+        <argsstring>(Texture2D texture)</argsstring>
+        <name>TextureTo2DArray</name>
+        <param>
+          <type>Texture2D</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+<para>Takes a texture converts it into a 2D color array. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The texture to convert</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The 2D color array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="426" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="425" bodyend="440"/>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a931a8a86dead3b0cb29f28453cf4f6f0" compoundref="_simulation_main_8cs" startline="401" endline="418">Attempt_7.SimulationMain::CreateGrassTexture</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1ad5cec97af179a424e2fd705ad82fc6bc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.SimulationMain.LoadGround</definition>
+        <argsstring>()</argsstring>
+        <name>LoadGround</name>
+        <briefdescription>
+<para>Create vertex data for the grass. Verts2 is the VertexPositionTexture array. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="446" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="445" bodyend="454"/>
+        <references refid="class_attempt__7_1_1_simulation_main_1a8c77e7d93e5e69fb14c1a36188e39a02" compoundref="_simulation_main_8cs" startline="75">Attempt_7.SimulationMain::verts2</references>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1afe27d46d9e2775dfb04d6397b700baeb" compoundref="_simulation_main_8cs" startline="189" endline="206">Attempt_7.SimulationMain::LoadContent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1a376590da39458ac9580001ca9fc1a036" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.SimulationMain.LoadLines</definition>
+        <argsstring>()</argsstring>
+        <name>LoadLines</name>
+        <briefdescription>
+<para>Creates the vertexPositionColor array &quot;verts1&quot; that is used to draw the white lines. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="460" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="459" bodyend="497"/>
+        <references refid="class_attempt__7_1_1_simulation_main_1ae9fff7ad9450d2b1c783a8867d386031" compoundref="_simulation_main_8cs" startline="110">Attempt_7.SimulationMain::rand</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a80810188dd0ef0a7422d0594ce3b7eca" compoundref="_simulation_main_8cs" startline="115">Attempt_7.SimulationMain::robot1</references>
+        <references refid="class_attempt__7_1_1_robot_1a9945c6d5a6e824f9669b3e6720f644e3" compoundref="_robot_8cs" startline="121" endline="125">Attempt_7.Robot::SetStartPosition</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1acdfd2380fdb8526a45e083f23b8d570b" compoundref="_simulation_main_8cs" startline="70">Attempt_7.SimulationMain::verts1</references>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1afe27d46d9e2775dfb04d6397b700baeb" compoundref="_simulation_main_8cs" startline="189" endline="206">Attempt_7.SimulationMain::LoadContent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1a8ec874da6a1aa6fab66c9f1c0d7549a8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.SimulationMain.UpDateRobotPosition</definition>
+        <argsstring>()</argsstring>
+        <name>UpDateRobotPosition</name>
+        <briefdescription>
+<para>Loads the vertex information about the robot and recreates it every game cycle to reflect the new position of the robot. &apos;verts3&apos; is the VertexPositionColor array. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="503" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="502" bodyend="523"/>
+        <references refid="class_attempt__7_1_1_simulation_main_1a3b83a138c458ab76ad38722ba6cced5a" compoundref="_simulation_main_8cs" startline="124">Attempt_7.SimulationMain::cameraList</references>
+        <references refid="class_attempt__7_1_1_robot_1a2ad0f76fceb915c1f1b0b98f4dc4686e" compoundref="_robot_8cs" startline="172" endline="179">Attempt_7.Robot::ChangeDirection</references>
+        <references refid="class_attempt__7_1_1_robot_1a68c2627772051c07f1551c38daf9ab95" compoundref="_robot_8cs" startline="140" endline="143">Attempt_7.Robot::GetIsRobotPaused</references>
+        <references refid="class_attempt__7_1_1_robot_1a121c5b23a88c3a1b57bbfc728e63f7bf" compoundref="_robot_8cs" startline="103" endline="106">Attempt_7.Robot::GetPosition</references>
+        <references refid="class_attempt__7_1_1_robot_1aeda683933e67246b4e3758d8bdd250c3" compoundref="_robot_8cs" startline="131" endline="134">Attempt_7.Robot::GetRobotCamera</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a99c5e65fe48a1145d7c9afba96bfb220" compoundref="_image_analysis2_8cs" startline="338" endline="341">Attempt_7.ImageAnalysis::GetTurnIndicator</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a9f9ea12c0d811d9bcd5f933adb3d75f3" compoundref="_simulation_main_8cs" startline="141">Attempt_7.SimulationMain::imageAnalysis</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a80810188dd0ef0a7422d0594ce3b7eca" compoundref="_simulation_main_8cs" startline="115">Attempt_7.SimulationMain::robot1</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a3b904d65677046e391d59846d2f1a8b9" compoundref="_simulation_main_8cs" startline="90">Attempt_7.SimulationMain::trackRobot</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a825a374a50b64f52d5c990b999ac7555" compoundref="_simulation_main_8cs" startline="80">Attempt_7.SimulationMain::verts3</references>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1afe27d46d9e2775dfb04d6397b700baeb" compoundref="_simulation_main_8cs" startline="189" endline="206">Attempt_7.SimulationMain::LoadContent</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a2fcdaa01b7439002334e047819e3ae4f" compoundref="_simulation_main_8cs" startline="220" endline="226">Attempt_7.SimulationMain::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1a596379dec8c50adc14977c75005def80" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.SimulationMain.BuildRenderTargets</definition>
+        <argsstring>()</argsstring>
+        <name>BuildRenderTargets</name>
+        <briefdescription>
+<para>Set the renderTargets to a texture object in memory rather than rendering to the screen. Need target for both the Worldview and the robot CameraView. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="529" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="528" bodyend="539"/>
+        <references refid="class_attempt__7_1_1_simulation_main_1abb56a338488e1b56bb87162cd8405c8f" compoundref="_simulation_main_8cs" startline="136">Attempt_7.SimulationMain::renderTargets</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1aab4721054890276bdd393bf33731eb88" compoundref="_simulation_main_8cs" startline="35">Attempt_7.SimulationMain::screenSize</references>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1ae2774f61c773a44b36670c81e5df8b05" compoundref="_simulation_main_8cs" startline="294" endline="349">Attempt_7.SimulationMain::Draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1acfd54a5aa5fb4311b2938ee7ab121022" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.SimulationMain.DrawRobot</definition>
+        <argsstring>(Camera camera)</argsstring>
+        <name>DrawRobot</name>
+        <param>
+          <type><ref refid="class_attempt__7_1_1_camera" kindref="compound">Camera</ref></type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+<para>Draw the robot from the &quot;camera&quot;s perspective. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The camera to use when drawing. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="546" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="545" bodyend="558"/>
+        <references refid="class_attempt__7_1_1_simulation_main_1a68088515c710f3045abb248dc77fb059" compoundref="_simulation_main_8cs" startline="65">Attempt_7.SimulationMain::basicEffects</references>
+        <references refid="class_attempt__7_1_1_camera_1afad745cd526a8c616843da8464a4d256" compoundref="_camera_8cs" startline="35">Attempt_7.Camera::Projection</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a825a374a50b64f52d5c990b999ac7555" compoundref="_simulation_main_8cs" startline="80">Attempt_7.SimulationMain::verts3</references>
+        <references refid="class_attempt__7_1_1_camera_1ab58715b7ebc0eb1b0181638331e7fe04" compoundref="_camera_8cs" startline="30">Attempt_7.Camera::View</references>
+        <references refid="class_attempt__7_1_1_camera_1a3bc8d53e4d9b029bb75f8f0e7b09cc17" compoundref="_camera_8cs" startline="40">Attempt_7.Camera::World</references>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1ae2774f61c773a44b36670c81e5df8b05" compoundref="_simulation_main_8cs" startline="294" endline="349">Attempt_7.SimulationMain::Draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1a6600ca6533a6db25d8796c13b63c1a40" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.SimulationMain.DrawColorLines</definition>
+        <argsstring>(Camera camera)</argsstring>
+        <name>DrawColorLines</name>
+        <param>
+          <type><ref refid="class_attempt__7_1_1_camera" kindref="compound">Camera</ref></type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+<para>Draw the lines from the &quot;camera&quot;&apos;s persepective. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The camera to use when drawing.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="565" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="564" bodyend="580"/>
+        <references refid="class_attempt__7_1_1_simulation_main_1a68088515c710f3045abb248dc77fb059" compoundref="_simulation_main_8cs" startline="65">Attempt_7.SimulationMain::basicEffects</references>
+        <references refid="class_attempt__7_1_1_camera_1afad745cd526a8c616843da8464a4d256" compoundref="_camera_8cs" startline="35">Attempt_7.Camera::Projection</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1acdfd2380fdb8526a45e083f23b8d570b" compoundref="_simulation_main_8cs" startline="70">Attempt_7.SimulationMain::verts1</references>
+        <references refid="class_attempt__7_1_1_camera_1ab58715b7ebc0eb1b0181638331e7fe04" compoundref="_camera_8cs" startline="30">Attempt_7.Camera::View</references>
+        <references refid="class_attempt__7_1_1_camera_1a3bc8d53e4d9b029bb75f8f0e7b09cc17" compoundref="_camera_8cs" startline="40">Attempt_7.Camera::World</references>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1ae2774f61c773a44b36670c81e5df8b05" compoundref="_simulation_main_8cs" startline="294" endline="349">Attempt_7.SimulationMain::Draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1abbd56e335ac6f87700aa78afdea7c6c8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.SimulationMain.DrawGrass</definition>
+        <argsstring>(Camera camera)</argsstring>
+        <name>DrawGrass</name>
+        <param>
+          <type><ref refid="class_attempt__7_1_1_camera" kindref="compound">Camera</ref></type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+<para>Draw the grass or ground from &quot;camera&quot;&apos;s perspective. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The camera to use when drawing.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="587" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="586" bodyend="601"/>
+        <references refid="class_attempt__7_1_1_simulation_main_1a68088515c710f3045abb248dc77fb059" compoundref="_simulation_main_8cs" startline="65">Attempt_7.SimulationMain::basicEffects</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a6d8a090dc3732924bc787fe73cd09657" compoundref="_simulation_main_8cs" startline="60">Attempt_7.SimulationMain::largeGrass</references>
+        <references refid="class_attempt__7_1_1_camera_1afad745cd526a8c616843da8464a4d256" compoundref="_camera_8cs" startline="35">Attempt_7.Camera::Projection</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a8c77e7d93e5e69fb14c1a36188e39a02" compoundref="_simulation_main_8cs" startline="75">Attempt_7.SimulationMain::verts2</references>
+        <references refid="class_attempt__7_1_1_camera_1ab58715b7ebc0eb1b0181638331e7fe04" compoundref="_camera_8cs" startline="30">Attempt_7.Camera::View</references>
+        <references refid="class_attempt__7_1_1_camera_1a3bc8d53e4d9b029bb75f8f0e7b09cc17" compoundref="_camera_8cs" startline="40">Attempt_7.Camera::World</references>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1ae2774f61c773a44b36670c81e5df8b05" compoundref="_simulation_main_8cs" startline="294" endline="349">Attempt_7.SimulationMain::Draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_simulation_main_1aa933058eb5333dbb1addb68b72c27def" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.SimulationMain.DrawText</definition>
+        <argsstring>()</argsstring>
+        <name>DrawText</name>
+        <briefdescription>
+<para>Draw the Simulation Status as either PAUSED or Active. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="607" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="606" bodyend="618"/>
+        <references refid="class_attempt__7_1_1_simulation_main_1ac193bee1fac89d0148938ab528684f89" compoundref="_simulation_main_8cs" startline="100">Attempt_7.SimulationMain::arialLarge</references>
+        <references refid="class_attempt__7_1_1_robot_1a68c2627772051c07f1551c38daf9ab95" compoundref="_robot_8cs" startline="140" endline="143">Attempt_7.Robot::GetIsRobotPaused</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1a80810188dd0ef0a7422d0594ce3b7eca" compoundref="_simulation_main_8cs" startline="115">Attempt_7.SimulationMain::robot1</references>
+        <references refid="class_attempt__7_1_1_simulation_main_1afe8a6a7e4c03f00c8b92448b8ce11e82" compoundref="_simulation_main_8cs" startline="50">Attempt_7.SimulationMain::spriteBatch</references>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1ae2774f61c773a44b36670c81e5df8b05" compoundref="_simulation_main_8cs" startline="294" endline="349">Attempt_7.SimulationMain::Draw</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is the main type for the Simulation. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="39">
+        <label>Attempt_7.Camera</label>
+        <link refid="class_attempt__7_1_1_camera"/>
+      </node>
+      <node id="40">
+        <label>Attempt_7.Robot</label>
+        <link refid="class_attempt__7_1_1_robot"/>
+        <childnode refid="39" relation="usage">
+          <edgelabel>robotCameraView</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Attempt_7.ImageAnalysis</label>
+        <link refid="class_attempt__7_1_1_image_analysis"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>drawAnalysis</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>Attempt_7.DrawImageAnalysis</label>
+        <link refid="class_attempt__7_1_1_draw_image_analysis"/>
+        <childnode refid="39" relation="usage">
+          <edgelabel>camera</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>imageAnalysis</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>Attempt_7.SimulationMain</label>
+        <link refid="class_attempt__7_1_1_simulation_main"/>
+        <childnode refid="37" relation="usage">
+          <edgelabel>imageAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>robot1</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" line="26" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/SimulationMain.cs" bodystart="25" bodyend="619"/>
+    <listofallmembers>
+      <member refid="class_attempt__7_1_1_simulation_main_1ac193bee1fac89d0148938ab528684f89" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>arialLarge</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a9c44b03ea24459de3117b705612a4b65" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>arialSmall</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a68088515c710f3045abb248dc77fb059" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>basicEffects</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a596379dec8c50adc14977c75005def80" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>BuildRenderTargets</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a3b83a138c458ab76ad38722ba6cced5a" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>cameraList</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a931a8a86dead3b0cb29f28453cf4f6f0" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>CreateGrassTexture</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1aabe2d52bb2b34aeeff6a5d8c98512ef6" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>CreateViewPorts</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1aaa69f7bf5be3a94041ab550508cfbd4b" prot="public" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>currentHoughMode</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1ae2774f61c773a44b36670c81e5df8b05" prot="protected" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>Draw</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a6600ca6533a6db25d8796c13b63c1a40" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>DrawColorLines</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1abbd56e335ac6f87700aa78afdea7c6c8" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>DrawGrass</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1acfd54a5aa5fb4311b2938ee7ab121022" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>DrawRobot</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1aa933058eb5333dbb1addb68b72c27def" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>DrawText</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1afe6aa0f5c85b090b06c0228cf4e7c21c" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>DrawTextDebugInfo</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a4b98b01df022d9a02ce98bf80f0f5c9b" prot="protected" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>GetKeyBoard</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1ad2efa87410eaca1dbf09c6424b9b31fc" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>graphics</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1aab081a6e01f2778738692ef5cdecfed3" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>grass</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a9f9ea12c0d811d9bcd5f933adb3d75f3" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>imageAnalysis</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a87038950391e39711d316d5a73d8768f" prot="protected" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>Initialize</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a6d8a090dc3732924bc787fe73cd09657" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>largeGrass</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1afe27d46d9e2775dfb04d6397b700baeb" prot="protected" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>LoadContent</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1ad5cec97af179a424e2fd705ad82fc6bc" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>LoadGround</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a376590da39458ac9580001ca9fc1a036" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>LoadLines</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1ae9fff7ad9450d2b1c783a8867d386031" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>rand</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1abb56a338488e1b56bb87162cd8405c8f" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>renderTargets</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a80810188dd0ef0a7422d0594ce3b7eca" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>robot1</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1aa4011cd0b15cc12416022b1cdec378ea" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>screenRectangle</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1aab4721054890276bdd393bf33731eb88" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>screenSize</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a9ea5edf642dc80c782aa35f4a4ba4107" prot="public" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>SimulationMain</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1afe8a6a7e4c03f00c8b92448b8ce11e82" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>spriteBatch</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a5918fc691a0121426b6c3382a02e86c0" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>TextureTo2DArray</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1ada7b29bc97491449c6cf58b58b7f82cc" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>timePressedKey</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a3b904d65677046e391d59846d2f1a8b9" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>trackRobot</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a5626f084ed61fc4807b4bd5cbc256129" prot="protected" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>UnloadContent</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a2fcdaa01b7439002334e047819e3ae4f" prot="protected" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>Update</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a8ec874da6a1aa6fab66c9f1c0d7549a8" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>UpDateRobotPosition</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1acdfd2380fdb8526a45e083f23b8d570b" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>verts1</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a8c77e7d93e5e69fb14c1a36188e39a02" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>verts2</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a825a374a50b64f52d5c990b999ac7555" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>verts3</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a65d06e9d2b30625630083b7526fa4dd3" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>viewPortList</name></member>
+      <member refid="class_attempt__7_1_1_simulation_main_1a74fa7cc4615b22ab00abfdab65d75e59" prot="private" virt="non-virtual"><scope>Attempt_7::SimulationMain</scope><name>windowSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

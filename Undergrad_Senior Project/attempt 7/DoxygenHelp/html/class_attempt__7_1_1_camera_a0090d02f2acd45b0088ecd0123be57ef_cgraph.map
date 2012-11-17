@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_attempt__7_1_1_camera.html#a26c1b12ed3fea81c3bed64f0389cc9d1" title="Checks to see if the Arrow keys are pressed. Moves the camera position and target based on the arrow ..." alt="" coords="231,5,463,35"/>
+<area shape="rect" id="node5" href="$class_attempt__7_1_1_camera.html#ac8b5117b5378692c67dada10a2707ad9" title="Updates the position of the camera based on the mouse&#39;s position. The Mouse origin (0..." alt="" coords="240,59,453,88"/>
+</map>

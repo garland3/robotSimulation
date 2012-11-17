@@ -1,0 +1,46 @@
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\UnitTestGame.exe
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\UnitTestGame.pdb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\obj\x86\Debug\UnitTestGame.exe
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\obj\x86\Debug\UnitTestGame.pdb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\Arial.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\grass11.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\field.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\APG.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest2.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest3.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest4.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest5.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest6.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest7.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest8.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest9.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\UnitTestGame.exe.manifest
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\UnitTestGame.application
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\obj\x86\Debug\UnitTestGame.exe.manifest
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\obj\x86\Debug\UnitTestGame.application
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\Arial.xnb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\grass11.xnb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\field.xnb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\APG.xnb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest.xnb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest2.xnb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest3.xnb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest4.xnb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest5.xnb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest6.xnb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest7.xnb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest8.xnb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\Content\LineTest9.xnb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\UnitTestGame.exe.manifest
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\UnitTestGame.application
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\UnitTestGame.exe
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Debug\UnitTestGame.pdb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\obj\x86\Debug\UnitTestGame.exe.manifest
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\obj\x86\Debug\UnitTestGame.application
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\obj\x86\Debug\UnitTestGame.exe
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\UnitTestGame\UnitTestGame\UnitTestGame\obj\x86\Debug\UnitTestGame.pdb

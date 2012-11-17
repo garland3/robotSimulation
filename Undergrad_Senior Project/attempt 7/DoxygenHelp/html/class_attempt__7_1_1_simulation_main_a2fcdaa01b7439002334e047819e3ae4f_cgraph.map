@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_attempt__7_1_1_simulation_main.html#a4b98b01df022d9a02ce98bf80f0f5c9b" title="Checks the keyboard for F3, and Escape." alt="" coords="299,59,555,88"/>
+<area shape="rect" id="node5" href="$class_attempt__7_1_1_simulation_main.html#a8ec874da6a1aa6fab66c9f1c0d7549a8" title="Loads the vertex information about the robot and recreates it every game cycle to reflect the new pos..." alt="" coords="276,112,577,141"/>
+<area shape="rect" id="node7" href="$class_attempt__7_1_1_robot.html#a2ad0f76fceb915c1f1b0b98f4dc4686e" title="Turns the robot based on the value of the turnIndicator Turn indicator must be greater or less than t..." alt="" coords="653,5,872,35"/>
+<area shape="rect" id="node9" href="$class_attempt__7_1_1_robot.html#a68c2627772051c07f1551c38daf9ab95" title="Accessor method that tells if the robot is moving forward." alt="" coords="647,59,879,88"/>
+<area shape="rect" id="node11" href="$class_attempt__7_1_1_robot.html#a121c5b23a88c3a1b57bbfc728e63f7bf" title="Gets the current position of the Robot." alt="" coords="667,112,859,141"/>
+<area shape="rect" id="node13" href="$class_attempt__7_1_1_robot.html#aeda683933e67246b4e3758d8bdd250c3" title="Gets the camera/view that the robot&#39;s camera sees." alt="" coords="651,165,875,195"/>
+<area shape="rect" id="node15" href="$class_attempt__7_1_1_image_analysis.html#a99c5e65fe48a1145d7c9afba96bfb220" title="Allows the SimulationMain to get the turnIndicator." alt="" coords="628,219,897,248"/>
+</map>

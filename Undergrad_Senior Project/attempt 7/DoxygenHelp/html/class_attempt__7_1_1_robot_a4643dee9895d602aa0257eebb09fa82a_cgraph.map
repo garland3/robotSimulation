@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_attempt__7_1_1_robot.html#a26d9c782d2b45cea22c9214cddd65e64" title="Checks to see if a key was pressed. F1,F2,Numpad4,NumPad6,NumPad8,NumPad2 are all checked..." alt="" coords="271,5,473,35"/>
+<area shape="rect" id="node5" href="$class_attempt__7_1_1_camera.html#a950a4219356e02b8b8eddf506c03743f" title="Sets the camera position and target point to a specific position." alt="" coords="219,59,525,88"/>
+<area shape="rect" id="node7" href="$class_attempt__7_1_1_camera.html#a0090d02f2acd45b0088ecd0123be57ef" title="Updates the camera&#39;s view. If the camera is mouse dependent than Update gets the position of the ..." alt="" coords="284,112,460,141"/>
+<area shape="rect" id="node9" href="$class_attempt__7_1_1_camera.html#a26c1b12ed3fea81c3bed64f0389cc9d1" title="Checks to see if the Arrow keys are pressed. Moves the camera position and target based on the arrow ..." alt="" coords="575,85,807,115"/>
+<area shape="rect" id="node11" href="$class_attempt__7_1_1_camera.html#ac8b5117b5378692c67dada10a2707ad9" title="Updates the position of the camera based on the mouse&#39;s position. The Mouse origin (0..." alt="" coords="584,139,797,168"/>
+</map>

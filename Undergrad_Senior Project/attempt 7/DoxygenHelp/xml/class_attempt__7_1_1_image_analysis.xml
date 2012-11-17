@@ -1,0 +1,1595 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="class_attempt__7_1_1_image_analysis" kind="class" prot="public">
+    <compoundname>Attempt_7::ImageAnalysis</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1aaa874c7b203d72acf483aac60d199c10" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Attempt_7.ImageAnalysis.OLD_HOUGH_MODE</definition>
+        <argsstring></argsstring>
+        <name>OLD_HOUGH_MODE</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="34" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a327ee82eeb29ad6f4060bb4a9a21d7d8" compoundref="_image_analysis2_8cs" startline="644" endline="795">Attempt_7.ImageAnalysis::CalculateStartandStopofLine</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a74a456e2880a858c96a7d8802250c504" compoundref="_image_analysis2_8cs" startline="559" endline="634">Attempt_7.ImageAnalysis::FindMaxInAccumArrayOfHough</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a11feb673e1bb0953762222e164cec0c7" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Attempt_7.ImageAnalysis.New_HOUGH_MODE</definition>
+        <argsstring></argsstring>
+        <name>New_HOUGH_MODE</name>
+        <initializer> 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="35" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a327ee82eeb29ad6f4060bb4a9a21d7d8" compoundref="_image_analysis2_8cs" startline="644" endline="795">Attempt_7.ImageAnalysis::CalculateStartandStopofLine</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a74a456e2880a858c96a7d8802250c504" compoundref="_image_analysis2_8cs" startline="559" endline="634">Attempt_7.ImageAnalysis::FindMaxInAccumArrayOfHough</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a4b69c7da8f3962c2220e8d77fd9c51e9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.ImageAnalysis.currentMode</definition>
+        <argsstring></argsstring>
+        <name>currentMode</name>
+        <initializer> 1</initializer>
+        <briefdescription>
+<para>If 0 then Old mode (top left origin), if 1 then New Hough mode( bottom Center). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="40" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a327ee82eeb29ad6f4060bb4a9a21d7d8" compoundref="_image_analysis2_8cs" startline="644" endline="795">Attempt_7.ImageAnalysis::CalculateStartandStopofLine</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a74a456e2880a858c96a7d8802250c504" compoundref="_image_analysis2_8cs" startline="559" endline="634">Attempt_7.ImageAnalysis::FindMaxInAccumArrayOfHough</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1ae14af27b7aaa3d4a1006af2a56ab14d1" compoundref="_image_analysis2_8cs" startline="312" endline="326">Attempt_7.ImageAnalysis::GetHoughMode</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1ab597ab75ce16d1fd903b68e7df2a2c7f" compoundref="_image_analysis2_8cs" startline="270" endline="285">Attempt_7.ImageAnalysis::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a74cfdb396e3abe4a6f5a9ccbe4f948e2" prot="private" static="no" mutable="no">
+        <type>const short</type>
+        <definition>const short Attempt_7.ImageAnalysis.NumberofLinesToFind</definition>
+        <argsstring></argsstring>
+        <name>NumberofLinesToFind</name>
+        <initializer> 6</initializer>
+        <briefdescription>
+<para>Number of lines the hough transform should find. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="46" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1aa983bdc246185a5a41414e1db84534dd" compoundref="_image_analysis2_8cs" startline="924" endline="956">Attempt_7.ImageAnalysis::FindAverages</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a372086fbe7753711c79fb65694e74b8b" compoundref="_image_analysis2_8cs" startline="200" endline="210">Attempt_7.ImageAnalysis::ImageAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a8cdd9f3be232a5cf32006ddd52bc4ae2" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Attempt_7.ImageAnalysis.AccumLength</definition>
+        <argsstring></argsstring>
+        <name>AccumLength</name>
+        <initializer> 600</initializer>
+        <briefdescription>
+<para>Size of the Acuumlator&apos;s lenght. Must be able to fit the largest posible value of rho. Max rho = Sqrt( ScreenHeight^2+ (ScreenWidth/2)^2), because the origin is the bottom center and the max rho is top left or right. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="51" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a75787da0f52a71c54f5f8a18d32467b8" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Attempt_7.ImageAnalysis.AccumLengthOld</definition>
+        <argsstring></argsstring>
+        <name>AccumLengthOld</name>
+        <initializer> 810</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="52" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="52" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1ae80e0958661793ecf50c1a17f1b7e9d0" prot="private" static="no" mutable="no">
+        <type>const short</type>
+        <definition>const short Attempt_7.ImageAnalysis.ThetaIncrement</definition>
+        <argsstring></argsstring>
+        <name>ThetaIncrement</name>
+        <initializer> 3</initializer>
+        <briefdescription>
+<para>How big the steps are for a potiential theta. In degreees. Large values reduce computation but less acurate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="57" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a00bfc4bb52ece15ba645b81fb3ca3f2b" compoundref="_image_analysis2_8cs" startline="965" endline="988">Attempt_7.ImageAnalysis::ClearMaxInAccum</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a372086fbe7753711c79fb65694e74b8b" compoundref="_image_analysis2_8cs" startline="200" endline="210">Attempt_7.ImageAnalysis::ImageAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1aade101616dd021e3cbb0501146a78835" prot="private" static="no" mutable="no">
+        <type>const short</type>
+        <definition>const short Attempt_7.ImageAnalysis.RhoIncrement</definition>
+        <argsstring></argsstring>
+        <name>RhoIncrement</name>
+        <initializer> 6</initializer>
+        <briefdescription>
+<para>How big the steps are for a potiential rho values. Large values reduce computation but less acurate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="62" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="62" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a00bfc4bb52ece15ba645b81fb3ca3f2b" compoundref="_image_analysis2_8cs" startline="965" endline="988">Attempt_7.ImageAnalysis::ClearMaxInAccum</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a74a456e2880a858c96a7d8802250c504" compoundref="_image_analysis2_8cs" startline="559" endline="634">Attempt_7.ImageAnalysis::FindMaxInAccumArrayOfHough</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a372086fbe7753711c79fb65694e74b8b" compoundref="_image_analysis2_8cs" startline="200" endline="210">Attempt_7.ImageAnalysis::ImageAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1ace29e13b249b0a3d0fccd7228f47937b" prot="private" static="no" mutable="no">
+        <type>const short</type>
+        <definition>const short Attempt_7.ImageAnalysis.UpdateSquareDimForDrawing</definition>
+        <argsstring></argsstring>
+        <name>UpdateSquareDimForDrawing</name>
+        <initializer> 2</initializer>
+        <briefdescription>
+<para>Inorder to make computations go faster, not every pixels is anylzed every time. 1 out of This value squared is analzed each pass. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="67" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="67" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a372086fbe7753711c79fb65694e74b8b" compoundref="_image_analysis2_8cs" startline="200" endline="210">Attempt_7.ImageAnalysis::ImageAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a87fb97262f08f3b21afd2bcdb29bbe6c" compoundref="_image_analysis2_8cs" startline="449" endline="501">Attempt_7.ImageAnalysis::Smooth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a228e6183baa7e0b58771ad6be4117d7f" prot="private" static="no" mutable="no">
+        <type>const short</type>
+        <definition>const short Attempt_7.ImageAnalysis.UpdateSquareDimForAnalysis</definition>
+        <argsstring></argsstring>
+        <name>UpdateSquareDimForAnalysis</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>Inorder to make drawing go faster, not every pixels is updated every time. 1 out of This value squared is updated each pass. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="72" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="72" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a372086fbe7753711c79fb65694e74b8b" compoundref="_image_analysis2_8cs" startline="200" endline="210">Attempt_7.ImageAnalysis::ImageAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a0befd0244fb507716329010283730fb6" compoundref="_image_analysis2_8cs" startline="510" endline="551">Attempt_7.ImageAnalysis::ShowPath</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a87fb97262f08f3b21afd2bcdb29bbe6c" compoundref="_image_analysis2_8cs" startline="449" endline="501">Attempt_7.ImageAnalysis::Smooth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1af57eb11bc470f90921bed1b60cfc9741" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Attempt_7.ImageAnalysis.ClearArroundMaxDegree</definition>
+        <argsstring></argsstring>
+        <name>ClearArroundMaxDegree</name>
+        <initializer>5</initializer>
+        <briefdescription>
+<para>Number of degrees around a maximum to clear around before searching the Accumulator again. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="77" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="77" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a00bfc4bb52ece15ba645b81fb3ca3f2b" compoundref="_image_analysis2_8cs" startline="965" endline="988">Attempt_7.ImageAnalysis::ClearMaxInAccum</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a5de31952bf3d80b7ad21aa4c0acc3092" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Attempt_7.ImageAnalysis.ClearArroundMaxRho</definition>
+        <argsstring></argsstring>
+        <name>ClearArroundMaxRho</name>
+        <initializer> 8</initializer>
+        <briefdescription>
+<para>Number of rho values around a maximum to clear around before searching the Accumulator again. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="82" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="82" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a00bfc4bb52ece15ba645b81fb3ca3f2b" compoundref="_image_analysis2_8cs" startline="965" endline="988">Attempt_7.ImageAnalysis::ClearMaxInAccum</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a3622f807410a6198f92490ee1964b3ff" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Attempt_7.ImageAnalysis.SmoothSearchSize</definition>
+        <argsstring></argsstring>
+        <name>SmoothSearchSize</name>
+        <initializer> 4</initializer>
+        <briefdescription>
+<para>Used by the smooth method. Dimension of Number of pixels to look around for the smooth function. This (values*2)^2 = number of pixels checked. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="87" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="87" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a87fb97262f08f3b21afd2bcdb29bbe6c" compoundref="_image_analysis2_8cs" startline="449" endline="501">Attempt_7.ImageAnalysis::Smooth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a9b47675bd42bc8dacf5c93bb02befd81" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Attempt_7.ImageAnalysis.turnIndicatorisTheta</definition>
+        <argsstring></argsstring>
+        <name>turnIndicatorisTheta</name>
+        <initializer> false</initializer>
+        <briefdescription>
+<para>If true then steering desisions will be based off the theta&apos;s of the hough transform. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="92" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="92" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1aa983bdc246185a5a41414e1db84534dd" compoundref="_image_analysis2_8cs" startline="924" endline="956">Attempt_7.ImageAnalysis::FindAverages</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1ab597ab75ce16d1fd903b68e7df2a2c7f" compoundref="_image_analysis2_8cs" startline="270" endline="285">Attempt_7.ImageAnalysis::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a5c675bc754b9cc7185837d234766dd04" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Attempt_7.ImageAnalysis.robotCameraView</definition>
+        <argsstring></argsstring>
+        <name>robotCameraView</name>
+        <briefdescription>
+<para>Texture object that represents the robot camera&apos;s current view. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="98" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="98" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1aa6cac5de12d6bf454500ee5498db48cb" compoundref="_image_analysis2_8cs" startline="261" endline="264">Attempt_7.ImageAnalysis::SetRobotCameraView</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a1d0bc75993df71df5d005ab3d749bb81" compoundref="_image_analysis2_8cs" startline="249" endline="255">Attempt_7.ImageAnalysis::Update1</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1ab79ad9fb17e17983e14861ee93c3479a" prot="private" static="no" mutable="no">
+        <type>bool[,]</type>
+        <definition>bool [,] Attempt_7.ImageAnalysis.trueFalseMap</definition>
+        <argsstring></argsstring>
+        <name>trueFalseMap</name>
+        <briefdescription>
+<para>TrueFalse maps used for marking pixels either &quot;good&quot; or &quot;bad&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="103" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="103" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a9418e8e0a6868d294d27b97cadf6d958" compoundref="_image_analysis2_8cs" startline="369" endline="396">Attempt_7.ImageAnalysis::FindWhite</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1ab597ab75ce16d1fd903b68e7df2a2c7f" compoundref="_image_analysis2_8cs" startline="270" endline="285">Attempt_7.ImageAnalysis::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a88fcfe8ea8917bfe5e458a845cc2b291" prot="private" static="no" mutable="no">
+        <type>bool[,]</type>
+        <definition>bool [,] Attempt_7.ImageAnalysis.trueFalseMapB</definition>
+        <argsstring></argsstring>
+        <name>trueFalseMapB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="103" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="103" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1ab597ab75ce16d1fd903b68e7df2a2c7f" compoundref="_image_analysis2_8cs" startline="270" endline="285">Attempt_7.ImageAnalysis::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1ad698ffe87469398b956a2a1c5ae2b840" prot="private" static="no" mutable="no">
+        <type>bool[,]</type>
+        <definition>bool [,] Attempt_7.ImageAnalysis.trueFalseMapC</definition>
+        <argsstring></argsstring>
+        <name>trueFalseMapC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="103" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="103" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a1ba8eee3151c73ef5023003ee7b57b67" compoundref="_image_analysis2_8cs" startline="303" endline="306">Attempt_7.ImageAnalysis::GetTrueFalseMaptoDraw</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1ab597ab75ce16d1fd903b68e7df2a2c7f" compoundref="_image_analysis2_8cs" startline="270" endline="285">Attempt_7.ImageAnalysis::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1affd258e6985c66c0a80415e3ddebb4e7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.ImageAnalysis.screenWidth</definition>
+        <argsstring></argsstring>
+        <name>screenWidth</name>
+        <briefdescription>
+<para>Screen Width of the image to analze. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="108" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="108" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a327ee82eeb29ad6f4060bb4a9a21d7d8" compoundref="_image_analysis2_8cs" startline="644" endline="795">Attempt_7.ImageAnalysis::CalculateStartandStopofLine</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a9418e8e0a6868d294d27b97cadf6d958" compoundref="_image_analysis2_8cs" startline="369" endline="396">Attempt_7.ImageAnalysis::FindWhite</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a372086fbe7753711c79fb65694e74b8b" compoundref="_image_analysis2_8cs" startline="200" endline="210">Attempt_7.ImageAnalysis::ImageAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a0befd0244fb507716329010283730fb6" compoundref="_image_analysis2_8cs" startline="510" endline="551">Attempt_7.ImageAnalysis::ShowPath</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a87fb97262f08f3b21afd2bcdb29bbe6c" compoundref="_image_analysis2_8cs" startline="449" endline="501">Attempt_7.ImageAnalysis::Smooth</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a879442dce1e8ad7240a78101c31cace4" compoundref="_image_analysis2_8cs" startline="404" endline="440">Attempt_7.ImageAnalysis::Whiteline</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1af5af6f29720f9a85b1cb6a71016b7af8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.ImageAnalysis.screenHeight</definition>
+        <argsstring></argsstring>
+        <name>screenHeight</name>
+        <briefdescription>
+<para>Screen Height of the image to analze. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="113" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="113" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a327ee82eeb29ad6f4060bb4a9a21d7d8" compoundref="_image_analysis2_8cs" startline="644" endline="795">Attempt_7.ImageAnalysis::CalculateStartandStopofLine</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a9418e8e0a6868d294d27b97cadf6d958" compoundref="_image_analysis2_8cs" startline="369" endline="396">Attempt_7.ImageAnalysis::FindWhite</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a372086fbe7753711c79fb65694e74b8b" compoundref="_image_analysis2_8cs" startline="200" endline="210">Attempt_7.ImageAnalysis::ImageAnalysis</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a0befd0244fb507716329010283730fb6" compoundref="_image_analysis2_8cs" startline="510" endline="551">Attempt_7.ImageAnalysis::ShowPath</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a87fb97262f08f3b21afd2bcdb29bbe6c" compoundref="_image_analysis2_8cs" startline="449" endline="501">Attempt_7.ImageAnalysis::Smooth</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a879442dce1e8ad7240a78101c31cace4" compoundref="_image_analysis2_8cs" startline="404" endline="440">Attempt_7.ImageAnalysis::Whiteline</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1ace2cb703da0214a4f5565f2c619d54f8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.ImageAnalysis.turnIndication</definition>
+        <argsstring></argsstring>
+        <name>turnIndication</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+<para>The turn indicator measures measures how much the analysis things the robot should go right or left. Right = positive. Left = negative. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="118" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="118" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1aa983bdc246185a5a41414e1db84534dd" compoundref="_image_analysis2_8cs" startline="924" endline="956">Attempt_7.ImageAnalysis::FindAverages</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a99c5e65fe48a1145d7c9afba96bfb220" compoundref="_image_analysis2_8cs" startline="338" endline="341">Attempt_7.ImageAnalysis::GetTurnIndicator</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a0befd0244fb507716329010283730fb6" compoundref="_image_analysis2_8cs" startline="510" endline="551">Attempt_7.ImageAnalysis::ShowPath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a51a11cb6235b097fb2140c32ab734521" prot="private" static="no" mutable="no">
+        <type>double[]</type>
+        <definition>double [] Attempt_7.ImageAnalysis.houghInfo</definition>
+        <argsstring></argsstring>
+        <name>houghInfo</name>
+        <briefdescription>
+<para>Stores information about lines from the hough transform. each polarRho we want to find = 7 more values to store 0=slope, 1= yInt, 2=Rho, 3=Theta, 4=Xvalue, 5=Yvalue, 6= size of the bin 5 more ending values for the averages. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="126" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="126" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1aa983bdc246185a5a41414e1db84534dd" compoundref="_image_analysis2_8cs" startline="924" endline="956">Attempt_7.ImageAnalysis::FindAverages</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a74a456e2880a858c96a7d8802250c504" compoundref="_image_analysis2_8cs" startline="559" endline="634">Attempt_7.ImageAnalysis::FindMaxInAccumArrayOfHough</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a897a0f80fbf65670828c8a1a1db13d97" compoundref="_image_analysis2_8cs" startline="291" endline="301">Attempt_7.ImageAnalysis::GetHoughInfo</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1aeb7215aa1a091fa531c07ee3aa4c03d6" prot="private" static="no" mutable="no">
+        <type>Vector3[]</type>
+        <definition>Vector3 [] Attempt_7.ImageAnalysis.houghLineStartandStopVectors</definition>
+        <argsstring></argsstring>
+        <name>houghLineStartandStopVectors</name>
+        <briefdescription>
+<para>Stores vector3 locations of the beginning and end points of two lines on the screen. Was part of the old Hough system, but potientially still useful, so has not deleted. 0 = start location of line, 1 = end location ofline. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="132" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="132" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a327ee82eeb29ad6f4060bb4a9a21d7d8" compoundref="_image_analysis2_8cs" startline="644" endline="795">Attempt_7.ImageAnalysis::CalculateStartandStopofLine</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a3c35b4a6a6a1e4464fc79772caa612cf" compoundref="_image_analysis2_8cs" startline="797" endline="800">Attempt_7.ImageAnalysis::GetHoughStartandStopVectors</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a3490343b5c67fcbbdbb23257a56e4b3a" prot="private" static="no" mutable="no">
+        <type>Color[,]</type>
+        <definition>Color [,] Attempt_7.ImageAnalysis.colorArray</definition>
+        <argsstring></argsstring>
+        <name>colorArray</name>
+        <briefdescription>
+<para>Color Array 2D from the robot camera that is analzed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="137" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="137" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1ab8604cecb2f620a88298bccc48a4436d" compoundref="_image_analysis2_8cs" startline="329" endline="332">Attempt_7.ImageAnalysis::GetColorMapToDraw</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1ab597ab75ce16d1fd903b68e7df2a2c7f" compoundref="_image_analysis2_8cs" startline="270" endline="285">Attempt_7.ImageAnalysis::Update</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a1d0bc75993df71df5d005ab3d749bb81" compoundref="_image_analysis2_8cs" startline="249" endline="255">Attempt_7.ImageAnalysis::Update1</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1acdb050a1334538156f7a3332ae7f332a" prot="private" static="no" mutable="no">
+        <type>Color[]</type>
+        <definition>Color [] Attempt_7.ImageAnalysis.colorArray1D</definition>
+        <argsstring></argsstring>
+        <name>colorArray1D</name>
+        <briefdescription>
+<para>Color Array 2D from the robot camera that is analzed. Can&apos;t extract informatino directly from the robot view Texture to 2D. But have to go through 1D array. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="142" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="142" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a1d0bc75993df71df5d005ab3d749bb81" compoundref="_image_analysis2_8cs" startline="249" endline="255">Attempt_7.ImageAnalysis::Update1</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a8fa0aaf56dde7fca58135cdc8c74575f" prot="private" static="no" mutable="no">
+        <type>short</type>
+        <definition>short Attempt_7.ImageAnalysis.count1A</definition>
+        <argsstring></argsstring>
+        <name>count1A</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+<para>These values are the incremented numbers used in the giant double &quot;for-loops&quot;. The &quot;1&quot; values are the for the first &quot;for-loop&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="147" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a53eb6ffb4fdd39ce7f8f59a7358e2144" prot="private" static="no" mutable="no">
+        <type>short</type>
+        <definition>short Attempt_7.ImageAnalysis.count1B</definition>
+        <argsstring></argsstring>
+        <name>count1B</name>
+        <initializer> 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="147" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="147" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a87fb97262f08f3b21afd2bcdb29bbe6c" compoundref="_image_analysis2_8cs" startline="449" endline="501">Attempt_7.ImageAnalysis::Smooth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a87af8ae466e41feca21cb200e3463bf9" prot="private" static="no" mutable="no">
+        <type>short</type>
+        <definition>short Attempt_7.ImageAnalysis.count1C</definition>
+        <argsstring></argsstring>
+        <name>count1C</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="147" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a195927d24332255e0130b0bf2791e146" prot="private" static="no" mutable="no">
+        <type>short</type>
+        <definition>short Attempt_7.ImageAnalysis.count1D</definition>
+        <argsstring></argsstring>
+        <name>count1D</name>
+        <initializer> 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="147" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="147" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a0befd0244fb507716329010283730fb6" compoundref="_image_analysis2_8cs" startline="510" endline="551">Attempt_7.ImageAnalysis::ShowPath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1aea1d803966f442e9699b52e196613f8c" prot="private" static="no" mutable="no">
+        <type>short</type>
+        <definition>short Attempt_7.ImageAnalysis.count1E</definition>
+        <argsstring></argsstring>
+        <name>count1E</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="147" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="147" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1ae79ba8e9b9e910edf5aded0604399f07" prot="private" static="no" mutable="no">
+        <type>short</type>
+        <definition>short Attempt_7.ImageAnalysis.count2A</definition>
+        <argsstring></argsstring>
+        <name>count2A</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+<para>These values are the incremented numbers used in the giant double &quot;for-loops&quot;. The &quot;2&quot; values are the for the second &quot;for-loop&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="152" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1aa9956634aa2f4b718beb2d398b3d2b46" prot="private" static="no" mutable="no">
+        <type>short</type>
+        <definition>short Attempt_7.ImageAnalysis.count2B</definition>
+        <argsstring></argsstring>
+        <name>count2B</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="152" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="152" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a87fb97262f08f3b21afd2bcdb29bbe6c" compoundref="_image_analysis2_8cs" startline="449" endline="501">Attempt_7.ImageAnalysis::Smooth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a8f2510e6449b532e0a8aa7c616d8f474" prot="private" static="no" mutable="no">
+        <type>short</type>
+        <definition>short Attempt_7.ImageAnalysis.count2C</definition>
+        <argsstring></argsstring>
+        <name>count2C</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="152" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a1c9acb58142af8f283eb7958305b4337" prot="private" static="no" mutable="no">
+        <type>short</type>
+        <definition>short Attempt_7.ImageAnalysis.count2E</definition>
+        <argsstring></argsstring>
+        <name>count2E</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="152" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="152" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a6dfa6991871f29000b2e32e2a1bed121" prot="private" static="no" mutable="no">
+        <type>int[]</type>
+        <definition>int [] Attempt_7.ImageAnalysis.middleValues</definition>
+        <argsstring></argsstring>
+        <name>middleValues</name>
+        <briefdescription>
+<para>An array of the middle clear pixels for each row. The length of the array is the number of rows = this.screenHeight. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="157" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="157" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a29de7b233adab56b0b7df3464b1528ef" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.ImageAnalysis.totalWhiteCnt</definition>
+        <argsstring></argsstring>
+        <name>totalWhiteCnt</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+<para>Number of white pixels the &quot;FindWhite&quot; found. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="162" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="162" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a9418e8e0a6868d294d27b97cadf6d958" compoundref="_image_analysis2_8cs" startline="369" endline="396">Attempt_7.ImageAnalysis::FindWhite</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a55b77047aaacc5a78fcd70401da3b069" compoundref="_image_analysis2_8cs" startline="286" endline="289">Attempt_7.ImageAnalysis::GetWhiteCount</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1ac861772cdcfacb7ac2401079c651eb4e" prot="private" static="no" mutable="no">
+        <type>short[,]</type>
+        <definition>short [,] Attempt_7.ImageAnalysis.accum2</definition>
+        <argsstring></argsstring>
+        <name>accum2</name>
+        <briefdescription>
+<para>The accumlator for the hough values. Each position is a hough Bin. Each bin represents a line in Cartessian cordinates. The Accumlator is basically in polar cordinates. Theta,rho. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="167" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="167" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1acb2ae3d661927b0467b5d4fdc7eded98" prot="private" static="no" mutable="no">
+        <type>short[,]</type>
+        <definition>short [,] Attempt_7.ImageAnalysis.accum1</definition>
+        <argsstring></argsstring>
+        <name>accum1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="168" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="168" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1ae51a397ecb99b137ec6920e1329e8b6b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.ImageAnalysis.cntThreshold</definition>
+        <argsstring></argsstring>
+        <name>cntThreshold</name>
+        <initializer> 15</initializer>
+        <briefdescription>
+<para>Used by the smooth method. How many pixels must also be white in the area around a white pixel for it to be counted white. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="173" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="173" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a87fb97262f08f3b21afd2bcdb29bbe6c" compoundref="_image_analysis2_8cs" startline="449" endline="501">Attempt_7.ImageAnalysis::Smooth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1aa9e1387a4605edfe0d910284724a671a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.ImageAnalysis.redGood</definition>
+        <argsstring></argsstring>
+        <name>redGood</name>
+        <briefdescription>
+<para>On a scale of 0-255 how high does a pixel RGB value have to be before being declared white. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="178" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="178" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a9418e8e0a6868d294d27b97cadf6d958" compoundref="_image_analysis2_8cs" startline="369" endline="396">Attempt_7.ImageAnalysis::FindWhite</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1afdb8b1b0ef151cceeed6883a6ca955f5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.ImageAnalysis.blueGood</definition>
+        <argsstring></argsstring>
+        <name>blueGood</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="178" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="178" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a9418e8e0a6868d294d27b97cadf6d958" compoundref="_image_analysis2_8cs" startline="369" endline="396">Attempt_7.ImageAnalysis::FindWhite</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a288ae76c53338d5463b05a6c978baf61" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.ImageAnalysis.greenGood</definition>
+        <argsstring></argsstring>
+        <name>greenGood</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="178" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="178" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a9418e8e0a6868d294d27b97cadf6d958" compoundref="_image_analysis2_8cs" startline="369" endline="396">Attempt_7.ImageAnalysis::FindWhite</referencedby>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1ab67ff7ed27c69e82b67b7d0d3b6e1fec" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.ImageAnalysis.whiteParam</definition>
+        <argsstring></argsstring>
+        <name>whiteParam</name>
+        <initializer> 150</initializer>
+        <briefdescription>
+<para>Sets red_good, blue_good, green_good to this value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="183" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="183" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" compoundref="_image_analysis2_8cs" startline="215" endline="243">Attempt_7.ImageAnalysis::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1a20ae1fce740efa28137cde3029a1b4bf" prot="private" static="no" mutable="no">
+        <type><ref refid="class_attempt__7_1_1_draw_image_analysis" kindref="compound">DrawImageAnalysis</ref></type>
+        <definition>DrawImageAnalysis Attempt_7.ImageAnalysis.drawAnalysis</definition>
+        <argsstring></argsstring>
+        <name>drawAnalysis</name>
+        <briefdescription>
+<para>The drawingImageAnalysis class handles the vertex information the shows what the robot is thinking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="188" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="188" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a372086fbe7753711c79fb65694e74b8b" compoundref="_image_analysis2_8cs" startline="200" endline="210">Attempt_7.ImageAnalysis::ImageAnalysis</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1af6c217c696c6b6e16d8988e89d39666b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.ImageAnalysis.countOfNewHoughSingularities</definition>
+        <argsstring></argsstring>
+        <name>countOfNewHoughSingularities</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="191" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="191" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a23adf47c39e8990ae161dd46dcb43846" compoundref="_image_analysis2_8cs" startline="913" endline="916">Attempt_7.ImageAnalysis::GetSingularitiesNewHough</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attempt__7_1_1_image_analysis_1ab9f59ec453ba211ebc7cd614c6ab5fab" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attempt_7.ImageAnalysis.countofOldHoughSingularities</definition>
+        <argsstring></argsstring>
+        <name>countofOldHoughSingularities</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="192" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="192" bodyend="-1"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a8b8e7e705c97bbb5da1300c139ec0f36" compoundref="_image_analysis2_8cs" startline="917" endline="920">Attempt_7.ImageAnalysis::GetSingularitesOldHough</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1a372086fbe7753711c79fb65694e74b8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Attempt_7.ImageAnalysis.ImageAnalysis</definition>
+        <argsstring>(Game game, Vector2 screenSize, List&lt; Viewport &gt; viewPortList1)</argsstring>
+        <name>ImageAnalysis</name>
+        <param>
+          <type>Game</type>
+          <declname>game</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>screenSize</declname>
+        </param>
+        <param>
+          <type>List&lt; Viewport &gt;</type>
+          <declname>viewPortList1</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_attempt__7_1_1_image_analysis" kindref="compound">ImageAnalysis</ref> class. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>game</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game associated with the class</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screenSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the sceen to analze</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>viewPortList1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list of the view ports</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="202" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="200" bodyend="210"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1a20ae1fce740efa28137cde3029a1b4bf" compoundref="_image_analysis2_8cs" startline="188">Attempt_7.ImageAnalysis::drawAnalysis</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a74cfdb396e3abe4a6f5a9ccbe4f948e2" compoundref="_image_analysis2_8cs" startline="46">Attempt_7.ImageAnalysis::NumberofLinesToFind</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1aade101616dd021e3cbb0501146a78835" compoundref="_image_analysis2_8cs" startline="62">Attempt_7.ImageAnalysis::RhoIncrement</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1af5af6f29720f9a85b1cb6a71016b7af8" compoundref="_image_analysis2_8cs" startline="113">Attempt_7.ImageAnalysis::screenHeight</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1affd258e6985c66c0a80415e3ddebb4e7" compoundref="_image_analysis2_8cs" startline="108">Attempt_7.ImageAnalysis::screenWidth</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1ae80e0958661793ecf50c1a17f1b7e9d0" compoundref="_image_analysis2_8cs" startline="57">Attempt_7.ImageAnalysis::ThetaIncrement</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a228e6183baa7e0b58771ad6be4117d7f" compoundref="_image_analysis2_8cs" startline="72">Attempt_7.ImageAnalysis::UpdateSquareDimForAnalysis</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1ace29e13b249b0a3d0fccd7228f47937b" compoundref="_image_analysis2_8cs" startline="67">Attempt_7.ImageAnalysis::UpdateSquareDimForDrawing</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Attempt_7.ImageAnalysis.Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+<para>Called when the class is initialized. Creates many of the arrays and sets many of the values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="216" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="215" bodyend="243"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1acb2ae3d661927b0467b5d4fdc7eded98" compoundref="_image_analysis2_8cs" startline="168">Attempt_7.ImageAnalysis::accum1</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1ac861772cdcfacb7ac2401079c651eb4e" compoundref="_image_analysis2_8cs" startline="167">Attempt_7.ImageAnalysis::accum2</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a8cdd9f3be232a5cf32006ddd52bc4ae2" compoundref="_image_analysis2_8cs" startline="51">Attempt_7.ImageAnalysis::AccumLength</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a75787da0f52a71c54f5f8a18d32467b8" compoundref="_image_analysis2_8cs" startline="52">Attempt_7.ImageAnalysis::AccumLengthOld</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1afdb8b1b0ef151cceeed6883a6ca955f5" compoundref="_image_analysis2_8cs" startline="178">Attempt_7.ImageAnalysis::blueGood</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a3490343b5c67fcbbdbb23257a56e4b3a" compoundref="_image_analysis2_8cs" startline="137">Attempt_7.ImageAnalysis::colorArray</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1acdb050a1334538156f7a3332ae7f332a" compoundref="_image_analysis2_8cs" startline="142">Attempt_7.ImageAnalysis::colorArray1D</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a288ae76c53338d5463b05a6c978baf61" compoundref="_image_analysis2_8cs" startline="178">Attempt_7.ImageAnalysis::greenGood</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a51a11cb6235b097fb2140c32ab734521" compoundref="_image_analysis2_8cs" startline="126">Attempt_7.ImageAnalysis::houghInfo</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1aeb7215aa1a091fa531c07ee3aa4c03d6" compoundref="_image_analysis2_8cs" startline="132">Attempt_7.ImageAnalysis::houghLineStartandStopVectors</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a6dfa6991871f29000b2e32e2a1bed121" compoundref="_image_analysis2_8cs" startline="157">Attempt_7.ImageAnalysis::middleValues</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a74cfdb396e3abe4a6f5a9ccbe4f948e2" compoundref="_image_analysis2_8cs" startline="46">Attempt_7.ImageAnalysis::NumberofLinesToFind</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1aa9e1387a4605edfe0d910284724a671a" compoundref="_image_analysis2_8cs" startline="178">Attempt_7.ImageAnalysis::redGood</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1aade101616dd021e3cbb0501146a78835" compoundref="_image_analysis2_8cs" startline="62">Attempt_7.ImageAnalysis::RhoIncrement</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1af5af6f29720f9a85b1cb6a71016b7af8" compoundref="_image_analysis2_8cs" startline="113">Attempt_7.ImageAnalysis::screenHeight</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1affd258e6985c66c0a80415e3ddebb4e7" compoundref="_image_analysis2_8cs" startline="108">Attempt_7.ImageAnalysis::screenWidth</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1ae80e0958661793ecf50c1a17f1b7e9d0" compoundref="_image_analysis2_8cs" startline="57">Attempt_7.ImageAnalysis::ThetaIncrement</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1ab79ad9fb17e17983e14861ee93c3479a" compoundref="_image_analysis2_8cs" startline="103">Attempt_7.ImageAnalysis::trueFalseMap</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a88fcfe8ea8917bfe5e458a845cc2b291" compoundref="_image_analysis2_8cs" startline="103">Attempt_7.ImageAnalysis::trueFalseMapB</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1ad698ffe87469398b956a2a1c5ae2b840" compoundref="_image_analysis2_8cs" startline="103">Attempt_7.ImageAnalysis::trueFalseMapC</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1ab67ff7ed27c69e82b67b7d0d3b6e1fec" compoundref="_image_analysis2_8cs" startline="183">Attempt_7.ImageAnalysis::whiteParam</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1a1d0bc75993df71df5d005ab3d749bb81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.ImageAnalysis.Update1</definition>
+        <argsstring>(GameTime gameTime1)</argsstring>
+        <name>Update1</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime1</declname>
+        </param>
+        <briefdescription>
+<para>Stores the texture from the robot camera in a color array before the texture is disposed. Expicitly called in the <ref refid="class_attempt__7_1_1_simulation_main" kindref="compound">SimulationMain</ref> Draw method. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Clock Information</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="250" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="249" bodyend="255"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1a3490343b5c67fcbbdbb23257a56e4b3a" compoundref="_image_analysis2_8cs" startline="137">Attempt_7.ImageAnalysis::colorArray</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1acdb050a1334538156f7a3332ae7f332a" compoundref="_image_analysis2_8cs" startline="142">Attempt_7.ImageAnalysis::colorArray1D</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a5c675bc754b9cc7185837d234766dd04" compoundref="_image_analysis2_8cs" startline="98">Attempt_7.ImageAnalysis::robotCameraView</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1ac70a680405b76bd8b0ece8ee2a8112e8" compoundref="_image_analysis2_8cs" startline="350" endline="362">Attempt_7.ImageAnalysis::TextureTo2DArray</references>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1ae2774f61c773a44b36670c81e5df8b05" compoundref="_simulation_main_8cs" startline="294" endline="349">Attempt_7.SimulationMain::Draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1aa6cac5de12d6bf454500ee5498db48cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.ImageAnalysis.SetRobotCameraView</definition>
+        <argsstring>(Texture2D text)</argsstring>
+        <name>SetRobotCameraView</name>
+        <param>
+          <type>Texture2D</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>Takes a 2D renderTarget/Texture and sets it as the image to analze. Explicitly called in the <ref refid="class_attempt__7_1_1_simulation_main" kindref="compound">SimulationMain</ref> Draw Method. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The texture to analze. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="262" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="261" bodyend="264"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1a5c675bc754b9cc7185837d234766dd04" compoundref="_image_analysis2_8cs" startline="98">Attempt_7.ImageAnalysis::robotCameraView</references>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1ae2774f61c773a44b36670c81e5df8b05" compoundref="_simulation_main_8cs" startline="294" endline="349">Attempt_7.SimulationMain::Draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1ab597ab75ce16d1fd903b68e7df2a2c7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Attempt_7.ImageAnalysis.Update</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>Calls the analysis methods that actually do all the work. Basically the Main function for the Image Analysis Class. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Clock Info</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="271" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="270" bodyend="285"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1a3490343b5c67fcbbdbb23257a56e4b3a" compoundref="_image_analysis2_8cs" startline="137">Attempt_7.ImageAnalysis::colorArray</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a4b69c7da8f3962c2220e8d77fd9c51e9" compoundref="_image_analysis2_8cs" startline="40">Attempt_7.ImageAnalysis::currentMode</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a9418e8e0a6868d294d27b97cadf6d958" compoundref="_image_analysis2_8cs" startline="369" endline="396">Attempt_7.ImageAnalysis::FindWhite</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a0befd0244fb507716329010283730fb6" compoundref="_image_analysis2_8cs" startline="510" endline="551">Attempt_7.ImageAnalysis::ShowPath</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1ab79ad9fb17e17983e14861ee93c3479a" compoundref="_image_analysis2_8cs" startline="103">Attempt_7.ImageAnalysis::trueFalseMap</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a88fcfe8ea8917bfe5e458a845cc2b291" compoundref="_image_analysis2_8cs" startline="103">Attempt_7.ImageAnalysis::trueFalseMapB</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1ad698ffe87469398b956a2a1c5ae2b840" compoundref="_image_analysis2_8cs" startline="103">Attempt_7.ImageAnalysis::trueFalseMapC</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a9b47675bd42bc8dacf5c93bb02befd81" compoundref="_image_analysis2_8cs" startline="92">Attempt_7.ImageAnalysis::turnIndicatorisTheta</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1a55b77047aaacc5a78fcd70401da3b069" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Attempt_7.ImageAnalysis.GetWhiteCount</definition>
+        <argsstring>()</argsstring>
+        <name>GetWhiteCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="287" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="286" bodyend="289"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1a29de7b233adab56b0b7df3464b1528ef" compoundref="_image_analysis2_8cs" startline="162">Attempt_7.ImageAnalysis::totalWhiteCnt</references>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a3405b325467c48533528a5312bbbf08b" compoundref="_draw_image_analysis2_8cs" startline="215" endline="226">Attempt_7.DrawImageAnalysis::Draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1a897a0f80fbf65670828c8a1a1db13d97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double[]</type>
+        <definition>double [] Attempt_7.ImageAnalysis.GetHoughInfo</definition>
+        <argsstring>()</argsstring>
+        <name>GetHoughInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="292" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="291" bodyend="301"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1a51a11cb6235b097fb2140c32ab734521" compoundref="_image_analysis2_8cs" startline="126">Attempt_7.ImageAnalysis::houghInfo</references>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1ae271911b749fc6bad5f303da0f6b895d" compoundref="_draw_image_analysis2_8cs" startline="127" endline="155">Attempt_7.DrawImageAnalysis::Initialize</referencedby>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a6de17ba6756456372d8d6e2a69d6ce45" compoundref="_draw_image_analysis2_8cs" startline="162" endline="172">Attempt_7.DrawImageAnalysis::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1a1ba8eee3151c73ef5023003ee7b57b67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool[,]</type>
+        <definition>bool [,] Attempt_7.ImageAnalysis.GetTrueFalseMaptoDraw</definition>
+        <argsstring>()</argsstring>
+        <name>GetTrueFalseMaptoDraw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="304" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="303" bodyend="306"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1ad698ffe87469398b956a2a1c5ae2b840" compoundref="_image_analysis2_8cs" startline="103">Attempt_7.ImageAnalysis::trueFalseMapC</references>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a6de17ba6756456372d8d6e2a69d6ce45" compoundref="_draw_image_analysis2_8cs" startline="162" endline="172">Attempt_7.DrawImageAnalysis::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1ae14af27b7aaa3d4a1006af2a56ab14d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Attempt_7.ImageAnalysis.GetHoughMode</definition>
+        <argsstring>()</argsstring>
+        <name>GetHoughMode</name>
+        <briefdescription>
+<para>Gets the Hough mode. 0 = Old, 1 = New. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>&quot;Old&quot; if in the old mode, &quot;New&quot; if in the new mode</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="313" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="312" bodyend="326"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1a4b69c7da8f3962c2220e8d77fd9c51e9" compoundref="_image_analysis2_8cs" startline="40">Attempt_7.ImageAnalysis::currentMode</references>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aaf4088bca6ef2e41e13c6a9bf0ca2a52" compoundref="_draw_image_analysis2_8cs" startline="507" endline="540">Attempt_7.DrawImageAnalysis::DrawText</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1ab8604cecb2f620a88298bccc48a4436d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Color[,]</type>
+        <definition>Color [,] Attempt_7.ImageAnalysis.GetColorMapToDraw</definition>
+        <argsstring>()</argsstring>
+        <name>GetColorMapToDraw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="330" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="329" bodyend="332"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1a3490343b5c67fcbbdbb23257a56e4b3a" compoundref="_image_analysis2_8cs" startline="137">Attempt_7.ImageAnalysis::colorArray</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1a99c5e65fe48a1145d7c9afba96bfb220" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Attempt_7.ImageAnalysis.GetTurnIndicator</definition>
+        <argsstring>()</argsstring>
+        <name>GetTurnIndicator</name>
+        <briefdescription>
+<para>Allows the <ref refid="class_attempt__7_1_1_simulation_main" kindref="compound">SimulationMain</ref> to get the turnIndicator. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The turn Indicator</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="339" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="338" bodyend="341"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1ace2cb703da0214a4f5565f2c619d54f8" compoundref="_image_analysis2_8cs" startline="118">Attempt_7.ImageAnalysis::turnIndication</references>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a3405b325467c48533528a5312bbbf08b" compoundref="_draw_image_analysis2_8cs" startline="215" endline="226">Attempt_7.DrawImageAnalysis::Draw</referencedby>
+        <referencedby refid="class_attempt__7_1_1_simulation_main_1a8ec874da6a1aa6fab66c9f1c0d7549a8" compoundref="_simulation_main_8cs" startline="502" endline="523">Attempt_7.SimulationMain::UpDateRobotPosition</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1a3c35b4a6a6a1e4464fc79772caa612cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3[]</type>
+        <definition>Vector3 [] Attempt_7.ImageAnalysis.GetHoughStartandStopVectors</definition>
+        <argsstring>()</argsstring>
+        <name>GetHoughStartandStopVectors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="798" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="797" bodyend="800"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1aeb7215aa1a091fa531c07ee3aa4c03d6" compoundref="_image_analysis2_8cs" startline="132">Attempt_7.ImageAnalysis::houghLineStartandStopVectors</references>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1a6de17ba6756456372d8d6e2a69d6ce45" compoundref="_draw_image_analysis2_8cs" startline="162" endline="172">Attempt_7.DrawImageAnalysis::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1a23adf47c39e8990ae161dd46dcb43846" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Attempt_7.ImageAnalysis.GetSingularitiesNewHough</definition>
+        <argsstring>()</argsstring>
+        <name>GetSingularitiesNewHough</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="914" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="913" bodyend="916"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1af6c217c696c6b6e16d8988e89d39666b" compoundref="_image_analysis2_8cs" startline="191">Attempt_7.ImageAnalysis::countOfNewHoughSingularities</references>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aaf4088bca6ef2e41e13c6a9bf0ca2a52" compoundref="_draw_image_analysis2_8cs" startline="507" endline="540">Attempt_7.DrawImageAnalysis::DrawText</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1a8b8e7e705c97bbb5da1300c139ec0f36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Attempt_7.ImageAnalysis.GetSingularitesOldHough</definition>
+        <argsstring>()</argsstring>
+        <name>GetSingularitesOldHough</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="918" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="917" bodyend="920"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1ab9f59ec453ba211ebc7cd614c6ab5fab" compoundref="_image_analysis2_8cs" startline="192">Attempt_7.ImageAnalysis::countofOldHoughSingularities</references>
+        <referencedby refid="class_attempt__7_1_1_draw_image_analysis_1aaf4088bca6ef2e41e13c6a9bf0ca2a52" compoundref="_draw_image_analysis2_8cs" startline="507" endline="540">Attempt_7.DrawImageAnalysis::DrawText</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1ac70a680405b76bd8b0ece8ee2a8112e8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Color[,]</type>
+        <definition>Color [,] Attempt_7.ImageAnalysis.TextureTo2DArray</definition>
+        <argsstring>(Texture2D texture, Color[] colors1D, Color[,] colors2D)</argsstring>
+        <name>TextureTo2DArray</name>
+        <param>
+          <type>Texture2D</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>Color[]</type>
+          <declname>colors1D</declname>
+        </param>
+        <param>
+          <type>Color</type>
+          <declname>colors2D</declname>
+          <array>[,]</array>
+        </param>
+        <briefdescription>
+<para>Takes a texture and makes it into a 2D color array. Passing in the arrays is faster than trying to build it each time. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Texture to extract color information</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colors1D</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1D array needed for the extraction</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colors2D</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D array that will be returned</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The 2D color array of the texture color information</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="351" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="350" bodyend="362"/>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a1d0bc75993df71df5d005ab3d749bb81" compoundref="_image_analysis2_8cs" startline="249" endline="255">Attempt_7.ImageAnalysis::Update1</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1a9418e8e0a6868d294d27b97cadf6d958" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool[,]</type>
+        <definition>bool [,] Attempt_7.ImageAnalysis.FindWhite</definition>
+        <argsstring>(Color[,] colorArray1)</argsstring>
+        <name>FindWhite</name>
+        <param>
+          <type>Color</type>
+          <declname>colorArray1</declname>
+          <array>[,]</array>
+        </param>
+        <briefdescription>
+<para>Takes a 2D color array and finds the pixels that are &quot;white&quot;. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colorArray1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color array to find white in.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The TrueFalse bool map of white pixels. True = white, False = not white. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="370" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="369" bodyend="396"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1afdb8b1b0ef151cceeed6883a6ca955f5" compoundref="_image_analysis2_8cs" startline="178">Attempt_7.ImageAnalysis::blueGood</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a288ae76c53338d5463b05a6c978baf61" compoundref="_image_analysis2_8cs" startline="178">Attempt_7.ImageAnalysis::greenGood</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1aa9e1387a4605edfe0d910284724a671a" compoundref="_image_analysis2_8cs" startline="178">Attempt_7.ImageAnalysis::redGood</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1af5af6f29720f9a85b1cb6a71016b7af8" compoundref="_image_analysis2_8cs" startline="113">Attempt_7.ImageAnalysis::screenHeight</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1affd258e6985c66c0a80415e3ddebb4e7" compoundref="_image_analysis2_8cs" startline="108">Attempt_7.ImageAnalysis::screenWidth</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a29de7b233adab56b0b7df3464b1528ef" compoundref="_image_analysis2_8cs" startline="162">Attempt_7.ImageAnalysis::totalWhiteCnt</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1ab79ad9fb17e17983e14861ee93c3479a" compoundref="_image_analysis2_8cs" startline="103">Attempt_7.ImageAnalysis::trueFalseMap</references>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1ab597ab75ce16d1fd903b68e7df2a2c7f" compoundref="_image_analysis2_8cs" startline="270" endline="285">Attempt_7.ImageAnalysis::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1a879442dce1e8ad7240a78101c31cace4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool[,]</type>
+        <definition>bool [,] Attempt_7.ImageAnalysis.Whiteline</definition>
+        <argsstring>(bool[,] whitemap)</argsstring>
+        <name>Whiteline</name>
+        <param>
+          <type>bool</type>
+          <declname>whitemap</declname>
+          <array>[,]</array>
+        </param>
+        <briefdescription>
+<para>Determines if white pixels meet the Width threshold to possibly be a line. NOT IN USE RIGHT NOW********************. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>whitemap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TrueFalse map of whate Pixels</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A truefalse map of white pixels that met the line width requirement</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="405" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="404" bodyend="440"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1af5af6f29720f9a85b1cb6a71016b7af8" compoundref="_image_analysis2_8cs" startline="113">Attempt_7.ImageAnalysis::screenHeight</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1affd258e6985c66c0a80415e3ddebb4e7" compoundref="_image_analysis2_8cs" startline="108">Attempt_7.ImageAnalysis::screenWidth</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1a87fb97262f08f3b21afd2bcdb29bbe6c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool[,]</type>
+        <definition>bool [,] Attempt_7.ImageAnalysis.Smooth</definition>
+        <argsstring>(bool[,] original, bool[,] final)</argsstring>
+        <name>Smooth</name>
+        <param>
+          <type>bool</type>
+          <declname>original</declname>
+          <array>[,]</array>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>final</declname>
+          <array>[,]</array>
+        </param>
+        <briefdescription>
+<para>Takes a truefalse map and for each pixel checks the other pixels around it to see if they are also white. If the number of pixels arround it that are also white is above a threshold then keep that pixel white. Meant to reduce noise in the picture. NOT IN USE RIGHT NOW********************. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>original</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The raw truefalse map of whie pixels.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>final</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The trueFalse map to modify</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The truefalse map of pixels that met the threshold requirements. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="450" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="449" bodyend="501"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1ae51a397ecb99b137ec6920e1329e8b6b" compoundref="_image_analysis2_8cs" startline="173">Attempt_7.ImageAnalysis::cntThreshold</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a53eb6ffb4fdd39ce7f8f59a7358e2144" compoundref="_image_analysis2_8cs" startline="147">Attempt_7.ImageAnalysis::count1B</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1aa9956634aa2f4b718beb2d398b3d2b46" compoundref="_image_analysis2_8cs" startline="152">Attempt_7.ImageAnalysis::count2B</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1af5af6f29720f9a85b1cb6a71016b7af8" compoundref="_image_analysis2_8cs" startline="113">Attempt_7.ImageAnalysis::screenHeight</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1affd258e6985c66c0a80415e3ddebb4e7" compoundref="_image_analysis2_8cs" startline="108">Attempt_7.ImageAnalysis::screenWidth</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a3622f807410a6198f92490ee1964b3ff" compoundref="_image_analysis2_8cs" startline="87">Attempt_7.ImageAnalysis::SmoothSearchSize</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a228e6183baa7e0b58771ad6be4117d7f" compoundref="_image_analysis2_8cs" startline="72">Attempt_7.ImageAnalysis::UpdateSquareDimForAnalysis</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1ace29e13b249b0a3d0fccd7228f47937b" compoundref="_image_analysis2_8cs" startline="67">Attempt_7.ImageAnalysis::UpdateSquareDimForDrawing</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1a0befd0244fb507716329010283730fb6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool[,]</type>
+        <definition>bool [,] Attempt_7.ImageAnalysis.ShowPath</definition>
+        <argsstring>(bool[,] blocked, bool[,] clearPath)</argsstring>
+        <name>ShowPath</name>
+        <param>
+          <type>bool</type>
+          <declname>blocked</declname>
+          <array>[,]</array>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clearPath</declname>
+          <array>[,]</array>
+        </param>
+        <briefdescription>
+<para>Find a path through the map to go through and return it as a bool map, also set the turn indicator. Based off the reactiveNavigation from the old robot code. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>blocked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The trueFalse map of pixels that are blocked.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clearPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Blank. This map will be turned.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The trueFalse map of a clear path.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="511" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="510" bodyend="551"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1a195927d24332255e0130b0bf2791e146" compoundref="_image_analysis2_8cs" startline="147">Attempt_7.ImageAnalysis::count1D</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1af5af6f29720f9a85b1cb6a71016b7af8" compoundref="_image_analysis2_8cs" startline="113">Attempt_7.ImageAnalysis::screenHeight</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1affd258e6985c66c0a80415e3ddebb4e7" compoundref="_image_analysis2_8cs" startline="108">Attempt_7.ImageAnalysis::screenWidth</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1ace2cb703da0214a4f5565f2c619d54f8" compoundref="_image_analysis2_8cs" startline="118">Attempt_7.ImageAnalysis::turnIndication</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a228e6183baa7e0b58771ad6be4117d7f" compoundref="_image_analysis2_8cs" startline="72">Attempt_7.ImageAnalysis::UpdateSquareDimForAnalysis</references>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1ab597ab75ce16d1fd903b68e7df2a2c7f" compoundref="_image_analysis2_8cs" startline="270" endline="285">Attempt_7.ImageAnalysis::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1a74a456e2880a858c96a7d8802250c504" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.ImageAnalysis.FindMaxInAccumArrayOfHough</definition>
+        <argsstring>(short[,] accumToAnalze, short thetaIncrement, short startIndexOfStoringHoughInfoList)</argsstring>
+        <name>FindMaxInAccumArrayOfHough</name>
+        <param>
+          <type>short</type>
+          <declname>accumToAnalze</declname>
+          <array>[,]</array>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>thetaIncrement</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>startIndexOfStoringHoughInfoList</declname>
+        </param>
+        <briefdescription>
+<para>Finds Max value in Hough. Store information about that max. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>accumToAnalze</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The accumlator of bins we want to search</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>thetaIncrement</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How large is the quantitization of the theta values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>startIndexOfStoringHoughInfoList</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>What value in the Array &apos;HoughInfo&apos; should we start storing information.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="560" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="559" bodyend="634"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1a4b69c7da8f3962c2220e8d77fd9c51e9" compoundref="_image_analysis2_8cs" startline="40">Attempt_7.ImageAnalysis::currentMode</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a51a11cb6235b097fb2140c32ab734521" compoundref="_image_analysis2_8cs" startline="126">Attempt_7.ImageAnalysis::houghInfo</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a11feb673e1bb0953762222e164cec0c7" compoundref="_image_analysis2_8cs" startline="35">Attempt_7.ImageAnalysis::New_HOUGH_MODE</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1aaa874c7b203d72acf483aac60d199c10" compoundref="_image_analysis2_8cs" startline="34">Attempt_7.ImageAnalysis::OLD_HOUGH_MODE</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1aade101616dd021e3cbb0501146a78835" compoundref="_image_analysis2_8cs" startline="62">Attempt_7.ImageAnalysis::RhoIncrement</references>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1a327ee82eeb29ad6f4060bb4a9a21d7d8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.ImageAnalysis.CalculateStartandStopofLine</definition>
+        <argsstring>(double x1, double y1, double slope1, int startIndexforStorageArray)</argsstring>
+        <name>CalculateStartandStopofLine</name>
+        <param>
+          <type>double</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>slope1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>startIndexforStorageArray</declname>
+        </param>
+        <briefdescription>
+<para>Part of the old Hough system. Finds the edge values on the screen of the lines based on the slope and yInt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slope1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Slope of the line</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yintercept1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>YIntercept of the line</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>startIndexforStorageArray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where to store the information in the storage array</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="645" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="644" bodyend="795"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1a4b69c7da8f3962c2220e8d77fd9c51e9" compoundref="_image_analysis2_8cs" startline="40">Attempt_7.ImageAnalysis::currentMode</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1aeb7215aa1a091fa531c07ee3aa4c03d6" compoundref="_image_analysis2_8cs" startline="132">Attempt_7.ImageAnalysis::houghLineStartandStopVectors</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a11feb673e1bb0953762222e164cec0c7" compoundref="_image_analysis2_8cs" startline="35">Attempt_7.ImageAnalysis::New_HOUGH_MODE</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1aaa874c7b203d72acf483aac60d199c10" compoundref="_image_analysis2_8cs" startline="34">Attempt_7.ImageAnalysis::OLD_HOUGH_MODE</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1af5af6f29720f9a85b1cb6a71016b7af8" compoundref="_image_analysis2_8cs" startline="113">Attempt_7.ImageAnalysis::screenHeight</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1affd258e6985c66c0a80415e3ddebb4e7" compoundref="_image_analysis2_8cs" startline="108">Attempt_7.ImageAnalysis::screenWidth</references>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.ImageAnalysis.Hough</definition>
+        <argsstring>(bool[,] isLine)</argsstring>
+        <name>Hough</name>
+        <param>
+          <type>bool</type>
+          <declname>isLine</declname>
+          <array>[,]</array>
+        </param>
+        <briefdescription>
+<para>For each white pixel that might be part of a line, Find all the potiential lines going through it and store each vote for that line in the accumlator&apos;s bins. Calls the methods to search through the accumlator to find the bins with the largest values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>isLine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The trueFalse array of pixels that might be part of a line. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="809" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="808" bodyend="911"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1acb2ae3d661927b0467b5d4fdc7eded98" compoundref="_image_analysis2_8cs" startline="168">Attempt_7.ImageAnalysis::accum1</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1ac861772cdcfacb7ac2401079c651eb4e" compoundref="_image_analysis2_8cs" startline="167">Attempt_7.ImageAnalysis::accum2</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a327ee82eeb29ad6f4060bb4a9a21d7d8" compoundref="_image_analysis2_8cs" startline="644" endline="795">Attempt_7.ImageAnalysis::CalculateStartandStopofLine</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a00bfc4bb52ece15ba645b81fb3ca3f2b" compoundref="_image_analysis2_8cs" startline="965" endline="988">Attempt_7.ImageAnalysis::ClearMaxInAccum</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1aea1d803966f442e9699b52e196613f8c" compoundref="_image_analysis2_8cs" startline="147">Attempt_7.ImageAnalysis::count1E</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a1c9acb58142af8f283eb7958305b4337" compoundref="_image_analysis2_8cs" startline="152">Attempt_7.ImageAnalysis::count2E</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a4b69c7da8f3962c2220e8d77fd9c51e9" compoundref="_image_analysis2_8cs" startline="40">Attempt_7.ImageAnalysis::currentMode</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1aa983bdc246185a5a41414e1db84534dd" compoundref="_image_analysis2_8cs" startline="924" endline="956">Attempt_7.ImageAnalysis::FindAverages</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a74a456e2880a858c96a7d8802250c504" compoundref="_image_analysis2_8cs" startline="559" endline="634">Attempt_7.ImageAnalysis::FindMaxInAccumArrayOfHough</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a51a11cb6235b097fb2140c32ab734521" compoundref="_image_analysis2_8cs" startline="126">Attempt_7.ImageAnalysis::houghInfo</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a11feb673e1bb0953762222e164cec0c7" compoundref="_image_analysis2_8cs" startline="35">Attempt_7.ImageAnalysis::New_HOUGH_MODE</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a74cfdb396e3abe4a6f5a9ccbe4f948e2" compoundref="_image_analysis2_8cs" startline="46">Attempt_7.ImageAnalysis::NumberofLinesToFind</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1aaa874c7b203d72acf483aac60d199c10" compoundref="_image_analysis2_8cs" startline="34">Attempt_7.ImageAnalysis::OLD_HOUGH_MODE</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1aade101616dd021e3cbb0501146a78835" compoundref="_image_analysis2_8cs" startline="62">Attempt_7.ImageAnalysis::RhoIncrement</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1af5af6f29720f9a85b1cb6a71016b7af8" compoundref="_image_analysis2_8cs" startline="113">Attempt_7.ImageAnalysis::screenHeight</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1affd258e6985c66c0a80415e3ddebb4e7" compoundref="_image_analysis2_8cs" startline="108">Attempt_7.ImageAnalysis::screenWidth</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1ae80e0958661793ecf50c1a17f1b7e9d0" compoundref="_image_analysis2_8cs" startline="57">Attempt_7.ImageAnalysis::ThetaIncrement</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a228e6183baa7e0b58771ad6be4117d7f" compoundref="_image_analysis2_8cs" startline="72">Attempt_7.ImageAnalysis::UpdateSquareDimForAnalysis</references>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1ab597ab75ce16d1fd903b68e7df2a2c7f" compoundref="_image_analysis2_8cs" startline="270" endline="285">Attempt_7.ImageAnalysis::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1aa983bdc246185a5a41414e1db84534dd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attempt_7.ImageAnalysis.FindAverages</definition>
+        <argsstring>()</argsstring>
+        <name>FindAverages</name>
+        <briefdescription>
+<para>Find the average theta values. Weigh them according to the rho value of each one. Make a turning desision based off the weighted thetas if turnBytheta is on. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="925" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="924" bodyend="956"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1a51a11cb6235b097fb2140c32ab734521" compoundref="_image_analysis2_8cs" startline="126">Attempt_7.ImageAnalysis::houghInfo</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a74cfdb396e3abe4a6f5a9ccbe4f948e2" compoundref="_image_analysis2_8cs" startline="46">Attempt_7.ImageAnalysis::NumberofLinesToFind</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1ace2cb703da0214a4f5565f2c619d54f8" compoundref="_image_analysis2_8cs" startline="118">Attempt_7.ImageAnalysis::turnIndication</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a9b47675bd42bc8dacf5c93bb02befd81" compoundref="_image_analysis2_8cs" startline="92">Attempt_7.ImageAnalysis::turnIndicatorisTheta</references>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_attempt__7_1_1_image_analysis_1a00bfc4bb52ece15ba645b81fb3ca3f2b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>short[,]</type>
+        <definition>short [,] Attempt_7.ImageAnalysis.ClearMaxInAccum</definition>
+        <argsstring>(short[,] accumToChange, int rho, int theta)</argsstring>
+        <name>ClearMaxInAccum</name>
+        <param>
+          <type>short</type>
+          <declname>accumToChange</declname>
+          <array>[,]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rho</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>theta</declname>
+        </param>
+        <briefdescription>
+<para>Clears the array arround the maximum. Gets information about the line to clear around from the &apos;this.houghInfo&apos; array. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>accumToChange</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Accumulator to clear around</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>degreeIncrement</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The theta quantitization</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indexOffset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How far into the &apos;this.houghInfo&apos; array is the data for the line we want to clear around</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The accumulator with the values around the max cleared.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="966" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="965" bodyend="988"/>
+        <references refid="class_attempt__7_1_1_image_analysis_1af57eb11bc470f90921bed1b60cfc9741" compoundref="_image_analysis2_8cs" startline="77">Attempt_7.ImageAnalysis::ClearArroundMaxDegree</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1a5de31952bf3d80b7ad21aa4c0acc3092" compoundref="_image_analysis2_8cs" startline="82">Attempt_7.ImageAnalysis::ClearArroundMaxRho</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1aade101616dd021e3cbb0501146a78835" compoundref="_image_analysis2_8cs" startline="62">Attempt_7.ImageAnalysis::RhoIncrement</references>
+        <references refid="class_attempt__7_1_1_image_analysis_1ae80e0958661793ecf50c1a17f1b7e9d0" compoundref="_image_analysis2_8cs" startline="57">Attempt_7.ImageAnalysis::ThetaIncrement</references>
+        <referencedby refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" compoundref="_image_analysis2_8cs" startline="808" endline="911">Attempt_7.ImageAnalysis::Hough</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>It was easier to redure 640*480 small triangles and view then from a distance than to put a texture on the GPU So there is a camera to view the triangels. The class only analzes a small fraction of the pixels each time through the game loop inorder to keep the speed high. Many of the methods have loops that cause them to only look at every X pixel each time through and then the next time through a different set. Basically it functions like a giant double &quot;for&quot; loop. </para>    </briefdescription>
+    <detaileddescription>
+<para>The Image Analysis Class does the image processing of the robot view. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="31">
+        <label>Attempt_7.Camera</label>
+        <link refid="class_attempt__7_1_1_camera"/>
+      </node>
+      <node id="29">
+        <label>Attempt_7.ImageAnalysis</label>
+        <link refid="class_attempt__7_1_1_image_analysis"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>drawAnalysis</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>Attempt_7.DrawImageAnalysis</label>
+        <link refid="class_attempt__7_1_1_draw_image_analysis"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>camera</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>imageAnalysis</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" line="33" bodyfile="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/ImageAnalysis2.cs" bodystart="32" bodyend="989"/>
+    <listofallmembers>
+      <member refid="class_attempt__7_1_1_image_analysis_1acb2ae3d661927b0467b5d4fdc7eded98" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>accum1</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1ac861772cdcfacb7ac2401079c651eb4e" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>accum2</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a8cdd9f3be232a5cf32006ddd52bc4ae2" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>AccumLength</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a75787da0f52a71c54f5f8a18d32467b8" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>AccumLengthOld</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1afdb8b1b0ef151cceeed6883a6ca955f5" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>blueGood</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a327ee82eeb29ad6f4060bb4a9a21d7d8" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>CalculateStartandStopofLine</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1af57eb11bc470f90921bed1b60cfc9741" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>ClearArroundMaxDegree</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a5de31952bf3d80b7ad21aa4c0acc3092" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>ClearArroundMaxRho</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a00bfc4bb52ece15ba645b81fb3ca3f2b" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>ClearMaxInAccum</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1ae51a397ecb99b137ec6920e1329e8b6b" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>cntThreshold</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a3490343b5c67fcbbdbb23257a56e4b3a" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>colorArray</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1acdb050a1334538156f7a3332ae7f332a" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>colorArray1D</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a8fa0aaf56dde7fca58135cdc8c74575f" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>count1A</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a53eb6ffb4fdd39ce7f8f59a7358e2144" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>count1B</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a87af8ae466e41feca21cb200e3463bf9" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>count1C</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a195927d24332255e0130b0bf2791e146" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>count1D</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1aea1d803966f442e9699b52e196613f8c" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>count1E</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1ae79ba8e9b9e910edf5aded0604399f07" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>count2A</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1aa9956634aa2f4b718beb2d398b3d2b46" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>count2B</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a8f2510e6449b532e0a8aa7c616d8f474" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>count2C</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a1c9acb58142af8f283eb7958305b4337" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>count2E</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1af6c217c696c6b6e16d8988e89d39666b" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>countOfNewHoughSingularities</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1ab9f59ec453ba211ebc7cd614c6ab5fab" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>countofOldHoughSingularities</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a4b69c7da8f3962c2220e8d77fd9c51e9" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>currentMode</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a20ae1fce740efa28137cde3029a1b4bf" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>drawAnalysis</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1aa983bdc246185a5a41414e1db84534dd" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>FindAverages</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a74a456e2880a858c96a7d8802250c504" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>FindMaxInAccumArrayOfHough</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a9418e8e0a6868d294d27b97cadf6d958" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>FindWhite</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1ab8604cecb2f620a88298bccc48a4436d" prot="public" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>GetColorMapToDraw</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a897a0f80fbf65670828c8a1a1db13d97" prot="public" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>GetHoughInfo</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1ae14af27b7aaa3d4a1006af2a56ab14d1" prot="public" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>GetHoughMode</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a3c35b4a6a6a1e4464fc79772caa612cf" prot="public" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>GetHoughStartandStopVectors</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a8b8e7e705c97bbb5da1300c139ec0f36" prot="public" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>GetSingularitesOldHough</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a23adf47c39e8990ae161dd46dcb43846" prot="public" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>GetSingularitiesNewHough</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a1ba8eee3151c73ef5023003ee7b57b67" prot="public" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>GetTrueFalseMaptoDraw</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a99c5e65fe48a1145d7c9afba96bfb220" prot="public" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>GetTurnIndicator</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a55b77047aaacc5a78fcd70401da3b069" prot="public" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>GetWhiteCount</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a288ae76c53338d5463b05a6c978baf61" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>greenGood</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a89a87d17049aa2c3f1b31af9b8ffcb07" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>Hough</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a51a11cb6235b097fb2140c32ab734521" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>houghInfo</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1aeb7215aa1a091fa531c07ee3aa4c03d6" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>houghLineStartandStopVectors</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a372086fbe7753711c79fb65694e74b8b" prot="public" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>ImageAnalysis</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1af250995c0e8937dc0ad3c26239716225" prot="public" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>Initialize</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a6dfa6991871f29000b2e32e2a1bed121" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>middleValues</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a11feb673e1bb0953762222e164cec0c7" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>New_HOUGH_MODE</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a74cfdb396e3abe4a6f5a9ccbe4f948e2" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>NumberofLinesToFind</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1aaa874c7b203d72acf483aac60d199c10" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>OLD_HOUGH_MODE</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1aa9e1387a4605edfe0d910284724a671a" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>redGood</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1aade101616dd021e3cbb0501146a78835" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>RhoIncrement</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a5c675bc754b9cc7185837d234766dd04" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>robotCameraView</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1af5af6f29720f9a85b1cb6a71016b7af8" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>screenHeight</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1affd258e6985c66c0a80415e3ddebb4e7" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>screenWidth</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1aa6cac5de12d6bf454500ee5498db48cb" prot="public" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>SetRobotCameraView</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a0befd0244fb507716329010283730fb6" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>ShowPath</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a87fb97262f08f3b21afd2bcdb29bbe6c" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>Smooth</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a3622f807410a6198f92490ee1964b3ff" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>SmoothSearchSize</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1ac70a680405b76bd8b0ece8ee2a8112e8" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>TextureTo2DArray</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1ae80e0958661793ecf50c1a17f1b7e9d0" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>ThetaIncrement</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a29de7b233adab56b0b7df3464b1528ef" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>totalWhiteCnt</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1ab79ad9fb17e17983e14861ee93c3479a" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>trueFalseMap</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a88fcfe8ea8917bfe5e458a845cc2b291" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>trueFalseMapB</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1ad698ffe87469398b956a2a1c5ae2b840" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>trueFalseMapC</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1ace2cb703da0214a4f5565f2c619d54f8" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>turnIndication</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a9b47675bd42bc8dacf5c93bb02befd81" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>turnIndicatorisTheta</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1ab597ab75ce16d1fd903b68e7df2a2c7f" prot="public" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>Update</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a1d0bc75993df71df5d005ab3d749bb81" prot="public" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>Update1</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a228e6183baa7e0b58771ad6be4117d7f" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>UpdateSquareDimForAnalysis</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1ace29e13b249b0a3d0fccd7228f47937b" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>UpdateSquareDimForDrawing</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1a879442dce1e8ad7240a78101c31cace4" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>Whiteline</name></member>
+      <member refid="class_attempt__7_1_1_image_analysis_1ab67ff7ed27c69e82b67b7d0d3b6e1fec" prot="private" virt="non-virtual"><scope>Attempt_7::ImageAnalysis</scope><name>whiteParam</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.3">
+  <compounddef id="dir_65531c2611cc05e70dd67d851570d469" kind="dir">
+    <compoundname>C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/</compoundname>
+    <innerdir refid="dir_4dc70ce585b07afacd66256bfeb8b8e5">C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/Properties/</innerdir>
+    <innerfile refid="_camera_8cs">Camera.cs</innerfile>
+    <innerfile refid="_draw_image_analysis_8cs">DrawImageAnalysis.cs</innerfile>
+    <innerfile refid="_draw_image_analysis2_8cs">DrawImageAnalysis2.cs</innerfile>
+    <innerfile refid="_image_analysis_8cs">ImageAnalysis.cs</innerfile>
+    <innerfile refid="_image_analysis2_8cs">ImageAnalysis2.cs</innerfile>
+    <innerfile refid="_program_8cs">Program.cs</innerfile>
+    <innerfile refid="_robot_8cs">Robot.cs</innerfile>
+    <innerfile refid="_simulation_main_8cs">SimulationMain.cs</innerfile>
+    <innerfile refid="_user_control1_8cs">UserControl1.cs</innerfile>
+    <innerfile refid="_user_control1_8_designer_8cs">UserControl1.Designer.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/"/>
+  </compounddef>
+</doxygen>

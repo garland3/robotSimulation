@@ -1,0 +1,112 @@
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\grass11.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\blacksquare.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\ground.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\flashlight.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\Arial.xnb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.exe
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.pdb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.exe
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.pdb
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.exe.manifest
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.application
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.TrustInfo.xml
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.exe.manifest
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.application
+C:\Users\Joyce\Documents\Anthony\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.XML
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\grass11.xnb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\blacksquare.xnb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\ground.xnb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\flashlight.xnb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\Arial.xnb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.exe.manifest
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.application
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.exe
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.pdb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.TrustInfo.xml
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.exe.manifest
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.application
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.exe
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.pdb
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.XML
+C:\Users\Anthony\Documents\School Fall 2010\Misc\XNA\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\ArialLarge.xnb
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\grass11.xnb
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\blacksquare.xnb
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\ground.xnb
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\grass2.xnb
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\grass3.xnb
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\flashlight.xnb
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\Arial.xnb
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\ArialLarge.xnb
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.exe.manifest
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.application
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.exe
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.pdb
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.TrustInfo.xml
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.exe.manifest
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.application
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.exe
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.pdb
+C:\Users\Anthony\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.XML
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\grass11.xnb
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\blacksquare.xnb
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\ground.xnb
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\grass2.xnb
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\grass3.xnb
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\flashlight.xnb
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\Arial.xnb
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\ArialLarge.xnb
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.exe.manifest
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.application
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.exe
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.pdb
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.TrustInfo.xml
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.exe.manifest
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.application
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.exe
+C:\Users\Anthony G\Dropbox\Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.pdb
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\grass11.xnb
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\blacksquare.xnb
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\ground.xnb
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\grass2.xnb
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\grass3.xnb
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\flashlight.xnb
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\Arial.xnb
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\ArialLarge.xnb
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.exe.manifest
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.application
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.exe
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.pdb
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.csprojResolveAssemblyReference.cache
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.TrustInfo.xml
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.exe.manifest
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.application
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.exe
+C:\Users\Anthony G\Dropbox\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.pdb
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\grass11.xnb
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\blacksquare.xnb
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\ground.xnb
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\grass2.xnb
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\grass3.xnb
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\flashlight.xnb
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\Arial.xnb
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\Content\ArialLarge.xnb
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.exe.manifest
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.application
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.exe
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\attempt 7.pdb
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.csprojResolveAssemblyReference.cache
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.TrustInfo.xml
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.exe.manifest
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.application
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.exe
+C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\obj\x86\Release\attempt 7.pdb

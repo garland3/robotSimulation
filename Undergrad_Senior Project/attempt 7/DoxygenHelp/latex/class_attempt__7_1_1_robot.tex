@@ -1,0 +1,643 @@
+\section{Attempt\_\-7.Robot Class Reference}
+\label{class_attempt__7_1_1_robot}\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}}
+
+
+Collaboration diagram for Attempt\_\-7.Robot:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_attempt__7_1_1_robot__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Robot} (Game game, Vector3 {\bf position}, Vector3 {\bf direction}, float {\bf speed}, float howFarToLookInFront, float {\bf cameraHeight})
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxyref{Robot}{p.}{class_attempt__7_1_1_robot} class. \item\end{DoxyCompactList}\item 
+Vector3 {\bf GetPosition} ()
+\begin{DoxyCompactList}\small\item\em Gets the current position of the \doxyref{Robot}{p.}{class_attempt__7_1_1_robot}. \item\end{DoxyCompactList}\item 
+void {\bf SetPosition} (Vector3 pos)
+\begin{DoxyCompactList}\small\item\em Sets the position of the robot. \item\end{DoxyCompactList}\item 
+void {\bf SetStartPosition} (Vector3 pos)
+\begin{DoxyCompactList}\small\item\em Called when the robot is first placed. Stores the value of the start position so that the robot can be reset to this location. \item\end{DoxyCompactList}\item 
+{\bf Camera} {\bf GetRobotCamera} ()
+\begin{DoxyCompactList}\small\item\em Gets the camera/view that the robot's camera sees. \item\end{DoxyCompactList}\item 
+bool {\bf GetIsRobotPaused} ()
+\begin{DoxyCompactList}\small\item\em Accessor method that tells if the robot is moving forward. \item\end{DoxyCompactList}\item 
+Vector3 {\bf GetDirection} ()
+\begin{DoxyCompactList}\small\item\em Accessor method that tells the direction the robot is going. \item\end{DoxyCompactList}\item 
+override void {\bf Initialize} ()
+\begin{DoxyCompactList}\small\item\em Called when the robot object is first made. The robot starts paused. \item\end{DoxyCompactList}\item 
+void {\bf ChangeDirection} (float turnIndicator)
+\begin{DoxyCompactList}\small\item\em Turns the robot based on the value of the turnIndicator Turn indicator must be greater or less than the threshold turn value before the robot will turn. Positive cross product of positive z with the dirrection the robot is going = \char`\"{}right\char`\"{} Negative cross product of positive z with the dirrection the robot is going = \char`\"{}left\char`\"{} \item\end{DoxyCompactList}\item 
+override void {\bf Update} (GameTime gameTime)
+\begin{DoxyCompactList}\small\item\em Main Update method. Calls all other methods for updating the robot. Because the robot is a GameComponent, the update method is called by the Game1.update method. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf GetKeyBoard} (GameTime gameTime1)
+\begin{DoxyCompactList}\small\item\em Checks to see if a key was pressed. F1,F2,Numpad4,NumPad6,NumPad8,NumPad2 are all checked. Called by update. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 {\bf position}
+\begin{DoxyCompactList}\small\item\em Position of the robot. \item\end{DoxyCompactList}\item 
+Vector3 {\bf startPosition}
+\begin{DoxyCompactList}\small\item\em Where the robot starts. Needed so it can be reset. \item\end{DoxyCompactList}\item 
+Vector3 {\bf direction}
+\begin{DoxyCompactList}\small\item\em Direction the robot is heading. \item\end{DoxyCompactList}\item 
+float {\bf speed}
+\begin{DoxyCompactList}\small\item\em Speed the robot is moving forward on update. /. \item\end{DoxyCompactList}\item 
+float {\bf distanceToCameraTarget}
+\begin{DoxyCompactList}\small\item\em The distance in front of the robot that the camera is pointed at. \item\end{DoxyCompactList}\item 
+float {\bf cameraHeight}
+\begin{DoxyCompactList}\small\item\em Height of the camera above the robot. \item\end{DoxyCompactList}\item 
+{\bf Camera} {\bf robotCameraView}
+\begin{DoxyCompactList}\small\item\em \doxyref{Camera}{p.}{class_attempt__7_1_1_camera} associated with the robot. \item\end{DoxyCompactList}\item 
+bool {\bf paused}
+\begin{DoxyCompactList}\small\item\em Is the robot moving on each all to update? if paused = true then moving, if false then not moving. \item\end{DoxyCompactList}\item 
+int {\bf changeDirectionThreshholdValue} = 10
+\begin{DoxyCompactList}\small\item\em How big does the turn indicator have to be, before the robot turns. 20 is default. \item\end{DoxyCompactList}\item 
+int {\bf timePressedKey}
+\begin{DoxyCompactList}\small\item\em Time in total milliseconds from the start of the game to the last time one of the keys was pressed. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\doxyref{Robot}{p.}{class_attempt__7_1_1_robot} object that inherits from the XNA game component class. 
+
+Definition at line 23 of file Robot.cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!Robot@{Robot}}
+\index{Robot@{Robot}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{Robot}]{\setlength{\rightskip}{0pt plus 5cm}Attempt\_\-7.Robot.Robot (
+\begin{DoxyParamCaption}
+\item[{Game}]{game, }
+\item[{Vector3}]{position, }
+\item[{Vector3}]{direction, }
+\item[{float}]{speed, }
+\item[{float}]{howFarToLookInFront, }
+\item[{float}]{cameraHeight}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_robot_a785ba173cf0504dee326170d3b4db554}
+
+
+Initializes a new instance of the \doxyref{Robot}{p.}{class_attempt__7_1_1_robot} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The game associate with the robot. \\
+\hline
+{\em position} & Where the robot is to start\\
+\hline
+{\em direction} & What direction the robot is pointed at \\
+\hline
+{\em speed} & How fast the robot will go. \\
+\hline
+{\em howFarToLookInFront} & How far in front of the robot the camera is to point. \\
+\hline
+{\em cameraHeight} & How high above the ground the camera for the robot is.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 84 of file Robot.cs.
+
+
+\begin{DoxyCode}
+            : base(game)
+        {
+            // Set the variables
+            this.position = position;
+            this.direction = direction;
+            this.direction.Normalize();
+            this.speed = speed;
+            this.distanceToCameraTarget = howFarToLookInFront;
+            this.cameraHeight = cameraHeight;
+
+            // Create the camera for the robot based on the information just assi
+      gned to the robot. 
+            this.robotCameraView = new Camera(Game, this.position + new Vector3(0
+      , 0, this.cameraHeight), this.position + Vector3.Multiply(this.direction, this.di
+      stanceToCameraTarget), Vector3.Backward, false);
+        }
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!ChangeDirection@{ChangeDirection}}
+\index{ChangeDirection@{ChangeDirection}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{ChangeDirection}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.Robot.ChangeDirection (
+\begin{DoxyParamCaption}
+\item[{float}]{turnIndicator}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_robot_a2ad0f76fceb915c1f1b0b98f4dc4686e}
+
+
+Turns the robot based on the value of the turnIndicator Turn indicator must be greater or less than the threshold turn value before the robot will turn. Positive cross product of positive z with the dirrection the robot is going = \char`\"{}right\char`\"{} Negative cross product of positive z with the dirrection the robot is going = \char`\"{}left\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em turnIndicator} & The TurnIndicator value must be passed to this method\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 172 of file Robot.cs.
+
+
+\begin{DoxyCode}
+        {
+            if (turnIndicator > this.changeDirectionThreshholdValue || turnIndica
+      tor < -this.changeDirectionThreshholdValue)
+            {
+                this.direction += (Vector3.Cross(this.direction, Vector3.UnitZ) /
+       2500) * turnIndicator; // 2500 is just an experimental value that works
+                this.direction.Normalize(); // Make a unit vector
+            }
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_robot_a2ad0f76fceb915c1f1b0b98f4dc4686e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!GetDirection@{GetDirection}}
+\index{GetDirection@{GetDirection}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{GetDirection}]{\setlength{\rightskip}{0pt plus 5cm}Vector3 Attempt\_\-7.Robot.GetDirection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_robot_a7f204250cb4974ce920c698ce72556d8}
+
+
+Accessor method that tells the direction the robot is going. 
+
+\begin{DoxyReturn}{Returns}
+Vector3 of the direction the robot is pointed
+\end{DoxyReturn}
+
+
+Definition at line 149 of file Robot.cs.
+
+
+\begin{DoxyCode}
+        {
+            return this.direction;
+        }
+\end{DoxyCode}
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!GetIsRobotPaused@{GetIsRobotPaused}}
+\index{GetIsRobotPaused@{GetIsRobotPaused}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{GetIsRobotPaused}]{\setlength{\rightskip}{0pt plus 5cm}bool Attempt\_\-7.Robot.GetIsRobotPaused (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_robot_a68c2627772051c07f1551c38daf9ab95}
+
+
+Accessor method that tells if the robot is moving forward. 
+
+\begin{DoxyReturn}{Returns}
+True if paused, false if robot is moving. 
+\end{DoxyReturn}
+
+
+Definition at line 140 of file Robot.cs.
+
+
+\begin{DoxyCode}
+        {
+            return this.paused;
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_robot_a68c2627772051c07f1551c38daf9ab95_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!GetKeyBoard@{GetKeyBoard}}
+\index{GetKeyBoard@{GetKeyBoard}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{GetKeyBoard}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.Robot.GetKeyBoard (
+\begin{DoxyParamCaption}
+\item[{GameTime}]{gameTime1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [protected]}}\label{class_attempt__7_1_1_robot_a26d9c782d2b45cea22c9214cddd65e64}
+
+
+Checks to see if a key was pressed. F1,F2,Numpad4,NumPad6,NumPad8,NumPad2 are all checked. Called by update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gameTime1} & Clock information\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 206 of file Robot.cs.
+
+
+\begin{DoxyCode}
+        {
+            KeyboardState keyboardState = Keyboard.GetState();
+
+            // Toggle pausing the game. Force 500 milliseconds between toggles. 
+            if (keyboardState.IsKeyDown(Keys.F2) && gameTime1.TotalGameTime.Total
+      Milliseconds - this.timePressedKey > 500)
+            {
+                this.timePressedKey = (int)gameTime1.TotalGameTime.TotalMilliseco
+      nds;
+                if (this.paused == false)
+                {
+                    this.paused = true;
+                }
+                else
+                {
+                    this.paused = false;
+                }
+            }
+
+            // Reset the robot. 
+            if (keyboardState.IsKeyDown(Keys.F1) == true)
+            {
+                this.position = this.startPosition;
+            }
+
+            // Turn left
+            if (keyboardState.IsKeyDown(Keys.S) == true)
+            {
+                this.direction -= Vector3.Cross(this.direction, Vector3.UnitZ) / 
+      60;
+                this.direction.Normalize(); // Make a unit vector
+            }
+
+            // Turn right
+            if (keyboardState.IsKeyDown(Keys.F) == true)
+            {
+                this.direction += Vector3.Cross(this.direction, Vector3.UnitZ) / 
+      60;
+                this.direction.Normalize();
+            }
+
+            // Change speed faster
+            if (keyboardState.IsKeyDown(Keys.E) == true)
+            {
+                this.speed += 0.0001f;
+            }
+
+            // Change speed slower
+            if (keyboardState.IsKeyDown(Keys.D) == true)
+            {
+                this.speed -= 0.0001f;
+            }
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=392pt]{class_attempt__7_1_1_robot_a26d9c782d2b45cea22c9214cddd65e64_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{GetPosition}]{\setlength{\rightskip}{0pt plus 5cm}Vector3 Attempt\_\-7.Robot.GetPosition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_robot_a121c5b23a88c3a1b57bbfc728e63f7bf}
+
+
+Gets the current position of the \doxyref{Robot}{p.}{class_attempt__7_1_1_robot}. 
+
+\begin{DoxyReturn}{Returns}
+Vector3 value of the robot position
+\end{DoxyReturn}
+
+
+Definition at line 103 of file Robot.cs.
+
+
+\begin{DoxyCode}
+        {
+            return this.position;
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_robot_a121c5b23a88c3a1b57bbfc728e63f7bf_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!GetRobotCamera@{GetRobotCamera}}
+\index{GetRobotCamera@{GetRobotCamera}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{GetRobotCamera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera} Attempt\_\-7.Robot.GetRobotCamera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_robot_aeda683933e67246b4e3758d8bdd250c3}
+
+
+Gets the camera/view that the robot's camera sees. 
+
+\begin{DoxyReturn}{Returns}
+The camera associated with the robot. 
+\end{DoxyReturn}
+
+
+Definition at line 131 of file Robot.cs.
+
+
+\begin{DoxyCode}
+        {
+            return this.robotCameraView;
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_robot_aeda683933e67246b4e3758d8bdd250c3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}override void Attempt\_\-7.Robot.Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_robot_a4b7de5f5731480e25f70c0177495e635}
+
+
+Called when the robot object is first made. The robot starts paused. 
+
+
+
+Definition at line 158 of file Robot.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.paused = true;
+            base.Initialize();
+        }
+\end{DoxyCode}
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{SetPosition}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.Robot.SetPosition (
+\begin{DoxyParamCaption}
+\item[{Vector3}]{pos}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_robot_a9541d93ce48fe779926507f5b0a9f229}
+
+
+Sets the position of the robot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The new position of the robot.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 112 of file Robot.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.position = pos;
+        }
+\end{DoxyCode}
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!SetStartPosition@{SetStartPosition}}
+\index{SetStartPosition@{SetStartPosition}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{SetStartPosition}]{\setlength{\rightskip}{0pt plus 5cm}void Attempt\_\-7.Robot.SetStartPosition (
+\begin{DoxyParamCaption}
+\item[{Vector3}]{pos}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_robot_a9945c6d5a6e824f9669b3e6720f644e3}
+
+
+Called when the robot is first placed. Stores the value of the start position so that the robot can be reset to this location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position of the robot when it starts. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 121 of file Robot.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.position = pos;
+            this.startPosition = pos; // Set the Start position so it can be rese
+      t later. 
+        }
+\end{DoxyCode}
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_robot_a9945c6d5a6e824f9669b3e6720f644e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!Update@{Update}}
+\index{Update@{Update}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}override void Attempt\_\-7.Robot.Update (
+\begin{DoxyParamCaption}
+\item[{GameTime}]{gameTime}
+\end{DoxyParamCaption}
+)}\label{class_attempt__7_1_1_robot_a4643dee9895d602aa0257eebb09fa82a}
+
+
+Main Update method. Calls all other methods for updating the robot. Because the robot is a GameComponent, the update method is called by the Game1.update method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gameTime} & Clock information\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 187 of file Robot.cs.
+
+
+\begin{DoxyCode}
+        {
+            this.GetKeyBoard(gameTime); // Get the key board values. 
+            if (this.paused != true)
+            {
+                this.position += Vector3.Multiply(this.direction, this.speed); //
+       Move the robot forward by the speed of the robot
+            }
+
+            // Set the robot camera based on its new position
+            this.robotCameraView.SetCameraPositionAndTarget(this.position + new V
+      ector3(0, 0, this.cameraHeight), this.position + Vector3.Multiply(this.direction,
+       this.distanceToCameraTarget)); // Update the camera position
+            this.robotCameraView.Update(gameTime); // Update the camera, by calli
+      ng the camera's update method
+            base.Update(gameTime);
+        }
+\end{DoxyCode}
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_attempt__7_1_1_robot_a4643dee9895d602aa0257eebb09fa82a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!cameraHeight@{cameraHeight}}
+\index{cameraHeight@{cameraHeight}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{cameraHeight}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Attempt\_\-7.Robot.cameraHeight}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_robot_a4f546940b473ee32465833ddb9e14bc0}
+
+
+Height of the camera above the robot. 
+
+
+
+Definition at line 53 of file Robot.cs.
+
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!changeDirectionThreshholdValue@{changeDirectionThreshholdValue}}
+\index{changeDirectionThreshholdValue@{changeDirectionThreshholdValue}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{changeDirectionThreshholdValue}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Attempt\_\-7.Robot.changeDirectionThreshholdValue} = 10\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_robot_ab4f37d2ec38b3a9fa404e6d9c74c54cc}
+
+
+How big does the turn indicator have to be, before the robot turns. 20 is default. 
+
+
+
+Definition at line 68 of file Robot.cs.
+
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!direction@{direction}}
+\index{direction@{direction}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{direction}]{\setlength{\rightskip}{0pt plus 5cm}Vector3 {\bf Attempt\_\-7.Robot.direction}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_robot_aeab9c7a5393e1b353f90e179815d1d28}
+
+
+Direction the robot is heading. 
+
+
+
+Definition at line 38 of file Robot.cs.
+
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!distanceToCameraTarget@{distanceToCameraTarget}}
+\index{distanceToCameraTarget@{distanceToCameraTarget}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{distanceToCameraTarget}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Attempt\_\-7.Robot.distanceToCameraTarget}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_robot_a3d145c2fa647a421cebd0cd1ba2908e0}
+
+
+The distance in front of the robot that the camera is pointed at. 
+
+
+
+Definition at line 48 of file Robot.cs.
+
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!paused@{paused}}
+\index{paused@{paused}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{paused}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Attempt\_\-7.Robot.paused}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_robot_a150306a7cb29e38e31b4c583dd260845}
+
+
+Is the robot moving on each all to update? if paused = true then moving, if false then not moving. 
+
+
+
+Definition at line 63 of file Robot.cs.
+
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!position@{position}}
+\index{position@{position}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}Vector3 {\bf Attempt\_\-7.Robot.position}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_robot_a2c385dd8076a962677e83ad6a6dc2bba}
+
+
+Position of the robot. 
+
+
+
+Definition at line 28 of file Robot.cs.
+
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!robotCameraView@{robotCameraView}}
+\index{robotCameraView@{robotCameraView}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{robotCameraView}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera} {\bf Attempt\_\-7.Robot.robotCameraView}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_robot_a7a9896ed9d9a0eff3a72a38d9a79e16d}
+
+
+\doxyref{Camera}{p.}{class_attempt__7_1_1_camera} associated with the robot. 
+
+
+
+Definition at line 58 of file Robot.cs.
+
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!speed@{speed}}
+\index{speed@{speed}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{speed}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Attempt\_\-7.Robot.speed}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_robot_a7bf6f1325eee035a51c8ab387e7a79b8}
+
+
+Speed the robot is moving forward on update. /. 
+
+
+
+Definition at line 43 of file Robot.cs.
+
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!startPosition@{startPosition}}
+\index{startPosition@{startPosition}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{startPosition}]{\setlength{\rightskip}{0pt plus 5cm}Vector3 {\bf Attempt\_\-7.Robot.startPosition}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_robot_aa928880825b2dadef2602204a6998854}
+
+
+Where the robot starts. Needed so it can be reset. 
+
+
+
+Definition at line 33 of file Robot.cs.
+
+\index{Attempt\_\-7::Robot@{Attempt\_\-7::Robot}!timePressedKey@{timePressedKey}}
+\index{timePressedKey@{timePressedKey}!Attempt_7::Robot@{Attempt\_\-7::Robot}}
+\subsubsection[{timePressedKey}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Attempt\_\-7.Robot.timePressedKey}\hspace{0.3cm}{\ttfamily  [private]}}\label{class_attempt__7_1_1_robot_a6cce884644ea640990454230965f80c5}
+
+
+Time in total milliseconds from the start of the game to the last time one of the keys was pressed. 
+
+
+
+Definition at line 73 of file Robot.cs.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+C:/Users/Anthony/Dropbox/Senior Project/attempt 7/attempt 7/attempt 7/{\bf Robot.cs}\end{DoxyCompactItemize}

@@ -1,0 +1,15 @@
+\section{Package Attempt\_\-7}
+\label{namespace_attempt__7}\index{Attempt\_\-7@{Attempt\_\-7}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Camera}
+\begin{DoxyCompactList}\small\item\em Represents the camera object/class that contains all the information needed about position and target for rendering. \item\end{DoxyCompactList}\item 
+class {\bf DrawImageAnalysis}
+\begin{DoxyCompactList}\small\item\em This is a game component that implements IUpdateable. Draws the image analysis information. \item\end{DoxyCompactList}\item 
+class {\bf ImageAnalysis}
+\begin{DoxyCompactList}\small\item\em It was easier to redure 640$\ast$480 small triangles and view then from a distance than to put a texture on the GPU So there is a camera to view the triangels. The class only analzes a small fraction of the pixels each time through the game loop inorder to keep the speed high. Many of the methods have loops that cause them to only look at every X pixel each time through and then the next time through a different set. Basically it functions like a giant double \char`\"{}for\char`\"{} loop. \item\end{DoxyCompactList}\item 
+class {\bf Robot}
+\item 
+class {\bf SimulationMain}
+\begin{DoxyCompactList}\small\item\em This is the main type for the Simulation. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
