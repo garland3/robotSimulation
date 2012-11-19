@@ -517,8 +517,40 @@ namespace Attempt_7
                 this.robot1.ChangeDirection(this.imageAnalysis.GetTurnIndicator()); // Steering determination get from imageAnalysis and give to robot
             }
 
-            this.verts3 = new VertexPositionColor[5]; // Pyramid that represents the robot. 
+            this.verts3 = new VertexPositionColor[16];  
             Vector3 robotPosition = this.robot1.GetPosition();
+            Vector3 robotDirection = this.robot1.GetDirection();
+            robotDirection.Normalize();
+            Vector3 robotHeight = new Vector3(0, 0,1);
+
+            // two rectangle robot representation. 
+
+            // bottom
+            //this.verts3[0] = new VertexPositionColor(new Vector3(0.3f, 0, 0) + robotPosition + robotDirection, Color.Aqua);
+            //this.verts3[1] = new VertexPositionColor(new Vector3(-0.3f, 0, 0) + robotPosition + robotDirection, Color.AliceBlue);
+            //this.verts3[2] = new VertexPositionColor(new Vector3(-0.3f, 0, 0) - robotPosition + robotDirection, Color.Aqua);
+            //this.verts3[3] = new VertexPositionColor(new Vector3(0.3f, 0, 0) - robotPosition + robotDirection, Color.Azure  );
+
+            //// top of bottom box. 
+            //this.verts3[4] = new VertexPositionColor(new Vector3(0.3f, 0, 0) + robotPosition + robotDirection + robotHeight/2, Color.Aqua);
+            //this.verts3[5] = new VertexPositionColor(new Vector3(-0.3f, 0, 0) + robotPosition + robotDirection + robotHeight/2, Color.AliceBlue);
+            //this.verts3[6] = new VertexPositionColor(new Vector3(-0.3f, 0, 0) - robotPosition + robotDirection + robotHeight/2, Color.Aqua);
+            //this.verts3[7] = new VertexPositionColor(new Vector3(0.3f, 0, 0) - robotPosition + robotDirection + robotHeight/2, Color.Azure);
+
+            //// bottom  of top box. 
+            //this.verts3[8] = new VertexPositionColor(new Vector3(0.3f, 0, 0) + robotPosition/2 + robotDirection + robotHeight/2, Color.Aqua);
+            //this.verts3[9] = new VertexPositionColor(new Vector3(-0.3f, 0, 0) + robotPosition/2 + robotDirection + robotHeight/2, Color.AliceBlue);
+            //this.verts3[10] = new VertexPositionColor(new Vector3(-0.3f, 0, 0) - robotPosition/2 + robotDirection + robotHeight/2, Color.Aqua);
+            //this.verts3[11] = new VertexPositionColor(new Vector3(0.3f, 0, 0) - robotPosition/2 + robotDirection + robotHeight/2, Color.Azure);
+
+            //// top  of top box. 
+            //this.verts3[12] = new VertexPositionColor(new Vector3(0.3f, 0, 0) + robotPosition / 2 + robotDirection + robotHeight , Color.Aqua);
+            //this.verts3[13] = new VertexPositionColor(new Vector3(-0.3f, 0, 0) + robotPosition / 2 + robotDirection + robotHeight , Color.AliceBlue);
+            //this.verts3[14] = new VertexPositionColor(new Vector3(-0.3f, 0, 0) - robotPosition / 2 + robotDirection + robotHeight , Color.Aqua);
+            //this.verts3[15] = new VertexPositionColor(new Vector3(0.3f, 0, 0) - robotPosition / 2 + robotDirection + robotHeight, Color.Azure);
+
+
+            // Pyramid that represents the robot.
             this.verts3[0] = new VertexPositionColor(new Vector3(-0.3f, 0.3f, 0) + robotPosition, Color.Aqua);
             this.verts3[1] = new VertexPositionColor(new Vector3(0.3f, 0.3f, 0) + robotPosition, Color.Green);
             this.verts3[2] = new VertexPositionColor(new Vector3(-0.0f, 0.0f, 1.0f) + robotPosition, Color.Red);

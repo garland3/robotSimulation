@@ -130,6 +130,11 @@ namespace Attempt_7
         private double[] houghInfo;
 
         /// <summary>
+        /// A class containing the hough information. 
+        /// </summary>
+        HoughInformation houghInformation;
+
+        /// <summary>
         /// Stores  vector3 locations of the beginning and end points of two lines on the screen. Was part of the old Hough system, but potientially still useful, so has not deleted.
         /// 0 = start location of  line, 1 = end location ofline
         /// </summary>
@@ -233,6 +238,7 @@ namespace Attempt_7
             this.colorArray = new Color[this.screenWidth, this.screenHeight]; // Create a 2D array of color
 
             this.houghInfo = new double[(11 * NumberofLinesToFind) + 5]; // Make the array to store hough information. Must be double so that slopes which are fractions can be stored
+            this.houghInformation = new HoughInformation(NumberofLinesToFind);
 
             this.lineArray = new Line[NumberofLinesToFind];
 
@@ -316,6 +322,15 @@ namespace Attempt_7
         public double[] GetHoughInfo()
         {
             return this.houghInfo;
+        }
+
+        /// <summary>
+        /// Gets the houghInfo object
+        /// </summary>
+        /// <returns>houghInformation</returns>
+        public HoughInformation GetHoughInformation()
+        {
+            return this.houghInformation;
         }
 
         public Line[] GetLineInfo()

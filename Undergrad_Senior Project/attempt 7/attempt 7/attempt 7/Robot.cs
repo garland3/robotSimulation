@@ -106,6 +106,15 @@ namespace Attempt_7
         }
 
         /// <summary>
+        /// Gets robot cammer hieght
+        /// </summary>
+        /// <returns> float value of the robot camera height</returns>
+        public float  GetCameraHeight()
+        {
+            return this.cameraHeight;
+        }
+
+        /// <summary>
         /// Sets the position of the robot. 
         /// </summary>
         /// <param name="pos"> The new position of the robot.</param>

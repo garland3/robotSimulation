@@ -87,6 +87,12 @@
             </summary>
             <returns> Vector3 value of the robot position</returns>
         </member>
+        <member name="M:Attempt_7.Robot.GetCameraHeight">
+            <summary>
+            Gets robot cammer hieght
+            </summary>
+            <returns> float value of the robot camera height</returns>
+        </member>
         <member name="M:Attempt_7.Robot.SetPosition(Microsoft.Xna.Framework.Vector3)">
             <summary>
             Sets the position of the robot. 

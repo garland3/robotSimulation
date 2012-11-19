@@ -7,8 +7,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Anthony\Dropbox\Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\Arial.xnb</Output>
-      <Time>2011-02-12T11:16:34.933-05:00</Time>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\Arial.xnb</Output>
+      <Time>2011-02-12T11:16:34-05:00</Time>
     </Item>
     <Item>
       <Source>grass11.jpg</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Anthony\Dropbox\Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\grass11.xnb</Output>
-      <Time>2011-01-13T20:15:59.9654932-05:00</Time>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\grass11.xnb</Output>
+      <Time>2011-01-13T20:15:59-05:00</Time>
     </Item>
     <Item>
       <Source>field.jpg</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Anthony\Dropbox\Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\field.xnb</Output>
-      <Time>2011-01-13T20:16:07.3684932-05:00</Time>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\field.xnb</Output>
+      <Time>2011-01-13T20:16:07-05:00</Time>
     </Item>
     <Item>
       <Source>APG.jpg</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Anthony\Dropbox\Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\APG.xnb</Output>
-      <Time>2011-01-16T16:31:22.458-05:00</Time>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\APG.xnb</Output>
+      <Time>2011-01-16T16:31:22-05:00</Time>
     </Item>
     <Item>
       <Source>LineTest.jpg</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Anthony\Dropbox\Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\LineTest.xnb</Output>
-      <Time>2011-01-16T20:49:45.801-05:00</Time>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\LineTest.xnb</Output>
+      <Time>2011-01-16T20:49:45-05:00</Time>
     </Item>
     <Item>
       <Source>LineTest2.jpg</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Anthony\Dropbox\Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\LineTest2.xnb</Output>
-      <Time>2011-01-16T21:20:33.138-05:00</Time>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\LineTest2.xnb</Output>
+      <Time>2011-01-16T21:20:33-05:00</Time>
     </Item>
     <Item>
       <Source>LineTest3.jpg</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Anthony\Dropbox\Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\LineTest3.xnb</Output>
-      <Time>2011-01-16T22:53:27.525-05:00</Time>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\LineTest3.xnb</Output>
+      <Time>2011-01-16T22:53:27-05:00</Time>
     </Item>
     <Item>
       <Source>LineTest4.jpg</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Anthony\Dropbox\Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\LineTest4.xnb</Output>
-      <Time>2011-01-17T21:36:32.175-05:00</Time>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\LineTest4.xnb</Output>
+      <Time>2011-01-17T21:36:32-05:00</Time>
     </Item>
     <Item>
       <Source>LineTest5.jpg</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Anthony\Dropbox\Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\LineTest5.xnb</Output>
-      <Time>2011-01-17T21:36:48.698-05:00</Time>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\LineTest5.xnb</Output>
+      <Time>2011-01-17T21:36:48-05:00</Time>
     </Item>
     <Item>
       <Source>LineTest6.jpg</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Anthony\Dropbox\Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\LineTest6.xnb</Output>
-      <Time>2011-01-17T21:37:09.7-05:00</Time>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\LineTest6.xnb</Output>
+      <Time>2011-01-17T21:37:09-05:00</Time>
     </Item>
     <Item>
       <Source>LineTest7.jpg</Source>
@@ -97,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Anthony\Dropbox\Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\LineTest7.xnb</Output>
-      <Time>2011-02-25T22:06:35.536-05:00</Time>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\LineTest7.xnb</Output>
+      <Time>2011-02-25T22:06:35-05:00</Time>
     </Item>
     <Item>
       <Source>LineTest8.jpg</Source>
@@ -106,8 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Anthony\Dropbox\Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\LineTest8.xnb</Output>
-      <Time>2011-01-17T21:37:48.699-05:00</Time>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\LineTest8.xnb</Output>
+      <Time>2011-01-17T21:37:48-05:00</Time>
     </Item>
     <Item>
       <Source>LineTest9.jpg</Source>
@@ -115,8 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Anthony\Dropbox\Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\LineTest9.xnb</Output>
-      <Time>2011-01-17T21:38:05.58-05:00</Time>
+      <Output>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\LineTest9.xnb</Output>
+      <Time>2011-01-17T21:38:05-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -124,39 +124,39 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Release</BuildConfiguration>
       <CompressContent>true</CompressContent>
-      <RootDirectory>C:\Users\Anthony\Dropbox\Senior Project\UnitTestGame\UnitTestGame\UnitTestGameContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Anthony\Dropbox\Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Anthony\Dropbox\Senior Project\UnitTestGame\UnitTestGame\UnitTestGameContent\obj\x86\Release\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Anthony\Dropbox\Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\UnitTestGame\UnitTestGame\UnitTestGameContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\UnitTestGame\UnitTestGame\UnitTestGameContent\obj\x86\Release\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\UnitTestGame\UnitTestGame\UnitTestGame\bin\x86\Release\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2010-08-23T13:41:18-04:00</Value>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2010-08-23T13:41:18-04:00</Value>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2010-08-23T13:41:18-04:00</Value>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2010-08-23T13:41:18-04:00</Value>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2010-08-23T13:41:18-04:00</Value>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2010-08-23T13:41:18-04:00</Value>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2010-12-19T21:53:47.291-05:00</Value>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2011-08-28T13:18:12.0881197-04:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

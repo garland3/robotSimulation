@@ -124,6 +124,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DrawImageAnalysis2.cs" />
+    <Compile Include="HoughInformation.cs" />
     <Compile Include="ImageAnalysis2.cs">
       <SubType>Code</SubType>
     </Compile>
