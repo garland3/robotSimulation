@@ -80,6 +80,11 @@ namespace Attempt_7
         private VertexPositionColor[] verts3;
 
         /// <summary>
+        /// track Array 
+        /// </summary>
+        private Vector2[] trackArray;
+
+        /// <summary>
         /// List holding the viewports used in the simulation. 
         /// </summary>
         private List<Viewport> viewPortList;
@@ -113,6 +118,22 @@ namespace Attempt_7
         /// The robot object. See the robot class for more information.
         /// </summary>
         private Robot robot1;
+
+
+        /// <summary>
+        /// Robot Lap Number
+        /// </summary>
+        private int robotLapNumber;
+
+        /// <summary>
+        /// Number of Laps to complete
+        /// </summary>
+        private int robotNumberOfLapsToComplete;
+
+        /// <summary>
+        /// total errors in the line detection. 
+        /// </summary>
+        private int totalErrorsInLineDetection;
 
         /// <summary>
         /// A list of the cameras. There are 2, The mainview and the robot view. 
@@ -154,6 +175,8 @@ namespace Attempt_7
         /// </summary>
         protected override void Initialize()
         {
+            this .trackArray = new Vector2[37*4];
+            this.ReadParametersFromFile();
             this.graphics.PreferredBackBufferWidth = (int)this.windowSize.X; // Set the window size
             this.graphics.PreferredBackBufferHeight = (int)this.windowSize.Y;
             this.graphics.IsFullScreen = false  ; // Not full screen
@@ -494,8 +517,9 @@ namespace Attempt_7
                     randomAdd1 = randomFirstX; // Apply the same random changes to the last that you did the first. 
                     randomAdd2 = randomFirstY;
                 }
+                this.trackArray[j] = new Vector2((float)((Math.Cos(i) * 10) + randomAdd1), (float)((Math.Sin(i) * 10) + randomAdd2));
 
-                this.verts1[j] = new VertexPositionColor(new Vector3((float)((Math.Cos(i) * 10) + randomAdd1), (float)((Math.Sin(i) * 10) + randomAdd2), 0), Color.WhiteSmoke); // 1st inside line
+                this.verts1[j] = new VertexPositionColor(new Vector3(trackArray[j].X,trackArray[j].Y, 0), Color.WhiteSmoke); // 1st inside line
                 this.verts1[j + 37] = new VertexPositionColor(new Vector3((float)((Math.Cos(i) * 15) + randomAdd1), (float)((Math.Sin(i) * 14) + randomAdd2), 0), Color.White); // 1st outside line
                 this.verts1[j + (37 * 2)] = new VertexPositionColor(new Vector3((float)((Math.Cos(i) * 10.2f) + randomAdd1), (float)((Math.Sin(i) * 10.2f) + randomAdd2), 0), Color.White); // 2nd inside line -- make it thicker
                 this.verts1[j + (37 * 3)] = new VertexPositionColor(new Vector3((float)((Math.Cos(i) * 15.2f) + randomAdd1), (float)((Math.Sin(i) * 14.2f) + randomAdd2), 0), Color.White); // 2nd outside line -- make it thicker
@@ -660,6 +684,40 @@ namespace Attempt_7
                 this.spriteBatch.DrawString(this.arialLarge, "Simulation Status--- Active", new Vector2(0, 0), Color.Green);
               //  this.spriteBatch.DrawString(this.arialLarge, "DrawCnt" + frameDrawCount + "UpdateCnt" + updateCount, new Vector2(0, 300), Color.Yellow);
             }
+        }
+
+
+        /// <summary>
+        /// Read parametes from File. 
+        /// </summary>
+                private void ReadParametersFromFile()
+                {
+          
+
+            FileStream fileStream = new FileStream(@"c:\file.txt", FileMode.Open);
+            try
+            {
+          // read from file or write to file
+        }
+        finally
+        {
+          fileStream.Close();
+        }
+            // File name
+            // open
+            // parse, assign to parameters
+            //close
+        }
+
+        /// <summary>
+        /// Print Results of the simulation to a file. 
+        /// </summary>
+        private void PrintResultToFile()
+        {
+            // File name
+            // open
+            // print parameters to file so that they are easy to parse by optimizer. 
+            //close
         }
     }
 }

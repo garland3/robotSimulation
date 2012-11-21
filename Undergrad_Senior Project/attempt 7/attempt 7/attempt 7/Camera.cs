@@ -105,6 +105,7 @@ namespace Attempt_7
                 this.UpdateKeyBoard();
             }
 
+            //this.View = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4, (float)Game.Window.ClientBounds.Width / (float)Game.Window.ClientBounds.Height, 1, 1200);
             this.View = Matrix.CreateLookAt(this.cameraPosition, this.target, this.updirection); // Update the veiw. 
           
             base.Update(gameTime);
