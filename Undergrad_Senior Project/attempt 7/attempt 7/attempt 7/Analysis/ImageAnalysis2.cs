@@ -18,6 +18,12 @@ namespace Attempt_7
     using Microsoft.Xna.Framework.Graphics;
     using Microsoft.Xna.Framework.Input;
     using Microsoft.Xna.Framework.Media;
+    using Attempt_7._2DDrawing;
+    using Attempt_7.Cameras;
+    using Attempt_7.Analysis;
+    using Attempt_7.DrawAbleSimulationObjects;
+    using Attempt_7.ViewPorts;
+    using Attempt_7;
 
     /// <summary>
     /// 
@@ -37,73 +43,63 @@ namespace Attempt_7
         /// <summary>
         /// Number of lines the hough transform should find.
         /// </summary>
-        private const short NumberofLinesToFind = 4;
+        private int numberOfLinesToFind;
       
         /// <summary>
         /// Size of the Acuumlator's lenght. Must be able to fit the largest posible value of rho. Max rho = Sqrt( ScreenHeight^2+ (ScreenWidth/2)^2), because the origin is the bottom center and the max rho is top left or right
         /// </summary>        
-        private const int AccumLength = 600;
+        private int AccumLength;
 
         /// <summary>
         /// lenght of the hold hough accumulator
         /// </summary>
-        private const int AccumLengthOld = 810;
+        private int AccumLengthOld;
 
         /// <summary>
         /// How big the steps are for a potiential theta. In degreees. Large values  reduce computation but less acurate.  
         /// </summary>
-        private const short ThetaIncrement = 4;
+        private short ThetaIncrement;
 
         /// <summary>
         /// How big the steps are for a potiential rho values. Large values  reduce computation but less acurate.  
         /// </summary>
-        private const short RhoIncrement = 7;
-
-        /// <summary>
-        /// Inorder to make computations go faster, not every pixels is anylzed every time. 1 out of This value squared is analzed each pass
-        /// </summary>
-        private const short UpdateSquareDimForDrawing = 3;
+        private short RhoIncrement;
+       
 
         /// <summary>
         /// Inorder to make drawing go faster, not every pixels is updated every time. 1 out of This value squared is updated each pass
         /// </summary>
-        private const short UpdateSquareDimForAnalysis = 3;
+        private short UpdateSquareDimForAnalysis;
 
         /// <summary>
         /// Number of degrees around a maximum to clear around before searching the Accumulator again. 
         /// </summary>
-        private const int ClearArroundMaxDegree = 5;
+        private int ClearArroundMaxDegree;
 
         /// <summary>
         /// Number of rho values around a maximum to clear around before searching the Accumulator again.
         /// </summary>
-        private const int ClearArroundMaxRho = 8;
+        private int ClearArroundMaxRho;
 
         /// <summary>
         /// Used by the smooth method. Dimension of Number of pixels  to look around for the smooth function. This (values*2)^2 = number of pixels checked.
         /// </summary>
-        private const int SmoothSearchSize = 4;
+        private int SmoothSearchSize;    
 
+        
         /// <summary>
-        /// If 0 then Old mode (top left origin), if 1 then New Hough mode( bottom Center). 
+        /// Texture object that represents the robot camera's current view. Called
         /// </summary>
-        private int currentMode = 0;
-
-        /// <summary>
-        /// If true then steering desisions will be based off the theta's of the hough transform
-        /// </summary>       
-        private bool turnIndicatorisTheta = false;
-
-
-        /// <summary>
-        /// Texture object that represents the robot camera's current view
-        /// </summary>
-        private Texture2D robotCameraView;
+        public Texture2D robotCameraViewTexture { get; set; }
 
         /// <summary>
         /// TrueFalse maps used for marking pixels either "good" or "bad"
         /// </summary>
-        private bool[,] trueFalseMap, trueFalseMapB, trueFalseMapC;
+        public bool[,] clearPathTrueFalseMap{get;set;}
+        public bool[,] trueFalseMapB { get; set; }
+        public bool[,] findWhiteTrueFalseMap { get; set; }
+            
+          
 
         /// <summary>
         /// Screen Width of the image to analze
@@ -118,26 +114,20 @@ namespace Attempt_7
         /// <summary>
         /// The turn indicator measures measures how much the analysis things the robot should go right or left. Right = positive. Left = negative
         /// </summary>
-        private int turnIndication = 0;
+        public int turnIndication { get; set; }
 
-        /// <summary>
-        /// Stores information about lines from the hough transform.    
-        /// each polarRho we want to find = 7 more values to store
-        /// 0=slope, 1= yInt, 2=Rho, 3=Theta, 4=Xvalue, 5=Yvalue, 6= size of the bin, 7= xTransformed value 8= yTransformedValue, 9 = distance to line Algorithm, 10= angle to line Algorithm
-        /// 5  more ending values for the averages
+       
+        /// the current Hough Mode
         /// </summary>
-        private double[] houghInfo;
+        private int currentMode { get; set; }
+        
 
-        /// <summary>
-        /// Stores  vector3 locations of the beginning and end points of two lines on the screen. Was part of the old Hough system, but potientially still useful, so has not deleted.
-        /// 0 = start location of  line, 1 = end location ofline
-        /// </summary>
-        private Vector3[] houghLineStartandStopVectors;
+      
 
         /// <summary>
         /// Color Array 2D from the robot camera that is analzed. 
         /// </summary>
-        private Color[,] colorArray;
+        private Color[,] colorArrayDirectlyFromRobotCamera;
 
         /// <summary>
         /// Color Array 2D from the robot camera that is analzed. Can't extract informatino directly from the robot view Texture to 2D. But have to go through 1D array.
@@ -162,7 +152,7 @@ namespace Attempt_7
         /// <summary>
         /// Number of white pixels the "FindWhite" found
         /// </summary>
-        private int totalWhiteCnt = 0;
+        public int totalWhiteCnt { get; set; }
 
         /// <summary>
         /// The accumlator for the hough values. Each position is a hough Bin. Each bin represents a line in Cartessian cordinates. The Accumlator is basically in polar cordinates. Theta,rho
@@ -171,44 +161,69 @@ namespace Attempt_7
         private short[,] accum1; // the old way. 
 
         /// <summary>
-        /// Used by the smooth method. How many pixels must also be white in the area around a white pixel for it to be counted white. 
+        /// List of Hough Lines Objects
         /// </summary>
-        private int cntThreshold = 15;
+        public List<HoughLines> houghLineList { get; set; }
+
+        /// <summary>
+        /// Debugging Text
+        /// </summary>
+        public DebugText debugText { get; set; }
+
+
+        /// <summary>
+        /// Error Analysis Object
+        /// </summary>
+        public LineErrorAnalysis lineErrorAnalysis { get; set; }       
 
         /// <summary>
         /// On a scale of 0-255 how high does a pixel RGB value have to be before being declared white. 
         /// </summary>
-        private int redGood, blueGood, greenGood;
-
-        /// <summary>
-        /// Sets red_good, blue_good, green_good to this value. 
-        /// </summary>
-        private int whiteParam = 150;
+        private int redGood, blueGood, greenGood;        
 
         /// <summary>
         /// The drawingImageAnalysis class handles the vertex information the shows what the robot is thinking
         /// </summary>
-        DrawImageAnalysis drawAnalysis;
+        public DrawImageAnalysis drawAnalysis { get; set; }
 
-        int countOfNewHoughSingularities = 0;
+       int countOfNewHoughSingularities = 0;
         int countofOldHoughSingularities = 0;
 
+
+       
+        
         /// <summary>
         /// Initializes a new instance of the ImageAnalysis class.
         /// </summary>
         /// <param name="game">The game associated with the class</param>
         /// <param name="screenSize">The size of the sceen to analze</param>
         /// <param name="viewPortList1">A list of the view ports</param>
-        public ImageAnalysis(Game game, Vector2 screenSize, List<Viewport> viewPortList1)
+        public ImageAnalysis(Game game)
             : base(game)
         {
-            this.screenWidth = (int)screenSize.X;
-            this.screenHeight = (int)screenSize.Y;
+            // Add the ImageAnalysis as a game Component. 
+           
+           
+            // Get Default configuration from the configuration object
+            this.screenWidth = (int)((SimulationMain)game).config.screenSize.X;
+            this.screenHeight = (int)((SimulationMain)game).config.screenSize.Y;
+            this.AccumLength = ((SimulationMain)game).config.AccumLength;
+            this.AccumLengthOld = (int)((SimulationMain)game).config.AccumLengthOld;
+            this.ThetaIncrement = ((SimulationMain)game).config.ThetaIncrement;
+            this.RhoIncrement = ((SimulationMain)game).config.RhoIncrement;
+            this.ClearArroundMaxDegree = ((SimulationMain)game).config.ClearArroundMaxDegree;
+            this.ClearArroundMaxRho = ((SimulationMain)game).config.ClearArroundMaxRho;
+            this.SmoothSearchSize = ((SimulationMain)game).config.SmoothSearchSize;
+            this.numberOfLinesToFind = ((SimulationMain)game).config.numberofLinesToFind;
+            this.UpdateSquareDimForAnalysis = ((SimulationMain)game).config.UpdateSquareDimForAnalysis;
 
-            // Creates the image drawing analysis object.
-            this.drawAnalysis = new DrawImageAnalysis(game, this.screenWidth, this.screenHeight, UpdateSquareDimForDrawing, UpdateSquareDimForAnalysis, NumberofLinesToFind, ThetaIncrement, RhoIncrement, viewPortList1, this);
-            this.drawAnalysis.DrawOrder = game.Components.Count;
-            Game.Components.Add(this.drawAnalysis);
+            //
+            this.turnIndication = 0;
+
+            this.houghLineList = new List<HoughLines>();
+            
+            
+           
         }
 
         /// <summary>
@@ -216,54 +231,70 @@ namespace Attempt_7
         /// </summary>
         public override void Initialize()
         {
+            this.totalWhiteCnt = 0;
             // Create the arrays needed. Building them now will save CPU later. 
-            this.trueFalseMap = new bool[this.screenWidth, this.screenHeight];
+            this.clearPathTrueFalseMap = new bool[this.screenWidth, this.screenHeight];
             this.trueFalseMapB = new bool[this.screenWidth, this.screenHeight];
-            this.trueFalseMapC = new bool[this.screenWidth, this.screenHeight];
+            this.findWhiteTrueFalseMap = new bool[this.screenWidth, this.screenHeight];
 
             this.accum2 = new short[360 / ThetaIncrement, AccumLength / RhoIncrement]; // Build the accumlator array. Make is smaller or shorter based on the size of the rho and theta increments
             this.accum1 = new short[360 / ThetaIncrement, AccumLengthOld / RhoIncrement];
             this.colorArray1D = new Color[this.screenWidth * this.screenHeight]; // Create a 1D array of color
-            this.colorArray = new Color[this.screenWidth, this.screenHeight]; // Create a 2D array of color
+            this.colorArrayDirectlyFromRobotCamera = new Color[this.screenWidth, this.screenHeight]; // Create a 2D array of color
 
-            this.houghInfo = new double[(11 * NumberofLinesToFind) + 5]; // Make the array to store hough information. Must be double so that slopes which are fractions can be stored
+            //this.houghInfo = new double[(11 * numberOfLinesToFind) + 5]; // Make the array to store hough information. Must be double so that slopes which are fractions can be stored
 
             // Set the color thresholds
-            this.redGood = this.whiteParam;
-            this.blueGood = this.whiteParam;
-            this.greenGood = this.whiteParam;
+            this.redGood = ((SimulationMain)Game).config.whiteParam;
+            this.blueGood = ((SimulationMain)Game).config.whiteParam;
+            this.greenGood = ((SimulationMain)Game).config.whiteParam;
 
-            this.houghLineStartandStopVectors = new Vector3[NumberofLinesToFind * 4];
-            for (int i = 0; i < NumberofLinesToFind * 4; i++)
-            {
-                this.houghLineStartandStopVectors[i] = Vector3.Zero;
-            }
+            //this.houghLineStartandStopVectors = new Vector3[numberOfLinesToFind * 4];
+           // for (int i = 0; i < numberOfLinesToFind * 4; i++)
+           // {
+             //   this.houghLineStartandStopVectors[i] = Vector3.Zero;
+            //}
 
             this.middleValues = new int[this.screenHeight]; // Steering desisions are based off the average middle clear value for each row
 
-            base.Initialize();
+
+            // Creates the image drawing analysis object.
+            this.drawAnalysis = new DrawImageAnalysis(Game);
+            this.Game.Components.Add(this.drawAnalysis);
+
+
+
+            // Great a some Hough lines (the number that of lines we are trying to find)
+            for (int i = 0; i < numberOfLinesToFind; i++)
+            {
+                HoughLines houghLine = new HoughLines(Game);
+                this.Game.Components.Add(houghLine);
+                this.houghLineList.Add(houghLine);
+                
+            }
+
+            this.debugText = new DebugText(Game);
+            this.debugText.imageAnalysisLinked = this;
+            this.Game.Components.Add(this.debugText);
+
+            this.lineErrorAnalysis = new LineErrorAnalysis(Game);
+
+           // base.Initialize();
         }
 
         /// <summary> 
         /// Stores the texture from the robot camera in a color array before the texture is disposed. Expicitly called in the SimulationMain Draw method
         /// </summary>
         /// <param name="gameTime1">Clock Information</param>
-        public void Update1(GameTime gameTime1)
+        public void preUpdate(GameTime gameTime)
         {
-            if (this.robotCameraView != null)
+            if (this.robotCameraViewTexture != null)
             {
-                this.colorArray = this.TextureTo2DArray(this.robotCameraView, this.colorArray1D, this.colorArray);
+                this.colorArrayDirectlyFromRobotCamera = this.TextureTo2DArray(this.robotCameraViewTexture, this.colorArray1D, this.colorArrayDirectlyFromRobotCamera);
             }
         }
 
-        /// <summary>
-        /// Takes a  2D renderTarget/Texture and sets it as the image to analze. Explicitly called in the SimulationMain Draw Method.
-        /// </summary>
-        /// <param name="text">The texture to analze. </param>
-        public void SetRobotCameraView(Texture2D text)
-        {
-            this.robotCameraView = text;
-        }
+        
 
         /// <summary>
         /// Calls the analysis methods that actually do all the work. Basically the Main function for the Image Analysis Class
@@ -271,15 +302,17 @@ namespace Attempt_7
         /// <param name="gameTime">Clock Info</param>
         public override void Update(GameTime gameTime)
         {
-            currentMode = Attempt_7.SimulationMain.currentHoughMode; //Comment out for the UnitTest only
+            this.currentMode = ((SimulationMain)Game).config.currentHoughMode; //Comment out for the UnitTest only
 
-            if (this.colorArray != null)
+            if (this.colorArrayDirectlyFromRobotCamera != null)
             {
-                this.trueFalseMapC = this.FindWhite(this.colorArray); // Find White                
-                this.Hough(this.trueFalseMapC); // Run the hough  
-                if (this.turnIndicatorisTheta != true)
+                this.findWhiteTrueFalseMap = this.FindWhite(this.colorArrayDirectlyFromRobotCamera); // Find White                
+                this.Hough(this.findWhiteTrueFalseMap); // Run the hough  
+
+                // 
+                if (((SimulationMain)Game).config.turnIndicatorisTheta != true)
                 {
-                    this.trueFalseMap = this.ShowPath(this.trueFalseMapC, this.trueFalseMapB); // Find the path through the map   
+                    this.clearPathTrueFalseMap = this.ShowPath(this.findWhiteTrueFalseMap, this.trueFalseMapB); // Find the path through the map   
                 }
 
                 ////UpdateColorArrayto3DRectangle(colorArray, vertexArray);
@@ -287,32 +320,7 @@ namespace Attempt_7
             base.Update(gameTime);
         }
 
-        /// <summary>
-        /// Allows access to the WhiteCount in the image
-        /// </summary>
-        /// <returns>The number of white pixels</returns>
-        public int GetWhiteCount()
-        {
-            return this.totalWhiteCnt;
-        }
-
-        /// <summary>
-        /// Gets the houghInfo Array
-        /// </summary>
-        /// <returns>houghInfo Array</returns>
-        public double[] GetHoughInfo()
-        {
-            return this.houghInfo;
-        }
-
-        /// <summary>
-        /// Allows access to the bool map that is to be drawn.
-        /// </summary>
-        /// <returns>bool map</returns>
-        public bool[,] GetTrueFalseMaptoDraw()
-        {
-            return this.trueFalseMapC;
-        }
+        
 
         /// <summary>
         /// Gets the Hough mode. 0 = Old, 1 = New
@@ -340,17 +348,10 @@ namespace Attempt_7
         /// <returns>Color map</returns>
         public Color[,] GetColorMapToDraw()
         {
-            return this.colorArray;
+            return this.colorArrayDirectlyFromRobotCamera;
         }
 
-        /// <summary>
-        /// Allows the SimulationMain to get the turnIndicator
-        /// </summary>
-        /// <returns>The turn Indicator</returns>
-        public int GetTurnIndicator()
-        {
-            return this.turnIndication;
-        }
+       
 
         /// <summary>
         /// Returns the number of times rho=0 in the new hough system
@@ -370,14 +371,7 @@ namespace Attempt_7
             return this.countofOldHoughSingularities;
         }
 
-        /// <summary>
-        /// Gets the array holding information about the hough lines and where to draw them
-        /// </summary>
-        /// <returns>Array of Vector3 with the locations of where to start and stop hough lines</returns>
-        public Vector3[] GetHoughStartandStopVectors()
-        {
-            return this.houghLineStartandStopVectors;
-        }
+       
 
         /// <summary>
         /// Takes a texture and makes it into a 2D color array. Passing in the arrays is faster than trying to build it each time. 
@@ -393,7 +387,7 @@ namespace Attempt_7
             {
                 for (int y = 0; y < texture.Height; y++)
                 {
-                    colors2D[x, y] = colors1D[x + (y * texture.Width)];
+                     colors2D[x, y] = colors1D[x + (y * texture.Width)];                    
                 }
             }
 
@@ -509,7 +503,7 @@ namespace Attempt_7
                             }
                         }
 
-                        if (cnt > this.cntThreshold)
+                        if (cnt > ((SimulationMain)Game).config.cntThreshold)
                         {
                             final[i, j] = true;
                         }
@@ -525,16 +519,16 @@ namespace Attempt_7
                 }
             }
 
-            this.count1B++;
-            if (this.count1B == UpdateSquareDimForDrawing)
-            {
-                this.count1B = 0;
-                this.count2B++;
-                if (this.count2B == UpdateSquareDimForDrawing)
-                {
-                    this.count2B = 0;
-                }
-            }
+            //this.count1B++;
+            //if (this.count1B == UpdateSquareDimForDrawing)
+            //{
+            //    this.count1B = 0;
+            //    this.count2B++;
+            //    if (this.count2B == UpdateSquareDimForDrawing)
+            //    {
+            //        this.count2B = 0;
+            //    }
+            //}
 
             return final;
         }
@@ -595,7 +589,7 @@ namespace Attempt_7
         /// <param name="accumToAnalze">The accumlator of bins we want to search</param>
         /// <param name="thetaIncrement">How large is the quantitization of the theta values. </param>
         /// <param name="startIndexOfStoringHoughInfoList">What value in the Array 'HoughInfo' should we start storing information.</param>
-        private void FindMaxInAccumArrayOfHough(short[,] accumToAnalze, short thetaIncrement, short startIndexOfStoringHoughInfoList)
+        private void FindMaxInAccumArrayOfHough(short[,] accumToAnalze, HoughLines houghLine)
         {
             int maxTheta = 1;
             int maxRho = 1;
@@ -622,9 +616,9 @@ namespace Attempt_7
             double x1 = 0;
             double y1 = 0;
 
-            if (this.currentMode == New_HOUGH_MODE)
+            if (((SimulationMain)Game).config.currentHoughMode == New_HOUGH_MODE)
             {
-                maxTheta *= thetaIncrement; // Scale the Theta back to real size.
+                maxTheta *= this.ThetaIncrement ; // Scale the Theta back to real size.
                 maxRho = maxRho * RhoIncrement; // Scale the Rho back to real size.
                 x1 = (int)(maxRho * Math.Cos(MathHelper.ToRadians(maxTheta))); // Find the x Point corresponding the theta, rho
                 y1 = (int)(maxRho * Math.Sin(MathHelper.ToRadians(maxTheta))); // Find the y Point corresponding the theta, rho               
@@ -637,18 +631,20 @@ namespace Attempt_7
                 yintercept1 = (int)(y1 - (slope1 * x1));
 
                 // Store the information found about the line in the 'this.houghInfo' array starting at the value 'StartIndexOfStoringHoughInfoList'
-                this.houghInfo[startIndexOfStoringHoughInfoList + 0] = slope1;
-                this.houghInfo[startIndexOfStoringHoughInfoList + 1] = yintercept1;
-                this.houghInfo[startIndexOfStoringHoughInfoList + 2] = maxRho;
-                this.houghInfo[startIndexOfStoringHoughInfoList + 3] = maxTheta;
-                this.houghInfo[startIndexOfStoringHoughInfoList + 4] = x1;
-                this.houghInfo[startIndexOfStoringHoughInfoList + 5] = y1;
-                this.houghInfo[startIndexOfStoringHoughInfoList + 6] = maxAccum;
+                houghLine.slope = slope1;
+                
+                
+                houghLine.yIntercept = yintercept1;
+                houghLine.rho = maxRho;
+                houghLine.theta = maxTheta;
+                houghLine.xValue = x1;
+                houghLine.yValue = y1;
+                houghLine.sizeOfBin = maxAccum;
             }
 
             if (this.currentMode == OLD_HOUGH_MODE)
             {
-                maxTheta = (thetaIncrement * maxTheta) - 180; // Scale the Theta back to real size.
+                maxTheta = (this.ThetaIncrement * maxTheta) - 180; // Scale the Theta back to real size.
                 maxRho = maxRho * RhoIncrement; // Scale the Rho back to real size.
                 x1 = (int)(maxRho * Math.Cos(MathHelper.ToRadians(maxTheta))); // Find the x Point corresponding the theta, rho
                 y1 = (int)(maxRho * Math.Sin(MathHelper.ToRadians(maxTheta))); // Find the y Point corresponding the theta, rho               
@@ -682,17 +678,18 @@ namespace Attempt_7
                 }
 
                 // Store the information found about the line in the 'this.houghInfo' array starting at the value 'StartIndexOfStoringHoughInfoList'
-                this.houghInfo[startIndexOfStoringHoughInfoList + 0] = slope1;
-                this.houghInfo[startIndexOfStoringHoughInfoList + 1] = yintercept1;
-                this.houghInfo[startIndexOfStoringHoughInfoList + 2] = maxRho;
-                this.houghInfo[startIndexOfStoringHoughInfoList + 3] = maxTheta + 180; // Stay in the range of the array. 
-                this.houghInfo[startIndexOfStoringHoughInfoList + 4] = x1;
-                this.houghInfo[startIndexOfStoringHoughInfoList + 5] = y1;
-                this.houghInfo[startIndexOfStoringHoughInfoList + 6] = maxAccum;
-                this.houghInfo[startIndexOfStoringHoughInfoList + 7] = xTransformed;
-                this.houghInfo[startIndexOfStoringHoughInfoList + 8] = yTransformed;
-                this.houghInfo[startIndexOfStoringHoughInfoList + 9] = distance; // distance to line. 
-                this.houghInfo[startIndexOfStoringHoughInfoList + 10] = angle; // angle to line. 
+                houghLine.slope = slope1;
+                houghLine.yIntercept = yintercept1;
+                houghLine.rho = maxRho;
+                houghLine.theta = maxTheta + 180; // Stay in the range of the array. 
+                houghLine.xValue = x1;
+                houghLine.yValue = y1;
+                houghLine.sizeOfBin = maxAccum;
+                houghLine.xTransformedValue = xTransformed;
+                houghLine.yTransformedValue = yTransformed;
+                houghLine.distanceToLine = distance; // distance to line. 
+                houghLine.angleToLine = angle;// angle to line. 
+
             }
 
         }
@@ -702,10 +699,8 @@ namespace Attempt_7
         /// <summary>
         /// Part of the old Hough system. Finds the edge values on the screen of the lines based on the slope and yInt.
         /// </summary>
-        /// <param name="slope1">Slope of the line</param>
-        /// <param name="yintercept1">YIntercept of the line</param>
-        /// <param name="startIndexforStorageArray">Where to store the information in the storage array</param>
-        private void CalculateStartandStopofLine(double x1, double y1, double slope1, int startIndexforStorageArray)
+        /// <param name="line">The line we are dealing with</param>
+        private void CalculateStartandStopofLine( HoughLines line)
         {
             int startX = 0;
             int startY = 0;
@@ -713,6 +708,10 @@ namespace Attempt_7
             int endY = 0;
             int yIntReal = 0;
             double slopeReal = 0;
+
+            double x1 = line.xValue;
+            double y1 = line.yValue;
+            double slope1 = line.slope;
 
             if (this.currentMode == New_HOUGH_MODE)
             {
@@ -809,9 +808,10 @@ namespace Attempt_7
 
             }
 
-            // Store the Line information in the array 'houghLineStartandStopVectors' starting at the value 'startIndexforStorageArray'
-            this.houghLineStartandStopVectors[startIndexforStorageArray + 0] = new Vector3(startX, startY, 0);
-            this.houghLineStartandStopVectors[startIndexforStorageArray + 1] = new Vector3(endX, endY, 0);
+            // Store the Line information in the array 
+            line.houghStartVector = new Vector3(startX, startY, 0);
+            line.houghEndVector = new Vector3(endX, endY, 0);
+          
         }
 
         /// <summary>
@@ -892,27 +892,28 @@ namespace Attempt_7
                 if (this.count2E == UpdateSquareDimForAnalysis)
                 {
                     // Find the largest values. 
-                    for (int i = 0; i < NumberofLinesToFind; i++)
+                    for (int i = 0; i < numberOfLinesToFind; i++)
                     {
                         if (this.currentMode == New_HOUGH_MODE)
                         {
-                            this.FindMaxInAccumArrayOfHough(this.accum2, ThetaIncrement, (short)(i * 11));
-                            this.CalculateStartandStopofLine(this.houghInfo[4 + (i * 11)], this.houghInfo[5 + (i * 11)], this.houghInfo[0 + (i * 11)], i * 4);
-                            this.ClearMaxInAccum(this.accum2, (int)this.houghInfo[(i * 11) + 2], (int)this.houghInfo[(i * 11) + 3]);
+                            this.FindMaxInAccumArrayOfHough(this.accum2, houghLineList[i]);
+                            this.CalculateStartandStopofLine(houghLineList[i]);   
+                            this.ClearMaxInAccum(this.accum2, houghLineList[i]);
                         }
 
                         if (this.currentMode == OLD_HOUGH_MODE)
                         {
-                            this.FindMaxInAccumArrayOfHough(this.accum1, ThetaIncrement, (short)(i * 11));
-                            this.CalculateStartandStopofLine(this.houghInfo[4 + (i * 11)], this.houghInfo[5 + (i * 11)], this.houghInfo[0 + (i * 11)], i * 4);
-
+                            this.FindMaxInAccumArrayOfHough(this.accum1, houghLineList[i]);
+                            this.CalculateStartandStopofLine(houghLineList[i]);
+                            this.ClearMaxInAccum(this.accum1, houghLineList[i]);
+                           
                             // From top (0,0) to perpendicular
                             //this.houghLineStartandStopVectors[i * 4 + 2] = new Vector3((float)this.houghInfo[i * 11 + 4], (float)this.houghInfo[i * 11 + 5], 0);
 
                             //// From bottom center to perpendicular
                             //this.houghLineStartandStopVectors[i * 4 + 3] = new Vector3((float)this.houghInfo[i * 11 + 7], (float)this.houghInfo[i * 11 + 8], 0);
 
-                            this.ClearMaxInAccum(this.accum1, (int)this.houghInfo[(i * 11) + 2], (int)this.houghInfo[(i * 11) + 3]);
+                           // this.ClearMaxInAccum(this.accum1, (int)this.houghInfo[(i * 11) + 2], (int)this.houghInfo[(i * 11) + 3]);
                         }
                     }
 
@@ -947,25 +948,27 @@ namespace Attempt_7
             int binSize = 0;
             int turn = -1;
 
-            for (int i = 0; i < NumberofLinesToFind; i++)
+            for (int i = 0; i < numberOfLinesToFind; i++)
             {
                 // If the rho or theta are the same as the last one, then don't count it. 
-                if (this.houghInfo[((i * 11) + 4)] != rho && this.houghInfo[((i * 11) + 5)] != theta && this.houghInfo[((i * 11) + 6)] * 1.5 > binSize)
+                
+                if(houghLineList[i].rho != rho && houghLineList[i].theta != theta && houghLineList[i].sizeOfBin*1.5 >binSize)
                 {
-                    rho = (int)this.houghInfo[((i * 11) + 2)]; // Sum the rhos
-                    theta = (int)this.houghInfo[((i * 11) + 3)]; // Sum the thetas
-                    binSize = (int)this.houghInfo[((i * 11) + 4)]; // Get bin size
+                    rho = (int)houghLineList[i].rho; // Sum the rhos
+                    theta = (int)this.houghLineList[i].theta;// Sum the thetas
+                    binSize = (int)this.houghLineList[i].sizeOfBin; // Get bin size
                     rhoSum += rho;
                     thetaSum += theta;
-                    turn += (int)((theta - 90) * (double)((i / NumberofLinesToFind) * (577 - rho) / 500));
+                    turn += (int)((theta - 90) * (double)((i / numberOfLinesToFind) * (577 - rho) / 500));
                     count++;
                 }
             }
 
-            int averageTheta = thetaSum / count;
-            this.houghInfo[NumberofLinesToFind * 11] = averageTheta; // Compute and store the averages
-            this.houghInfo[(NumberofLinesToFind * 11) + 1] = rhoSum / count;
-            if (this.turnIndicatorisTheta == true)
+            // Store the averages
+            HoughLines.averageTheta = thetaSum / count;
+            HoughLines.averageRho = rhoSum / count;
+           
+            if (((SimulationMain)Game).config.turnIndicatorisTheta == true)
             {
                 this.turnIndication = turn;
             }
@@ -978,10 +981,11 @@ namespace Attempt_7
        /// <param name="rho">the rho value to clear around</param>
        /// <param name="theta">the theta value to clear around</param>
        /// <returns>the accumulator array that is cleared around</returns>
-        private short[,] ClearMaxInAccum(short[,] accumToChange, int rho, int theta)
+        private short[,] ClearMaxInAccum(short[,] accumToChange, HoughLines line)
         {
-            rho = rho / RhoIncrement;
-            theta = theta / ThetaIncrement;
+            int rho =(int)( line.rho / this.RhoIncrement);
+            int theta =(int)( line.theta / this.ThetaIncrement);
+
 
             int accumDim1 = accumToChange.GetLength(0); // Get the size accum Array
             int accumDim2 = accumToChange.GetLength(1);

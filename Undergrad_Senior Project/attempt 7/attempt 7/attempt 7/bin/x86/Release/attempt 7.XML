@@ -1,64 +1,62 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>attempt 7</name>
+        <name>Attempt 7</name>
     </assembly>
     <members>
-        <member name="T:Attempt_7.Program">
-            <summary>
-            The Program Class
-            </summary>
-        </member>
-        <member name="M:Attempt_7.Program.Main(System.String[])">
-            <summary>
-            The main entry point for the application.
-            </summary>
-            <param name="args">Strings passed to the application at startup from Command Prompt</param>
-        </member>
         <member name="T:Attempt_7.Robot">
             <summary >
-            Robot object that inherits from the XNA game component class. 
+            Robot object
             </summary>   
         </member>
-        <member name="F:Attempt_7.Robot.position">
+        <member name="T:Attempt_7.DrawAbleSimulationObject">
             <summary>
-            Position of the robot. 
+            This is a game component that implements. We want to manually call the Draw Functions, so we will not make it a drawable
+            Componet.
+            to load content we will use the constructor. 
+            </summary>
+        </member>
+        <member name="M:Attempt_7.DrawAbleSimulationObject.Initialize">
+            <summary>
+            Allows the game component to perform any initialization it needs to before starting
+            to run.  This is where it can query for any required services and load content.
+            </summary>
+        </member>
+        <member name="M:Attempt_7.DrawAbleSimulationObject.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Allows the game component to update itself.
+            </summary>
+            <param name="gameTime">Provides a snapshot of timing values.</param>
+        </member>
+        <member name="P:Attempt_7.DrawAbleSimulationObject.basicEffects">
+            <summary>
+            The basicEffects for rendering in 3D.
+            </summary>
+        </member>
+        <member name="F:Attempt_7.Robot.robotVertexPositionColor">
+            <summary>
+            The vertexPositionColor Array holding the information needed for the 3D representation of the robot. 
+            </summary>
+        </member>
+        <member name="F:Attempt_7.Robot.numberOfVertexPositionColorRobot">
+            <summary>
+            Number of VertexPositionColor's that make up the robot in the virtual robot 
+            </summary>
+        </member>
+        <member name="F:Attempt_7.Robot.robotVertexPositionOffsetsFromRobot">
+            <summary>
+            The offset for the VertexPositionColors Vector3 from the actual robot position
+            </summary>
+        </member>
+        <member name="F:Attempt_7.Robot.basicEffects">
+            <summary>
+            The basicEffects for rendering in 3D.
             </summary>
         </member>
         <member name="F:Attempt_7.Robot.startPosition">
             <summary>
             Where the robot starts. Needed so it can be reset. 
             </summary>        
-        </member>
-        <member name="F:Attempt_7.Robot.direction">
-            <summary>
-            Direction the robot is heading
-            </summary>        
-        </member>
-        <member name="F:Attempt_7.Robot.speed">
-            <summary>
-            Speed the robot is moving forward on update. 
-            /// </summary>
-        </member>
-        <member name="F:Attempt_7.Robot.distanceToCameraTarget">
-            <summary>
-            The distance in front of the robot that the camera is pointed at. 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.Robot.cameraHeight">
-            <summary>
-            Height of the camera above the robot. 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.Robot.robotCameraView">
-            <summary>
-            Camera associated with the robot.
-            </summary>
-        </member>
-        <member name="F:Attempt_7.Robot.paused">
-            <summary>
-            Is the robot moving on each all to update? if paused = true then moving, if false then not moving. 
-            </summary>
         </member>
         <member name="F:Attempt_7.Robot.changeDirectionThreshholdValue">
             <summary>
@@ -70,7 +68,18 @@
             Time in total milliseconds from the start of the game to the last time one of the keys was pressed. 
             </summary>
         </member>
-        <member name="M:Attempt_7.Robot.#ctor(Microsoft.Xna.Framework.Game,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,System.Single,System.Single,System.Single)">
+        <member name="F:Attempt_7.Robot.robotconfig">
+            <summary>
+            Defualt Robot configuration information is stored in this object. 
+            </summary>
+        </member>
+        <member name="M:Attempt_7.Robot.SetStartPosition(Microsoft.Xna.Framework.Vector3)">
+            <summary>
+            Called when the robot is first placed. Stores the value of the start position so that the robot can be reset to this location
+            </summary>
+            <param name="pos"> The position of the robot when it starts. </param>
+        </member>
+        <member name="M:Attempt_7.Robot.#ctor(Microsoft.Xna.Framework.Game)">
             <summary>
             Initializes a new instance of the Robot class.
             </summary>
@@ -81,52 +90,15 @@
             <param name="howFarToLookInFront">How far in front of the robot the camera is to point. </param>
             <param name="cameraHeight">How high above the ground the camera for the robot is.</param>
         </member>
-        <member name="M:Attempt_7.Robot.GetPosition">
-            <summary>
-            Gets the current position of the Robot
-            </summary>
-            <returns> Vector3 value of the robot position</returns>
-        </member>
-        <member name="M:Attempt_7.Robot.GetCameraHeight">
-            <summary>
-            Gets robot cammer hieght
-            </summary>
-            <returns> float value of the robot camera height</returns>
-        </member>
-        <member name="M:Attempt_7.Robot.SetPosition(Microsoft.Xna.Framework.Vector3)">
-            <summary>
-            Sets the position of the robot. 
-            </summary>
-            <param name="pos"> The new position of the robot.</param>
-        </member>
-        <member name="M:Attempt_7.Robot.SetStartPosition(Microsoft.Xna.Framework.Vector3)">
-            <summary>
-            Called when the robot is first placed. Stores the value of the start position so that the robot can be reset to this location
-            </summary>
-            <param name="pos"> The position of the robot when it starts. </param>
-        </member>
-        <member name="M:Attempt_7.Robot.GetRobotCamera">
-            <summary>
-            Gets the camera/view that the robot's camera sees. 
-            </summary>
-            <returns> The camera associated with the robot. </returns>
-        </member>
-        <member name="M:Attempt_7.Robot.GetIsRobotPaused">
-            <summary>
-            Accessor method that tells if the robot is moving forward
-             </summary>
-            <returns> True if paused, false if robot is moving. </returns>
-        </member>
-        <member name="M:Attempt_7.Robot.GetDirection">
-            <summary>
-            Accessor method that tells the direction the robot is going. 
-            </summary>
-            <returns> Vector3 of the direction the robot is pointed</returns>
-        </member>
         <member name="M:Attempt_7.Robot.Initialize">
             <summary>
             Called when the robot object is first made. 
             The robot starts paused.
+            </summary>
+        </member>
+        <member name="M:Attempt_7.Robot.BuildVertexPositionColorArrayandOffSetArray">
+            <summary>
+            Initializes the vertexPositioncolors and the offset arrays. 
             </summary>
         </member>
         <member name="M:Attempt_7.Robot.ChangeDirection(System.Single)">
@@ -143,7 +115,7 @@
             <summary>
             Main Update method. 
             Calls all other methods for updating the robot. 
-            Because the robot is a GameComponent, the update method is called by the Game1.update method. 
+            Because the robot is a GameComponent, the update method is called by the SimulationMain.update method. 
             </summary>
             <param name="gameTime"> Clock information</param>
         </member>
@@ -153,6 +125,188 @@
             Called by update.
             </summary>
             <param name="gameTime1"> Clock information</param>
+        </member>
+        <member name="M:Attempt_7.Robot.UpdateRobotVertexPositions">
+            <summary>
+            Loads the vertex information about the robot and recreates it every game cycle to reflect the new position of the robot. 
+            'verts3' is the VertexPositionColor array
+            </summary>
+        </member>
+        <member name="M:Attempt_7.Robot.DrawRobot(Attempt_7.Cameras.Camera)">
+            <summary>
+            Draw the robot from the "camera"s perspective
+            </summary>
+            <param name="camera">The camera to use when drawing. </param>
+        </member>
+        <member name="P:Attempt_7.Robot.robotLapNumber">
+            <summary>
+            Robot Lap Number
+            </summary>
+        </member>
+        <member name="P:Attempt_7.Robot.robotNumberOfLapsToComplete">
+            <summary>
+            Number of Laps to complete
+            </summary>
+        </member>
+        <member name="P:Attempt_7.Robot.position">
+            <summary>
+            Position of the robot. 
+            </summary>
+        </member>
+        <member name="P:Attempt_7.Robot.direction">
+            <summary>
+            Direction the robot is heading
+            </summary>        
+        </member>
+        <member name="P:Attempt_7.Robot.speed">
+            <summary>
+            Speed the robot is moving forward on update. 
+            /// </summary>
+        </member>
+        <member name="P:Attempt_7.Robot.robotCameraView">
+            <summary>
+            Camera associated with the robot.
+            </summary>
+        </member>
+        <member name="P:Attempt_7.Robot.imageAnalysisRobotCamera">
+            <summary>
+            Make an image analysis associated with the robot. 
+            </summary>
+        </member>
+        <member name="P:Attempt_7.Robot.paused">
+            <summary>
+            Is the robot moving on each all to update? if paused = true then moving, if false then not moving. 
+            </summary>
+        </member>
+        <member name="F:Attempt_7.DrawAbleSimulationObjects.CourseLines.whiteLinesVertexPositionColor">
+            <summary>
+            The vertexPositionColor array holding the vertex information needed for drawing the white lines representing the course. 
+            </summary>
+        </member>
+        <member name="F:Attempt_7.DrawAbleSimulationObjects.CourseLines.trackArray">
+            <summary>
+            track Array 
+            </summary>
+        </member>
+        <member name="M:Attempt_7.DrawAbleSimulationObjects.CourseLines.#ctor(Microsoft.Xna.Framework.Game)">
+            <summary>
+            Constructor. Generates the needed arrays for the course lines. 
+            </summary>
+        </member>
+        <member name="M:Attempt_7.DrawAbleSimulationObjects.CourseLines.LoadLines">
+            <summary>
+            Creates the vertexPositionColor array "verts1" that is used to draw the white lines. 
+            </summary>
+        </member>
+        <member name="M:Attempt_7.DrawAbleSimulationObjects.CourseLines.DrawCouseLines(Attempt_7.Cameras.Camera)">
+            <summary>
+            Draw the lines from the "camera"'s persepective. 
+            </summary>
+            <param name="camera">The camera to use when drawing.</param>
+        </member>
+        <member name="P:Attempt_7.DrawAbleSimulationObjects.CourseLines.startPosition">
+            <summary>
+            The Start Position of the Track
+            </summary>
+        </member>
+        <member name="P:Attempt_7.DrawAbleSimulationObjects.CourseLines.randomGenerator">
+            <summary>
+            Random Number Generator
+            </summary>
+        </member>
+        <member name="T:Attempt_7._2DDrawing.SimulationText">
+            <summary>
+            This is a game component that shows 2D text that gives current information 
+            about the simulation but is not used for dbugging
+            </summary>
+        </member>
+        <member name="T:Attempt_7._2DDrawing._2DDrawingObject">
+            <summary>
+            This is a game component that implements IUpdateable.
+            </summary>
+        </member>
+        <member name="F:Attempt_7._2DDrawing._2DDrawingObject.spriteBatch">
+            <summary>
+            The sprite batch object. Used to draw 2D graphics. 
+            </summary>
+        </member>
+        <member name="F:Attempt_7._2DDrawing._2DDrawingObject.simulationMain">
+            <summary>
+            Reference to the simulation main. 
+            </summary>        
+        </member>
+        <member name="M:Attempt_7._2DDrawing._2DDrawingObject.Initialize">
+            <summary>
+            Allows the game component to perform any initialization it needs to before starting
+            to run.  This is where it can query for any required services and load content.
+            </summary>
+        </member>
+        <member name="M:Attempt_7._2DDrawing._2DDrawingObject.LoadContent">
+            <summary>
+            Called after initialize. Loads the textures and calls methods to create the simulated enviroment. 
+            </summary>
+        </member>
+        <member name="M:Attempt_7._2DDrawing._2DDrawingObject.LoadSpecificContent">
+            <summary>
+            Called by the LoadContent. This allows for specific objects to add to the main Load Content Without the need to 
+            override it. They can over ride this function instad. 
+            </summary>
+        </member>
+        <member name="M:Attempt_7._2DDrawing._2DDrawingObject.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Allows the game component to update itself.
+            </summary>
+            <param name="gameTime">Provides a snapshot of timing values.</param>
+        </member>
+        <member name="M:Attempt_7._2DDrawing._2DDrawingObject.Draw(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Main draw method 
+            </summary>
+            <param name="gameTime">Clock Information</param>
+        </member>
+        <member name="F:Attempt_7._2DDrawing.SimulationText.arialLarge">
+            <summary>
+            The 2D font object needed to show text. Size = 20.
+            </summary>
+        </member>
+        <member name="F:Attempt_7._2DDrawing.SimulationText.arialSmall">
+            <summary>
+            A smaller font of arial to show debug information. 
+            </summary>
+        </member>
+        <member name="M:Attempt_7._2DDrawing.SimulationText.Initialize">
+            <summary>
+            Allows the game component to perform any initialization it needs to before starting
+            to run.  This is where it can query for any required services and load content.
+            </summary>
+        </member>
+        <member name="M:Attempt_7._2DDrawing.SimulationText.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Allows the game component to update itself.
+            </summary>
+            <param name="gameTime">Provides a snapshot of timing values.</param>
+        </member>
+        <member name="M:Attempt_7._2DDrawing.SimulationText.Draw(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Main draw method 
+            </summary>
+            <param name="gameTime">Clock Information</param>
+        </member>
+        <member name="M:Attempt_7._2DDrawing.SimulationText.DrawText">
+            <summary>
+            Draw the Simulation Status as either PAUSED or Active 
+            </summary>
+        </member>
+        <member name="T:Attempt_7.Program">
+            <summary>
+            The Program Class
+            </summary>
+        </member>
+        <member name="M:Attempt_7.Program.Main(System.String[])">
+            <summary>
+            The main entry point for the application.
+            </summary>
+            <param name="args">Strings passed to the application at startup from Command Prompt</param>
         </member>
         <member name="T:Attempt_7.SimulationMain">
             <summary>
@@ -164,34 +318,9 @@
             GPU manager
             </summary>
         </member>
-        <member name="F:Attempt_7.SimulationMain.screenSize">
+        <member name="F:Attempt_7.SimulationMain.worldViewCamera">
             <summary>
-            2D vector representing the resolution of the cameras used in the simulation. 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.SimulationMain.screenRectangle">
-            <summary>
-            Rectangle object that is the size of the camera resolution (screenSize).
-            </summary>
-        </member>
-        <member name="F:Attempt_7.SimulationMain.windowSize">
-            <summary>
-            2D vector represeting the size of the Window's Window that the simulation will run in. 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.SimulationMain.spriteBatch">
-            <summary>
-            The sprite batch object. Used to draw 2D graphics. 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.SimulationMain.grass">
-            <summary>
-            Represents the texture of the grass bitmap that is used to represent the grass. 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.SimulationMain.largeGrass">
-            <summary>
-            A large tiled version of the grass Texture. 
+            World Camera
             </summary>
         </member>
         <member name="F:Attempt_7.SimulationMain.basicEffects">
@@ -199,64 +328,10 @@
             The basicEffects for rendering in 3D.
             </summary>
         </member>
-        <member name="F:Attempt_7.SimulationMain.verts1">
+        <member name="F:Attempt_7.SimulationMain.spriteBatch">
             <summary>
-            The vertexPositionColor array holding the vertex information needed for drawing the white lines representing the course. 
+            The sprite batch object. Used to draw 2D graphics. 
             </summary>
-        </member>
-        <member name="F:Attempt_7.SimulationMain.verts2">
-            <summary>
-            The vertexPositionColor array holding the information for the grass/ground. 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.SimulationMain.verts3">
-            <summary>
-            The vertexPositionColor Array holding the information needed for the 3D representation of the robot. 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.SimulationMain.viewPortList">
-            <summary>
-            List holding the viewports used in the simulation. 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.SimulationMain.trackRobot">
-            <summary>
-            Bool representing if the main Camera moves its view to follow the robot. 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.SimulationMain.timePressedKey">
-            <summary>
-            Time in totalmillseconds when F1, F2, or F3 were pushed. 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.SimulationMain.arialLarge">
-            <summary>
-            The 2D font object needed to show text. Size = 20.
-            </summary>
-        </member>
-        <member name="F:Attempt_7.SimulationMain.arialSmall">
-            <summary>
-            A smaller font of arial to show debug information. 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.SimulationMain.rand">
-            <summary>
-            Represents a random object so that random numbers can be generated. 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.SimulationMain.robot1">
-            <summary>
-            The robot object. See the robot class for more information.
-            </summary>
-        </member>
-        <member name="F:Attempt_7.SimulationMain.cameraList">
-            <summary>
-            A list of the cameras. There are 2, The mainview and the robot view. 
-            <list type="Camera">
-            <item > WorldView Camera =  0 (The main camera)</item>
-            <item> Robot View Camera = 1 </item>
-            </list>
-            </summary>        
         </member>
         <member name="F:Attempt_7.SimulationMain.renderTargets">
             <summary> 
@@ -282,12 +357,13 @@
         </member>
         <member name="M:Attempt_7.SimulationMain.Initialize">
             <summary>
-            Initialize the Simulation Object.  
+            Initialize the all non graphics resournces. 
             </summary>
         </member>
         <member name="M:Attempt_7.SimulationMain.LoadContent">
             <summary>
             Called after initialize. Loads the textures and calls methods to create the simulated enviroment. 
+            3rd method called at start up
             </summary>
         </member>
         <member name="M:Attempt_7.SimulationMain.UnloadContent">
@@ -307,11 +383,6 @@
             </summary>
             <param name="gameTime1">Clock information</param>
         </member>
-        <member name="F:Attempt_7.SimulationMain.currentHoughMode">
-            <summary>
-            If 0 then Old mode (top left origin), if 1 then New Hough mode( bottom Center). 
-            </summary>
-        </member>
         <member name="M:Attempt_7.SimulationMain.Draw(Microsoft.Xna.Framework.GameTime)">
             <summary>
             Main draw method for the simulation. Draws all the world from both the mainview and the robots view. 
@@ -320,236 +391,252 @@
             </summary>
             <param name="gameTime">Clock Information</param>
         </member>
-        <member name="M:Attempt_7.SimulationMain.CreateViewPorts">
+        <member name="M:Attempt_7.SimulationMain.BuildRenderTargets">
             <summary>
-            Creates the 5 view ports. View ports are like windows inside of a Window's window.
-            <list type=" ViewPorts">
-            <item > MainPort = 0 </item>
-            <item > TopRight = 1</item>
-            <item > CenterRight = 2</item>
-            <item > BottomRight = 3</item>
-            <item > BottomLeft = 4</item>
-            <item > BottomCenter = 5</item>
-            </list>
-            </summary>        
+            Set the renderTargets to a texture object in memory rather than rendering to the screen. Need target for both the Worldview and the robot CameraView.
+            </summary>
         </member>
-        <member name="M:Attempt_7.SimulationMain.CreateGrassTexture(Microsoft.Xna.Framework.Graphics.Texture2D)">
+        <member name="M:Attempt_7.SimulationMain.ReadParametersFromFile">
+            <summary>
+            Read parametes from File. 
+            </summary>
+        </member>
+        <member name="M:Attempt_7.SimulationMain.PrintResultToFile">
+            <summary>
+            Print Results of the simulation to a file. 
+            </summary>
+        </member>
+        <member name="P:Attempt_7.SimulationMain.config">
+            <summary>
+            Object With configuration information
+            </summary>
+        </member>
+        <member name="P:Attempt_7.SimulationMain.mainRobot">
+            <summary>
+            The robot object. See the robot class for more information.
+            </summary>
+        </member>
+        <member name="P:Attempt_7.SimulationMain.grassTurf">
+            <summary>
+            Grass Object
+            </summary>
+        </member>
+        <member name="P:Attempt_7.SimulationMain.courseLines">
+            <summary>
+            Course Lines Object
+            </summary>
+        </member>
+        <member name="P:Attempt_7.SimulationMain.cameraListDraw3DWorld">
+            <summary>
+            List of camera's to draw the 3D world and render to a target in memory
+            </summary>
+        </member>
+        <member name="F:Attempt_7.DrawAbleSimulationObjects.Grass.grassAndGroundVertexPositionColor">
+            <summary>
+            The vertexPositionColor array holding the information for the grass/ground. 
+            </summary>
+        </member>
+        <member name="F:Attempt_7.DrawAbleSimulationObjects.Grass.grass">
+            <summary>
+            Represents the texture of the grass bitmap that is used to represent the grass. 
+            </summary>
+        </member>
+        <member name="F:Attempt_7.DrawAbleSimulationObjects.Grass.tiledGrass">
+            <summary>
+            A large tiled version of the grass Texture. 
+            </summary>
+        </member>
+        <member name="M:Attempt_7.DrawAbleSimulationObjects.Grass.#ctor(Microsoft.Xna.Framework.Game)">
+            <summary>        
+            Initializes a new instance of the DrawImageAnalysis class.
+            </summary>      
+        </member>
+        <member name="M:Attempt_7.DrawAbleSimulationObjects.Grass.LoadGround">
+            <summary>
+            Create vertex data for the grass. Verts2 is the VertexPositionTexture array
+            </summary>
+        </member>
+        <member name="M:Attempt_7.DrawAbleSimulationObjects.Grass.CreateGrassTexture(Microsoft.Xna.Framework.Graphics.Texture2D)">
             <summary>
             Takes a texture and returns a larger texture. Size of the new texture is 1024,1024. 
             </summary>
             <param name="texturetoUse">The smaller texture to tile</param>
             <returns>The larger texture with the smaller on tiled onto it. </returns>
         </member>
-        <member name="M:Attempt_7.SimulationMain.TextureTo2DArray(Microsoft.Xna.Framework.Graphics.Texture2D)">
+        <member name="M:Attempt_7.DrawAbleSimulationObjects.Grass.TextureTo2DArray(Microsoft.Xna.Framework.Graphics.Texture2D)">
             <summary>
             Takes a texture converts it into a 2D color array
             </summary>
             <param name="texture">The texture to convert</param>
             <returns>The 2D color array </returns>
         </member>
-        <member name="M:Attempt_7.SimulationMain.LoadGround">
-            <summary>
-            Create vertex data for the grass. Verts2 is the VertexPositionTexture array
-            </summary>
-        </member>
-        <member name="M:Attempt_7.SimulationMain.LoadLines">
-            <summary>
-            Creates the vertexPositionColor array "verts1" that is used to draw the white lines. 
-            </summary>
-        </member>
-        <member name="M:Attempt_7.SimulationMain.UpDateRobotPosition">
-            <summary>
-            Loads the vertex information about the robot and recreates it every game cycle to reflect the new position of the robot. 'verts3' is the VertexPositionColor array
-            </summary>
-        </member>
-        <member name="M:Attempt_7.SimulationMain.BuildRenderTargets">
-            <summary>
-            Set the renderTargets to a texture object in memory rather than rendering to the screen. Need target for both the Worldview and the robot CameraView.
-            </summary>
-        </member>
-        <member name="M:Attempt_7.SimulationMain.DrawRobot(Attempt_7.Camera)">
-            <summary>
-            Draw the robot from the "camera"s perspective
-            </summary>
-            <param name="camera">The camera to use when drawing. </param>
-        </member>
-        <member name="M:Attempt_7.SimulationMain.DrawColorLines(Attempt_7.Camera)">
-            <summary>
-            Draw the lines from the "camera"'s persepective. 
-            </summary>
-            <param name="camera">The camera to use when drawing.</param>
-        </member>
-        <member name="M:Attempt_7.SimulationMain.DrawGrass(Attempt_7.Camera)">
+        <member name="M:Attempt_7.DrawAbleSimulationObjects.Grass.DrawGrass(Attempt_7.Cameras.Camera)">
             <summary>
             Draw the grass or ground from "camera"'s perspective
             </summary>
             <param name="camera">The camera to use when drawing.</param>
         </member>
-        <member name="M:Attempt_7.SimulationMain.DrawText">
+        <member name="M:Attempt_7.DrawAbleSimulationObjects.Obstacle.#ctor(Microsoft.Xna.Framework.Game)">
             <summary>
-            Draw the Simulation Status as either PAUSED or Active 
+            Constructor
+            </summary>       
+        </member>
+        <member name="F:Attempt_7.HoughLines.houghInfo">
+            <summary>
+            Stores information about lines from the hough transform.    
+            each polarRho we want to find = 7 more values to store
+            0=slope, 1= yInt, 2=Rho, 3=Theta, 4=Xvalue, 5=Yvalue, 6= size of the bin, 7= xTransformed value
+            8= yTransformedValue, 9 = distance to line Algorithm, 10= angle to line Algorithm
+            5  more ending values for the averages
             </summary>
         </member>
-        <member name="T:Attempt_7.DrawImageAnalysis">
+        <member name="F:Attempt_7.HoughLines.houghStartLineVector">
+            <summary>
+            Stores  vector3 locations of the beginning and end points of two lines on the screen. Was part of the old Hough system,
+            but potientially still useful, so has not deleted.
+            0 = start location of  line, 1 = end location ofline
+            </summary>
+        </member>
+        <member name="T:Attempt_7._2DDrawing.DrawImageAnalysis">
             <summary>
             This is a game component that implements IUpdateable. Draws the image analysis information. 
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.count1A">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.count1A">
             <summary>
             These values are part of the double for loops that reduce the computational requirements. These are the values that are incremented.
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.count2A">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.count2A">
             <summary>
             These values are part of the double for loops that reduce the computational requirements. These are the values that are incremented.
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.count1C">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.count1C">
             <summary>
             These values are part of the double for loops that reduce the computational requirements. These are the values that are incremented.
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.count2C">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.count2C">
             <summary>
             These values are part of the double for loops that reduce the computational requirements. These are the values that are incremented.
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.count1D">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.count1D">
             <summary>
             Other count usage. 1D = the number of vertexs to draw. So the number of triangels will be 1/3 this number. 
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.screenWidth">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.screenWidth">
             <summary>
             The screenSize.
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.screenHeight">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.screenHeight">
             <summary>
             The screenSize.
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.updateSquareDimForDrawing">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.updateSquareDimForDrawing">
             <summary>
             The dimensions of the double for loops
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.updateSquareDimForAnalysis">
-            <summary>
-            The dimensions of the double for loops
-            </summary>
-        </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.numberofLinesToFind">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.numberofLinesToFind">
             <summary>
             How many lines to find. 
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.thetaIncrement">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.thetaIncrement">
             <summary>
             How precise the hough transform is. How large between possible values. 
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.rhoIncrement">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.rhoIncrement">
             <summary>
             How precise the hough transform is. How large between possible values. 
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.camera">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.camera">
             <summary>
             Camera used to draw the triangles of what the robot is "thinking"
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.viewPortList">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.viewPortList">
             <summary>
             List holding the viewports used in the simulation. This list is created in the Main simulation and then passed to this class when it is initiaized. 
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.basicEffects">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.basicEffects">
             <summary>
             BasicEffects for how to draw the triangles.
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.arial">
-            <summary>
-            Font to use for drawing the debug/hough information
-            </summary>
-        </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.spriteBatch">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.spriteBatch">
             <summary>
             The spriteBatch is used to draw 2D graphics
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.vertexArray">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.vertexArray">
             <summary>
             VertexPositionColory array that stores the triangles of what the robot is "thinking". Each triangle represents 1 pixel from the robot's view. So 640*480 triangles.
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.vertexArray2">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.vertexArray2">
             <summary>
             Stores vertex information about the houglines and white pixels. Each time a vertex is added count1D should be incremented. 
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.houghInfo">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.houghInfo">
             <summary>
             Stores information about the hough. 
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.imageAnalysis">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.imageAnalysis">
             <summary>
             The image analysis object associated with this class. 
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.vertexIndex">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.vertexIndex">
             <summary>
             A list of the vertexs to draw.
             </summary>
         </member>
-        <member name="F:Attempt_7.DrawImageAnalysis.houghLineStartandStopVectors">
+        <member name="F:Attempt_7._2DDrawing.DrawImageAnalysis.houghLineStartandStopVectors">
             <summary>
             Stores info about where houghlines start and stop. Values 0=start of houghline Vector3, 1= End of houghLine Vector3
             </summary>
         </member>
-        <member name="M:Attempt_7.DrawImageAnalysis.#ctor(Microsoft.Xna.Framework.Game,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Collections.Generic.List{Microsoft.Xna.Framework.Graphics.Viewport},Attempt_7.ImageAnalysis)">
+        <member name="M:Attempt_7._2DDrawing.DrawImageAnalysis.#ctor(Microsoft.Xna.Framework.Game)">
             <summary>        
             Initializes a new instance of the DrawImageAnalysis class.
-            </summary>
-            <param name="game">the game associated with the calss</param>
-            <param name="screenWidth">ScreenWidth</param>
-            <param name="screenHeight">ScreenHeight</param>
-            <param name="updateSquareDimForDrawing">How fast to update drawing. Obsolete</param>
-            <param name="updateSquareDimForAnalysis">How fast to update analysis. This is used mostly for hough</param>
-            <param name="numberofLinesToFind">How many lines to find in the picture</param>
-            <param name="thetaIncrement">Quantitization of angle size, in degrees</param>
-            <param name="rhoIncrement">Quantitization of rho size</param>
-            <param name="viewPortList">A list of view ports</param>
-            <param name="imageAnalysis">Associated imageAnalysis object.</param>
+            </summary>      
         </member>
-        <member name="M:Attempt_7.DrawImageAnalysis.Initialize">
+        <member name="M:Attempt_7._2DDrawing.DrawImageAnalysis.Initialize">
             <summary>
             Allows the game component to perform any initialization it needs to before starting
             to run.  This is where it can query for any required services and load content.
             </summary>
         </member>
-        <member name="M:Attempt_7.DrawImageAnalysis.Update(Microsoft.Xna.Framework.GameTime)">
+        <member name="M:Attempt_7._2DDrawing.DrawImageAnalysis.Update(Microsoft.Xna.Framework.GameTime)">
             <summary>
             Allows the game component to update itself.
             </summary>
             <param name="gameTime">Provides a snapshot of timing values.</param>
         </member>
-        <member name="M:Attempt_7.DrawImageAnalysis.UpdateColorArrayto3DRectangle(Microsoft.Xna.Framework.Color[0:,0:])">
+        <member name="M:Attempt_7._2DDrawing.DrawImageAnalysis.UpdateColorArrayto3DRectangle(Microsoft.Xna.Framework.Color[0:,0:])">
             <summary>
             Takes a 2D color array and colors the triangles.
             </summary>
             <param name="c">Color array to make into triangles</param>   
         </member>
-        <member name="M:Attempt_7.DrawImageAnalysis.Draw(Microsoft.Xna.Framework.GameTime)">
+        <member name="M:Attempt_7._2DDrawing.DrawImageAnalysis.Draw(Microsoft.Xna.Framework.GameTime)">
             <summary>
             Calls methods to draw the analysis triangles and the Debug text. 
             </summary>
             <param name="gameTime">Clock Information</param>
         </member>
-        <member name="M:Attempt_7.DrawImageAnalysis.UpdateBoolMapto3DRectangle(System.Boolean[0:,0:],System.Double[])">
+        <member name="M:Attempt_7._2DDrawing.DrawImageAnalysis.UpdateBoolMapto3DRectangle(System.Boolean[0:,0:],System.Double[])">
             <summary>
              Colors the analysis triangles based a trueFalse bool map. Also adds the Hough information
             If true then Blue. If false then Transparent.
@@ -557,18 +644,18 @@
             <param name="c">True False map</param>
             <param name="houghInfo">Hough Information</param>
         </member>
-        <member name="M:Attempt_7.DrawImageAnalysis.LoadContent">
+        <member name="M:Attempt_7._2DDrawing.DrawImageAnalysis.LoadContent">
             <summary>
             Loads the SpriteBatch Content.
             </summary>
         </member>
-        <member name="M:Attempt_7.DrawImageAnalysis.BuildVertexArrayforDrawingSmallerNumberofTriangles(System.Boolean[0:,0:])">
+        <member name="M:Attempt_7._2DDrawing.DrawImageAnalysis.BuildVertexArrayforDrawingSmallerNumberofTriangles(System.Boolean[0:,0:])">
             <summary>
             Takes a bool map of and makes vertex positions based on the map. 
             </summary>
             <param name="c"> The bool map</param>       
         </member>
-        <member name="M:Attempt_7.DrawImageAnalysis.InsertLine(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Color)">
+        <member name="M:Attempt_7._2DDrawing.DrawImageAnalysis.InsertLine(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Color)">
             <summary>
             Updates the vertex information of the triangels for a line of a particular color based off its starting and ending position. 
             </summary>
@@ -576,117 +663,50 @@
             <param name="endLocation">End position of the line </param>
             <param name="c">Color to draw the line. </param>
         </member>
-        <member name="M:Attempt_7.DrawImageAnalysis.AddHoughLinesColor">
+        <member name="M:Attempt_7._2DDrawing.DrawImageAnalysis.AddHoughLinesColor">
             <summary>
             Puts the hough information about the lines in the vertex array. 
             </summary>
         </member>
-        <member name="M:Attempt_7.DrawImageAnalysis.DrawVertexArray2">
+        <member name="M:Attempt_7._2DDrawing.DrawImageAnalysis.DrawVertexArray2">
             <summary>
             Draws the analysis rectangles that are in the "vertexArray2" and only draws the first count1D/3 in the array.
             </summary>
         </member>
-        <member name="M:Attempt_7.DrawImageAnalysis.DrawText(System.Int32,System.Int32,System.Double[])">
+        <member name="M:Attempt_7._2DDrawing.DrawImageAnalysis.LoadVertexArray">
+            <summary>
+            Loads the position of each triangle into the VertexArray
+            </summary>
+        </member>
+        <member name="T:Attempt_7._2DDrawing.DebugText">
+            <summary>
+            This is a game component that implements is meant to show debugging text. 
+            </summary>
+        </member>
+        <member name="F:Attempt_7._2DDrawing.DebugText.arial">
+            <summary>
+            Font to use for drawing the debug/hough information
+            </summary>
+        </member>
+        <member name="M:Attempt_7._2DDrawing.DebugText.Initialize">
+            <summary>
+            Allows the game component to perform any initialization it needs to before starting
+            to run.  This is where it can query for any required services and load content.
+            </summary>
+        </member>
+        <member name="M:Attempt_7._2DDrawing.DebugText.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Allows the game component to update itself.
+            </summary>
+            <param name="gameTime">Provides a snapshot of timing values.</param>
+        </member>
+        <member name="M:Attempt_7._2DDrawing.DebugText.DrawText(System.Int32,System.Int32,System.Double[])">
             <summary>
             Draws the Text giving important information about the status of the analysis.
             </summary>
             <param name="turnIndication">Indicator of how much to turn</param>
             <param name="totalWhiteCnt">Number of white pixels found</param>
             <param name="houghInfo">Hough information array</param>
-        </member>
-        <member name="M:Attempt_7.DrawImageAnalysis.LoadVertexArray">
-            <summary>
-            Loads the position of each triangle into the VertexArray
-            </summary>
-        </member>
-        <member name="T:Attempt_7.Camera">
-            <summary>
-            Represents the camera object/class that contains all the information needed about position and target for rendering. 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.Camera.View">
-            <summary>
-            Matrix representation of the view determined by the position, target, and updirection.
-            </summary>
-        </member>
-        <member name="F:Attempt_7.Camera.Projection">
-            <summary>
-            Matrix representation of the view determined by the angle of the field of view (Pi/4), aspectRatio, nearest plane visible (1), and farthest plane visible (1200) 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.Camera.World">
-            <summary>
-            Matrix representing how the real world cordinates differ from that of the rendering by the camera. 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.Camera.cameraPosition">
-            <summary>
-            The position of the camera. Defualt  = 0,0,0
-            </summary>
-        </member>
-        <member name="F:Attempt_7.Camera.target">
-            <summary>
-            Target of the camera = a point in 3D space that the camera is pointed at. 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.Camera.updirection">
-            <summary>
-            The 3D vector that defines which direction is up for the camera.
-            </summary>
-        </member>
-        <member name="F:Attempt_7.Camera.mouseOffset">
-            <summary>
-            If the camera is mouse controlled, how much should the mouse cordinates differ from 3D cordinates in space. How much should they be translated in 3D space. 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.Camera.isMouseDependent">
-            <summary>
-            If the camera is mouse dependent than the position of the mouse determines the position of the camera in 3D space. 
-            </summary>
-        </member>
-        <member name="M:Attempt_7.Camera.#ctor(Microsoft.Xna.Framework.Game,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,System.Boolean)">
-            <summary>
-            Initializes a new instance of the Camera class.
-            </summary>
-            <param name="game">The game object of the simulation</param>
-            <param name="pos">The start position of the camera in 3D space</param>
-            <param name="target">A point in 3D space that the camera will point at. </param>
-            <param name="up">The 3D vector that determines which direction is up for the camera</param>
-            <param name="isMouseDependent">Sets the camera's position based on the mouse if true</param>
-        </member>
-        <member name="M:Attempt_7.Camera.Initialize">
-            <summary>
-            Initializes the camera
-            </summary>
-        </member>
-        <member name="M:Attempt_7.Camera.Update(Microsoft.Xna.Framework.GameTime)">
-            <summary>
-            Updates the camera's view. If the camera is mouse dependent than Update gets the position of the mouse and keyboard inorder to update the camera position.
-            </summary>
-            <param name="gameTime">Clock Information</param>
-        </member>
-        <member name="M:Attempt_7.Camera.GetCameraPosition">
-            <summary>
-            Returns the current camera position in 3D space.
-            </summary>
-            <returns>The camera position</returns>
-        </member>
-        <member name="M:Attempt_7.Camera.SetCameraPositionAndTarget(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)">
-            <summary>
-            Sets the camera position and target point to a specific position
-            </summary>
-            <param name="pos">The new position of the camera in 3D space</param>
-            <param name="target">The new target point of the camera in 3D space</param>
-        </member>
-        <member name="M:Attempt_7.Camera.UpdateMouse">
-            <summary>
-            Updates the position of the camera based on the mouse's position. The Mouse origin (0,0) is the top left corner of the simulation Window.
-            </summary>
-        </member>
-        <member name="M:Attempt_7.Camera.UpdateKeyBoard">
-            <summary>
-            Checks to see if the Arrow keys are pressed. Moves the camera position and target based on the arrow keys. 
-            </summary>       
         </member>
         <member name="T:Attempt_7.ImageAnalysis">
             <summary>
@@ -700,7 +720,7 @@
             The Image Analysis Class does the image processing of the robot view. 
             </summary>
         </member>
-        <member name="F:Attempt_7.ImageAnalysis.NumberofLinesToFind">
+        <member name="F:Attempt_7.ImageAnalysis.numberOfLinesToFind">
             <summary>
             Number of lines the hough transform should find.
             </summary>
@@ -725,11 +745,6 @@
             How big the steps are for a potiential rho values. Large values  reduce computation but less acurate.  
             </summary>
         </member>
-        <member name="F:Attempt_7.ImageAnalysis.UpdateSquareDimForDrawing">
-            <summary>
-            Inorder to make computations go faster, not every pixels is anylzed every time. 1 out of This value squared is analzed each pass
-            </summary>
-        </member>
         <member name="F:Attempt_7.ImageAnalysis.UpdateSquareDimForAnalysis">
             <summary>
             Inorder to make drawing go faster, not every pixels is updated every time. 1 out of This value squared is updated each pass
@@ -748,21 +763,6 @@
         <member name="F:Attempt_7.ImageAnalysis.SmoothSearchSize">
             <summary>
             Used by the smooth method. Dimension of Number of pixels  to look around for the smooth function. This (values*2)^2 = number of pixels checked.
-            </summary>
-        </member>
-        <member name="F:Attempt_7.ImageAnalysis.currentMode">
-            <summary>
-            If 0 then Old mode (top left origin), if 1 then New Hough mode( bottom Center). 
-            </summary>
-        </member>
-        <member name="F:Attempt_7.ImageAnalysis.turnIndicatorisTheta">
-            <summary>
-            If true then steering desisions will be based off the theta's of the hough transform
-            </summary>       
-        </member>
-        <member name="F:Attempt_7.ImageAnalysis.robotCameraView">
-            <summary>
-            Texture object that represents the robot camera's current view
             </summary>
         </member>
         <member name="F:Attempt_7.ImageAnalysis.trueFalseMap">
@@ -790,11 +790,6 @@
             Screen Height of the image to analze
             </summary>
         </member>
-        <member name="F:Attempt_7.ImageAnalysis.turnIndication">
-            <summary>
-            The turn indicator measures measures how much the analysis things the robot should go right or left. Right = positive. Left = negative
-            </summary>
-        </member>
         <member name="F:Attempt_7.ImageAnalysis.houghInfo">
             <summary>
             Stores information about lines from the hough transform.    
@@ -809,7 +804,7 @@
             0 = start location of  line, 1 = end location ofline
             </summary>
         </member>
-        <member name="F:Attempt_7.ImageAnalysis.colorArray">
+        <member name="F:Attempt_7.ImageAnalysis.colorArrayDirectlyFromRobotCamera">
             <summary>
             Color Array 2D from the robot camera that is analzed. 
             </summary>
@@ -879,11 +874,6 @@
             The accumlator for the hough values. Each position is a hough Bin. Each bin represents a line in Cartessian cordinates. The Accumlator is basically in polar cordinates. Theta,rho
             </summary>
         </member>
-        <member name="F:Attempt_7.ImageAnalysis.cntThreshold">
-            <summary>
-            Used by the smooth method. How many pixels must also be white in the area around a white pixel for it to be counted white. 
-            </summary>
-        </member>
         <member name="F:Attempt_7.ImageAnalysis.redGood">
             <summary>
             On a scale of 0-255 how high does a pixel RGB value have to be before being declared white. 
@@ -899,17 +889,12 @@
             On a scale of 0-255 how high does a pixel RGB value have to be before being declared white. 
             </summary>
         </member>
-        <member name="F:Attempt_7.ImageAnalysis.whiteParam">
-            <summary>
-            Sets red_good, blue_good, green_good to this value. 
-            </summary>
-        </member>
         <member name="F:Attempt_7.ImageAnalysis.drawAnalysis">
             <summary>
             The drawingImageAnalysis class handles the vertex information the shows what the robot is thinking
             </summary>
         </member>
-        <member name="M:Attempt_7.ImageAnalysis.#ctor(Microsoft.Xna.Framework.Game,Microsoft.Xna.Framework.Vector2,System.Collections.Generic.List{Microsoft.Xna.Framework.Graphics.Viewport})">
+        <member name="M:Attempt_7.ImageAnalysis.#ctor(Microsoft.Xna.Framework.Game)">
             <summary>
             Initializes a new instance of the ImageAnalysis class.
             </summary>
@@ -922,35 +907,17 @@
             Called when the class is initialized. Creates many of the arrays and sets many of the values. 
             </summary>
         </member>
-        <member name="M:Attempt_7.ImageAnalysis.Update1(Microsoft.Xna.Framework.GameTime)">
+        <member name="M:Attempt_7.ImageAnalysis.preUpdate(Microsoft.Xna.Framework.GameTime)">
             <summary> 
             Stores the texture from the robot camera in a color array before the texture is disposed. Expicitly called in the SimulationMain Draw method
             </summary>
             <param name="gameTime1">Clock Information</param>
-        </member>
-        <member name="M:Attempt_7.ImageAnalysis.SetRobotCameraView(Microsoft.Xna.Framework.Graphics.Texture2D)">
-            <summary>
-            Takes a  2D renderTarget/Texture and sets it as the image to analze. Explicitly called in the SimulationMain Draw Method.
-            </summary>
-            <param name="text">The texture to analze. </param>
         </member>
         <member name="M:Attempt_7.ImageAnalysis.Update(Microsoft.Xna.Framework.GameTime)">
             <summary>
             Calls the analysis methods that actually do all the work. Basically the Main function for the Image Analysis Class
             </summary>
             <param name="gameTime">Clock Info</param>
-        </member>
-        <member name="M:Attempt_7.ImageAnalysis.GetWhiteCount">
-            <summary>
-            Allows access to the WhiteCount in the image
-            </summary>
-            <returns>The number of white pixels</returns>
-        </member>
-        <member name="M:Attempt_7.ImageAnalysis.GetHoughInfo">
-            <summary>
-            Gets the houghInfo Array
-            </summary>
-            <returns>houghInfo Array</returns>
         </member>
         <member name="M:Attempt_7.ImageAnalysis.GetTrueFalseMaptoDraw">
             <summary>
@@ -969,12 +936,6 @@
             Gets the Color map to be drawn
             </summary>
             <returns>Color map</returns>
-        </member>
-        <member name="M:Attempt_7.ImageAnalysis.GetTurnIndicator">
-            <summary>
-            Allows the SimulationMain to get the turnIndicator
-            </summary>
-            <returns>The turn Indicator</returns>
         </member>
         <member name="M:Attempt_7.ImageAnalysis.GetSingularitiesNewHough">
             <summary>
@@ -1072,6 +1033,288 @@
             <param name="rho">the rho value to clear around</param>
             <param name="theta">the theta value to clear around</param>
             <returns>the accumulator array that is cleared around</returns>
+        </member>
+        <member name="P:Attempt_7.ImageAnalysis.robotCameraViewTexture">
+            <summary>
+            Texture object that represents the robot camera's current view. Called
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ImageAnalysis.turnIndication">
+            <summary>
+            The turn indicator measures measures how much the analysis things the robot should go right or left. Right = positive. Left = negative
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ImageAnalysis.currentMode">
+            <summary>
+            the current Hough Mode
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ImageAnalysis.houghLineList">
+            <summary>
+            List of Hough Lines Objects
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ImageAnalysis.lineErrorAnalysis">
+            <summary>
+            Error Analysis Object
+            </summary>
+        </member>
+        <member name="T:Attempt_7.Analysis.LineErrorAnalysis">
+            <summary>
+            This is a game component that implements IUpdateable.
+            </summary>
+        </member>
+        <member name="F:Attempt_7.Analysis.LineErrorAnalysis.totalErrorsInLineDetection">
+            <summary>
+            total errors in the line detection. 
+            </summary>
+        </member>
+        <member name="M:Attempt_7.Analysis.LineErrorAnalysis.Initialize">
+            <summary>
+            Allows the game component to perform any initialization it needs to before starting
+            to run.  This is where it can query for any required services and load content.
+            </summary>
+        </member>
+        <member name="M:Attempt_7.Analysis.LineErrorAnalysis.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Allows the game component to update itself.
+            </summary>
+            <param name="gameTime">Provides a snapshot of timing values.</param>
+        </member>
+        <member name="T:Attempt_7.ConfigurationInformation">
+            <summary>
+            Contains configuration information about the Simulation. When it is initialized, it sets
+            a bunch of default values. 
+            </summary>
+        </member>
+        <member name="M:Attempt_7.ConfigurationInformation.#ctor">
+            <summary>
+            Initialize and set the defaults of everything. 
+            
+            </summary>
+        </member>
+        <member name="M:Attempt_7.ConfigurationInformation.SetDefaults">
+            <summary>
+            Sets the Defaults
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.numberofLinesToFind">
+            <summary>
+            How many lines to find. 
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.screenSize">
+            <summary>
+            2D vector representing the resolution of the cameras used in the simulation. 
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.screenRectangle">
+            <summary>
+            Rectangle object that is the size of the camera resolution (screenSize).
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.windowSize">
+            <summary>
+            2D vector represeting the size of the Window's Window that the simulation will run in. 
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.trackRobot">
+            <summary>
+            Bool representing if the main Camera moves its view to follow the robot. 
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.timePressedKey">
+            <summary>
+            Time in totalmillseconds when F1, F2, or F3 were pushed. 
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.currentHoughMode">
+            <summary>
+            If 0 then Old mode (top left origin), if 1 then New Hough mode( bottom Center). 
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.AccumLength">
+            <summary>
+            Size of the Acuumlator's lenght. Must be able to fit the largest posible value of rho. Max rho = Sqrt( ScreenHeight^2+ (ScreenWidth/2)^2), because the origin is the bottom center and the max rho is top left or right
+            </summary>        
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.AccumLengthOld">
+            <summary>
+            lenght of the hold hough accumulator
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.ThetaIncrement">
+            <summary>
+            How big the steps are for a potiential theta. In degreees. Large values  reduce computation but less acurate.  
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.RhoIncrement">
+            <summary>
+            How big the steps are for a potiential rho values. Large values  reduce computation but less acurate.  
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.UpdateSquareDimForDrawing">
+            <summary>
+            Inorder to make computations go faster, not every pixels is anylzed every time. 1 out of This value squared is analzed each pass
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.UpdateSquareDimForAnalysis">
+            <summary>
+            Inorder to make drawing go faster, not every pixels is updated every time. 1 out of This value squared is updated each pass
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.ClearArroundMaxDegree">
+            <summary>
+            Number of degrees around a maximum to clear around before searching the Accumulator again. 
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.ClearArroundMaxRho">
+            <summary>
+            Number of rho values around a maximum to clear around before searching the Accumulator again.
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.SmoothSearchSize">
+            <summary>
+            Used by the smooth method. Dimension of Number of pixels  to look around for the smooth function. This (values*2)^2 = number of pixels checked.
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.turnIndicatorisTheta">
+            <summary>
+            If true then steering desisions will be based off the theta's of the hough transform
+            </summary>       
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.whiteParam">
+            <summary>
+            Sets red_good, blue_good, green_good to this value. 
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.cntThreshold">
+            <summary>
+            Used by the smooth method. How many pixels must also be white in the area around a white pixel for it to be counted white. 
+            </summary>
+        </member>
+        <member name="P:Attempt_7.ConfigurationInformation.coureLinesPointsPerCircle">
+            <summary>
+            Spokes on the course when making it. ie. when making the couse we pick trackPointsPerCircle to make the whole 
+            circular track so that the angle between each point
+            </summary>
+        </member>
+        <member name="T:Attempt_7.Cameras.Camera">
+            <summary>
+            Represents the camera object/class that contains all the information needed about position and target for rendering. 
+            </summary>
+        </member>
+        <member name="F:Attempt_7.Cameras.Camera.View">
+            <summary>
+            Matrix representation of the view determined by the position, target, and updirection.
+            </summary>
+        </member>
+        <member name="F:Attempt_7.Cameras.Camera.Projection">
+            <summary>
+            Matrix representation of the view determined by the angle of the field of view (Pi/4), aspectRatio, nearest plane visible (1), and farthest plane visible (1200) 
+            </summary>
+        </member>
+        <member name="F:Attempt_7.Cameras.Camera.World">
+            <summary>
+            Matrix representing how the real world cordinates differ from that of the rendering by the camera. 
+            </summary>
+        </member>
+        <member name="F:Attempt_7.Cameras.Camera.updirection">
+            <summary>
+            The 3D vector that defines which direction is up for the camera.
+            </summary>
+        </member>
+        <member name="F:Attempt_7.Cameras.Camera.isMouseDependent">
+            <summary>
+            If the camera is mouse dependent than the position of the mouse determines the position of the camera in 3D space. 
+            </summary>
+        </member>
+        <member name="M:Attempt_7.Cameras.Camera.#ctor(Microsoft.Xna.Framework.Game,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,System.Boolean)">
+            <summary>
+            Initializes a new instance of the Camera class.
+            </summary>
+            <param name="game">The game object of the simulation</param>
+            <param name="pos">The start position of the camera in 3D space</param>
+            <param name="target">A point in 3D space that the camera will point at. </param>
+            <param name="up">The 3D vector that determines which direction is up for the camera</param>
+            <param name="isMouseDependent">Sets the camera's position based on the mouse if true</param>
+        </member>
+        <member name="M:Attempt_7.Cameras.Camera.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Updates the camera's view. If the camera is mouse dependent than Update gets the position of the mouse and keyboard inorder to update the camera position.
+            </summary>
+            <param name="gameTime">Clock Information</param>
+        </member>
+        <member name="P:Attempt_7.Cameras.Camera.renderTarget">
+            <summary>
+            Render Target 
+            </summary>
+        </member>
+        <member name="P:Attempt_7.Cameras.Camera.cameraPosition">
+            <summary>
+            The position of the camera. Defualt  = 0,0,0
+            </summary>
+        </member>
+        <member name="P:Attempt_7.Cameras.Camera.target">
+            <summary>
+            Target of the camera = a point in 3D space that the camera is pointed at. 
+            </summary>
+        </member>
+        <member name="M:Attempt_7.Cameras.StationaryCamera.#ctor(Microsoft.Xna.Framework.Game,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,System.Boolean)">
+            <summary>
+            Calls the base Camera constructor. 
+            </summary>
+            <param name="game">The game object of the simulation</param>
+            <param name="pos">The start position of the camera in 3D space</param>
+            <param name="target">A point in 3D space that the camera will point at. </param>
+            <param name="up">The 3D vector that determines which direction is up for the camera</param>
+            <param name="isMouseDependent">Sets the camera's position based on the mouse if true</param>
+        </member>
+        <member name="F:Attempt_7.Cameras.MovingCamera.mouseOffset">
+            <summary>
+            If the camera is mouse controlled, how much should the mouse cordinates differ from 3D cordinates in space. How much should they be translated in 3D space. 
+            </summary>
+        </member>
+        <member name="M:Attempt_7.Cameras.MovingCamera.#ctor(Microsoft.Xna.Framework.Game,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,System.Boolean)">
+            <summary>
+            Calls the base Camera constructor. 
+            </summary>
+            <param name="game">The game object of the simulation</param>
+            <param name="pos">The start position of the camera in 3D space</param>
+            <param name="target">A point in 3D space that the camera will point at. </param>
+            <param name="up">The 3D vector that determines which direction is up for the camera</param>
+            <param name="isMouseDependent">Sets the camera's position based on the mouse if true</param>
+        </member>
+        <member name="M:Attempt_7.Cameras.MovingCamera.Initialize">
+            <summary>
+            Initializes the camera
+            </summary>
+        </member>
+        <member name="M:Attempt_7.Cameras.MovingCamera.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Updates the camera's view. If the camera is mouse dependent than Update gets the position of the mouse and keyboard inorder to update the camera position.
+            </summary>
+            <param name="gameTime">Clock Information</param>
+        </member>
+        <member name="M:Attempt_7.Cameras.MovingCamera.UpdateMouse">
+            <summary>
+            Updates the position of the camera based on the mouse's position. The Mouse origin (0,0) is the top left corner of the simulation Window.
+            </summary>
+        </member>
+        <member name="M:Attempt_7.Cameras.MovingCamera.UpdateKeyBoard">
+            <summary>
+            Checks to see if the Arrow keys are pressed. Moves the camera position and target based on the arrow keys. 
+            </summary>       
+        </member>
+        <member name="F:Attempt_7.ViewPorts.ViewPortManager.viewPortList">
+            <summary>
+            List holding the viewports used in the simulation. 
+            </summary>
+        </member>
+        <member name="M:Attempt_7.ViewPorts.ViewPortManager.#ctor">
+            <summary>
+            Constructor
+            </summary>
         </member>
     </members>
 </doc>
