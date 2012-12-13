@@ -215,7 +215,7 @@ namespace Attempt_7
             this.coureLinesPointsPerCircle = 37;
 
             // Image Analysis
-            this.whiteParam = 150;
+            this.whiteParam = 200;
             this.cntThreshold = 15;
 
 
@@ -228,7 +228,7 @@ namespace Attempt_7
             robotDistanceToCameraTarget = 1.8f * 2;
             robotCameraHeight = 2f;
             robotChangeDirectionThreshholdValue = 10; // default should be around 10-20
-            robotNumberOfLapsToComplete = 2;
+            robotNumberOfLapsToComplete = 1;
             robotTurnRatio = 2500;
            
         }
