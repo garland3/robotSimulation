@@ -82,7 +82,8 @@ namespace Attempt_7.Cameras
             this.View = Matrix.CreateLookAt(pos, target, up);
             //this.Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4, (float)Game.Window.ClientBounds.Width / (float)Game.Window.ClientBounds.Height, 1, 1200);
             this.Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4,
-                ((SimulationMain)Game).config.screenSize.X / ((SimulationMain)Game).config.screenSize.Y, 1, 1200);
+                ((SimulationMain)Game).config.screenSize.X / ((SimulationMain)Game).config.screenSize.Y, 1.0f, 100);
+           
             
             this.isMouseDependent = isMouseDependent;
             this.World = Matrix.Identity;

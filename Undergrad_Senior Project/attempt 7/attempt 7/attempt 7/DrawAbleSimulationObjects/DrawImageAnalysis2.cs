@@ -25,14 +25,14 @@ namespace Attempt_7.DrawAbleSimulationObjects
     /// <summary>
     /// This is a game component that implements IUpdateable. Draws the image analysis information. 
     /// </summary>
-    public class DrawImageAnalysis  :DrawAbleSimulationObject
+    public class DrawImageAnalysis : DrawAbleSimulationObject
     {
         /// <summary>
         /// These values are part of the double for loops that reduce the computational requirements. These are the values that are incremented.
         /// </summary>
         private int count1A, count2A, count1C, count2C;
 
-      
+
 
         /// <summary>
         /// The screenSize.
@@ -115,14 +115,14 @@ namespace Attempt_7.DrawAbleSimulationObjects
         /// </summary>
         public int count1D { get; set; }
 
-        
+
 
         public Color[] colorMap { get; set; }
 
         /// <summary>        
         /// Initializes a new instance of the DrawImageAnalysis class.
         /// </summary>      
-        public DrawImageAnalysis(Game game) 
+        public DrawImageAnalysis(Game game)
             : base(game)
         {
             this.screenWidth = (int)((SimulationMain)game).config.screenSize.X;
@@ -149,7 +149,7 @@ namespace Attempt_7.DrawAbleSimulationObjects
             this.spriteBatch = new SpriteBatch(Game.GraphicsDevice);
 
             this.basicEffects = new BasicEffect(Game.GraphicsDevice); // Create a basic effects object so we the GPU knows how to render the vertex data
-           
+
 
             this.textureFindWhite = new Texture2D(Game.GraphicsDevice, screenWidth, screenHeight);
             this.colorMap = new Color[screenWidth * screenHeight];
@@ -159,7 +159,7 @@ namespace Attempt_7.DrawAbleSimulationObjects
                 this.colorMap[i] = Color.AliceBlue;
             }
 
-          
+
 
 
             // // Camera needed for the analysis picture 
@@ -178,7 +178,7 @@ namespace Attempt_7.DrawAbleSimulationObjects
             this.vertexArray2 = new VertexPositionColor[65535]; // The vertex array for the analysis triangles , the largest this could be is 65535 = 16 bit
             for (int i = 0; i < 65535; i++)
             {
-                this.vertexArray2[i] = new VertexPositionColor(Vector3.UnitX, Color.Blue);
+                this.vertexArray2[i] = new VertexPositionColor(Vector3.Zero, Color.Blue);
             }
 
 
@@ -190,7 +190,7 @@ namespace Attempt_7.DrawAbleSimulationObjects
 
             base.Initialize();
         }
-        
+
         ///// <summary>
         ///// Loads the position of each triangle into the VertexArray
         ///// </summary>
@@ -225,25 +225,19 @@ namespace Attempt_7.DrawAbleSimulationObjects
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         public override void Update(GameTime gameTime)
         {
-            //this.houghInfo = this.imageAnalysis.GetHoughInfo();
-            //this.houghLineStartandStopVectors = this.imageAnalysis.GetHoughStartandStopVectors();
-            //this.BuildVertexArrayforDrawingSmallerNumberofTriangles(this.imageAnalysis.GetTrueFalseMaptoDraw());
-
-            // this.textureFindWhite = GenerateTexturesFromBoolArray(imageAnalysis.findWhiteTrueFalseMap,this.colorMap,this.textureFindWhite);
+            this.count1D = 0;
             //this.textureFindWhite = GenerateTexturesFromBoolArray(imageAnalysis.findWhiteTrueFalseMap, this.colorMap);
 
-            //this.UpdateBoolMapto3DVerts(imageAnalysis.findWhiteTrueFalseMap);
-            // this.BuildVertexArrayforDrawingSmallerNumberofTriangles(imageAnalysis.findWhiteTrueFalseMap);
-            
-            //this.ProjectBoolMapOnGroundJason(imageAnalysis.findWhiteTrueFalseMap);
-            this.ProjectBoolMapOnGroundAnthony(imageAnalysis.findWhiteTrueFalseMap);
+           //this.ProjectBoolMapOnGroundJason(imageAnalysis.findWhiteTrueFalseMap);
+            // this.ProjectBoolMapOnGroundAnthony(imageAnalysis.findWhiteTrueFalseMap);
+            this.ProjectBoolMapOnGroundAnthony2(imageAnalysis.findWhiteTrueFalseMap);
 
             //for (int i = 0; i < imageAnalysis.houghLineList.Count; i++)
             //{
             //    this.InsertLine(imageAnalysis.houghLineList[i].houghStartVector, imageAnalysis.houghLineList[i].houghEndVector, Color.Red);
             //}
-            
-            
+
+
             InsertRobotPositionDirectionLines();
 
             base.Update(gameTime);
@@ -254,7 +248,7 @@ namespace Attempt_7.DrawAbleSimulationObjects
         /// Main draw method 
         /// </summary>
         /// <param name="gameTime">Clock Information</param>
-        public  void DrawTexture(SpriteBatch spriteBatchSent)
+        public void DrawTexture(SpriteBatch spriteBatchSent)
         {
             Vector2 topRightVector = ((SimulationMain)Game).spriteRectangleManager.topRightVector;
             Vector2 scaleFactor = ((SimulationMain)Game).config.scaleFactorScreenSizeToWindow;
@@ -292,11 +286,11 @@ namespace Attempt_7.DrawAbleSimulationObjects
                 {
                     pass.Apply();
                     // divide count1D by 3 because three verts make a triangle. 
-                    Game.GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, this.vertexArray2, 0, this.count1D/3 );
+                    Game.GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, this.vertexArray2, 0, this.count1D / 3);
                 }
             }
 
-           
+
         }
 
         /// <summary>
@@ -365,8 +359,8 @@ namespace Attempt_7.DrawAbleSimulationObjects
             }
         }
 
-       
-        
+
+
 
 
 
@@ -396,54 +390,54 @@ namespace Attempt_7.DrawAbleSimulationObjects
         }
 
 
-        /// <summary>
-        /// Takes a bool map of and makes vertex positions based on the map. 
-        /// </summary>
-        /// <param name="c"> The bool map</param>       
-        private void BuildVertexArrayforDrawingSmallerNumberofTriangles(bool[,] c)
-        {
-            this.count1D = 0;
-            for (int x = 0; x < this.screenWidth; x++)
-            {
-                for (int y = 0; y < this.screenHeight; )
-                {
-                    if (c[x, y] == true)
-                    {
-                        int j = 1;
+        ///// <summary>
+        ///// Takes a bool map of and makes vertex positions based on the map. 
+        ///// </summary>
+        ///// <param name="c"> The bool map</param>       
+        //private void BuildVertexArrayforDrawingSmallerNumberofTriangles(bool[,] c)
+        //{
+        //    this.count1D = 0;
+        //    for (int x = 0; x < this.screenWidth; x++)
+        //    {
+        //        for (int y = 0; y < this.screenHeight; )
+        //        {
+        //            if (c[x, y] == true)
+        //            {
+        //                int j = 1;
 
-                        // If there are multiple pixels in a row, then make them all into on larger triangle.
-                        // Find how many pixels are in  a row.
-                        while ((y + j) < this.screenHeight && c[x, y + j] == true)
-                        {
-                            j++;
-                        }
+        //                // If there are multiple pixels in a row, then make them all into on larger triangle.
+        //                // Find how many pixels are in  a row.
+        //                while ((y + j) < this.screenHeight && c[x, y + j] == true)
+        //                {
+        //                    j++;
+        //                }
 
-                        this.vertexArray2[this.count1D + 2].Position.X=(float)x;
-                        this.vertexArray2[this.count1D + 2].Position.Y=(float)y;                            
-                         
-                        this.vertexArray2[this.count1D + 2].Color = Color.Red;
+        //                this.vertexArray2[this.count1D + 2].Position.X = (float)x;
+        //                this.vertexArray2[this.count1D + 2].Position.Y = (float)y;
 
-                        // Put another vertex a the position but +1 in the X direction
-                        this.vertexArray2[this.count1D + 1].Position.X = (float)x + 3;
-                        this.vertexArray2[this.count1D + 1].Position.Y = (float)y + j;
+        //                this.vertexArray2[this.count1D + 2].Color = Color.Red;
 
-                        this.vertexArray2[this.count1D + 1].Color = Color.Red;
+        //                // Put another vertex a the position but +1 in the X direction
+        //                this.vertexArray2[this.count1D + 1].Position.X = (float)x + 3;
+        //                this.vertexArray2[this.count1D + 1].Position.Y = (float)y + j;
 
-                        // Put another vertex a the position but +1 in the X direction
-                        this.vertexArray2[this.count1D + 0].Position.X=(float)x;
-                        this.vertexArray2[this.count1D + 0].Position.Y=(float)y + 3 + j;
-                        this.vertexArray2[this.count1D + 0].Color = Color.Red;
-                        this.count1D += 3;
+        //                this.vertexArray2[this.count1D + 1].Color = Color.Red;
 
-                        y += j;
-                    }
-                    else
-                    {
-                        y++;
-                    }
-                }
-            }
-        }
+        //                // Put another vertex a the position but +1 in the X direction
+        //                this.vertexArray2[this.count1D + 0].Position.X = (float)x;
+        //                this.vertexArray2[this.count1D + 0].Position.Y = (float)y + 3 + j;
+        //                this.vertexArray2[this.count1D + 0].Color = Color.Red;
+        //                this.count1D += 3;
+
+        //                y += j;
+        //            }
+        //            else
+        //            {
+        //                y++;
+        //            }
+        //        }
+        //    }
+        //}
 
 
         /// <summary>
@@ -457,7 +451,7 @@ namespace Attempt_7.DrawAbleSimulationObjects
 
             float triangleSize = 0.02f;
 
-            this.count1D = 0;
+           // this.count1D = 0;
 
             // 1.8 = distance to center point of were camera is looking (i.e.) how far to look in front
             double disToCenterCamLooking = 1.8;
@@ -469,8 +463,8 @@ namespace Attempt_7.DrawAbleSimulationObjects
             double radian = MathHelper.ToRadians(16.875f);
 
             Vector3 robotPos = ((SimulationMain)Game).mainRobot.position;
-             Vector3 robotDir = ((SimulationMain)Game).mainRobot.direction;
-            
+            Vector3 robotDir = ((SimulationMain)Game).mainRobot.direction;
+
 
 
             for (int x = 0; x < this.screenWidth; x++)
@@ -488,29 +482,29 @@ namespace Attempt_7.DrawAbleSimulationObjects
                             j++;
                         }
 
-                        
+
 
                         if (y >= 240)
-                            DistanceToPoint = (float)(disToCenterCamLooking - (height * Math.Sin((double)(y - 240) / 240)*radian)/
-                                (Math.Cos(alpha)*Math.Sin(MathHelper.PiOver2 -((y-240)/240)*radian)-alpha));
+                            DistanceToPoint = (float)(disToCenterCamLooking - (height * Math.Sin((double)(y - 240) / 240) * radian) /
+                                (Math.Cos(alpha) * Math.Sin(MathHelper.PiOver2 - ((y - 240) / 240) * radian) - alpha));
                         else
                             DistanceToPoint = (float)(disToCenterCamLooking - (height * Math.Sin((double)(240 - y) / 240) * radian) /
-                                (Math.Cos(alpha) * Math.Sin(MathHelper.PiOver2 - ((240-y) / 240) * radian) - alpha));
+                                (Math.Cos(alpha) * Math.Sin(MathHelper.PiOver2 - ((240 - y) / 240) * radian) - alpha));
 
 
-                        float DD = Vector2.DistanceSquared(Vector2.Zero,new Vector2((float)DistanceToPoint,(float)height));
-                            //Math.Sqrt((double)(DistanceToPoint ^ 2 + height ^ 2));
+                        float DD = Vector2.DistanceSquared(Vector2.Zero, new Vector2((float)DistanceToPoint, (float)height));
+                        //Math.Sqrt((double)(DistanceToPoint ^ 2 + height ^ 2));
 
                         if (x < 320)
-                            distanceFromCenterLine = (int)(DD - 
+                            distanceFromCenterLine = (int)(DD -
                                 Math.Tan(((320 - x) / 320) * MathHelper.PiOver4 / 2));
                         else
                             distanceFromCenterLine = (int)(DD -
-                                Math.Tan(((x-320) / 320) * MathHelper.PiOver4 / 2));
+                                Math.Tan(((x - 320) / 320) * MathHelper.PiOver4 / 2));
 
-                        
-                      // Vector3 pointLocationOnGround = new Vector3(DistanceToPoint,distanceFromCenterLine,0);
-                       //pointLocationOnGround+= ((SimulationMain)Game).mainRobot.position; // Add the robot Position
+
+                        // Vector3 pointLocationOnGround = new Vector3(DistanceToPoint,distanceFromCenterLine,0);
+                        //pointLocationOnGround+= ((SimulationMain)Game).mainRobot.position; // Add the robot Position
 
 
                         Vector2 pointOnGroud = Vector2.Zero;
@@ -521,30 +515,30 @@ namespace Attempt_7.DrawAbleSimulationObjects
                             pointOnGroud.Y = robotPos.Y + (DistanceToPoint * robotDir.Y) / (robotDir.Length()) + distanceFromCenterLine * robotDir.Y / robotDir.Length();
                             pointOnGroud.X = robotPos.X + (DistanceToPoint * robotDir.X) / (robotDir.Length()) - distanceFromCenterLine * robotDir.Y / robotDir.Length();
                         }
-                            // right
+                        // right
                         else
                         {
                             pointOnGroud.Y = robotPos.Y + (DistanceToPoint * robotDir.Y) / (robotDir.Length()) - distanceFromCenterLine * robotDir.Y / robotDir.Length();
                             pointOnGroud.X = robotPos.X + (DistanceToPoint * robotDir.X) / (robotDir.Length()) + distanceFromCenterLine * robotDir.Y / robotDir.Length();
-                       }
+                        }
 
 
-                       // Vector3.
-                       //x = DistanceToPoint;
-                       //y = distanceFromCenterLine;                       
-                        
+                        // Vector3.
+                        //x = DistanceToPoint;
+                        //y = distanceFromCenterLine;                       
+
 
                         //this.vertexArray2[this.count1D + 2].Position.X = (float)x;
                         //this.vertexArray2[this.count1D + 2].Position.Y = (float)y;
                         this.vertexArray2[this.count1D + 0].Position.X = pointOnGroud.X - triangleSize;
-                        this.vertexArray2[this.count1D + 0].Position.Y = pointOnGroud.Y - triangleSize*j;
+                        this.vertexArray2[this.count1D + 0].Position.Y = pointOnGroud.Y - triangleSize * j;
 
                         this.vertexArray2[this.count1D + 0].Color = Color.Red;
 
                         // Put another vertex a the position but +1 in the X direction triangleSize
                         //this.vertexArray2[this.count1D + 1].Position.X = pointOnGroud.X + 3;
                         //this.vertexArray2[this.count1D + 1].Position.Y = pointOnGroud.Y + j;
-                        this.vertexArray2[this.count1D + 1].Position.X = pointOnGroud.X ;
+                        this.vertexArray2[this.count1D + 1].Position.X = pointOnGroud.X;
                         this.vertexArray2[this.count1D + 1].Position.Y = pointOnGroud.Y + triangleSize * j;
 
                         this.vertexArray2[this.count1D + 1].Color = Color.Red;
@@ -553,7 +547,7 @@ namespace Attempt_7.DrawAbleSimulationObjects
                         //this.vertexArray2[this.count1D + 0].Position.X = pointOnGroud.X;
                         //this.vertexArray2[this.count1D + 0].Position.Y = pointOnGroud.Y + 3 + j;
                         this.vertexArray2[this.count1D + 2].Position.X = pointOnGroud.X + triangleSize;
-                        this.vertexArray2[this.count1D + 2].Position.Y = pointOnGroud.Y - triangleSize * j ;
+                        this.vertexArray2[this.count1D + 2].Position.Y = pointOnGroud.Y - triangleSize * j;
                         this.vertexArray2[this.count1D + 2].Color = Color.Orange;
                         this.count1D += 3;
 
@@ -567,6 +561,10 @@ namespace Attempt_7.DrawAbleSimulationObjects
             }
         }
 
+        /// <summary>
+        /// Robot Direction in radians
+        /// </summary>       
+        public double thetaRobotDir { get; set; }
 
         /// <summary>
         /// Takes a bool map of and makes vertex positions based on the map. 
@@ -574,11 +572,10 @@ namespace Attempt_7.DrawAbleSimulationObjects
         /// <param name="c"> The bool map</param>       
         private void ProjectBoolMapOnGroundAnthony(bool[,] c)
         {
-           
 
             float triangleSize = 0.02f;
 
-            this.count1D = 0;
+           // this.count1D = 0;
 
             // 1.8 = distance to center point of were camera is looking (i.e.) how far to look in front
             double disToCenterCamLooking = 1.8;
@@ -587,7 +584,7 @@ namespace Attempt_7.DrawAbleSimulationObjects
             // alpha is the angle from the robot camera to where it is looking in the center. 
             double alpha = Math.Atan(disToCenterCamLooking / height);
 
-            double radian = MathHelper.ToRadians(16.875f);
+
 
             Vector3 robotPos = ((SimulationMain)Game).mainRobot.position;
             Vector3 robotDir = ((SimulationMain)Game).mainRobot.direction;
@@ -616,22 +613,23 @@ namespace Attempt_7.DrawAbleSimulationObjects
 
                         // See my sheet of paper. (m,n) is the point of interest in the robot's cordinate system
                         float beta = (float)(-((y - 240) * MathHelper.PiOver4 / 480) + alpha);
-                         
+
                         float gamma = (float)Math.Atan((x - 320) * MathHelper.PiOver4 / 640);
 
 
-                        float centerPoint = (float)Math.Atan(alpha);
-                        pointOfInterest_R.Y = (float)Math.Atan(beta);
-                        pointOfInterest_R.X = (float)Math.Atan(gamma) * pointOfInterest_R.Y;
+                        // float centerPoint = (float)Math.Tan(alpha);
+                        pointOfInterest_R.Y = (float)Math.Tan(beta);
+                        pointOfInterest_R.X = (float)Math.Tan(gamma) * pointOfInterest_R.Y;
 
-                        double theta = Math.Atan(robotDir.Y/robotDir.X);
-                        if (robotDir.X <= 0)
-                            theta += MathHelper.Pi;
-                        
+                        this.thetaRobotDir = Math.Atan(robotDir.Y / robotDir.X);
+                        //if (robotDir.X <= 0)
+                        //    theta += MathHelper.Pi;
 
-                        pointOfInterest_W.X = (float)(robotPos.X + pointOfInterest_R.X * Math.Cos(theta) - pointOfInterest_R.Y * Math.Sin(theta));
-                        pointOfInterest_W.Y = (float)(robotPos.Y + pointOfInterest_R.X * Math.Sin(theta) - pointOfInterest_R.Y * Math.Sin(theta));
 
+                        pointOfInterest_W.X = (float)(robotPos.X + pointOfInterest_R.X * Math.Cos(this.thetaRobotDir) - pointOfInterest_R.Y * Math.Sin(this.thetaRobotDir));
+                        pointOfInterest_W.Y = (float)(robotPos.Y + pointOfInterest_R.X * Math.Sin(this.thetaRobotDir) - pointOfInterest_R.Y * Math.Sin(this.thetaRobotDir));
+
+                        pointOfInterest_R += robotPos;
                         // Vector3.
                         //x = DistanceToPoint;
                         //y = distanceFromCenterLine;                       
@@ -639,10 +637,100 @@ namespace Attempt_7.DrawAbleSimulationObjects
 
                         //this.vertexArray2[this.count1D + 2].Position.X = (float)x;
                         //this.vertexArray2[this.count1D + 2].Position.Y = (float)y;
-                        this.vertexArray2[this.count1D + 0].Position.X = pointOfInterest_W.X - triangleSize;
-                            this.vertexArray2[this.count1D + 0].Position.Y = pointOfInterest_W.Y - triangleSize * j;
+                        this.vertexArray2[this.count1D + 0].Position.X = pointOfInterest_R.X - triangleSize;
+                        this.vertexArray2[this.count1D + 0].Position.Y = pointOfInterest_R.Y - triangleSize * j;
 
                         this.vertexArray2[this.count1D + 0].Color = Color.Red;
+
+                        // Put another vertex a the position but +1 in the X direction triangleSize
+                        //this.vertexArray2[this.count1D + 1].Position.X = pointOnGroud.X + 3;
+                        //this.vertexArray2[this.count1D + 1].Position.Y = pointOnGroud.Y + j;
+                        this.vertexArray2[this.count1D + 1].Position.X = pointOfInterest_R.X;
+                        this.vertexArray2[this.count1D + 1].Position.Y = pointOfInterest_R.Y + triangleSize * j;
+
+                        this.vertexArray2[this.count1D + 1].Color = Color.Red;
+
+                        // Put another vertex a the position but +1 in the X direction
+                        //this.vertexArray2[this.count1D + 0].Position.X = pointOnGroud.X;
+                        //this.vertexArray2[this.count1D + 0].Position.Y = pointOnGroud.Y + 3 + j;
+                        this.vertexArray2[this.count1D + 2].Position.X = pointOfInterest_R.X + triangleSize;
+                        this.vertexArray2[this.count1D + 2].Position.Y = pointOfInterest_R.Y - triangleSize * j;
+                        this.vertexArray2[this.count1D + 2].Color = Color.Orange;
+                        this.count1D += 3;
+
+                        y += j;
+                    }
+                    else
+                    {
+                        y++;
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Takes a bool map of and makes vertex positions based on the map. 
+        /// </summary>
+        /// <param name="c"> The bool map</param>       
+        private void ProjectBoolMapOnGroundAnthony2(bool[,] c)
+        {
+            float triangleSize = 0.05f;            
+
+            // Point of interest in  World W cordinate system. 
+            Vector3 pointOfInterest_W = Vector3.Zero;
+            // Point of interest in Robot Cordinate system R
+            Vector3 pointOfInterest_R = Vector3.Zero;
+            // alpha is the angle from the robot camera to where it is looking in the center. 
+            //double alpha = Math.Atan(1.8f / 1);
+
+
+            /// Matrix representation of the view determined by the position, target, and updirection.
+            Matrix View = ((SimulationMain)Game).mainRobot.robotCameraView.View;
+
+            /// Matrix representation of the view determined by the angle of the field of view (Pi/4), aspectRatio, nearest plane visible (1), and farthest plane visible (1200) 
+            Matrix Projection = ((SimulationMain)Game).mainRobot.robotCameraView.Projection;
+
+            /// Matrix representing how the real world cordinates differ from that of the rendering by the camera. 
+            Matrix World = ((SimulationMain)Game).mainRobot.robotCameraView.World;
+
+            Plane groundPlan = new Plane(Vector3.UnitZ, 0.0f);            
+
+            for (int x = 0; x < this.screenWidth; x++)
+            {
+                for (int y = 0; y < this.screenHeight; )
+                {
+                    if (c[x, y] == true && this.count1D < 62000)
+                    {
+                        int j = 1;
+
+                        float x1 = x * this.Game.GraphicsDevice.Viewport.Width / this.screenWidth;
+                        float y1 = y * this.Game.GraphicsDevice.Viewport.Height / this.screenHeight;
+                        
+
+                        Vector3 nearPlanePoint = Game.GraphicsDevice.Viewport.Unproject(new Vector3(x1, y1, 0), Projection, View, World);
+                        Vector3 farPlanePoint = Game.GraphicsDevice.Viewport.Unproject(new Vector3(x1, y1, 1), Projection, View, World);
+
+                        //Vector3 Diff = nearPlanePoint - farPlanePoint;
+                        //Diff.Normalize();
+                        //float nearPlainDistance = 1.0f;
+                        //Vector3 robotLoc = Diff * nearPlainDistance + nearPlanePoint;
+                            
+                            //Vector3 pointOfInterest_W = Vector3.in
+                        Ray ray = new Ray(nearPlanePoint, farPlanePoint);
+                      
+                        float? interceptionAtPlane  = ray.Intersects(groundPlan);
+
+                        if (interceptionAtPlane != null)
+                            pointOfInterest_W = ray.Position + ray.Direction * (float)interceptionAtPlane;
+                        else
+                            break;
+                        
+
+                        this.vertexArray2[this.count1D + 0].Position.X = pointOfInterest_W.X - triangleSize;
+                        this.vertexArray2[this.count1D + 0].Position.Y = pointOfInterest_W.Y - triangleSize * j;
+                        
+
+                        this.vertexArray2[this.count1D + 0].Color = Color.DarkOrange;
 
                         // Put another vertex a the position but +1 in the X direction triangleSize
                         //this.vertexArray2[this.count1D + 1].Position.X = pointOnGroud.X + 3;
@@ -657,8 +745,10 @@ namespace Attempt_7.DrawAbleSimulationObjects
                         //this.vertexArray2[this.count1D + 0].Position.Y = pointOnGroud.Y + 3 + j;
                         this.vertexArray2[this.count1D + 2].Position.X = pointOfInterest_W.X + triangleSize;
                         this.vertexArray2[this.count1D + 2].Position.Y = pointOfInterest_W.Y - triangleSize * j;
+
                         this.vertexArray2[this.count1D + 2].Color = Color.Orange;
                         this.count1D += 3;
+
 
                         y += j;
                     }
@@ -669,6 +759,8 @@ namespace Attempt_7.DrawAbleSimulationObjects
                 }
             }
         }
+
+
 
         ///// <summary>
         ///// Takes a bool map of and makes vertex positions based on the map. 
@@ -720,28 +812,31 @@ namespace Attempt_7.DrawAbleSimulationObjects
             float size = 0.04f;
             // Make a line, but make the number of points dependent on the length of the line. 
             // Put 25 per unit length. Because the size of the triangles are 0.02 which is 50 per lines to make it whole. 
-            int incrementNumber=  (int)(Vector3.Distance(startLocation, endLocation)*25);
-            
+            int incrementNumber = (int)(Vector3.Distance(startLocation, endLocation) * 25);
+
             for (int i = 0; i < incrementNumber; i++)
             {
                 // Find each points location 
                 Vector3 lineLocation1 = Vector3.Lerp(startLocation, endLocation, (float)(i * 1f / incrementNumber));
                 {
-                    
-                    // Put a vertex at the position.
-                    this.vertexArray2[this.count1D + 0].Position.X = lineLocation1.X - size; 
-                    this.vertexArray2[this.count1D + 0].Position.Y = lineLocation1.Y - size;
-                    this.vertexArray2[this.count1D + 0].Color = c;
+                    if (this.count1D < 65000)
+                    {
 
-                    this.vertexArray2[this.count1D + 1].Position.X = lineLocation1.X;
-                    this.vertexArray2[this.count1D + 1].Position.Y = lineLocation1.Y + size; // Put another vertex a the position but +1 in the X direction
-                    this.vertexArray2[this.count1D + 1].Color = c;
+                        // Put a vertex at the position.
+                        this.vertexArray2[this.count1D + 0].Position.X = lineLocation1.X - size;
+                        this.vertexArray2[this.count1D + 0].Position.Y = lineLocation1.Y - size;
+                        this.vertexArray2[this.count1D + 0].Color = c;
 
-                    this.vertexArray2[this.count1D + 2].Position.X = lineLocation1.X + size;
-                    this.vertexArray2[this.count1D + 2].Position.Y = lineLocation1.Y - size; // Put another vertex a the position but +1 in the X direction
-                    this.vertexArray2[this.count1D + 2].Color = c;
+                        this.vertexArray2[this.count1D + 1].Position.X = lineLocation1.X;
+                        this.vertexArray2[this.count1D + 1].Position.Y = lineLocation1.Y + size; // Put another vertex a the position but +1 in the X direction
+                        this.vertexArray2[this.count1D + 1].Color = c;
 
-                    this.count1D += 3;
+                        this.vertexArray2[this.count1D + 2].Position.X = lineLocation1.X + size;
+                        this.vertexArray2[this.count1D + 2].Position.Y = lineLocation1.Y - size; // Put another vertex a the position but +1 in the X direction
+                        this.vertexArray2[this.count1D + 2].Color = c;
+
+                        this.count1D += 3;
+                    }
                 }
             }
         }
@@ -756,7 +851,7 @@ namespace Attempt_7.DrawAbleSimulationObjects
             Vector3 robotDir = ((SimulationMain)Game).mainRobot.direction;
 
             InsertLine(robotPos, Vector3.Zero, Color.Blue);
-            InsertLine(robotPos , robotDir * 2 + robotPos, Color.Black);
+            InsertLine(robotPos, robotDir * 2 + robotPos, Color.Black);
         }
 
         /// <summary>

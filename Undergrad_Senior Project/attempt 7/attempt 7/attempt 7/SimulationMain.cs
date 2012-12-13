@@ -73,6 +73,16 @@ namespace Attempt_7
         /// </summary>
         protected SpriteBatch spriteBatch;
 
+        /// <summary>
+        /// Time taken to finish the laps. 
+        /// </summary>
+        TimeSpan timePeneltyForRunningSlow;
+
+         /// <summary>
+        /// The time penelty amount that we will add to the totally time, if the game is running slow. 
+        /// </summary>
+        TimeSpan timePeneltyAmount;
+        
 
         /// <summary>
         /// The Sprite Rectangle Manager that determines sectors of the screen. 
@@ -92,7 +102,8 @@ namespace Attempt_7
             this.config = new ConfigurationInformation();
             this.ReadParametersFromFile();
 
-           
+            this.IsFixedTimeStep = true;
+            this.TargetElapsedTime = new TimeSpan(0, 0, 0, 0, 50);
 
             // Initialize the camera list
             cameraListDraw3DWorld = new List<Camera>();
@@ -102,6 +113,8 @@ namespace Attempt_7
             // Set GPU configuration information. 
             this.graphics.PreferredBackBufferWidth = (int)this.config.windowSize.Width; // Set the window size
             this.graphics.PreferredBackBufferHeight = (int)this.config.windowSize.Height;
+            //this.graphics.PreferredBackBufferWidth = (int)this.config.screenSize.X; // Set the window size
+            //this.graphics.PreferredBackBufferHeight = (int)this.config.screenSize.Y;
             this.graphics.IsFullScreen = false; // Not full screen
             this.graphics.ApplyChanges();
 
@@ -119,7 +132,8 @@ namespace Attempt_7
         {
            // going to try to not use view ports and then see what happens. 
            // this.viewPortManager = new ViewPortManager
-
+            this.timePeneltyForRunningSlow = TimeSpan.Zero;
+            this.timePeneltyAmount = new TimeSpan(0, 0, 0, 0, 200);
             
 
             // Make the 3d world objects
@@ -156,7 +170,10 @@ namespace Attempt_7
         protected override void LoadContent() 
         {
             this.spriteBatch = new SpriteBatch(GraphicsDevice); // Create a new SpriteBatch, which can be used to draw textures.
-                       
+            this.GraphicsDevice.Viewport = new Viewport(this.config.windowSize);           
+            //this.GraphicsDevice.Viewport = new Viewport(new Rectangle(0,0,(int)this.config.screenSize.X,(int)this.config.screenSize.Y));           
+
+
             base.LoadContent();
         }
 
@@ -180,6 +197,12 @@ namespace Attempt_7
             if (this.config.trackRobot == true)
             {
                 this.worldViewCamera.target = this.mainRobot.position;                
+            }
+
+            // Penelty for running slow
+            if (gameTime.IsRunningSlowly == true)
+            {
+                this.timePeneltyForRunningSlow += this.timePeneltyForRunningSlow;
             }
 
             base.Update(gameTime); // Call the update for all the game components (camera, robot, and imageAnalysis). -- this is where the real work is done           
@@ -253,9 +276,7 @@ namespace Attempt_7
         {
             //bool simulationPause = ; // Find if the simulatin is paused from the robot. 
             if (this.mainRobot.paused != true)           
-                this.config.frameDrawCount++;
-            
-           
+                this.config.frameDrawCount++;           
 
             this.BuildRenderTargets(); // Create the render targets to be in the computer memory instead of the screen.        
 
@@ -286,7 +307,7 @@ namespace Attempt_7
 
             // Set the view port to the main view and draw the main view
             //this.GraphicsDevice.Viewport = this.viewPortList[0]; // Main View  is 2/3 of the screen screen
-            this.GraphicsDevice.Viewport = new Viewport(this.config.windowSize);
+            
             this.spriteBatch.Begin(); // Start the 2D drawing 
             
             // Draw World View
@@ -335,10 +356,53 @@ namespace Attempt_7
         private void ReadParametersFromFile()
         {
 
-
-            // FileStream fileStream = new FileStream(@"c:\file.txt", FileMode.Open);
+            // Directory.GetCurrentDirectory()
+            //string path = Directory.GetCurrentDirectory();
+            //FileStream fileStream = new FileStream(@"c:/le.txt", FileMode.Open);
+            string line;
+            int counter = 0;
             try
             {
+                // rho
+                // theta
+                // updateNforAnalysis
+
+                if (File.Exists("test.txt"))
+                {
+                    //this.config.testString = File.ReadAllText("test.txt");
+                    System.IO.StreamReader file = new System.IO.StreamReader("test.txt");
+                    
+                    // First line
+                    if((line = file.ReadLine()) != null)
+                      this.config.robotSpeed= (float)Convert.ToDouble( line);
+                    else
+                        ExitWithMessage("Could not read 1 parameter of input file text.txt");
+
+                    // SEcond LIne
+                    if((line = file.ReadLine()) != null)
+                      this.config.robotChangeDirectionThreshholdValue= (short)Convert.ToInt32( line);
+                    else
+                        ExitWithMessage("Could not read 2 parameter of input file text.txt");
+
+                    // Third Line
+                    if((line = file.ReadLine()) != null)
+                        this.config.robotTurnRatio = (float)Convert.ToDouble(line);
+                    else
+                        ExitWithMessage("Could not read 3 parameter of input file text.txt");
+
+                    // Fourth Line
+                    if ((line = file.ReadLine()) != null)
+                        this.config.UpdateSquareDimForAnalysis = (short)Convert.ToInt32(line);
+                    else
+                        ExitWithMessage("Could not read 4 parameter of input file text.txt");
+
+                   
+
+                    file.Close();
+
+
+                }                
+              
                 // read from file or write to file
             }
             finally
@@ -354,14 +418,20 @@ namespace Attempt_7
         /// <summary>
         /// Print Results of the simulation to a file. 
         /// </summary>
-        private void PrintResultToFile()
-        {
-            // File name
-            // open
-            // print parameters to file so that they are easy to parse by optimizer. 
-            //close
+        public void PrintResultToFile(TimeSpan totalTime)
+        {   
+            System.IO.File.WriteAllText("results.txt", totalTime.TotalMilliseconds.ToString());
+            Exit();
         }
 
+         /// <summary>
+        /// Print Results of the simulation to a file. 
+        /// </summary>
+        public void ExitWithMessage(String message)
+        {
+             System.IO.File.WriteAllText("results.txt", message.ToString());
+              Exit();
+        }
 
     }
 }

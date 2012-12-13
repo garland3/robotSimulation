@@ -137,7 +137,28 @@ namespace Attempt_7._2DDrawing
             this.spriteBatch.DrawString(this.arial, "Count1D =" + this.imageAnalysisLinked.drawAnalysis.count1D.ToString(), new Vector2(0, 12 * spacing), Color.White);
             this.spriteBatch.DrawString(this.arial, 
                 "White Count = " + this.imageAnalysisLinked.drawAnalysis.imageAnalysis.totalWhiteCnt.ToString(), new Vector2(0, 13 * spacing), Color.White);
-                 
+            this.spriteBatch.DrawString(this.arial,
+                "Robot Direction = " + ((SimulationMain)Game).mainRobot.direction.ToString(), new Vector2(0, 14 * spacing), Color.White);
+
+            this.spriteBatch.DrawString(this.arial,
+               "Robot Dir Theta = " +  MathHelper.ToDegrees((float)this.imageAnalysisLinked.drawAnalysis.thetaRobotDir).ToString(), new Vector2(0, 15 * spacing), Color.White);
+
+
+           
+           
+            this.spriteBatch.DrawString(this.arial,
+               "robot Lap " + ((SimulationMain)Game).mainRobot.robotLapNumber.ToString(), new Vector2(0, 16 * spacing), Color.White);
+
+            //this.spriteBatch.DrawString(this.arial,
+            //   "Rho Increment " +  ((SimulationMain)Game).config.RhoIncrement.ToString(), new Vector2(0, 17 * spacing), Color.White);
+
+            //this.spriteBatch.DrawString(this.arial,
+            //   "Theta Increment " + ((SimulationMain)Game).config.ThetaIncrement.ToString(), new Vector2(0, 18 * spacing), Color.White);
+
+            //this.spriteBatch.DrawString(this.arial,
+            //   "Update Increment " + ((SimulationMain)Game).config.UpdateSquareDimForAnalysis.ToString(), new Vector2(0, 19 * spacing), Color.White);
+            
+
 
             this.spriteBatch.End();
         }

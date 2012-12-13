@@ -99,18 +99,21 @@ namespace Attempt_7
         /// <summary>
         /// How big does the turn indicator have to be, before the robot turns. 20 is default. 
         /// </summary>
-        private int changeDirectionThreshholdValue;
+        public int changeDirectionThreshholdValue { get; set; }
+
+
+        /// <summary>
+        /// When Turning how much do we use the average value compared to how hard we turn. 
+        /// </summary>
+        public float turnRatio { get; set; }
 
         /// <summary>
         /// Time in total milliseconds from the start of the game to the last time one of the keys was pressed. 
         /// </summary>
         private int timePressedKey;
 
+
         
-        /// <summary>
-        /// Defualt Robot configuration information is stored in this object. 
-        /// </summary>
-        DefaultRobotConfiguration robotconfig;
 
         /// <summary>
         /// Called when the robot is first placed. Stores the value of the start position so that the robot can be reset to this location
@@ -134,16 +137,19 @@ namespace Attempt_7
         public Robot(Game game)
             : base(game)
         {
-            
+            this.robotLapNumber = 0;
 
             // Make a default configuration object
-            this.robotconfig = new DefaultRobotConfiguration();
+           
 
             // Set the variables in the robot based off the default configuration. 
-            this.position =  this.robotconfig.position;
-            this.direction =  this.robotconfig.direction;            
-            this.speed =  this.robotconfig.speed;           
-            this.changeDirectionThreshholdValue =  this.robotconfig.changeDirectionThreshholdValue;
+            this.position = ((SimulationMain)game).config.robotPosition;
+            this.direction = ((SimulationMain)game).config.robotDirection;
+            this.speed = ((SimulationMain)game).config.robotSpeed;
+            this.changeDirectionThreshholdValue = ((SimulationMain)game).config.robotChangeDirectionThreshholdValue;
+            this.robotNumberOfLapsToComplete = ((SimulationMain)game).config.robotNumberOfLapsToComplete;
+            this.turnRatio = ((SimulationMain)game).config.robotTurnRatio;
+            
 
             this.basicEffects = new BasicEffect(this.Game.GraphicsDevice);
 
@@ -154,8 +160,8 @@ namespace Attempt_7
             // Create the camera for the robot based on the information just assigned to the robot. 
             // the camera height and distance to look infront are not stored in the robot, but just sent on to the camera. 
             // so we use the default configuration from robotconfig for cameraHeight and distanceToCameraTarget
-            Vector3 cameraPosition = this.position + new Vector3(0, 0,  this.robotconfig.cameraHeight);
-            Vector3 cameraTarget = this.position + Vector3.Multiply(this.direction,  this.robotconfig.distanceToCameraTarget);
+            Vector3 cameraPosition = this.position + new Vector3(0, 0,  ((SimulationMain)game).config.robotCameraHeight);
+            Vector3 cameraTarget = this.position + Vector3.Multiply(this.direction, ((SimulationMain)game).config.robotDistanceToCameraTarget);
             Vector3 cameraUp =  Vector3.Backward;
             bool isCameraMouseDependent = false;
 
@@ -194,7 +200,7 @@ namespace Attempt_7
 
             this.robotVertexPositionOffsetsFromRobot[0] = new Vector3(-0.3f, 0.3f, 0);
              this.robotVertexPositionOffsetsFromRobot[1] = new Vector3(0.3f, 0.3f, 0);
-             this.robotVertexPositionOffsetsFromRobot[2] = new Vector3(-0.0f, 0.0f, this.robotconfig.cameraHeight);
+             this.robotVertexPositionOffsetsFromRobot[2] = new Vector3(-0.0f, 0.0f, ((SimulationMain)Game).config.robotCameraHeight);
              this.robotVertexPositionOffsetsFromRobot[3] = new Vector3(-0.3f, -0.3f, 0);
              this.robotVertexPositionOffsetsFromRobot[4] = new Vector3(-0.3f, 0.3f, 0);
 
@@ -223,7 +229,9 @@ namespace Attempt_7
         {
             if (turnIndicator > this.changeDirectionThreshholdValue || turnIndicator < -this.changeDirectionThreshholdValue)
             {
-                this.direction += (Vector3.Cross(this.direction, Vector3.UnitZ) / 2500) * turnIndicator; // 2500 is just an experimental value that works
+                this.direction += (Vector3.Cross(this.direction, Vector3.UnitZ) / this.turnRatio) * turnIndicator; // 2500 is just an experimental value that works
+                //this.direction += (this.direction*this.turnRatio * turnIndicator); // 2500 is just an experimental value that works
+                
                 this.direction.Normalize(); // Make a unit vector
             }
         }
@@ -231,6 +239,31 @@ namespace Attempt_7
 
         static int updateCount = 0;
 
+
+        /// <summary>       
+        /// Checks If robot has finished all the laps
+        /// </summary>       
+        public void checkIfRobotCompleteAllLaps(GameTime gameTime)
+        {
+            if (robotLapNumber == this.robotNumberOfLapsToComplete)
+            {
+                // this.totalTime = gameTime.TotalGameTime;
+                ((SimulationMain)Game).PrintResultToFile(gameTime.TotalGameTime);
+            }
+        }
+
+        /// <summary>       
+        /// Checks If robot is on course
+        /// </summary>       
+        public void checkIfRobotOnCourse(GameTime gameTime)
+        {
+            if (this.position.Length() > 100)
+            {
+                // 32600,32700,34150
+                ((SimulationMain)Game).ExitWithMessage("98765");
+            }
+
+        }
 
 
         /// <summary>
@@ -242,18 +275,36 @@ namespace Attempt_7
         public override void Update(GameTime gameTime)
         {
             if (this.paused != true)
-                   updateCount++;           
+                   updateCount++;
 
+            // STart the robot 2 second after it is made
+            if (gameTime.TotalGameTime.TotalSeconds >= 2)
+                this.paused = false;
+            
+             bool potentialLap= false;
+            // If we are in quadrant 4, then we have the potential of crossing start line. 
+             if ((this.position.Y < 0) && (this.position.X >= 0))
+                               potentialLap = true;
+             
+               
             this.GetKeyBoard(gameTime); // Get the key board values. 
             if (this.paused != true)
                 this.position += Vector3.Multiply(this.direction, this.speed); // Move the robot forward by the speed of the robot
 
+            // If we were in quandrant 4, but now the y>=0, so we are in quadrant 1, then we passed the finish line.
+            // Incremenent the lap counter. 
+            if (potentialLap == true && (this.position.Y >= 0) && this.paused != true)
+                this.robotLapNumber += 1;
+
+
+            this.checkIfRobotCompleteAllLaps(gameTime);
+            this.checkIfRobotOnCourse(gameTime);  
             this.UpdateRobotVertexPositions();
             
 
             // Set the robot camera based on its new position
-            this.robotCameraView.cameraPosition = this.position + new Vector3(0, 0,  this.robotconfig.cameraHeight);
-            this.robotCameraView.target = this.position + Vector3.Multiply(this.direction,  this.robotconfig.distanceToCameraTarget);
+            this.robotCameraView.cameraPosition = this.position + new Vector3(0, 0, ((SimulationMain)Game).config.robotCameraHeight);
+            this.robotCameraView.target = this.position + Vector3.Multiply(this.direction, ((SimulationMain)Game).config.robotDistanceToCameraTarget);
             
                
             base.Update(gameTime);

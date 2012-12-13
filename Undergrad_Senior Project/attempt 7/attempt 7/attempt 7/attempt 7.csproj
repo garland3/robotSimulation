@@ -150,7 +150,6 @@
     <Compile Include="Cameras\MovingCamera.cs" />
     <Compile Include="Cameras\StationaryCamera.cs" />
     <Compile Include="ConfigurationInformation.cs" />
-    <Compile Include="DefaultRobotConfiguration.cs" />
     <Compile Include="DrawAbleSimulationObjects\CourseLines.cs" />
     <Compile Include="DrawAbleSimulationObjects\DrawAbleSimulationObject.cs" />
     <Compile Include="DrawAbleSimulationObjects\Grass.cs" />

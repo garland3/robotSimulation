@@ -101,7 +101,7 @@ namespace Attempt_7.DrawAbleSimulationObjects
 
 
                 // Create The Vertex PositionColor's of the lines. 
-                this.whiteLinesVertexPositionColor[j + (37 * 0)] = new VertexPositionColor(this.trackArray[j + (37 * 0)], Color.WhiteSmoke); // 1st inside line
+                this.whiteLinesVertexPositionColor[j + (37 * 0)] = new VertexPositionColor(this.trackArray[j + (37 * 0)], Color.White); // 1st inside line
                 this.whiteLinesVertexPositionColor[j + (37 * 1)] = new VertexPositionColor(this.trackArray[j + (37 * 1)], Color.White); // 1st outside line
                 this.whiteLinesVertexPositionColor[j + (37 * 2)] = new VertexPositionColor(this.trackArray[j + (37 * 2)], Color.White); // 2nd inside line -- make it thicker
                 this.whiteLinesVertexPositionColor[j + (37 * 3)] = new VertexPositionColor(this.trackArray[j + (37 * 3)], Color.White); // 2nd outside line -- make it thicker

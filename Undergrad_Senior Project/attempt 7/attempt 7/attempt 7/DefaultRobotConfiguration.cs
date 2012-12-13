@@ -21,21 +21,11 @@ namespace Attempt_7
     class DefaultRobotConfiguration
     {
         
-        public Vector3 position { get; set; }              
-        public Vector3 direction { get; set; }  
-        public float speed { get; set; }        
-        public float distanceToCameraTarget { get; set; }       
-        public float cameraHeight { get; set; }
-        public int changeDirectionThreshholdValue { get; set; }
+        
 
         public DefaultRobotConfiguration()
         {
-            position = new Vector3(0, 10.5f, 0);
-            direction = Vector3.UnitY;
-            speed = 0.03f;
-            distanceToCameraTarget = 1.8f;
-            cameraHeight = 1;
-            changeDirectionThreshholdValue = 10; // default should be around 10-20
+           
         }
     }
 }

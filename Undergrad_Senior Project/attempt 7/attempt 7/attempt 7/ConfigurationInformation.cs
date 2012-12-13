@@ -140,10 +140,32 @@ namespace Attempt_7
         public int cntThreshold { get; set; }
 
         /// <summary>
+        /// A test String for Reading and Writing. 
+        /// </summary>
+        public string testString { get; set; }
+
+
+        /// <summary>
         /// Spokes on the course when making it. ie. when making the couse we pick trackPointsPerCircle to make the whole 
         /// circular track so that the angle between each point
         /// </summary>
         public int coureLinesPointsPerCircle { get; set; }
+
+        // Robot Parameters
+        public Vector3 robotPosition { get; set; }
+        public Vector3 robotDirection { get; set; }
+        public float robotSpeed { get; set; }
+        public int robotChangeDirectionThreshholdValue { get; set; }
+        public int robotNumberOfLapsToComplete { get; set; }
+        public float robotTurnRatio { get; set; }
+        
+        // Robot Camera
+        public float robotDistanceToCameraTarget { get; set; }
+        public float robotCameraHeight { get; set; }
+       
+        
+       
+       
 
         /// <summary>
         /// Initialize and set the defaults of everything. 
@@ -166,12 +188,12 @@ namespace Attempt_7
             // calculate the scaling
             
             // Method 1 which is a true scalling, but the x and y are not scaled the same, so you get distortion
-            //this.scaleFactorScreenSizeToWindow     = new Vector2(this.windowSize.Width/(2*this.screenSize.X),this.windowSize.Height/(2*this.screenSize.Y));
+            this.scaleFactorScreenSizeToWindow     = new Vector2(this.windowSize.Width/(2*this.screenSize.X),this.windowSize.Height/(2*this.screenSize.Y));
             
             // 0.78125,0.8125
 
             // or the second method that just takes the smaller of the two, so that there will be even scaling
-            this.scaleFactorScreenSizeToWindow = new Vector2((float)0.78125, (float)0.78125);
+            //this.scaleFactorScreenSizeToWindow = new Vector2((float)0.78125, (float)0.78125);
                
 
 
@@ -196,6 +218,19 @@ namespace Attempt_7
             this.whiteParam = 150;
             this.cntThreshold = 15;
 
+
+            // 
+            robotPosition = new Vector3(0, 10.5f, 0);
+            robotDirection = Vector3.UnitY;
+            robotSpeed = 0.20f;
+            //distanceToCameraTarget = 1.8f;
+            //cameraHeight = 1;
+            robotDistanceToCameraTarget = 1.8f * 2;
+            robotCameraHeight = 2f;
+            robotChangeDirectionThreshholdValue = 10; // default should be around 10-20
+            robotNumberOfLapsToComplete = 2;
+            robotTurnRatio = 2500;
+           
         }
 
     }
