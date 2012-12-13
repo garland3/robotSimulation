@@ -1274,6 +1274,11 @@
             circular track so that the angle between each point
             </summary>
         </member>
+        <member name="P:Attempt_7.ConfigurationInformation.errorToShow">
+             <summary>
+            
+             </summary>
+        </member>
         <member name="M:Attempt_7.Cameras.MovingCamera.#ctor(Microsoft.Xna.Framework.Game,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,System.Boolean)">
             <summary>
             Calls the base Camera constructor. 

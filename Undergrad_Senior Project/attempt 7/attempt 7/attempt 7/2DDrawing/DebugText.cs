@@ -163,7 +163,9 @@ namespace Attempt_7._2DDrawing
             this.spriteBatch.DrawString(this.arial,
                "Do Analysis on every N pixels " + ((SimulationMain)Game).config.UpdateSquareDimForAnalysis.ToString(), new Vector2(0, 20 * spacing), Color.White);
 
-            
+            this.spriteBatch.DrawString(this.arial,
+              "Error " + ((SimulationMain)Game).config.errorToShow, new Vector2(0, 21 * spacing), Color.White);
+
 
             this.spriteBatch.End();
         }

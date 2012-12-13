@@ -370,7 +370,7 @@ namespace Attempt_7
                 if (File.Exists("test.txt"))
                 {
                     //this.config.testString = File.ReadAllText("test.txt");
-                    System.IO.StreamReader file = new System.IO.StreamReader("test.txt");
+                    System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Anthony G\Documents\GitHub\robotSimulation\Undergrad_Senior Project\attempt 7\attempt 7\attempt 7\bin\x86\Release\test.txt");
                     
                     // First line
                     if((line = file.ReadLine()) != null)
