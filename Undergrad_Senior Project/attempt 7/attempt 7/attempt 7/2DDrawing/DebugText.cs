@@ -144,21 +144,26 @@ namespace Attempt_7._2DDrawing
                "Robot Dir Theta = " +  MathHelper.ToDegrees((float)this.imageAnalysisLinked.drawAnalysis.thetaRobotDir).ToString(), new Vector2(0, 15 * spacing), Color.White);
 
 
-           
+         
            
             this.spriteBatch.DrawString(this.arial,
                "robot Lap " + ((SimulationMain)Game).mainRobot.robotLapNumber.ToString(), new Vector2(0, 16 * spacing), Color.White);
 
-            //this.spriteBatch.DrawString(this.arial,
-            //   "Rho Increment " +  ((SimulationMain)Game).config.RhoIncrement.ToString(), new Vector2(0, 17 * spacing), Color.White);
 
-            //this.spriteBatch.DrawString(this.arial,
-            //   "Theta Increment " + ((SimulationMain)Game).config.ThetaIncrement.ToString(), new Vector2(0, 18 * spacing), Color.White);
+            // output information about the current settings. 
+            this.spriteBatch.DrawString(this.arial,
+               "Speed seetting " + ((SimulationMain)Game).config.robotSpeed.ToString(), new Vector2(0, 17 * spacing), Color.White);
 
-            //this.spriteBatch.DrawString(this.arial,
-            //   "Update Increment " + ((SimulationMain)Game).config.UpdateSquareDimForAnalysis.ToString(), new Vector2(0, 19 * spacing), Color.White);
+            this.spriteBatch.DrawString(this.arial,
+               "Theta Turning Threshold " + ((SimulationMain)Game).config.robotChangeDirectionThreshholdValue.ToString(), new Vector2(0, 18 * spacing), Color.White);
+
+            this.spriteBatch.DrawString(this.arial,
+               "Robot Turn Ratio " + ((SimulationMain)Game).config.robotTurnRatio.ToString(), new Vector2(0, 19 * spacing), Color.White);
+
+            this.spriteBatch.DrawString(this.arial,
+               "Do Analysis on every N pixels " + ((SimulationMain)Game).config.UpdateSquareDimForAnalysis.ToString(), new Vector2(0, 20 * spacing), Color.White);
+
             
-
 
             this.spriteBatch.End();
         }

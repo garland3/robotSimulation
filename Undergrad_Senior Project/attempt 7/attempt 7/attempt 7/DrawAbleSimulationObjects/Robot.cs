@@ -257,7 +257,7 @@ namespace Attempt_7
         /// </summary>       
         public void checkIfRobotOnCourse(GameTime gameTime)
         {
-            if (this.position.Length() > 100)
+            if (this.position.Length() > 30)
             {
                 // 32600,32700,34150
                 ((SimulationMain)Game).ExitWithMessage("98765");
