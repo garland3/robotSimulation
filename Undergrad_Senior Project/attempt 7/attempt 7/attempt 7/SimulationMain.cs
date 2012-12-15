@@ -289,7 +289,7 @@ namespace Attempt_7
                 // Draw the world from the perspective of each camera, 
                 this.grassTurf.DrawGrass(camera);
                 this.courseLines.DrawCouseLines(camera);               
-                this.mainRobot.DrawRobot(camera);
+                //this.mainRobot.DrawRobot(camera);
                 this.mainRobot.imageAnalysisRobotCamera.drawAnalysis.DrawImageAnalysisResults(camera);
                
             }
@@ -390,11 +390,11 @@ namespace Attempt_7
                     else
                         ExitWithMessage("Could not read 3 parameter of input file text.txt");
 
-                    // Fourth Line
-                    if ((line = file.ReadLine()) != null)
-                        this.config.UpdateSquareDimForAnalysis = (short)Convert.ToInt32(line);
-                    else
-                        ExitWithMessage("Could not read 4 parameter of input file text.txt");
+                    //// Fourth Line
+                    //if ((line = file.ReadLine()) != null)
+                    //    this.config.UpdateSquareDimForAnalysis = (short)Convert.ToInt32(line);
+                    //else
+                    //    ExitWithMessage("Could not read 4 parameter of input file text.txt");
 
                    
 

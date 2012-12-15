@@ -260,7 +260,7 @@ namespace Attempt_7
             if (this.position.Length() > 30)
             {
                 // 32600,32700,34150
-                ((SimulationMain)Game).ExitWithMessage("98765");
+                ((SimulationMain)Game).ExitWithMessage("100000");
             }
 
         }

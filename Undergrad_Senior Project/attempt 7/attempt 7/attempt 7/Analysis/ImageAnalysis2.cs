@@ -307,7 +307,7 @@ namespace Attempt_7
             if (this.colorArrayDirectlyFromRobotCamera != null)
             {
                 this.findWhiteTrueFalseMap = this.FindWhite(this.colorArrayDirectlyFromRobotCamera); // Find White                
-                this.Hough(this.findWhiteTrueFalseMap); // Run the hough  
+                //this.Hough(this.findWhiteTrueFalseMap); // Run the hough  
 
                 // 
                 if (((SimulationMain)Game).config.turnIndicatorisTheta != true)

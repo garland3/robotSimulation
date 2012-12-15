@@ -207,7 +207,7 @@ namespace Attempt_7
             currentHoughMode = 1;
             this.frameDrawCount = 0;
             this.UpdateSquareDimForDrawing = 3;
-            this.UpdateSquareDimForAnalysis = 3;
+            this.UpdateSquareDimForAnalysis = 1;
             this.AccumLength = 600;
             this.AccumLengthOld = 810;
             this.ThetaIncrement = 4;
@@ -233,7 +233,7 @@ namespace Attempt_7
             robotDistanceToCameraTarget = 1.8f * 2;
             robotCameraHeight = 2f;
             robotChangeDirectionThreshholdValue = 10; // default should be around 10-20
-            robotNumberOfLapsToComplete = 1;
+            robotNumberOfLapsToComplete = 2;
             robotTurnRatio = 2500;
            
         }
